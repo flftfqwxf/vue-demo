@@ -1,0 +1,14 @@
+{
+  "breadcrumb": {
+    "currentMenu": "产品列表2",
+    "currentChildMenu": "产品子列表",
+    "supplierName": "供应商名称",
+    "supplierStaff": {
+      "admin":false
+    },
+    "distributorInfo": "",
+    "userInfo": {
+      "phone": "13880266903"
+    }
+  }
+}

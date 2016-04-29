@@ -1,0 +1,37 @@
+{
+  "navList": [
+    {
+      "navName": "我的首页",
+      "path": "/",
+      "iconClass":"gm-icon gm-home"
+    },
+    {
+      "navName": "产品管理",
+      "path": "/product",
+      "iconClass":"gm-icon gm-pro-manage",
+      "num":11
+    },
+    {
+      "navName": "意向订单",
+      "iconClass":"gm-icon gm-yixiangdingdanicon",
+      "id":28,
+      "subNav": [
+        {
+          "navName": "同行订单",
+          "path": "/booking-colleagues",
+          "num":11
+        },
+        {
+          "navName": "网站订单",
+          "path": "/booking-self",
+          "num":13
+        }
+      ]
+    },
+    {
+      "navName": "我的消息",
+      "path": "/mvvm/message",
+      "iconClass":"gm-icon gm-home"
+    }
+  ]
+}

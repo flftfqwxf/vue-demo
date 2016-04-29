@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.page404{ padding:27px 0 46px 0; background-color:#EDF0F2; }
+.page404-center{ margin:0 auto; width:1170px; height:618px; background-color:#fff; }
+.page404-centerbox{ margin:0 auto; width:400px; text-align:center; font-size:14px; }
+.page404-center i{ display:inline-block; margin-top:28px; font-size:130px; }
+.page404-center .gm-up{ color:#78A7FF;}
+
+.page404-center	.gm-warning-white{ color:#FF4848; }
+.page404-center .font-big{ font-size:24px; }
+.qq-box{ margin:0 auto; width:233px; }
+.qq-box a{ display:inline-block; float:left; margin-left:20px; padding-right:10px; width:83px; height:25px; line-height:25px; text-align:right; color:#626466; border:1px solid #E0E1E2; border-radius:4px; font-weight:bold; background:url(/theme/web/default/images/common/qq.jpg) 10% no-repeat; }
+
+.webcat-box{ width:325px; margin:30px 0 0 72px;}
+.webcat-box img{width:124px;}
+.webcat{ display:inline; float:left; }
+.notice,.tel-p,.qq-box{ margin-top:15px; }
+.back-home{ display:block; margin:18px auto 0; width:220px; height:34px; line-height:34px; border:1px solid #D0D5D9; font-weight:bold; border-radius:4px; color:#626466; }

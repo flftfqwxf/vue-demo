@@ -1,0 +1,9 @@
+.handle a{text-decoration: none;padding:1px 5px;border:1px solid #45aaf1;border-radius:3px;color:white !important;background-color:#45aaf1}
+.ct_title_search>a{display: inline-block;padding:3px 10px;background-color:#45aaf1;color:white !important;border:1px solid #45aaf1;border-radius: 3px;font-weight:normal;box-shadow:3px 3px 1px 1px #ccc}
+.ct_title_search>a:active{box-shadow:none}
+.ct_title_search>.items{font-weight: normal;color:red;margin-left:30px;}
+.ct_title_search .pagina{float:right}
+#table_list>div{padding-left:10px;padding-bottom:20px}
+.scroll{max-height:500px;overflow-y:scroll}
+.defult{background-color:gray !important;}
+.defult:hover{cursor: not-allowed}

@@ -1,0 +1,337 @@
+/*reset*/
+body {
+  background: #f6f6f6;
+}
+
+html, body {
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+  margin-top: -164px;
+  margin-bottom: -286px;
+  padding-top: 164px;
+  padding-bottom: 286px;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*gloabl*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl-c {
+  text-align: center;
+}
+
+.tl-l {
+  text-align: left;
+}
+
+.tl-r {
+  text-align: right;
+}
+
+.help-block i {
+  margin-right: 3px;
+}
+
+header, footer, section {
+  min-width: 1170px;
+}
+
+.link-14 {
+  font-size: 14px;
+}
+
+.yellow {
+  color: #ff8540;
+}
+
+.arial {
+  font-family: "arial";
+}
+
+.day-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  background: #ff9248;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.dashed {
+  border-bottom: dashed 1px #e0e1e2;
+  margin-bottom: 10px;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btns .btn {
+  margin-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 3px;
+}
+
+.p-body {
+  min-width: 1180px;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.p-download {
+  color: #626466 !important;
+}
+
+.p-download i {
+  color: #587ed1;
+  margin-right: 2px;
+}
+
+.p-download:hover i {
+  color: #3057ad;
+}
+
+.p-arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid #FF7E1D;
+}
+
+.p-no-data {
+  text-align: center;
+}
+
+div.p-no-data {
+  border: solid 1px #e0e1e2;
+  line-height: 80px !important;
+}
+
+tr.p-no-data td {
+  padding: 0 !important;
+  line-height: 80px !important;
+}
+
+.p-service {
+  position: relative;
+  padding-left: 22px;
+}
+
+.p-service i {
+  position: absolute;
+  top: -3px;
+  left: 3px;
+}
+
+header .heardnew {
+  border-bottom: solid 1px #e0e1e2;
+}
+
+.gm-rocket-up {
+  display: none;
+  text-decoration: none !important;
+  font-size: 50px;
+  color: #94989B;
+  position: fixed;
+  bottom: 140px;
+  right: 0;
+}
+
+.gm-rocket-up:hover {
+  color: #78a7ff;
+}
+
+.gm-rocket-up:active {
+  color: #587ed1;
+}
+
+.form-control-feedback {
+  height: 32px;
+  line-height: 32px;
+}
+
+/*tour type*/
+.group-tour-type, .free-tour-type, .ship-tour-type {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  text-align: center;
+  padding-top: 4px;
+  padding-left: 4px;
+  width: 64px;
+  height: 26px;
+  color: #ffffff;
+  font-size: 12px;
+  background-size: 100% 100%;
+  min-height: 0;
+}
+
+.group-tour-type {
+  background-image: url(../../images/group-tour.png);
+}
+
+.free-tour-type {
+  background-image: url(../../images/free-tour.png);
+}
+
+.ship-tour-type {
+  background-image: url(../../images/ship-tour.png);
+}
+
+.common-tips .gm-icon {
+  margin-right: 8px;
+}
+
+.tooltip {
+  z-index: 999999999;
+}
+
+.login-wrap {
+  padding: 18px 30px 10px;
+  width: 400px;
+}
+
+.login-wrap nav {
+  margin-bottom: 20px;
+}
+
+.login-wrap nav span {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.login-wrap nav span:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.login-wrap nav span.active {
+  cursor: default;
+  color: #ff7e1d;
+}
+
+.login-wrap nav span.active:after {
+  background: #ed7b28;
+}
+
+.login-wrap input {
+  font-size: 14px !important;
+}
+
+.login-wrap .has-feedback-left .help-block {
+  display: none;
+}
+
+.login-wrap .btn-info {
+  width: 100%;
+}
+
+.login-wrap .open-login {
+  border-top: solid 1px #eaeaea;
+  margin-bottom: 15px;
+}
+
+.login-wrap .open-login .gm-qq {
+  font-size: 20px;
+  color: #68a5e1 !important;
+}
+
+.login-wrap .open-login .gm-weixin {
+  font-size: 20px;
+  color: #8dc81b !important;
+}
+
+.login-wrap .help-block {
+  margin-top: 8px;
+}
+
+.login-wrap .open-login .gmIcon {
+  font-size: 20px;
+  text-decoration: none !important;
+}
+
+.login-wrap .open-login .gmIcon:first-child {
+  margin-right: 8px;
+}
+
+.login-wrap .open-login .gm-33loginqq {
+  color: #68a5e1;
+}
+
+.login-wrap .open-login .gm-33loginweixin {
+  color: #8dc81b;
+}
+
+.login-wrap .open-login .help-block {
+  padding: 3px 0;
+}
+
+.code-group input {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.code-group img {
+  height: 38px;
+  width: 125px;
+}
+
+.sms-group input {
+  width: 200px;
+}
+
+.sms-group .btn {
+  width: 130px;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 38px;
+}
+
+.login-wrap .login-tab {
+  display: none;
+}
+
+.login-wrap .login-tab:first-child {
+  display: block;
+}

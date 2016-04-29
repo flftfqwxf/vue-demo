@@ -1,0 +1,137 @@
+﻿@charset "utf-8";
+//字体类型
+$family: 'Microsoft YaHei';
+//辅助性描述字体大小
+$size_desc: 12px !default;
+//正文字体
+$size_cont: 14px !default;
+//一般标题字体
+$size_sTitle: 16px !default;
+//较大标题
+$size_mTitle: 18px !default;
+//大字体
+$size_bfont: 20px !default;
+//超大字体
+$size_lfont: 24px !default;
+
+
+//辅助性描述字体颜色
+$font_desc: #ccc;
+//文本内容颜色
+$font_content: #999 !default;
+//一般标题颜色
+$font_title: #666 !default;
+//深色字体颜色
+$font_deep: #333 !default;
+//白色字体
+$font_white: #fff !default;
+
+//浅灰色字体
+$font_less: #c4c4c4 !default;
+
+
+//浅绿色标签
+$tag_green:#77d3dc!default;
+//红色标签
+$tag_red:#ff6666!default;
+//紫色标签
+$tag_purple:#cc99ff!default;
+
+//绿色字体
+$color_green:#05d897!default; 
+
+//灰色字体
+$color_desc: #ccc;
+
+
+//页面背景色
+$theme_bg: #ededed !default;
+//主题色
+$theme: #ff9d3b !default;
+//主题色
+$themeDeep: #ff7e1d !default;
+//白色背景
+$white_bg:#ffffff !default;
+
+//黑色透明背景
+$opcBlack: rgba(0,0,0,0.4);
+
+//辅助色
+$aid: #78a7ff !default;
+//深色辅助色
+$aidDeep: #4782e2 !default;
+
+//点缀色
+$ornament: #ff4931 !default;
+//深色点缀色
+$ornamentDeep: #ef2626 !default;
+//红色 浅色
+$ornamentLess:#ff6666 !default;
+
+//button色
+$button:#4d5054 !default;
+//深色button色
+$buttonDeep: #303235 !default;
+
+
+//输入框颜色
+$border_text: #ccc !default;
+//实线框
+$border_box: #e5e5e5 !default;
+//虚线框
+$border_dashed: #d8d8d8 !default;
+
+//自由行标签颜色
+$free: #ff4931 !default;
+//跟团游标签颜色
+$team: #ff7e1d !default;
+//游轮行标签颜色
+$ship: #78a7ff !default;
+
+
+//方法
+//设置圆角兼容
+@mixin setBorderRadius($num){
+    border-radius:$num;
+    -webkit-border-radius:$num;
+    -moz-border-radius:$num;
+}
+//计算宽度兼容
+@mixin setCalc($max,$min){
+    width:-webkit-calc(#{$max} - #{$min});
+    width:-moz-calc(#{$max} - #{$min});
+    width:-o-calc(#{$max} - #{$min});
+    width:-ms-calc(#{$max} - #{$min});
+    width:calc(#{$max} - #{$min});
+}
+
+//设置box-sizing的兼容性
+@mixin setBoxSizing(){
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+//去除默认的浏览器样式
+@mixin clearAppearance(){
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+/* 重置样式 start*/
+html {height: auto;background-color:$theme_bg;}
+body, h1, h2, h3, h4, h5, h6,div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td,footer,header,optgroup,select,em{
+    margin:0;padding:0; font-family: $family;font-size: 14px;letter-spacing: normal;word-spacing: normal;vertical-align: top; /*去除webkit中块之间的间隙*/}
+body {font-family: $family,Helvetica, Arial, sans-serif;width: 100%;  max-width: 640px;-webkit-text-size-adjust: 100%;color:$font_deep;background:$theme_bg;-webkit-appearance:none;/*解决Iphone下橱窗字体变大问题*/}
+a{background-color: transparent;text-decoration:none;cursor: pointer;-webkit-tap-highlight-color: rgba(0,0,0,0);  /*禁止链接高亮*/-webkit-touch-callout: none;/*禁止链接长按弹出选项菜单*/}
+a:hover{text-decoration:none;}
+img{ border:none; }
+ul,li{margin:0;padding:0;list-style:none;}
+.img100{width: 100%;}
+input{color:$font_title;}
+input, button, select, textarea{-webkit-appearance:none;outline:none;appearance:none;-moz-appearance:none;-o-appearance:none;-webkit-tap-highlight-color:transparent;border:none;
+}
+input:focus{-webkit-appearance:none;outline:none;appearance:none;-moz-appearance:none;-o-appearance:none;
+}
+/*.clearfix:after{content: "020";display: block; height: 0;clear: both;visibility: hidden;}*/
+table {border-collapse: collapse;border-spacing: 0;}
+/* 重置样式 end*/

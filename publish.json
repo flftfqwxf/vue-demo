@@ -1,0 +1,38 @@
+
+{
+   "m":{
+       "description": "分销商网站静态资源",
+       "version": "3.5",
+       "jsp":"../gmmtour-web-m/WebContent/mobile/common/static.jsp"
+   },
+   "distributor":{
+        "description": "分销商后台静态资源",
+        "version": "3.5",
+        "jsp":"../gmmtour-web-distributor/WebContent/page/common/manage/static.jsp"
+   },
+   "supplier":{
+        "description": "供应商网站、供应商后台静态资源",
+        "version": "3.5",
+        "jsp":["../gmmtour-web-supplier/WebContent/page/common/static.jsp","../gmmtour-web-s/WebContent/mobile/common/static.jsp"]
+   },
+   "console":{
+        "description": "运营后台静态资源",
+        "version": "3.5",
+        "jsp":"../gmmtour-web-console/WebContent/page/common/static.jsp"
+   },
+   "www":{
+        "description": "主站静态资源",
+        "version": "3.5",
+        "jsp":"../gmmtour-web-www/WebContent/page/common/web/static.jsp",
+        "srcs":{
+          "src_dir": "oldVersion/www/src/",
+          "dist_dir": "oldVersion/www/",
+          "sass_dir": "skin/css/**/*.scss",
+          "css_dir": "skin/css/**/*.css",
+          "images_dir": "skin/images/*",
+          "libs_dir": "libs/**/*.js",
+          "controllers_dir": "controllers/**/*.js",
+          "packages_dir": "packages/**/*.js"
+         }
+   }
+}

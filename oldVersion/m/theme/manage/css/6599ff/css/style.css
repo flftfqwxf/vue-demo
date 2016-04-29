@@ -1,0 +1,79 @@
+@charset "utf-8";
+body .header .page_name,
+body .dest_other .dest_other_li .dest_other_li_title,
+body .product_spot_show .showButton{color:#6599ff;}
+/*列表*/
+body #loading,
+body .arrow-outer .selectNav-list li a, 
+body #lmTopFilters .outer-box-content input, 
+body .lmTopFilter li.current, 
+body .header .search-title{color:#6599ff;}
+body .lmTopFilterDrop .oneList li.current, 
+body #lmTopFilters .outer-box .btn, 
+body .no-result .backBtn, 
+body .header .search .box .searchBtn{background: #6599ff;}
+
+body #lmTopFilters .outer-box-content input,
+body #lmTopFilters .outer-box-content .btn{border:1px #6599ff solid;}
+body .lmTopFilter li.current:not(.disabled):after{border-color: #fff #6599ff #6599ff #fff;}
+/*搜索*/
+
+
+/*产品详情*/
+body .files-list .files_li .file_icon{background: url("/m/theme/manage/css/6599ff/images/detail/file.png") no-repeat center;background-size:100% 100%;}
+body .product_spot_show .showButton{background: url("/m/theme/manage/css/6599ff/images/detail/unfold.png") no-repeat 24px center #fff;background-size:15px 9px;width:80px;border-radius:4px;padding-left:20px;box-shadow:1px 2px 2px #ccc;text-align:center;}
+body .product_spot_show .showButton.all{background: url("/m/theme/manage/css/6599ff/images/detail/packup.png") no-repeat 24px center #fff;background-size:15px 9px;}
+body .other_title .other_title_li.on{color:#6599ff;border-color:#6599ff;}
+body .bottom_share{background-color: #6599ff;}
+body .showInfoTips .showInfoTips_text{background: url("/m/theme/manage/css/6599ff/images/detail/prompt-icon.png") no-repeat left center;background-size:20px 20px;}
+body .time_price{background: url("/m/theme/manage/css/6599ff/images/detail/time-icon.png") no-repeat left 8px;height:30px;line-height:30px;background-size:15px 15px;}
+body .time_price .prices{background: url("/m/theme/manage/css/6599ff/images/detail/more.png") no-repeat right center #fff;background-size:10px 18px;}
+body .product_spot{background: url("/m/theme/manage/css/6599ff/images/detail/feature-icon.png") no-repeat left center;background-size:15px 15px;}
+body .p_supplier{background: url("/m/theme/manage/css/6599ff/images/detail/supplier.png") no-repeat left center;background-size:15px 15px;}
+body .day_body .day_body_line{background-color:#6599ff;}
+body .day_body .day_title{background: url("/m/theme/manage/css/6599ff/images/detail/dayli_icon.png") no-repeat 7px 13px;background-size:13px 13px;}
+/*left icons*/
+body .day_body .meal .left_icon{top:10px;background: url("/m/theme/manage/css/6599ff/images/detail/meal.png") no-repeat center center #fff;background-size:15px 15px;}
+body .day_body .circle_day .left_icon{background: url("/m/theme/manage/css/6599ff/images/detail/content.png") no-repeat center center #fff;background-size:15px 15px;}
+body .day_body .end_day .left_icon{left:8px;top:21px; width:9px;height:9px;border-radius:50%;background: #6599ff;}
+body .day_body .travels .left_icon{background: url("/m/theme/manage/css/6599ff/images/detail/flight.png") no-repeat center center #fff;background-size:15px 15px;}
+body .day_body .t_info .left_icon{left:3px;top:12px;height:18px;width:auto; line-height:18px;text-align: center;background: #fff;color:#6599ff;font-size: 10px;}
+body .day_body .hotel .left_icon{background: url("/m/theme/manage/css/6599ff/images/detail/hotel.png") no-repeat center center #fff;background-size:15px 15px;}
+
+body .day_body .day_info_li .meal_li.on{background: url("/m/theme/manage/css/6599ff/images/detail/check.png") no-repeat left center;background-size:15px 10px;color:#6599ff;}
+body .day_body .day_info_li .hotel .hotel_li .hotel_li_name{color:#6599ff;}
+/*价格*/
+body .notice_li_title.include{background: url("/m/theme/manage/css/6599ff/images/detail/prices-include.png") no-repeat left center;background-size:12px 12px;}
+body .notice_li_title.no_include{background: url("/m/theme/manage/css/6599ff/images/detail/not-include.png") no-repeat left center;background-size:12px 12px;}
+body .notice_li_title.expense{background: url("/m/theme/manage/css/6599ff/images/detail/own-expense.png") no-repeat left center;background-size:12px 12px;}
+body .notice_li_title.shopping{background: url("/m/theme/manage/css/6599ff/images/detail/shopping.png") no-repeat left center;background-size:12px 12px;}
+/*注意事项*/
+body .notice_li_title.precautions{background: url("/m/theme/manage/css/6599ff/images/detail/precautions.png") no-repeat left center;background-size:12px 12px;}
+body .notice_li_title.safetyTips{background: url("/m/theme/manage/css/6599ff/images/detail/safetyTips.png") no-repeat left center;background-size:12px 12px;}
+body .visa_list .visa_li .visa_more{background: url("/m/theme/manage/css/6599ff/images/detail/more.png") no-repeat center center #fff;background-size:8px 11px;}
+body .notice_li_title.visa{background: url("/m/theme/manage/css/6599ff/images/detail/visa.png") no-repeat left 9px;background-size:12px 12px;}
+/*动感行程*/
+body .dynamic{position:relative; padding-left:20px;background: url("/m/theme/manage/css/6599ff/images/detail/prompt-icon.png") no-repeat left 8px;height:30px;line-height:30px;background-size:15px 15px;overflow: hidden;cursor: pointer;}
+body .dynamic .more{position: absolute;right:0px;top:0px;width:15px;height:30px; background: url("/m/theme/manage/css/6599ff/images/detail/more.png") no-repeat right center #fff;background-size:10px 18px;}
+/*附件*/
+body .fileup .uptitle{background: url("/m/theme/manage/css/6599ff/images/detail/annex.png") no-repeat left center;}
+body .fileup .upfile_number{background: url("/m/theme/manage/css/6599ff/images/detail/more.png") no-repeat right center;color:#ff4400;}
+
+/*登录*/
+body .main .login-group .login-btn{background-color:#6599ff;}
+body .main .done .done-group .know{background-color:#6599ff;}
+body .main .done .login-user{color:#6599ff;}
+body .main .done input[type=checkbox]:checked + label:after{border:none;content: '';position: absolute;width:22px;height:22px;background: url("/m/theme/detail/images/detail/login-done3.png") no-repeat;background-size:22px 22px;left:-1px;top:-1px;}
+body .main .done{background:url("/m/theme/manage/css/6599ff/images/detail/login-done.png") no-repeat center 0;background-size:100px 140px;}
+
+/*联系方式*/
+.contact .people{background:transparent url("/m/theme/manage/css/6599ff/images/detail/1_03.png") no-repeat center;background-size:25px 16px;}
+.contact .phone{background:transparent url("/m/theme/manage/css/6599ff/images/detail/1_06.png") no-repeat center;background-size:25px 16px;}
+.contact .phoneNumber{background:transparent url("/m/theme/manage/css/6599ff/images/detail/1_08.png") no-repeat center;background-size:25px 16px;}
+.contact .qq{background:transparent url("/m/theme/manage/css/6599ff/images/detail/1_10.png") no-repeat center;background-size:25px 16px;}
+
+/*联系客服*/
+.contact .telPhone{background:#6599ff url("/m/theme/manage/images/contact/phone.png") no-repeat 18px 7px;background-size:20px 26px;}
+body .more_but_parent{position: relative;overflow: hidden;cursor: pointer;}
+body .more_but_parent .mores {position: absolute;right:10px;top:0px;padding-right:15px;background: url("/m/theme/manage/css/6599ff/images/detail/more.png") no-repeat right center #fff;background-size:10px 18px;}
+body .supplier-btn{background: #6599ff;}

@@ -1,0 +1,513 @@
+@charset "UTF-8";
+/* 重置样式 start*/
+html {
+  height: auto;
+  background-color: #ededed;
+}
+
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td, footer, header, optgroup, select, em {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  /*去除webkit中块之间的间隙*/
+}
+
+body {
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 640px;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  background: #ededed;
+  -webkit-appearance: none;
+  /*解决Iphone下橱窗字体变大问题*/
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  /*禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*禁止链接长按弹出选项菜单*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img100 {
+  width: 100%;
+}
+
+input {
+  color: #666;
+}
+
+input, button, select, textarea {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+}
+
+input:focus {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+/*.clearfix:after{content: "020";display: block; height: 0;clear: both;visibility: hidden;}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置样式 end*/
+/**
+ * description
+ * @author  songxinglin
+ * @version 1.0,2015/7/1
+ */
+.banner-font {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 17px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.number {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+}
+
+.swipe {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.swipe-wrap a {
+  display: block;
+}
+
+.swipe-wrap img {
+  display: block;
+}
+
+.swipe_proPrice {
+  background-color: #ff4931;
+  display: inline-block;
+  color: #fff;
+  max-width: 90px;
+  padding: 2px 8px;
+  margin-top: 13px;
+  font-size: 12px;
+  border-radius: 16px;
+}
+
+.mask {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 45px;
+  line-height: 18px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#333));
+  /*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#333));
+  /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, transparent, #333);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, transparent, #333);
+  /*Opera 11.10+*/
+  color: white;
+  width: 100%;
+  z-index: 0;
+}
+
+.pic img {
+  border-radius: 6px;
+}
+
+.newImg {
+  width: 100%;
+}
+
+body {
+  position: static;
+  background-color: #ededed;
+}
+
+.hide {
+  display: none;
+}
+
+.fr {
+  float: right;
+}
+
+.hotel {
+  border-radius: 5px 0;
+}
+
+.title {
+  line-height: 40px;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info-box {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+  border-bottom: 2px solid #e5e5e5;
+  padding-right: 4px;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+}
+
+.info-box .info-title, .title {
+  font-family: "Microsoft YaHei";
+  font-size: 1.2rem;
+}
+
+.info-box .info-title {
+  margin-left: 10px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.info-box .info-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.info-box .info-title i, .title i.first-ico {
+  display: inline-block;
+  float: left;
+  margin: 0 8px;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+.info-box .info-title i {
+  margin: -2px 8px 0 0;
+  font-size: 26px;
+  color: #ff7e1d;
+}
+
+.info-box .info-title i.first-ico {
+  background: url(/m/theme/manage/images/common/hotel/img_ico.jpg) no-repeat;
+}
+
+.first-ico1 {
+  background: url(/m/theme/manage/images/common/hotel/address-icon.jpg) no-repeat;
+}
+
+.first-ico2 {
+  background: url(/m/theme/manage/images/common/hotel/sight_time.png) no-repeat;
+}
+
+.first-ico3 {
+  background: url(/m/theme/manage/images/common/hotel/sight_tackt.png) no-repeat;
+}
+
+.first-ico4 {
+  background: url(/m/theme/manage/images/common/hotel/sight_jies.png) no-repeat;
+}
+
+.first-ico5 {
+  background: url(/m/theme/manage/images/common/hotel/sight_teshe.png) no-repeat;
+}
+
+.first-ico6 {
+  background: url(/m/theme/manage/images/common/hotel/sight_daolan.png) no-repeat;
+}
+
+.first-ico7 {
+  background: url(/m/theme/manage/images/common/hotel/sight_notice.png) no-repeat;
+}
+
+.info-box .info-title i.end-ico2 {
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  width: 18px;
+  background: url(/m/theme/manage/css/6599ff/images/detail/see-details.png) no-repeat;
+}
+
+.info-box .info-title i.end-ico {
+  float: right;
+  margin-top: 14px;
+  background-position: 0 -60px;
+}
+
+.info-content {
+  margin: 12px 0 0 10px;
+  line-height: 25px;
+  color: #666;
+}
+
+.info-box.on .info-content {
+  display: block;
+}
+
+.info-box .info-title i.end-icoh {
+  float: right;
+  margin-top: 14px;
+  background-position: 0 -38px;
+}
+
+.hotel {
+  padding-bottom: 30px;
+}
+
+.hotel-banner {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.hotel-banner img {
+  display: block;
+  width: 100%;
+  height: 360px;
+}
+
+.hotel-banner p {
+  text-align: center;
+  font: 22px/24px "Microsoft YaHei";
+}
+
+.hotel-banner p.first-p {
+  margin-top: 10px;
+}
+
+.info-title span {
+  color: #999;
+}
+
+.info-title span.time-s {
+  display: block;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+}
+
+.info-title span.time-slinhe {
+  line-height: 25px;
+}
+
+.info-title span.fr {
+  margin-right: 28px;
+}
+
+.notice {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+
+/* 景点照片 查看 */
+#picWrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#picList {
+  height: 100%;
+}
+
+#picList .item {
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*.picvier{ position:absolute; bottom:0; width:100%; }*/
+#picList .item img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+#picBtns {
+  height: 0.3rem;
+  padding: 0.2rem 0;
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+
+#picBtns span {
+  width: 0.3rem;
+  height: 0.3rem;
+  margin: 0 0.1rem;
+  border: 1px solid #000;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0.15rem;
+  vertical-align: top;
+}
+
+#picBtns .active {
+  background: #f60;
+}
+
+.number-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+@media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  #picWrap {
+    height: 365px;
+  }
+}
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #picWrap {
+    height: 552px;
+  }
+}
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 3) {
+  #picWrap {
+    height: 620px;
+  }
+}
+.no-more {
+  margin: 15px auto;
+  width: 95%;
+  text-align: center;
+  color: #999;
+  height: 30px;
+  line-height: 30px;
+}
+
+.no-more .line {
+  width: 40%;
+  height: 15px;
+  border-bottom: 1px solid #999;
+}
+
+.no-more .text {
+  width: 20%;
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.play-date {
+  width: 85%;
+}
+
+#loading {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding-left: 6%;
+}
+
+#loading.loading {
+  background: url(/m/theme/manage/images/loading.gif) no-repeat 10% #fff;
+  background-size: 20% 46%;
+}
+
+.oth-footer {
+  position: relative;
+  bottom: 0;
+  padding-top: 10px;
+  width: 100%;
+  border-top: 1px #e5e5e5 solid;
+  background-color: #fcfcfc;
+}
+
+.oth-footer p {
+  text-align: center;
+}
+
+.footer {
+  padding-top: 0;
+  border-top: none;
+  background-color: none;
+}
+
+.item-r {
+  margin: 15px 0  15px 10px;
+  color: #999;
+}
+
+.item-rw {
+  width: 40%;
+}
+
+.play-date .time-s {
+  display: block;
+  margin: 15px 0 15px 10px;
+  color: #666;
+}

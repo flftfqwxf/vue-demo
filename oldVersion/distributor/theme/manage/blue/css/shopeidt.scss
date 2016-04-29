@@ -1,0 +1,328 @@
+@charset "utf-8";
+@import "./common/bootstrap/scss/bootstrap/variables";
+@import "./common/bootstrap/scss/bootstrap/mixins/clearfix";
+@import "./common/bootstrap/scss/custom/custom-reset";
+
+
+.form-horizontal{
+	color: $gray-darker;
+
+	.form-group{
+		//width: $form-width + 50;
+	}
+
+	.col-sm-2{
+		width: 15% !important;
+	}
+}
+
+.domain-wrap{
+	display: inline-block;
+	line-height: 36px;
+	font-size: $font-size-h2;
+	vertical-align: top;
+}
+.domain-edit{
+	margin-left: 5px;
+}
+
+.form-title{
+	line-height: 36px;
+	margin-bottom: $xSmallPadding;
+}
+.J_contact-item:nth-of-type(2){margin-top: -7px}
+.J_contact-item{
+	// font-size: 0;
+	//margin-bottom: $paddingContent;
+  width: 100%;
+  .form-control{width: 210px}
+  .form-group{ clear: both; width: 100%;
+    margin-bottom: $paddingContent;
+  }
+	//select{
+	//	min-width: 120px;
+	//}
+    //
+	//> span, select, > input{
+	//	margin-right: $paddingContent;
+	//}
+    //
+	//> input{
+	//	width: 315px !important;
+	//}
+    //
+	//span input{
+	//	width: 250px !important;
+	//}
+    //
+	.phone2{
+
+		input:first-child{
+			width: 65px !important;
+          text-align: center;
+		}
+		input:last-child{
+			width: 110px !important;
+		}
+
+		.spaceLine{
+			vertical-align: middle;
+			font-size: $font-size-base;
+          margin-right: $smallPadding;
+			color: $gray;
+          line-height: 34px;
+          float: left;
+		}
+	}
+	.phone3{
+
+        input:first-child{
+            width: 210px !important;
+          text-align: center;
+        }
+        input:last-child{
+            width: 110px !important;
+        }
+
+        .spaceLine{
+            vertical-align: middle;
+            font-size: $font-size-base;
+          margin-right: $smallPadding;
+            color: $gray;
+          line-height: 34px;
+          float: left;
+        }
+    }
+    //
+	//.help-block{
+	//	display: inline-block;
+	//	margin: 10px 0 -10px;
+	//}
+    //
+	//.delete-contact{
+	//	margin-left: ($smallPadding - $paddingContent);
+	//}
+}
+.J_addContact{ display: none; margin-top: -$paddingContent;}
+// .row-hack{
+// 	margin-left: -$padding-base-horizontal - $grid-gutter-width / 2 ;
+// }
+
+// 不具备出境资质
+$arrow-width: 5px !default;
+.message-pop{
+	position: absolute;
+	left: 162px;
+	top: 0;
+	z-index: 10;
+	color: $brand-info;
+	width: 400px;
+
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		left: -$arrow-width * 2 - 1;
+		top: 15px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: $arrow-width;
+		border-color: transparent $alert-info-border transparent transparent;
+	}
+	&:after{
+		left: -$arrow-width * 2;
+		border-color: transparent $alert-info-bg transparent transparent;
+	}
+	
+	> div{
+		float: left;
+		margin-left: $smallPadding;
+	}
+
+	dl{
+		margin: 0;
+	}
+	dt{
+		float: left;
+		font-weight: normal;
+	}
+
+	dd{
+		overflow: auto;
+	}
+
+	p{
+		margin-bottom: 2px;
+	}
+	span{
+		color: $state-info-text;
+	}
+}
+
+.allBroad.disabled{
+	color: #797a7b;
+}
+
+.allDomestic, .allBroad{
+	 span{
+	 	cursor: pointer;
+		color: $brand-primary;
+	}
+}
+
+.show_dialog{
+	width: 420px;
+	min-height: 120px;
+
+	.dialog_title{
+		font-size: $font-size-h4;
+		padding: 22px 0 8px;;
+	}
+
+	&.larger{
+		width: 460px;
+	}
+}
+
+.aui_title{
+	font-weight: normal;
+
+	.sufo{
+		font-size: $font-size-base;
+	}
+}
+
+.copy-wrap{
+	position: absolute;
+	left: 20px;
+	bottom: 15px;
+}
+
+[data-toggle="buttons"] .btn{
+	margin-left: -$padding-base-horizontal;
+}
+
+$input-margin: 30px !default;
+
+#addSup{
+	display: none;
+	margin-top: $smallPadding;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.addOne{
+	margin: 0 0 $paddingContent $input-margin;
+
+}
+
+.supplier-pro-name{
+	width: 270px;
+}
+
+.ac_results{
+	min-width: 270px !important;
+}
+
+.formError .formErrorContent{
+	min-width: 100px !important;
+}
+
+.addSupplier{
+	position: relative;
+	margin: 0 0 $paddingContent $input-margin;
+	@include clearfix;
+
+	input, button{
+		float: left;
+	}
+
+	button{
+		margin-left: $smallPadding;
+	}
+}
+
+#clearAllLine .dialog_body{color: $gray;}
+
+.linkGmService, #application{
+	cursor: pointer;
+}
+
+.notice{
+	@include clearfix;
+
+}
+
+.productorgialformError{
+	top: 0 !important;
+}
+.form-validation-field-0formError{
+	min-width: 140px !important;
+}
+
+.notice-wrap{
+	width: 460px;
+	padding: $paddingContent 0;
+	overflow: hidden;
+
+	img{
+		width: 160px;
+	}
+
+	.pull-right{
+		padding-left: $smallPadding;
+		width: 290px;
+
+		h5{
+			padding-bottom: $xSmallPadding;
+		}
+		li{
+			padding-left: $xSmallPadding;
+			margin-bottom: $smallPadding;
+		}
+	}
+
+	.select-group{
+		position: absolute;
+		left: $paddingContent;
+		bottom: 15px;
+	}
+}
+
+.agreenformError{
+	top: 0 !important;
+}
+
+#domainEdit{margin-left: $xSmallPadding;}
+
+.domain-dialog{
+	padding: $smallPadding 0;
+	width: 490px;
+
+	h5{
+		margin-bottom: $paddingContent;
+	}
+	.form-control{
+		width: 160px;
+		display: inline-block;
+		margin-right: $smallPadding;
+	}
+
+	> div{
+		margin-bottom: $smallPadding;
+
+		span{
+			margin-right: $smallPadding;
+		}
+	}
+
+	.domain-tips{
+		position: absolute;
+		left: $paddingContent;
+		bottom: 6px;
+		font-size: $font-size-h6;
+		color: $gray;
+
+		p{margin-bottom: 0;}
+	}
+}

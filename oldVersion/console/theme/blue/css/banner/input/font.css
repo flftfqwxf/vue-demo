@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	 font-family: 'Arial';
+	 src : url('./Arial.ttf');
+}
+
+
+@font-face {
+	 font-family: 'BauhausMedium';
+	 src : url('./BauhausMedium.otf');
+}
+
+@font-face {
+	 font-family: 'LucidaCalligraphy';
+	 src : url('./LucidaCalligraphy.TTF');
+}
+
+@font-face {
+	 font-family: 'SourceSansPro';
+	 src : url('./SourceSansPro-Semibold.otf');
+}
+
+
+@font-face {
+	 font-family: '方正标准圆简体';
+	 src : url('./CN_FangZhengBiaoZhunJianYuanTi.TTF');
+}
+
+@font-face {
+	 font-family: '方正藏体简体';
+	 src : url('./CN_FangZhengZangTiJianTi.TTF');
+}
+@font-face {
+	 font-family: '方正超粗黑简体';
+	 src : url('./CN_FangZhengChaoCuHeiJianTi.TTF');
+}
+@font-face {
+	 font-family: '方正粗活意简体';
+	 src : url('./CN_FangZhengCuHuoYiJianTi.ttf');
+}
+@font-face {
+	 font-family: '方正汉真广标简体';
+	 src : url('./CN_FangZhengHanZhenChangBiaoJianTi.TTF');
+}
+@font-face {
+	 font-family: '方正小标宋简体';
+	 src : url('./CN_FangZhengXiaoBiaoSongJianTi.TTF');
+}
+
+@font-face {
+	 font-family: '方正综艺简体';
+	 src : url('./CN_FangZhengZongYiJianTi.TTF');
+}
+
+@font-face {
+	 font-family: '汉仪彩云体简';
+	 src : url('./CN_HanYiCaiYunJianTi.ttf');
+}
+
+@font-face {
+	 font-family: '汉仪综艺体简';
+	 src : url('./CN_HanYiZongYiTiJian.ttf');
+}
+
+@font-face {
+	 font-family: '汉真广标';
+	 src : url('./CN_HanZhenGuangBiao.ttf');
+}
+
+@font-face {
+	 font-family: '兰亭黑简';
+	 src : url('./CN_LanTingHeiJian.TTF');
+}
+

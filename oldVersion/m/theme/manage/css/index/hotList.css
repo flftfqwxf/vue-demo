@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* 重置样式 start*/
+html {
+  height: auto;
+  background-color: #ededed;
+}
+
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td, footer, header, optgroup, select, em {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  /*去除webkit中块之间的间隙*/
+}
+
+body {
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 640px;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  background: #ededed;
+  -webkit-appearance: none;
+  /*解决Iphone下橱窗字体变大问题*/
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  /*禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*禁止链接长按弹出选项菜单*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img100 {
+  width: 100%;
+}
+
+input {
+  color: #666;
+}
+
+input, button, select, textarea {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+}
+
+input:focus {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+/*.clearfix:after{content: "020";display: block; height: 0;clear: both;visibility: hidden;}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置样式 end*/
+body {
+  padding-bottom: 65px;
+  background: #ededed;
+}
+
+.header {
+  border: none;
+}
+
+.header .page_name, .header {
+  line-height: 50px;
+  height: 50px;
+}
+
+.hot_all {
+  width: 100%;
+  height: auto;
+  background-color: #ededed;
+}
+
+.hot_swipe {
+  width: 100%;
+  height: 240px;
+}
+
+.hot_list {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.hot_group {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.group_list {
+  margin: 5px;
+  display: block;
+}
+
+.hot_title {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.hot_title .hot_t {
+  width: 100%;
+  position: absolute;
+  top: -23px;
+  height: 45px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.hot_t .hot_title_info {
+  line-height: 45px;
+  text-align: center;
+  height: 45px;
+  background-color: #fff;
+  color: #333;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.hot_title_info span {
+  font-size: 18px;
+  vertical-align: bottom;
+}
+
+.hot_title_img {
+  width: 100%;
+  height: 150px;
+}
+
+.line_title {
+  border-bottom: 1px solid #e5e5e5;
+  display: inline-block;
+  width: 35px;
+  height: 2px;
+  position: relative;
+  margin: 20px 10px;
+}
+
+.hot_items {
+  max-width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.hot_items .hot_left {
+  width: 50%;
+  float: left;
+}
+
+.hot_items .hot_left .pro_links {
+  margin: 5px;
+  display: block;
+}
+
+.hot_items .hot_left a, .hot_item a {
+  color: #333;
+}
+
+.hot_items .hot_pro {
+  background-color: #fff;
+}
+
+.hot_item {
+  width: 100%;
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+
+.hot_item .pro_links {
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.hot_item .hot_pro {
+  background-color: #fff;
+}
+
+.pro_img, .pro_info {
+  position: relative;
+}
+
+.pro_img img {
+  width: 100%;
+  height: 120px;
+}
+
+.pro_info {
+  height: auto;
+  padding: 3px 10px;
+}
+
+.pro_name {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+}
+
+.pro_date {
+  color: #999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.pro_date i {
+  font-size: 14px;
+}
+
+.hot_items .hot_left .pro_name {
+  height: 34px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+
+.pro_prices {
+  width: 100%;
+  display: inline-block;
+  color: #ff4931;
+}
+
+.pro_price, .pro_day {
+  float: left;
+  font-size: 12px;
+  width: 50%;
+  line-height: 24px;
+  height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pro_price {
+  text-align: left;
+}
+
+.loading {
+  background: url(/m/theme/manage/images/loading.gif) no-repeat center #fff;
+  background-size: 32px 22px;
+}
+
+/*价格*/
+.redPrice {
+  font-size: 16px;
+  color: #ff4931;
+}
+
+.pro_day {
+  text-align: right;
+}

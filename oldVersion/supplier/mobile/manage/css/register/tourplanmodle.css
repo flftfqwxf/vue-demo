@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 改样式文件为同行计划模块 公共样式表 */
+
+/* 上传按钮 */
+.upfilebutton {    
+    display: inline-block;    
+    position: relative;
+    min-width: 60px;
+    height: 25px;
+    line-height: 25px;    
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #5bc0de;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;    
+}
+.btns a{
+    color: #fff;
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+}
+.input-files{
+    border: medium solid transparent;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 104px;
+    opacity: 0;   
+}
+
+.color-strong{ color: #6599ff; }
+.texts{ padding: 15px 0 15px 23px; color:#4a4a4a; border-top: 1px solid #bfbfbf; }
+.date,.info-shuoming{ padding-top: 10px; }
+.date strong{ margin-right:25px; }
+.info-shuoming{ color: #9e9e9e; }

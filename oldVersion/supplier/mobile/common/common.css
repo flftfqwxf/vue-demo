@@ -1,0 +1,53 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td {
+    margin:0;padding:0;}
+a{text-decoration:none;cursor: pointer;}
+a:hover{text-decoration:none;}
+img{ border:none; }
+ul,li{margin:0;padding:0;list-style:none;}
+input{ -webkit-appearance:none; outline:none }
+body{font-family: "微软雅黑";max-width:640px;margin:0px auto; box-shadow:0px 0px 10px #ccc;}
+
+.img100{
+    width: 100%;
+}
+.clearfix:after{
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+input::-webkit-input-placeholder{
+	color: #fff;
+}
+input::-moz-placeholder{
+	color: #fff;
+}
+input::-ms-placeholder{
+	color: #fff;
+}
+
+/* title */
+.site-name,.website-name,.site-title,.title,.main .site-title{	
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 1.1rem;
+}
+
+.block-name.block-h p,.b-name{}
+
+.is-contact p,.block-w span,.contact-text,.module-ul1 li a��.tel-a span{	}
+
+
+.footbox{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;	
+	padding: 4px 0 3px;
+	text-align:center;	
+	font-size:0.8rem;	
+}

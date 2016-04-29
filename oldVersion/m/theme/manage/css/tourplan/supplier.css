@@ -1,0 +1,81 @@
+/*供应商详情*/
+body{width:100%;max-width:640px;background:#f5f5f5;margin:0px auto;}
+.header,header{background:#fff;}
+.header .page_name{line-height:50px;width: 81%;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+.footer{background-color: #fff;}
+.supplierInfoAll{background:#f2f2f2;position: relative;max-width:640px;height:100%;}
+.otherInfo{display:inline-block;}
+.lineBtn{word-break:normal;white-space:nowrap;display: inline-block;width:auto;padding:5px 5px;background:white;border:1px solid #6699ff;color:#6699ff;text-align:center;margin-right:5px;margin-bottom:5px;}
+#loading{background: url(/m/theme/manage/images/loading.gif) no-repeat center #ffffff; background-size:22px 22px;}
+.loading{width:100%;height:44px;box-shadow:1px 1px 1px #ccc;display: inline-block;margin: 10px 0px 10px 0px;}
+.qualification img{width:14.8%;zoom:1;height:30px;}
+.product_spot_ct, .product_info, .supplier_info{border-bottom:none;clear:left;padding:0px ;min-height:70px; width: 100%;  box-shadow: 0px 2px 2px #ccc;}
+#contact{padding-bottom:5px;}
+.product_spot{line-height:20px;background-size:15px 15px;}
+.product_spot_ct{padding:0;box-sizing:border-box;width:100%;line-height:20px;background:#fff;}
+.product_info{box-sizing:border-box;width:100%;line-height:20px;background:#fff;}
+.pd_spot_body_short{width:100%;line-height:20px;height:60px;overflow:hidden;}
+.pd_spot_body_short dl{clear:left;width:100%;height:auto;}
+.pd_spot_body_short dl dt, .pd_spot_body_short dl dd{float:left;}
+.pd_spot_body_short dl dt{width:80px;}
+.pd_spot_body_short dl dd{width:calc(100% - 80px);word-break: break-word;}
+.pd_spot_body_short dl dt img{width:95px;height:95px;border:1px solid lightgrey;}
+.product_spot_show{position:relative;text-align: center;overflow:hidden;}
+.product_light_show{position:relative; height:60px;text-align: center;overflow:hidden;}
+.product_light_show .all_spot .newImg{margin-bottom:5px;}
+.product_spot_show .showButton{position:relative;width:100%;height:24px;line-height:24px;background:#fff;top:-1px;display:inline-block;text-align: center;cursor: pointer;border-bottom:1px solid #e5e5e5;border-top:1px solid #e5e5e5;}
+.showButton .gmIcon{font-size:12px;}
+.product_spot_show .all_spot{min-height:60px;height:auto;overflow:hidden;}
+
+.supplier_info dl dt { width: 107px;  }
+.supplier_info{border-bottom:1px solid #f4f4f4;height:auto;padding:0px 0px; padding-top: 10px;  background-color: #fff;}
+.supplier_info dl dd {margin-left:8px;min-width:205px;width:205px;width:calc(100% - 115px);}
+.supplier_info dl dd ul{clear:left;display:inline-block;}
+.supplier_info dl dd ul li{height:auto;width:100%;display: inline-block;margin-top:5px;}
+.supplierName{font-size:16px;color:#444;}
+.all_spot{display:inline-block;width:100%;}
+.pd_spot_body_short{min-height:70px;}
+.supplier_info .supplierLogo{width:95%;min-width:85px;height:105px;margin-left:5px;border:none;}
+.supplierNotice{float:left;width:100%;padding: 10px 0px;margin-top:-4px;margin-bottom:0px;font-size:10px;background:white;border-top:1px solid #f4f4f4;}
+.supplierNotice dl{float:left;width:100%;height:auto;font-size:10px;height:auto; padding:0;border-bottom:1px solid #f4f4f4;}
+.supplierNotice dl:last-child{border:none;}
+.supplierNotice  dl dt, .supplierNotice dl dd{float:left;}
+.supplierNotice dl dt{margin-left:4px;width:60px;}
+.supplierNotice  dl dd{min-width:235px;width:calc(100% - 75px);width:-webkit-calc(100% - 75px);width:-o-calc(100% - 75px);width:-ms-calc(100% - 75px);word-break:normal;margin-bottom:4px;float:left;}
+.groupContact{padding-left:4px;border-bottom:1px solid #d9d9d9;}
+.bc { position: absolute; z-index: 97; left: 0; right: 0; bottom:-45px; }
+#bc1{  background-color: rgba(0, 0, 0, 0);  top: 0px;display:none;}
+#bc2{  background-color: rgba(0, 0, 0, 0.5);  top:400px;display:none;}
+.allContact .contact_li{float:left;}
+.allContact .contact_li span{word-break:normal;}
+.hidden{display:none;}
+.planList{display:inline-block;height:auto;background:transparent;padding-bottom:0px;width:100%;padding-bottom:45px;}
+.list{background:white;float:left;width:100%;box-shadow:1px 1px 1px #ccc;}
+.listNav{width:100%;background:white;height:40px;}
+.listNav li {float:left;width:49%;text-align:center;height:30px;line-height:30px; margin-top: 5px;}
+.listNav li ul li{clear:left;width:100%;}
+#lineFilter{z-index:200;position:absolute;width:100%;background:white;}
+#lineFilter li{width:100%;text-align:left;height:30px;line-height:30px;}
+#lineFilter li:hover{background:#6699ff url("/m/theme/manage/images/product/choice.png") no-repeat right;color:white;background-size:20px 20px;}
+#lineFilter li:hover a{color:white;}
+#lineFilter li a{padding-left:10px;}
+.current{text-align:center;}
+.lineOrder,.dateOrder{border-right:1px solid #d9d9d9;}
+.priceOrder a,.lineOrder a,.dateOrder a{color:#040404;} 
+i.lineIcon{background: url("/m/theme/manage/images/product/lineOrder2.png") no-repeat center;padding: 0px 6px;background-size:11px 7px}
+i.orderIcon {background: url("/m/theme/manage/images/product/order2.png") no-repeat center;padding: 0px 4px;background-size:9px 12px}
+.dateOrder.active a,.priceOrder.active a,.current.active{color:#6699ff;}
+.current.active i.lineIcon{background: url("/m/theme/manage/images/product/lineOrder1.png") no-repeat center;padding: 0px 6px;background-size:11px 7px}
+.dateOrder.active i.orderIcon,.priceOrder.active i.orderIcon{background: url("/m/theme/manage/images/product/order.png") no-repeat center;padding: 0px 4px;background-size:9px 12px}
+.list_info1 .price{font-weight: bold;color:#6599ff;margin-right:20px;}
+.list_info2{color:lightgray;font-size:10px;}
+.list .list_row{width:100%;border-top:1px solid #d9d9d9;float:left;}
+.row_item{width:96%;margin-left:4%;line-height:22px;padding:4px 0px;}
+.row_item p{overflow: hidden;width:90%;white-space: nowrap;text-overflow: ellipsis;line-height:22px;}
+.row_item a.title{color:#4a4a4a;}
+.choiceLine{background:green;border:none;}
+.no-more{width: 100%; text-align: center;color: gray;height: 30px;line-height: 30px;margin:20px 0;}
+.no-more .text{width:20%;text-align: center;line-height: 20px;}
+.no-more .line{width: 40%; height: 10px; border-bottom: 1px solid lightgrey;}
+.no-result{padding-bottom:10px; font-size: 14px;background-color:white ;width: 100%;height: auto;border-top:1px solid #d9d9d9;}
+#loading.load-more{ margin:20px auto 0; width: 60%; height: 30px; line-height: 30px; color: #6699ff; border: 1px solid #6699ff; cursor: pointer; text-align: center; }

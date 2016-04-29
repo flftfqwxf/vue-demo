@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "../components/reset";
+@import "../components/header";
+@import "../components/footer";
+
+html,body{height:100%;background-color:#f6f6f6;}
+section{margin-top:-82px;margin-bottom:-60px;padding-top:81px;padding-bottom:60px;height:100%;}
+.offline-pay{margin:0 auto;margin-top:40px;margin-bottom:40px;width:1180px;height:460px;text-align:center;border:solid 1px #d8d8d8;background-color:#ffffff;}
+.offline-pay .bank-card{position:relative;margin:0 auto;margin-top:40px;width:500px;height:236px;}
+.offline-pay .card-info{position:absolute;top:100px;left:106px;text-align:left;color:#fff;}
+.offline-pay .card-info .card-num{font-size:28px;font-weight:700;}
+.offline-pay .card-info .bank{margin-top:16px;font-size:16px;}
+.offline-pay .card-info .name{margin-top:10px;font-size:16px;}
+.offline-pay p.txt{margin-top:20px;}
+.offline-pay button{margin-top:10px;}

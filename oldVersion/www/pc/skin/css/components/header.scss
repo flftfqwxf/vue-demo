@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*header start*/
+.heardnew{background-color: #fff;}
+.heardnew .logo{display: inline-block;float: left;width: 216px;margin-right: 70px;}
+.heardnew .logo img{margin-top: 5px;}
+.heardnew .heard-center{margin: 0 auto;width: 1170px;}
+.heardnew .nav-list{display: inline;float: left;}
+.heardnew .nav-list li{display: inline;float: left;}
+.heardnew .nav-list li a{display: inline-block;height: 80px;line-height: 80px;padding: 0 20px;font-size: 18px;color: #626466;}
+.heardnew .nav-list li a:hover, .reg-log a:hover, .footer-list li a:hover{text-decoration: none;}
+.heardnew .nav-list li.selected{color: #313233;background-color: #EDF0F2;}
+.heardnew .nav-list li.selecteda{color: #313233;}
+.heardnew .reg-log{display: inline;float: right;height: 80px;line-height: 80px;}
+.heardnew .reg-log a{font-size: 14px;color: #939699 !important;}
+.heardnew .reg-log a.login{margin-left: 20px;padding: 8px 15px;font-size: 14px;border: 1px solid #ccc;border-radius: 4px;}
+.heard-center .login-state{margin: 0 20px;padding: 25px 0 13px;line-height: 32px;}
+.heard-center .pull-right{display: none;float: right !important;}
+/*header end*/

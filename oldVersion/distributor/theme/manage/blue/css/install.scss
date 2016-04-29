@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import "./common/bootstrap/scss/custom/pathVariables";
+@import "./common/bootstrap/scss/bootstrap/variables";
+@import "./common/bootstrap/scss/bootstrap/mixins/clearfix";
+@import "./common/bootstrap/scss/custom/custom-reset";
+
+.pic-box img{ width: 140px; height: 100px; }
+
+.nostyle{
+	list-style: none;
+}
+.main{
+	background:white;
+}
+.main-left{
+	width:40%;
+	background:white;
+}
+.main-right{
+	width: 60%;
+	background: white;
+}
+ .main-left .main-nav{
+	padding: 0;
+	width:80%;
+	margin: 0px auto;
+	margin-left:40px ;
+	height: 800px;
+}
+ .main-left .main-nav li{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0px auto;
+	font-size: 20px;
+	color: gray;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.info{
+	height:auto;
+	border: 1px solid black;
+	border-radius: 6px;
+	width:90%;
+	float: left;
+	margin: 0px auto;
+	margin-left: 50px;
+	margin-top: 50px;
+	background:white;
+	color:black;
+	font-size:13px;
+}
+.info .info1{
+	margin-bottom: 20px;
+	padding-left:30px ;
+}
+.info .info1 p{
+	line-height: 40px!important;
+}
+.info .info2{
+	line-height: 30px;
+	padding-left:30px ;
+}
+.info .info2 dl dt,dd{
+	float: left;
+	padding-right:15px;
+}
+.info .info2 dl dd ul{
+	margin-left:0px;
+}
+.phone{
+	height:760px;
+	padding-top: 50px;
+	width:87%;
+	background:white;
+}
+.active{
+	background-color:white ;
+	color: gray!important;
+}
+.text-info{
+	color: skyblue;
+}
+.text-danger{
+	color: #ff8000;
+}
+select option{
+	border-left:1px solid black ;
+	border-right:1px solid black ;
+	border-bottom:1px solid black ;
+}
+.container{
+	margin: 0px auto;
+	padding-top: 100px;
+}
+.p{
+	float: left;
+	width:40%;
+}
+.p img{
+	 width:179px;
+	 height: 358px;
+}
+#qrcode {
+	position:relative;
+	left:40px;
+	top:-440px;
+}
+#qrcode  img{
+	 width:240px;
+	 height:240px;
+}
+
+p.qrcodeInfo{
+	position:relative;
+	//left:-30px;
+	top:-420px;
+	color:white;
+  font-size: 16px;
+}
+.i{
+	float: left;
+	width:56%;
+	height: 400px;
+	color:black;
+	background: url(../../../../theme/manage/blue/images/common/rb.jpg) no-repeat;
+}
+.text-container{
+	margin: 0px auto;
+	margin-top:135px ;
+	font-size: 14px;
+  >p{font-size: 20px; font-weight: bold; margin-top: 20px;
+
+  }
+}
+.installSuccess{
+  position: relative;
+  padding-left: 40px;
+  
+  .gm-icon{ font-size: 60px; color: $brand-info;
+    position: absolute;
+    left: -30px; top: -12px;
+  }
+   >p  {
+     >a { font-size: 12px; color: $gray;}
+   }
+}
+
+
+.text-container ul{
+	margin-top: 20px;
+	line-height:30px ;
+}
+.text-container ul a{
+	color: #4F4F4F;
+	text-decoration: none;
+}
+.btn-green{
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #a1d851;
+	font-size: 18px;
+	height: 30px;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	
+}
+.btn-green:hover{
+	cursor:pointer;
+}
+.mask{
+filter:alpha(opacity=30);
+background-color:#000 !important;
+}
+.mask #qrcode{
+	top:400px;
+	left:100px;
+	position:absolute;
+}
+.mask #qrcode img{
+	border:none;
+}
+
+
+.w-PhoneWrap {width:350px;height:713px;background:url('#{$widgetPath}/mobilePreview/images/iphone.png') no-repeat;background-size:contain;padding:80px 21px 0 21px; position: relative;}
+  .phoneMask{ width: 100%;; height: 100%; background: #000; opacity: .3; position: absolute; width: 314px; height: 546px;}
+.installWrap{padding:50px; overflow: hidden;
+    >div{ padding:0 40px;}
+  }

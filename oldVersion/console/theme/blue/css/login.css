@@ -1,0 +1,16 @@
+@charset "utf-8";
+/**
+* 登录css
+* @author wuxing
+* @date 2015-03-02
+*/
+/*重置弹窗logo宽度和高度*/
+.aui_outer .aui_icon div{width:82px;height:72px;margin-left:40px;}
+
+#loginForm i[class*="icon_"]{position:absolute;left: 2px;top:2px;width: 35px;height: 35px;}
+#loginForm i.icon_user{background: url("../images/login/user.png") no-repeat center center #ccc;}
+#loginForm i.icon_passwd{background: url("../images/login/password.png") no-repeat center center #ccc;}
+#loginForm .input_item{position: relative;height: 35px;line-height: 35px;margin: 40px 30px 40px 0;border: none;z-index: 0;}
+#loginForm .input_item input{padding-left: 40px;width: 220px;height: 35px;line-height: 35px; border: 2px solid #ccc;font-size: 18px; color: #ccc; z-index: 1;}
+#loginForm .input_item input:hover{border: 2px solid #696969;}
+#loginForm .input_item input:focus{border: 2px solid #91c35b;}

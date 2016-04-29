@@ -1,0 +1,19 @@
+@charset "utf-8";
+.site_box{width:910px;height:auto;background:#fff;padding:50px 20px 80px 20px;}
+.selected_site ul:after{ visibility:hidden;
+ display:block;
+ font-size:0;
+ content:" ";
+ clear:both;
+ height:0;
+}
+.selected_site ul{
+ zoom:1;
+}
+.selected_site ul li{float:left;padding:15px;}
+.selected_site ul li>.site_name{display:inline-block;width:80px;height:35px;border-radius:3px;border:1px solid #78A7FF;text-align:center;line-height:35px;cursor: pointer;position:relative;color:#333}
+.selected_site ul li>.site_name:hover{background-color:#78A7FF;color:#fff}
+
+
+
+

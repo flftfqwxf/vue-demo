@@ -1,0 +1,138 @@
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background: #f4f4f4 !important; }
+
+a:focus {
+  outline: none; }
+
+.w100 {
+  width: 100px; }
+
+.w200 {
+  width: 200px; }
+
+.w300 {
+  width: 300px; }
+
+.w400 {
+  width: 400px; }
+
+body {
+  background: #fff url(../images/item/view_bg_new.jpg) center 80px no-repeat;
+  min-height: 500px; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
+
+.header {
+  position: relative;
+  padding-top: 14px;
+  height: 80px; }
+  .header .login-state {
+    position: absolute;
+    right: 0;
+    top: 30px; }
+
+.content {
+  padding: 125px 40px; }
+
+.mobile {
+  float: left;
+  margin-right: 48px;
+  width: 360px;
+  height: 650px;
+  padding: 78px 21px;
+  background: url(../images/item/iphone.png) no-repeat;
+  overflow: hidden; }
+
+.mobile-inner {
+  overflow: hidden; }
+
+.item_view_info {
+  float: left;
+  color: #fff;
+  width: 680px;
+  height: 650px;
+  overflow: auto; }
+  .item_view_info a {
+    color: #fff; }
+  .item_view_info h2 {
+    font-weight: normal;
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 22px; }
+    .item_view_info h2 span {
+      color: #c8d7d4; }
+  .item_view_info h4 {
+    line-height: 20px;
+    font-weight: normal; }
+
+.linebor {
+  border-bottom: 1px solid #c8d7d4;
+  padding-bottom: 8px;
+  margin-bottom: 10px; }
+
+.item_view_info_qr {
+  margin-bottom: 20px; }
+
+.item_qr_li {
+  float: left;
+  padding-top: 60px;
+  margin-right: 40px;
+  padding-top: 5px; }
+  .item_qr_li img {
+    border-radius: 8px;
+    width: 180px;
+    height: 180px; }
+
+.qrcode_text {
+  line-height: 24px;
+  padding: 4px 0; }
+  .qrcode_text span {
+    padding: 0 10px; }
+
+.item_view_info_price {
+  padding: 10px 0; }
+
+.item_price_li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px; }
+  .item_price_li .itemWrap {
+    display: inline-block;
+    width: 480px;
+    margin-left: -0.3em; }
+    .item_price_li .itemWrap span {
+      white-space: nowrap; }
+
+.item_pricr_number {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  border: 1px solid #cddcd9;
+  text-align: center; }
+  .item_pricr_number span {
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    line-height: 1;
+    margin-top: -7px; }
+
+.item_price_info em {
+  font-style: normal;
+  color: #ccdcd9;
+  min-width: 90px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top; }
+
+.footer, .page-footer {
+  background: #252d36; }
+
+.page-footer {
+  color: #999999; }
+  .page-footer a {
+    color: #999999; }

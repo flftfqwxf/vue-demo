@@ -1,0 +1,168 @@
+@charset "utf-8";
+body,*{margin: 0;padding:0;}
+a{text-decoration: none;}
+a:focus{outline:none;}
+li{ list-style:none;}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+}
+
+/*重构代码开始*/
+.plan-list-view{background:#fff;border-top:solid 1px #e0e1e2;margin-top:25px;}
+.plan-list-view .page-main{width:1170px;margin:30px auto 0;}
+.plan-list-view .page-main>.row, .plan-list-view .page-main>.row .col-md-12, .plan-list-view .search-box{padding:0;margin:0;}
+.plan-list-view .plan-list{border:none;}
+.plan-list-view .plan-list>h2{margin-left:0;}
+.plan-list-view .plan-list>.list-box{margin:0;}
+.plan-list-view .list-left{width:880px;float:left;}
+
+.plan-list-view .plan-list>.list-box .right_info{width:270px;float:right;}
+.list-page{margin-top:20px;padding:9px 20px;background:#f2f3f4;border:solid 1px #e5e6e7;}
+.list-search .name{min-width:170px;}
+.plan-list-view .list-search .name input{width:170px;}
+.name>div:hover{min-width:249px;}
+/*重构代码结束*/
+
+
+.tourplan_body{margin: 0;padding:0;font-size: 14px;}
+.body_center{text-align: center;}
+.tourplan_body .top_recommend{padding:31px 0;width:100%; height:340px;background: #EDF0F2;display: inline-block;}
+.tourplan_body .top_recommend .recommend_content{width:1170px;height:340px;overflow: hidden;display: inline-block;text-align: left;}
+.tourplan_body .top_recommend .recommend_content .left_silder{float: left;width:570px;height:340px;overflow: hidden;display: inline-block;}
+.tourplan_body .top_recommend .recommend_content .right_recommend{position:relative; float: left;width:270px;height:160px;overflow: hidden;z-index: 1;}
+.tourplan_body .top_recommend .recommend_content .right_recommend .recommend_show_img img{width:100%;height:100%;display:inline-block;}
+.tourplan_body .top_recommend .recommend_content .right_recommend .right_recommend_title_bg{position: absolute;bottom:0px;left:0px;rigth:0px;width: 100%;height:39px;background: #000;filter:alpha(opacity=50); -moz-opacity:0.5;opacity:0.5;z-index: 0;}
+.tourplan_body .top_recommend .recommend_content .right_recommend .right_recommend_title{position: absolute;bottom:0px;left:0px;rigth:0px; padding:0 10px;width:250px;height:39px;line-height:39px;overflow: hidden;font-size: 16px;color:#fff;}
+.tourplan_body .top_recommend .recommend_content .right_recommend .right_recommend_title a{width: 250px;overflow: hidden;color:#fff;display:inline-block;}
+.gm_recommend_tips{background: #FF6342;}
+.gm_recommend_tips .gm_recommend_tips_content{margin-top:45px;font-size: 20px;color: #fff;line-height:30px;}
+.gm_recommend_tips .gm_recommend_tips_content_but{margin-top:12px;}
+.gm_recommend_tips .gm_recommend_tips_content_but .gm_recommend_tips_link{width: 150px;height:40px;line-height:40px;border:1px #fff solid;color:#fff;font-size: 14px;display: inline-block;text-align: center;border-radius:5px;}
+
+
+/*滚动控件*/
+.list_slider{width:100%;height:100%;overflow: hidden;display:inline-block;position: relative;}
+.list_slider li{width:100%;height:100%;position: relative;}
+.list_slider li .img_show img{width:100%;height:100%;overflow: hidden;}
+.list_slider .text_info_bg{position:absolute;left:0;bottom:0px;right:0px; width:100%; background: #000; filter:alpha(opacity=50); -moz-opacity:0.5;opacity:0.5;}
+.list_slider .text_info{position:absolute;left:0;bottom:0px;right:0px; width:100%;}
+.list_slider .text_info p{font-size: 14px;color:#fff;max-width: 100%;overflow: hidden;height:19px;}
+.list_slider .text_info p.title{font-size: 16px;color:#fff;line-height:20px;height:20px;}
+.list_slider .text_info p a{color:#fff;}
+.list_slider .JQ-slide-content{position: absolute;}
+.list_slider .JQ-slide-nav-show{position: absolute; bottom: 10px; height: 18px; padding-top: 2px;right: 10px;}
+.list_slider .JQ-slide-nav-show i{cursor:pointer;width:10px;height:10px;border-radius:50%;display:inline-block;border:1px #fff solid;margin-right:6px;}
+.list_slider .JQ-slide-nav-show i:last-child{margin-right:0px;}
+.list_slider .JQ-slide-nav-show i.on{background: #fff;}
+.list_slider .JQ-slide-nav .prev{position:absolute;left:0px;top:42%; width:30px;height:60px;z-index: 1;background: url("../images/tourplan/left.png") no-repeat;background-position: center center;display:inline-block;}
+.list_slider .JQ-slide-nav .next{position:absolute;right:0px;top:42%; width:30px;height:60px;z-index: 1;background: url("../images/tourplan/right.png") no-repeat;background-position: center center;display:inline-block;}
+
+/*头部banner滚动*/
+#banner_slider .wrap{height: 340px;overflow: hidden;position: relative;width: 570px;}
+#banner_slider .wrap ul{height:340px;overflow: hidden;}
+#banner_slider .wrap li{float:left; height: 340px;width: 570px;overflow: hidden;}
+#banner_slider .text_info_bg{height:40px;}
+#banner_slider .text_info{padding:0 100px 0 15px;height:40px; width:455px; overflow: hidden;}
+#banner_slider .text_info .info_title_text{color:#fff;font-size: 14px;filter:alpha(opacity=60); -moz-opacity:0.6;opacity:0.6;}
+#banner_slider .text_info p{height:40px;line-height:40px;}
+#banner_slider .red_price{color:#ff6342;}
+#banner_slider li:hover .text_info{display:inline-block;}
+#banner_slider li:hover .text_info_bg{display:inline-block;}
+/*右侧滚动广告*/
+#right_slider .wrap{height: 380px;overflow: hidden;position: relative;width: 270px;}
+#right_slider .wrap ul{height:380px;overflow: hidden;}
+#right_slider .wrap li{float:left; height: 380px;width: 270px;overflow: hidden;}
+#right_slider .text_info_bg{height:40px;}
+#right_slider .text_info{padding:0 15px;height:40px; line-height:40px; width:100%; overflow: hidden;}
+#right_slider .text_info p{height:40px; line-height:40px;overflow: hidden;}
+
+/*侧边样式*/
+.tourplan_content .tourplan .list_body .right_info{float:right;width:270px;display:inline-block;}
+.tourplan .right_info .right_info_li{width:100%;display:inline-block;}
+.self_add_tour{padding:0 28px 0 80px;height:60px;overflow: hidden;text-align: center;background: url("../images/tourplan/add_tour_but.png") no-repeat 20px center #FF6342;background-size:auto 54px; display:block;cursor: pointer;border-radius:4px;color:#fff;}
+.self_add_tour:hover{color:#fff;text-decoration:none!important;}
+.self_add_tour span strong{font-size: 20px;color:#fff;}
+.self_add_tour .self_add_tour_but{line-height:60px;}
+.self_add_tour .self_add_tour_tips{display:block;padding:9px 0;}
+.self_add_tour .self_add_tour_tips small{font-weight:400;display:inline-block;width:100%;font-size: 12px;color:#ffc1b3;}
+.self_add_tour .self_add_tour_tips strong{line-height:25px;margin-top:8px;}
+.right_recommend{height:380px;width:270px;}
+.hot_list{width:100%;display:inline-block;color:#313233;}
+.hot_list .hot_title{padding-left:15px;border:1px #e0e1e2 solid;background: #f2f3f4;height:38px;line-height:38px;font-size: 16px;}
+.hot_list .hot_li{position:relative;padding:0 10px;height:38px;line-height:38px;border:1px #e0e1e2 solid;border-top:0px;}
+.hot_list .hot_li .hot_li_num{margin:10px 10px 0 0; float:left; width:18px;height:18px;line-height:18px;border-radius:50%;color:#fff;display: inline-block;text-align: center;font-size: 12px;}
+.hot_list .hot_li .hot_li_title{float:left;max-width:130px;height:38px; text-align: left;overflow: hidden;display: inline-block;color:#313233;}
+.hot_list .hot_li .hot_li_info{position:absolute;right:15px;top:0;height:38px;overflow:hidden; display: inline-block;font-size: 12px;color:#626466;}
+.hot_keywords{width:100%;display:inline-block;color:#313233;}
+.hot_keywords .hot_keyword_title{padding-left:2px;height:25px;line-height:25px;overflow: hidden;font-size: 20px;margin-bottom:10px;}
+.hot_keywords .hot_keyword_list{width:100%;display:inline-block;}
+.hot_keywords .hot_keyword_list .hot_key_li{float:left; padding:0 10px;margin:0 10px 10px 0; height:26px;line-height:26px;border:1px #E0E1E2 solid;display:inline-block;border-radius:5px;color:#313233;}
+.hot_keywords .hot_keyword_list .hot_key_li:hover{color:#78A7FF;}
+.hot_keywords .hot_keyword_list .hot_key_li.on{border:1px #78A7FF solid; background: #78A7FF;color:#fff;}
+.hot_keywords .hot_keyword_list .hot_key_li.on:hover{color:#fff;}
+/*弹出层广告*/
+.aui_main{padding:0px;}
+.aui_content{display:block;}
+.aui_state_noTitle .aui_close{font-size: 24px;top:22px;right:15px;z-index: 9;}
+.gm-adv{width:812px;height:573px;display:block;overflow: hidden;}
+.gm-adv .gm-adv-nav{position:relative;margin-top:14px;height:46px;width:100%;z-index: 1;}
+.gm-adv .gm-adv-nav-br{position:absolute;left:0;bottom:0;rigth:0;height:1px;width:100%; background:#e0e1e2;z-index: -1;}
+.gm-adv .gm-adv-nav .gm-adv-nav-list{display:inline-block;width:792px;height:46px;}
+.gm-adv .gm-adv-nav .gm-adv-nav-li{float:left;padding:10px;line-height:24px;font-size:16px;color:#313233; display:inline-block;border:1px solid transparent;border-bottom:1px #e0e1e2 solid;margin-right:8px;cursor: pointer;}
+.gm-adv .gm-adv-nav .gm-adv-nav-li:last-child{margin-right:0px;}
+.gm-adv .gm-adv-nav .gm-adv-nav-li.on{border:1px #e0e1e2 solid;border-bottom:1px #fff solid;border-top-left-radius:3px;border-top-right-radius:3px;}
+.gm-adv-body{padding:20px;height:472px;}
+.gm-adv-body ul.gm-adv-body-ul{width:100%;display: inline-block;}
+.gm-adv-body ul.gm-adv-body-ul li.gm-adv-body-li{list-style:none;width:100%;display:none;}
+.gm-adv-body .gm-adv-ct-left{float:left;width:324px;height:472px;display:inline-block;overflow: hidden;}
+.gm-adv-body .gm-adv-ct-right{float:left;display:inline-block;width:428px;height:472px;overflow: hidden;}
+.gm-adv-body .gm-adv-ct-right .gm-adv-title{padding-top:4px;width:100%;padding-bottom:10px;border-bottom:1px #e8e8e8 dashed;font-size: 16px;color:#313233;font-weight: bold;}
+.gm-adv-body .gm-adv-ct-right .gm-adv-ct-text{padding-top:10px;margin-bottom:13px; width:428px;max-height:200px;line-height:20px;font-size: 14px;color:#626466;overflow: hidden;}
+.gm-adv-body .gm-adv-ct-right .gm-adv-ct-files{line-height:28px;height:28px;width:100%; display:inline-block;}
+.gm-adv-ct-files .gm-adv-files-li{float:left;display:inline-block;font-size:14px; color:#587ed1;margin-right:28px;}
+.gm-adv-body .gm-adc-file-download{padding-right:8px;color:#587ed1;text-decoration: underline;}
+.gm-adv-body .gm-adv-ct-right .gm-adv-links{width:100%;}
+.gm-adv-links .gm-adv-link-li{margin-top:12px;height:26px;line-height:26px; width:100%;overflow: hidden;font-size: 14px;color:#313233;}
+.gm-adv-links .gm-adv-link-li .gm-adv-link-title{color:#939699;}
+.gm-adv-links .gm-adv-link-li .gm-adv-link-user{margin-right:10px;font-weight: bold;}
+.gm-adv-links .gm-adv-link-li .gm-adv-link-phone{margin-right:20px;font-weight: bold;}
+.gm-adv-links .gm-adv-link-li .gm-adv-link-but{padding:0 5px 0 23px;height:24px;line-height:23px; border:1px #e0e1e2 solid;border-radius:3px;color:#313233; background: url("../images/tourplan/qq.png") no-repeat;background-position: 5px center;background-size:14px 16px;}
+/*弹出层幻灯片*/
+.gm-adv-slider .wrap{position: relative; height: 472px; width: 324px; overflow: hidden;}
+.gm-adv-slider .wrap ul{height: 472px;overflow: hidden;}
+.gm-adv-slider .wrap li{float:left; height: 472px; width: 324px;overflow: hidden;}
+.gm-adv-slider .JQ-slide-nav-show{right:0;width:100%;text-align: center;}
+
+.fl{float:left;display:inline-block;}
+.mr30{margin-right:30px;}
+.mb20{margin-bottom:20px;}
+.mr20{margin-right:20px;}
+.ml20{margin-left:20px;}
+.mr38{margin-right:38px;}
+.mb10{margin-bottom:10px;}
+.important_tips{color:#ff4848;}
+.blue_bg{background: #78a7ff;}
+.red_bg{background: #ff6161;}
+
+.aui_outer td tr:last-child{display:none;}
+.gm-adv-nav>a{
+	position:absolute;
+	top: 7px;
+    right: 16px;
+    font-size: 20px;
+    color: #c4c9cc;
+    line-height: 100%;
+    font-weight:700;
+    text-decoration: none !important;
+}
+.gm-adv-nav>a:hover{color:#587ed1;}
+.aui_state_noTitle .aui_inner{border:none;}

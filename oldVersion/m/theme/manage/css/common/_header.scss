@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "../theme.scss";
+/*头部*/
+.header{min-height:50px;line-height:50px;background-color:$font_white;width:100%;text-align: center;position: relative;border-bottom:1px solid $border_box;}
+.header .gmIcon.gm-arrow-full{font-size:16px;color: $font_content;}
+.header .return_back{position: absolute;left:5px;top:0px;height:50px;width:22px;line-height:50px;cursor: pointer;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.header .return_home{position: absolute;right:12px;top:0;height:50px;width:22px;cursor: pointer;line-height:50px;text-align:right;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.header .page_name{display:inline-block;font-size: 18px;color:$font_deep;text-align:center;width:100%;padding:0px 15px;box-sizing:border-box;height:50px;line-height:50px;}
+.header .gmIcon.gm-back{font-size:22px;line-height:45px;color:$themeDeep;}
+.header .gmIcon.gm-home{font-size:26px;line-height:50px;color:$themeDeep;}
+.header .page_name span{font-size: 18px;}
+/*end*/
+
+/*头部的搜索*/
+.header .search_but{position: absolute;right:0;top:0; padding:0 15px;display:inline-block;height:50px;width:20px;cursor: pointer;line-height:45px;}
+.header .search_but .gmIcon.gm-search2{font-size:22px;color:$themeDeep;}
+.header .search_but a{display:inline-block;position: relative;}
+
+/*合同条款*/
+.rules_info{padding:15px;background-color:none;color:$font_title;}
+
+/*页面主体部分，上下左右边距10px*/
+.container{padding:10px;width:100%;box-sizing:border-box;background:transparent;height:auto;}
+
+/*首页底部导航栏*/
+.index_nav{width:100%; left: 0;height:60px;position: fixed;bottom:0px;background:#eae9e9;z-index:100;border-top: 1px solid #E1E1E1;}
+    .nav_item{width:25%;float:left;text-align:center;}
+    .nav_item a{display: inline-block;width:100%;color:$font_content;font-size:12px;text-align:center;padding-top:9px;}
+    .nav_item .gmIcon{font-size:28px!important;line-height: 28px;}
+    .nav_item .gm-home2{line-height:27px;}
+    .nav_item .gmIcon.gm-sunlight{font-size:32px!important;line-height: 26px;}
+/*end*/
+
+/*选择出发地*/
+.locatHref{color: $font_white;position: absolute;top:15px;right: 15px;z-index: 100;font-size: 16px;}
+.departrue{width:100%;padding:10px;@include setBoxSizing();}
+.departrue dl dt{width:100%;border-left:5px solid $themeDeep;height: 18px;line-height:18px;padding-left:5px;@include setBoxSizing();font-size: 14px;margin:5px 0px;}
+.departrue dl dd{width: 100%;padding-left:10px;@include setBoxSizing();}
+.departrue dl a{color: $font_title;font-size: 12px;margin:5px 0 5px 1px;@include setCalc(25%,5px);@include setBoxSizing();display: inline-block;height: 30px;line-height: 30px;background-color: #f6f6f6;@include setBorderRadius(2px);text-align: center;@include clearAppearance();overflow:hidden;}
+.departrue dl a.on{color:$color_green;border:1px solid $color_green;}
+.departrue dl dd.myLocat{color: $color_green;}
+
+/*联系方式*/
+.more_contacts{display:none;width:100%;max-width:640px;height:100%;background:rgba(0,0,0,0.6);position: fixed;z-index:100;bottom:0px;}
+.contact_all.contacts{width:100%;position: absolute;margin:0px auto;background:white;;height:auto;bottom:0px;left:0%;}
+.contact_all .close_contacts{position: absolute;top: -14px; right:10px; z-index: 20;color:$themeDeep;background:$font_white;border-radius:32px;width:32px;height:32px;text-align:center;}
+.contact_all .gm-close{background:$font_white;border-radius:2.4rem;margin:0;padding:0;font-size:22px;line-height: 2.4rem;}
+.contact_all .contacts_info{padding:0px 10px;color:$themeDeep;}
+.contact_all .all_contacts{max-height:280px; overflow-y: auto;}
+.contact_all .contact_title{padding:10px 0px 5px 0px;font-size: 14px;color:$font_content;}
+.contact_all .contact_item{display: inline-block;margin:5px 0px;width:100%;position: relative;box-sizing:border-box;}
+.contact_all .contact_item:last-child{margin-bottom:0;margin-top:5px;}
+.contact_all .contact{width:100%;background:white; border-radius: 4px;box-sizing:border-box;height:45px;display: inline-block;border: 1px solid $border_box;}
+.contact_all .contact span{color:$font_title;font-size:12px;line-height:42px;background:$font_white; border-radius: 4px;border-collapse:collapse;display: inline-block;}
+.contact_all .contact span.contact_icon{ padding:0px 0px;height:100%;width:45px;text-align: center;vertical-align:inherit;}
+.contact_all .contact span.contact_name{ width:-webkit-calc(87.9% - 184px);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.contact_all .contact span.contact_phone{width:168px;float:right; text-align:right;padding-right:25px; box-sizing: border-box;position:relative; }
+.contact_all .contact .gm-telephone{color:$themeDeep;font-size:20px;}
+.loginDiv{width:100%;border-bottom:1px solid $border_box;padding-bottom:15px;}
+.adminLogin{margin-top:40px;color:$font_title;font-size:16px;display:inline-block;}

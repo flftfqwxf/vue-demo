@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* 重置样式 start*/
+html {
+  height: auto;
+  background-color: #ededed;
+}
+
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td, footer, header, optgroup, select, em {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  /*去除webkit中块之间的间隙*/
+}
+
+body {
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 640px;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  background: #ededed;
+  -webkit-appearance: none;
+  /*解决Iphone下橱窗字体变大问题*/
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  /*禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*禁止链接长按弹出选项菜单*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img100 {
+  width: 100%;
+}
+
+input {
+  color: #666;
+}
+
+input, button, select, textarea {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+}
+
+input:focus {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+/*.clearfix:after{content: "020";display: block; height: 0;clear: both;visibility: hidden;}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置样式 end*/
+.header .gmIcon.gm-back {
+  line-height: 55px;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "微软雅黑";
+}
+
+.header i.gm-back {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0 10px;
+  height: 50px;
+  font-size: 22px;
+  color: #ff7e1d;
+  line-height: 50px !important;
+}
+
+@media screen and (max-device-width: 1199px) {
+  .rules_Info {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #666;
+  }
+
+  table {
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #ccc;
+  }
+
+  table * {
+    font-size: 12px;
+  }
+
+  table tr {
+    border-top: 1px solid #cccccc;
+  }
+
+  table td {
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+  }
+
+  .rules_Info > p {
+    text-indent: 10px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0px;
+    color: #666;
+  }
+
+  .rulesTitle {
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  .rulesCode {
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  .rules_num {
+    margin: 8px 0px !important;
+  }
+
+  .returnTop {
+    position: fixed;
+    display: none;
+    z-index: 18;
+    right: 5px;
+    bottom: 65px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,161 @@
+	.w{ margin: 0 auto; width: 1090px; }
+	.mt20{ margin-top: 20px; }	
+	.mt24{ margin-top: 24px; }
+	.col{ width: 123px; }
+	.col1{ width: 210px; }
+	.col2{ width: 116px; }
+	.col3{ width: 320px; }
+	.color1{ color:#999999; }	
+	.m-l-n-sm {
+	    margin-left: -10px;
+	}
+	
+	.title-h4{ height: 35px; background: url(/supplier/theme/manage/blue/images/tourplan/titlebg.jpg) no-repeat; }
+	.heard { position: relative; width: 100%; height: 300px; background: url(/supplier/theme/manage/blue/images/tourplan/banner.jpg) no-repeat center center;}
+	.heard .heard-box{ margin: 0 auto; }
+	.heard .heard-box .logo{ display: inline-block; }
+	.userChoice{ margin:19px 0 0 0; font-size:16px;}
+	.info-box{ margin-left:181px; line-height: 28px; }
+	.userChoice .login-on{width:185px;background-color:rgba(255,255,255,0.7);border-radius:20px;padding-left:5px;}
+	.heard .info { position:absolute; bottom:0; width: 100%; background: rgba(0,0,0,0.6) ; color:#fff; font-size: 24px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; }
+
+	.nav { height:70px; background-color:#FFF; }
+	.nav-box { margin:0 auto; }
+	.nav-box .log{ position:relative; z-index:1; display: inline; float: left; margin:-67px 0 0 8px; width: 122px; height: 126px;}
+	.nav-box .log img{  border-radius: 50px;  }
+	.nav-ul{ margin-left: 182px; }
+	.nav-ul li{ display: inline; float: left; margin:18px 14px 0 0; padding-right: 14px; height:18px; line-height: 18px; border-right:2px solid #7d7d7d; color:#7d7d7d; font-size: 18px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; }
+
+	.content { background: #f8eee4; }
+	.content .main{ position: relative; padding:20px 0 0 20px; background: #fff; }
+
+	.item-bg{ padding: 5px 6px; width: 887px; height: 320px; background:url(images/bg.png) repeat;}
+	.item{ width: 878px; height: 311px; background: url(images/bg1.png) repeat; }
+	.item-cont{ padding:0 0 11px 4px; background: #fff; }
+	.item-cont .notice{ color: #b8b7b7; }
+	.item-cont .item-dl { padding-bottom:5px; border-bottom: 1px solid #eeeeee; }	
+	.tilte-h4{ width: 189px; height: 35px; line-height: 35px; background:url(images/bg2.png) no-repeat top right #fff; font-size: 14px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; color: #4a4a4a; }
+	.tilte-h4 span{ display:inline; float: left; margin:6px 9px 0 4px; width: 4px; height: 25px; background-color: #ff8f00; } 
+	.tilte-h4 .strong{ font-size: 18px; color: #008aff; }
+	.item-cont .item-dl dt{ display: inline; float: left; margin-right: 9px; width: 20px; height: 70px; text-align: center; color: #fff; font-size: 14px; line-height: 70px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; }
+	.item-cont .item-dl { margin-bottom: 5px; }
+	.item-cont .item-dl p{ color: #7d7d7d; }
+	.item-cont .item-dl span{ color: #535353; }
+	.dt-color{ background-color: #6d72b2; }
+	.dt-color1{ background-color: #6f8bca; }
+	.dt-color2{ background-color: #b0b2e2; }
+	.linka{ color: #80c269; text-decoration: underline; }
+	
+	.item1{ margin-top: 20px; }
+	.item1 .title-ico{ background-position:0 -105px; }
+	.item1 .title-ico4{ background-position:0 -36px; } 
+	.item1 .title-ico2{ background-position:0 -142px; }
+	.item1 .title-ico3{ background-position:0 0; } 
+	.item1 .info-ul{ margin:10px 0 0 37px; color: #737373; font-size:14px; }
+	.sp-dlock{ display: inline-block; width: 770px; }
+	.downfile-notice { margin:10px 0 0 42px; padding-left: 6px; width: 209px; height:18px; border: 1px solid #efefef; background: #f5f6f7; color: #737373; }
+	.down-file{ display: inline; float: right; margin-top: -1px; width: 70px; height: 20px; background: url(/supplier/theme/manage/blue/images/tourplan/download_btn.jpg) no-repeat; }
+	
+	/*  行程安排 */
+	.data-info-body{ position: relative; margin-left:37px; padding-top: 32px; border-left: 2px solid #ffdb6e; }
+	.pt{ padding-top: 0; }
+	.mt15{ margin-top: 15px; }
+	.data-info-body .data-info{ width: 854px;  }
+	.data-info-body .data-info .line-title{ padding-left:20px; height: 24px; line-height: 24px; color: #f3b24c; font-size: 16px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; background-color: #f7f7f7; }	
+	.left_icon{ position: absolute; left: -9px; z-index: 2; display: inline-block; text-align: center; background: url(/supplier/theme/manage/blue/images/tourplan/xingcico.png) no-repeat; }
+	.line-ico{ width: 25px; height: 33px; color: #fff; background-position: 0 -68px; left: -13px; }
+	.canyin-ico { top: 5px; left: -29px; width: 16px; height: 16px; background-position: 0 0; }
+	.traffic-ico{ top: 5px; left: -29px; width: 16px; height: 16px; background-position: 0 -17px; }
+	.day-ico{ top: 5px; left: -29px; width: 16px; height: 16px; background-position: -3px -33px; }
+	.stay-ico{ top: 5px; left: -29px; width: 16px; height: 16px; background-position: 0 -49px; }
+	.over-ico{ top: 5px; left: -29px; left:-6px; width: 16px; height: 16px; background-position: -19px -105px; }
+	.data-info-body h5{ text-indent:21px; height: 24px; line-height:24px; background-color: #f7f7f7; color: #f3b24c; font-size: 16px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; }
+	.data-info-body .traffic-title{ float:left; font-weight: bold; color: #323232; }
+	.data-info-body .line-mod{ position:relative;  margin:35px 0 0 20px; line-height: 25px; color: #666666; }
+	.data-info-body .line-mod .sub-title{ margin-right: 5px; float: left; color: #323232; }
+	.data-info-body .line-mod .hangban-info{ height: 93px; margin-top: 15px; }
+	.data-info-body .line-day dt{ display: inline; float: left; }
+	.data-info-body .line-day .day-box{ width: 716px; display: inline-block; }
+	.time-duan span{ display: inline-block; float: left; height: 100px; color: #323232; }
+	.time-duan p{ color: #808080; }
+	.data-info-body .line-mod .qianz-list{ display: inline-block; }
+	.item1 .item-dl{ margin:21px 0 0 37px; color: #737373; font-size: 14px;display:inline-block; }
+	.item1 .item-dl dt{ display: inline; float: left; width: 74px; color: #4a4a4a; }
+	.item1 .item-dl dd{ display: inline-block; float: left; }
+	.tablebox { width: 778px; height: 213px; text-align: center; }
+	.tablebox td{ padding:11px 0 8px 0; border: 1px solid #9c9c9c; }
+	.tablebox thead tr{ background-color: #eeeeee;  }
+	.tablebox thead th{ line-height: 28px; border: 1px solid #9c9c9c; text-align: center;  }
+
+	.qianz-list li{ margin-top: 22px; }
+	.qianz-list li a{ color: #3aa501; text-decoration: underline; }
+	.conen-a{ color: #ff6c00; text-decoration: underline; }
+	.conen-a i{ display: inline-block; margin: 0 4px 0 12px; width: 15px; height: 18px; background: url(/supplier/theme/manage/blue/images/tourplan/supplicerico.png) no-repeat 0 -122px;  vertical-align: middle; }
+	.stay-p{ padding-bottom: 24px; border-bottom: 1px dashed #ccc; }
+	.jindian-notice{ color: #0188fd; }
+	.linkea1{ color: #3aa501; }
+	.linkea1 i{ display: inline-block; margin: 0 8px; width: 15px; height: 15px; background: url(/supplier/theme/manage/blue/images/tourplan/xingcico.png) no-repeat 0 -105px; vertical-align: middle; }
+	
+	.day-box-down{ margin-top: 23px; }
+	.day-box-down .notic-p{ color:#fd7d7d; }
+	.prod-box{ margin:50px 0 0 -20px; width: 1072px; padding:0 19px 0 19px;  color: #666666; border: 1px solid #dcdcdc; background-color: #fff; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; }
+	.tilte{ font-size: 18px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+	.checkall { margin:10px 20px 0 0; float: right; color: #999999; }
+	.prod-listoth{ margin:9px -20px 0 0;display:inline-block; }
+	.prod-listoth li{ display: inline; float: left; margin :0 14px 10px 0; }
+	.prod-listoth li .l{ margin-right: 4px; }
+	.prod-listoth li .r { width: 152px; color: #666666; }
+	.prod-listoth li .r strong{ font-size:24px; color: #ff9000; }
+
+	.tripall-over{ position: relative; margin-top: 25px; border-bottom: 1px dashed #cacaca; }
+	.tripall-over .over-span{ position:absolute; top:-10px; padding:0 6px 0 20px; height:25px; line-height:25px; font-size: 14px; color: #f3b34d;  background-color:#fff; }
+
+	.side{ position:absolute; right:16px; width: 148px; border: 1px solid #ddd; font-size: 14px; text-align: center; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53;  }
+	.side .baoj-title { height: 30px; line-height: 30px; color: #5289fd; border-bottom: 1px solid #ddd; }
+	.side .days{ padding: 10px 0 0 9px; background-color: #f8f8f8; border-bottom: 1px solid #ddd; }
+	.side .days a{ display:block; width: 130px; line-height: 30px; margin-bottom: 5px; background-color: #ddd; color: #fff; }
+	.side .days a.select{ background-color:#7295e6; color: #fff; }
+	.side .on a{ display: inline-block; float: left; width: 60px; margin-right: 9px; }/* 大于10天 */
+	.side li { line-height: 30px; border-bottom: 1px solid #ddd; }
+	.side li a{ color: #666; }
+	.side .backTop { display: block; width: 150px; height: 30px; line-height: 30px; color: #fff; text-align: center; font-size: 14px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; background-color: #7295e6; }
+	.side .backTop i{ display: inline-block; margin-right: 5px; width: 16px; height: 16px; background: url(/supplier/theme/manage/blue/images/tourplan/backtop.png) no-repeat; vertical-align: middle; }
+	
+	/* 弹出层样式 */	
+
+	.supplier_dialog ul li .icon {cursor: pointer;  position: absolute;top: 0;left: 0;z-index: 2;border: 0;background-repeat: no-repeat;}
+		
+	.supplier_dialog .buttonbar {height: 40px;line-height: 40px;margin-top: 11px;padding: 10px;border-top: 1px solid #959595;clear: both;}
+	.supplier_dialog .buttonbar .button {margin: 7px;padding: 0 15px 0 20px;color: #fff;letter-spacing:5px;}
+	.supplier_dialog .buttonbar .button.cancel{background-color:#f06464;}
+	.supplier_dialog .buttonbar .button.save{background-color:#60d878;}
+	
+	.supplier_dialog { width:735px; border:1px solid #bfbfbf; border-radius:4px; max-height:524px;}
+	.scenic-content{ padding:20px 0 8px 15px;max-height:392px;}
+	/*设置滚动条样式*/
+	.scenic-content{overFlow-y: scroll ;overFlow-x: hidden ;scrollBar-face-color: green; scrollBar-hightLight-color: red;scrollBar-3dLight-color: orange; 
+	scrollBar-darkshadow-color:blue; 	scrollBar-shadow-color:yellow; 	scrollBar-arrow-color:purple; scrollBar-track-color:black; scrollBar-base-color:pink; }
+	.scenic-pic-box{ display:inline-block; margin-right:10px; width:312px; }
+	.scenic-pic-box .tilte{border:none;font-size:18px;}
+	.scenic-pic-box ul li{height:40px;line-height:40px;font-size:14px;color:#999;}
+	.scenic-pic-box ul li dl {line-height:20px;}
+	.scenic-pic { height:120px; }
+	.scenic-ul { margin:6px -20px 0 0; }
+	.scenic-ul li{ position:relative; margin:0px 4px 4px 0px;position: relative;overflow: hidden;cursor: pointer;float:left;display: inline-block; width:50px; height:30px; }
+	.scenic-ul li:hover{ background:url('/supplier/theme/manage/blue/images/tourplan/jdselect.png') no-repeat center center ; }
+	.scenic-ul li.selected .icon{ background:url(/supplier/theme/manage/blue/images/tourplan/jdselect.png) no-repeat center center; }
+	.supplier_dialog .title{ height:34px; line-height:34px; text-indent:17px; font-size:18px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; background:#ffd56f; color:#fff;}
+	
+	.scenic-font .tilte{ font-size:18px; color:#666; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53; border-bottom:none; }
+	.scenic-font{ display:inline-block; float:left; padding:0 17px 0 8px; color:#999; width:355px; border-left:1px solid #e5e5e5; }
+	.font-content { line-height:25px; }
+	.font-content .tab{width:355px;margin:0px auto;display:inline-block;}
+	.font-content .tab li{float:left;padding: 0px 11.5px;border-top:2px solid #eee;border-bottom:2px solid #eee;font-size:16px;}
+	.font-content .tab li a{color:#999;}
+	.font-content .tab li.active{border-top:2px solid orange;border-bottom:2px solid orange;color:orange;}
+	.font-content .tab li.active a{color:orange;}
+	.visa-content{margin-top:20px;font-size:14px; }
+	.visa-content dl dt{}
+	.cole{ width:130px; height:35px; line-height:35px; }
+	.color-graw{ color:#3aa501; text-decoration:underline; }
+	.tip{ color:#a0a0a0; }

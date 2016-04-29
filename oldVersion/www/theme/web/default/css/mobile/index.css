@@ -1,0 +1,18 @@
+body{max-width: 640px; margin: 0 auto;}
+img{display: block; width: 100%;}
+
+.qr-wrap{padding: 6% 25%;}
+.link-wrap{position: relative;}
+.link-wrap a{position: absolute; width: 100%; top: 8%; height: 25%;}
+
+.contact-pop{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(37, 45, 54, .9); display: none; -webkit-box-align: center; -webkit-box-pack: center; opacity: 0;}
+.contact-pop div{position: relative; width: 83%;}
+.contact-pop span{position: absolute; right: 0; top: 0; width: 14%; height: 9.5%;}
+.contact-pop.on{display: -webkit-box; -webkit-animation: fadeIn .5s ease-out forwards;}
+
+@-webkit-keyframes fadeIn{
+	100%{opacity: 1;}
+}
+
+footer :first-child{visibility: hidden;}
+footer :last-child{position: fixed; bottom: 0; width: 100%; max-width: 640px;}

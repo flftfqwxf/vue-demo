@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import '../theme.scss';
+.header i.gm-back{display:inline-block;cursor:pointer;position:absolute;left:0px;top:0px;padding:0 10px;height:50px;font-size:22px;color:#ff7e1d;line-height:45px;}
+
+
+
+input[type="checkbox"]{width:20px;height:20px;border: 1px solid $border_text;}
+input[type="checkbox"],input[type=radio]{-webkit-appearance: none;appearance: none;width: 20px;height: 20px;margin: 0;cursor: pointer;vertical-align: bottom;background: $font_white;border: 1px solid $border_text;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;}
+input[type="checkbox"]:active,input[type=radio]:active {border-color: $color_desc;background: $color_desc;}
+input[type="checkbox"]:checked,input[type=radio]:checked {background: $font_white;}
+input[type="checkbox"]:checked::after {content:"";display: block;position: absolute;top: -2px;right: 0px;left: -2px;height: 20px;width:20px;border-radius:2px;background:$themeDeep url(/m/theme/manage/images/common/iconfont-gmgouxuan.png) no-repeat center;border:solid 1px #ff7e1d;}
+input[type="checkbox"]:focus {outline: none;}
+input[type="checkbox"]:after{background-color:$themeDeep;color:$font_white;}
+input[type="checkbox"]{position:absolute;right:20px;top:30px;}
+input[type="checkbox"].error{border:solid 1px red;}
+
+
+
+.select-info{margin:10px 10px 15px 10px;overflow:hidden;border:solid 1px #e5e5e5;border-radius:4px;}
+.select-info .select-list li{position:relative;background-color:#ffffff;border-bottom:solid 1px #e5e5e5;height:80px;}
+.select-info .select-list i.gm-edit{position:absolute;left:15px;line-height:80px;color:#999999;font-size:28px;}
+.select-info .select-list .info{position:absolute;left:60px;top:18px;}
+.select-info .select-list .info .name{font-size:16px;color:#333333;}
+.select-info .select-list .info .identity-card{padding-top:5px;font-size:16px;color:#666666;}
+.select-info .select-list .info .identity-card em{font-style:normal;}
+
+
+.select-info .add-btn a{display:block;background-color:#ffffff;color:#ff7e1d;font-size:16px;text-align:center;height:45px;line-height:45px;}
+.select-info .add-btn i.gm-add{margin-right:5px;font-size:14px;}
+
+
+.sure-btn{margin:0 10px;}
+.sure-btn button{display:block;width:100%;border:none;background-color:#ff7e1d;color:#ffffff;font-size:18px;height:45px;line-height:45px;text-align:center;border-radius:4px;}
+
+
+
+/* 弹窗 */
+.artDialog{display:none;}
+.artDialog-bg{position:fixed;top:0px;left:0;z-index:99;width:100%;height:100%;background-color:#000000;opacity:0.5}
+.artDialog-info{position:fixed;top:150px;left:50%;margin-left:-150px;z-index:100;background-color:#ffffff;width:300px;height:135px;border:solid 1px #eaeaea;}
+.artDialog-info .title{height:90px;border-bottom:solid 1px #eaeaea;}
+.artDialog-info .title{@include setBoxSizing;padding-top:30px;color:#333333;font-size:16px;text-align:center;}
+.artDialog-info .select-btn>div{float:left;height:45px;width:50%;line-height:45px;text-align:center;color:#333333;font-size:18px;}
+.artDialog-info .select-btn>div.no{margin-right:-1px;color:#666666;border-right:solid 1px #eaeaea;}
+.artDialog-info .select-btn>div.yes a{display:block;color:#333333;}
+
+
+

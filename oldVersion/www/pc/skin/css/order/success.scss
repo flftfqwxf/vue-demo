@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "../components/reset";
+@import "../components/header";
+@import "../components/footer";
+
+html,body{height:100%;background-color:#f6f6f6;}
+section{margin-top:-82px;margin-bottom:-60px;padding-top:81px;padding-bottom:60px;height:100%;}
+.success{margin:0 auto;margin-top:40px;padding-top:118px;margin-bottom:40px;width:1180px;height:460px;text-align:center;border:solid 1px #d8d8d8;background-color:#ffffff;}
+.success i.gm-success-1{font-size:48px;color:#47b9bf;}
+.success .success-txt{margin-top:10px;font-size:18px;color:#47b9bf;font-weight:700;}
+.success .prompt{margin-top:10px;margin-bottom:20px;font-size:16px;color:#333;}
+.success .order-page a{display:block;margin:0 auto;width:106px;height:32px;line-height:30px;color:#666;border:solid 1px #ccc;border-radius:4px;}
+.success .order-page a:hover{color:#ffffff;background-color:#ff7e1d;border:solid 1px #ff7e1d;}

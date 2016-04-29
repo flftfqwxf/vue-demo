@@ -1,0 +1,35 @@
+/* contact start */
+.contact {
+  padding-top: 24px;
+  background-color: #666666;
+  text-align: center;
+  height: 80px;
+}
+
+.contact .txt {
+  color: #c4c4c4;
+  font-size: 14px;
+  line-height: 1;
+  height: 14px;
+  overflow: hidden;
+}
+
+.contact .copyright {
+  color: #999999;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+/* contact end */
+/* skill start */
+.skill {
+  background-color: #333333;
+  color: #999999;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* skill end */

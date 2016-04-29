@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "common";
+
+$padding:5px;
+body{
+    padding: 0 $padding;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    padding:20px 15px ;
+}
+section{margin-bottom:40px;}
+.rule-title{
+    text-align: center;
+    padding: $padding 0;
+    span{display: none;}
+
+    &:before{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 267px;
+        height: 45px;
+        @include bg-pos(0 -417px);
+    }
+}
+a{color:#fff;}
+.link-btn{
+    @include text-indent;
+    display: block;
+    margin: 0 auto $padding;
+    width: 211px;
+    height: 51px;
+    @include bg-pos(0 -465px);
+}
+
+.sub-title{
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: $padding;
+}
+
+.img-wrap{
+    text-align: center;
+    margin-bottom: $padding;
+    margin:10px 0px;
+    img{
+        width: 150px;
+        margin:10px 0px;
+    }
+}
+
+.help-block{
+    font-size: 12px;
+    text-align: center;
+    color: #eee4e4;
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.rules{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 16px 0 12px;
+
+    p{
+        margin-bottom: $padding;
+    }
+}
+
+.contact-info{
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 5px;
+    h4{
+        font-size: 16px;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+.supplier_logo{max-height: 80px;max-width:140px;}
+.color_org{color: #fff;text-decoration: underline;}

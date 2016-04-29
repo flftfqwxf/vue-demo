@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+.heardnew .nav-list{ display:none; }
+body{
+	background:url(/theme/manage/blue/images/supplier/bg.jpg) repeat;
+}
+.top-banner{ position:relative; width:100%; min-width:1190px; height:600px; background:url(/theme/manage/blue/images/supplier/banner.jpg) no-repeat; }
+.banner-font{ position:relative; margin:0 auto; width:1170px; }
+.opaci-bg{ width:1170px; height:62px; line-height:62px; background-color:#f3541E; filter:Alpha(opacity=90); opacity:0.9; }
+.opaci-font{ position:absolute; top:0; left:0;  text-align:center; width:1170px; height:62px; line-height:62px; font-size:18px; color:#fff; }
+
+.prod-centerBg{ }
+.prod-center{ margin:0 auto; width:1170px; }
+.online-list{ margin:25px -110px 0 0;}
+.online-list li{ display:inline-block; float:left; margin-right:120px; text-align:center; color:#A0A0A0; }
+.online-list span{ display:block; color:#000; }
+
+.tongh-plan{ margin-bottom:40px; }
+.title{ text-align:center; color:#000; }
+.title h4{ margin:40px 0 10px 0; font-size:32px; }
+
+.new-pic{ margin-top:20px; }
+.plan-pic{ margin-top:35px; }
+.line-txt{ height:32px; background:url(/theme/manage/blue/images/supplier/plantext.png) no-repeat; }
+.new-txt{ height:32px; background:url(/theme/manage/blue/images/supplier/newtext.png) no-repeat; }
+
+.week-newprod{ margin-bottom:42px; }

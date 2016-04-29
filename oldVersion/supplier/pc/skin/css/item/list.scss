@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "../components/reset";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/compare";
+@import "../components/product-item";
+@import "../components/plan-list";
+
+.p-list{
+  width:1180px;
+  margin:0 auto;
+}
+
+.pro-list li{height:312px;}
+.pro-list li .txt{height:102px;}
+.pro-list ul.login li {height: 332px;}
+.pro-list ul.login li .txt {height: 122px;}
+
+/*loading*/
+.loading{text-align:center;padding:100px 0 1198px;background:#fff;}
+.loading span{display:inline-block;background:url(../../images/loading.gif) 0 center no-repeat;line-height:30px;padding-left:38px;}
+
+/*loaded*/
+.loaded .loading{display:none;}
+.loaded>#J-list{display:block;}
+
+/*search result*/
+.p-hot{display:none;}
+.search-result h3.title i{background-position:0 -22px;width:191px;}
+
+.searching .p-search-box, .searching .right_info,  .searching .list-search{display:none;}
+.searching .list-left{width:1180px;margin-bottom:20px;}
+.searching .loading{padding: 200px 0 600px;}
+
+.no-result{background:#fff;}
+.no-result .pro-list{overflow:hidden;}
+.no-result .pro-list ul{width:110%;}
+.no-result h3.title label{background:#fff;}
+.no-result .loading{display:none;}
+.no-result .p-search-box, .no-result .right_info, .no-result .list-search{display:none;}
+.no-result-tips{margin:20px 0;border:solid 1px #ededed;background:#f6f6f6;padding:13px 20px;display:none;}
+.no-result-tips p{font-size:14px;color:#333;display:inline-block;margin-right:10px;}
+.no-result-tips p i{color:#ff7415;margin-right:10px;font-size:18px;}
+.no-result .p-hot, .no-result .no-result-tips{display:block;}
+
+.contact-list ul{
+    padding:10px 20px;
+    border:solid 1px #d8d8d8;
+    background:#fff;
+}
+.contact-list ul li{
+    border-bottom:dashed 1px #dedede;
+    padding:7px 0;
+}
+.contact-list ul li .fa{
+    font-size:16px;
+}
+.contact-list ul li p{
+    height:23px;
+    line-height:23px;
+    margin:1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contact-list ul li p{
+    color:#666;
+}
+.contact-list ul li p a{color:#666666;}
+.contact-list ul li p:first-child{
+    color:#333;
+    font-size:16px;
+}
+.contact-list ul li span{
+    margin-left:15px;
+}
+.contact-list ul li:last-child{
+    border-bottom:none;
+}
+.contact-list .title{
+    text-align:center;
+    margin:42px 0;
+}
+.contact-list .title label{
+    width:280px;
+    margin-left:-140px;
+    background:none;
+}
+.contact-list .title label span{
+    padding:0 10px;
+    background:#f6f6f6;
+}
+
+

@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* 重置样式 start*/
+html {
+  height: auto;
+  background-color: #ededed;
+}
+
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td, footer, header, optgroup, select, em {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  /*去除webkit中块之间的间隙*/
+}
+
+body {
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 640px;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  background: #ededed;
+  -webkit-appearance: none;
+  /*解决Iphone下橱窗字体变大问题*/
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  /*禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*禁止链接长按弹出选项菜单*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img100 {
+  width: 100%;
+}
+
+input {
+  color: #666;
+}
+
+input, button, select, textarea {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+}
+
+input:focus {
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+/*.clearfix:after{content: "020";display: block; height: 0;clear: both;visibility: hidden;}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置样式 end*/
+.header i.gm-back {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0 10px;
+  height: 50px;
+  font-size: 22px;
+  color: #ff7e1d;
+  line-height: 45px;
+}
+
+.information > div.title {
+  padding: 15px;
+  color: #333333;
+  font-size: 16px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.information .user-info {
+  margin: 10px 10px 60px 10px;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+  border-radius: 4px;
+}
+
+.information .user-info em {
+  font-style: normal;
+}
+
+.information .user-info > div.title {
+  padding-left: 15px;
+  height: 45px;
+  line-height: 45px;
+  color: #333333;
+  font-size: 16px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.information .user-info > div.title span {
+  padding-left: 10px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.information .user-info > div.info-list {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.information .user-info > div.info-list:last-child {
+  border-bottom: none;
+}
+
+.information .user-info > div.info-list .no-info {
+  display: block;
+  color: #666666;
+  padding: 20px 15px;
+  font-size: 14px;
+}
+
+.information .user-info > div.info-list .no-info i.gm-next {
+  color: #999999;
+}
+
+.information .user-info > div.info-list .no-info span {
+  padding-left: 10px;
+  color: #999999;
+}
+
+.information .user-info > div.info-list .yes-info {
+  position: relative;
+  display: block;
+  color: #666666;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.information .user-info > div.info-list .yes-info .name {
+  display: block;
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.information .user-info > div.info-list .yes-info .identification {
+  color: #666666;
+  font-size: 14px;
+}
+
+.information .user-info > div.info-list .yes-info i.gm-next {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #999999;
+}
+
+.information .user-info > div.info-list .yes-info em {
+  padding-left: 10px;
+}
+
+.submit-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.submit-btn .submit button {
+  display: block;
+  width: 100%;
+  background-color: #ff7e1d;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+}
+
+.pay-success {
+  width: 100%;
+  height: 65px;
+  background-color: #fff0e6;
+  line-height: 65px;
+}
+
+.pay-success p {
+  margin: 0 auto;
+  width: 120px;
+  color: #ff7e1d;
+  overflow: hidden;
+}
+
+.pay-success i.gm-success-o {
+  float: left;
+  font-size: 35px;
+}
+
+.pay-success span {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+}

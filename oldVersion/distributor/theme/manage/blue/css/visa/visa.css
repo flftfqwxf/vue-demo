@@ -1,0 +1,91 @@
+/**
+ * description
+ * @author  songxinglin
+ * @version 1.0,2015��6��3��
+ */
+
+.gmui-header { box-shadow:1px 0 2px #cecece; }
+.gmui-header .gmui-back{ margin-left:25px; }
+.header .gmui-search span {
+	margin-right:25px;
+	display:inline-block;
+	background:url(../../images/common/header/home.png) no-repeat;
+	background-size:100% 100%;
+	
+}
+.pd{ padding-bottom:17px; }
+ .gmui-header .gmui-header-logo{ 		
+ 	font-size:22px;
+ }
+ .visa{  
+ 		margin:10px auto 0;
+ 		width:90%;      
+        padding: 0 15px 20px;
+        border-radius:5px;
+        background-color:#fff;
+    }
+    .title{
+        line-height:40px;
+        color:#4a4a4a; 
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .info-box{
+        cursor: pointer;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .info-box .info-title, .title{
+         font-size: 1.1rem;
+    }
+    .info-box .info-title{
+    	display:block;
+    	padding-left:6px;
+        line-height: 30px;
+        color: #6b6b6b;
+    }
+    .info-box .info-content{
+        font-size: 1rem;
+    }
+    .info-box .info-content p{
+        margin-bottom: 10px;
+    }
+    .info-box .info-title i, .title i.first-ico{        
+        display: inline-block;
+        width: 20px;
+        height: 23px;
+       background:url(../../images/xq_ico.png) no-repeat;
+       vertical-align: middle;
+    }
+    .info-box .info-title i.first-ico,.title i.first-ico{
+        margin-right: 7px;
+        background-position: 0 0;
+    }
+    .info-box .info-title i.end-ico{
+        float: right;
+        margin-top: 14px;
+        background-position: 0 -60px;
+    }
+    .info-box .info-title i.end-icoh{
+        float: right;
+        margin-top:6px;
+        background-position: 0 -38px;
+    }
+    .info-content{
+        margin-left: 5px;
+        color: #898989;
+    }
+    .info-box.on .info-content{
+        display:block;
+    }
+    .info-box .info-title i.end-ico{
+        float: right;
+        margin-top: 14px;
+        background-position: 0 -60px;
+    }
+    .hide{
+        display: none;
+    }
+    .info-box .info-title i.end-ico2{
+        float: right;
+        margin-top: 6px;
+        background-position: 0 -83px;
+    }

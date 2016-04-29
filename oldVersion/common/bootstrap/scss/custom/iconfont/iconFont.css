@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "gm";
+	src: url('./gm.eot');
+	src: url('./gm.eot?#iefix') format('eot'),
+		url('./gm.woff') format('woff'),
+		url('./gm.ttf') format('truetype'),
+		url('./gm.svg#gm') format('svg');
+}
+
+.gmIcon:before {
+	font-family: "gm";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.gmIcon-gm_red:before {
+	content: "\E001";
+}

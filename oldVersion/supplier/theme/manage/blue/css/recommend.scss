@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import "../../../../../common/bootstrap/scss/bootstrap/variables";
+@import "../../../../../common/bootstrap/scss/custom/custom-reset";
+
+$qyz-row:960px;
+$col-qyz-1:52px;
+$col-qyz-2:753px;
+$col-qyz-3:145px;
+$box-width:168px;
+$box-height:250px;
+$box-chlid-height:115px;
+$margin-right:20px;
+$border:1px solid #e5e5e5;
+$bg:#F6F6F6;
+
+
+.page-main-tourinput{
+    width:$qyz-row; background:#fff; border:$border; padding:20px 0; margin:20px auto;
+    div{
+        display:inline-block; vertical-align: top;
+    }
+    .qyz-row{
+        width:$qyz-row; font-size:0; 
+        .col-qyz-1{
+            width:$col-qyz-1; font-size:14px;
+            span{
+               display:inline-block; width:100%; text-align:center;  color:#666;
+            }
+            .qyz-title-1{
+                margin-top:76px;
+            }
+            .qyz-title-2{
+                margin-top:75px;
+            }
+        }
+        .col-qyz-2{
+            width:$col-qyz-2; border-right:1px dotted #EDEDED;
+            ul{
+                li{
+                    float:left;
+                }
+                .pub-box-list{
+                    width:$box-width; height:$box-height;  border:$border; margin-right:$margin-right;
+                    background:$bg; position:relative; margin-bottom:22px;
+                    .replace-img{
+                            position:absolute; width:100%; height:100%; background:rgba(0,0,0,.4); left:0; top:0; display:none;
+                           
+                    }
+                    img{
+                        width:100%;
+                    }
+                    a,button{
+                        position:absolute; left:50%; top:50%; margin-top:-15px; margin-left:-35px; 
+                    }
+                    a{
+                        padding:0;
+                    }
+                }
+            }
+
+            .moblie-img{
+                margin-top:-$margin-right; 
+                li{
+                    display:inline-block; width:$box-width;margin-right:$margin-right;vertical-align:top;
+                    .pub-box-list-1{height:$box-chlid-height;  margin-bottom:0; overflow:hidden; position:relative;
+                        
+                        button{
+                            padding: 0;width: 77px;
+                        }
+                        .uploadbeforeUp{
+                            margin-left:0;
+                        }
+                         .replace-img{
+                            position:absolute; width:100%; height:100%; background:rgba(0,0,0,.4); left:0; top:0; display:none;
+                            .btn{
+                                background:transparent; border:none;
+                            }
+                    }
+                        .btn-cover{
+                            z-index:10;height:30px; display:none;
+                        }
+                .webupload-t{
+                    .webuploader-container{
+                        background:#fff !important;
+                        color:#666 !important;
+                    }
+                    .uploaddoingUp {
+                        color:#666; border:1px solid #ddd5d9;
+                    }
+                }
+
+                .webupload{
+                   .webuploader-container{
+                    background:#ff9248 !important;
+                    color:#fff!important;
+                   } 
+                }
+
+                        .webuploader-container{
+                            height:27px !important
+                        }
+                        .webuploader-container div{
+                            height:27px !important; line-height:27px  !important;
+                        }
+                        .uploaddoingUp,.uploadsuccessUp{
+                            position:absolute;
+                            left:-38px; top:-1px; width:126px !important;background:#fff; border-radius:3px; height:30px;
+                        }
+                        .uploadsuccessUp{
+                            .uploadupBtn{
+                                padding-left:23px;
+                            }
+                        }
+                        .uploaddoingUp{
+                            .uploadupBtn{
+                                padding-left:23px; width:90px; 
+                            }
+                            .cancle{
+                               vertical-align:middle; 
+                            }
+                        }
+                        .uploadupBtn{
+                        width:73px; height:30px;  text-align:left; padding-left:15px; border:none !important;   border:none;
+                    }
+
+                    .not-img-btn{
+                        .uploadupBtn{
+                            background:#fff !important; color:#666 !important;
+                        }
+                    }
+
+                    .uploadupBtn:hover, .webuploader-container:hove, .webuploader-pick-hover{
+                        background:#ff9248 !important; color:#fff; border:none;
+                    }
+                        .webup-hidden{
+                            display:none;
+                        }
+                } 
+                   .input-product-number{
+                        display:block;
+                        padding:16px 0 6px; font-size:14px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+                    }
+                    .input-group{
+                        height:auto;
+                        .has-feedback{
+                            width:68%; display:inline-block; font-size:14px;
+                        }
+                        .input-group-btn{
+                            display:inline-block;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .col-qyz-3{
+            width:$col-qyz-3;
+            span{
+                font-size:12px; display:block; width:100%; text-align:center; 
+            }
+            p{
+                text-align:center; padding-top:19px;
+                img{
+                    width:106px; height:106px; border:none; margin-bottom:6px;
+                }
+
+                button{
+                    margin-top:16px;
+                }
+            }
+        }
+    }
+
+}

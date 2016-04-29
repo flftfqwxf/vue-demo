@@ -1,0 +1,6 @@
+.lightbox{
+	background:#FFFFFF;border:1px solid #ccc;line-height:25px; top:20%; left:20%;
+}
+.lightbox dt{
+	background:#f4f4f4; padding:5px;
+}

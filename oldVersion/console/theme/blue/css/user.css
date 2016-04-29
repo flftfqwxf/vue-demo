@@ -1,0 +1,14 @@
+@charset "utf-8";
+#empAdd{width:100%;height:100%;display:inline-block;font-size: 14px;color:#434343;}
+#empAdd .input_body{padding:35px 5%;width:90%;display:inline-block;background: #fff;}
+#empAdd .input_body .body_li{width:100%;display:inline-block;text-align: left;}
+#empAdd .input_body .body_li .input_li_left{float:left;display:inline-block;max-width:30%;min-width:46px;text-align: right;-moz-text-align-last:justify;text-align-last:justify;-webkit-text-align-last:justify; height:20px;padding:3px 0;line-height:20px;}
+#empAdd .input_body .body_li .input_li_right{float:left;display:inline-block;height:20px;padding:3px 0 3px 2%;line-height:20px;}
+#empAdd .input_body .body_li .input{height:16px;padding:2px;width:150px;border:1px #a0a0a0 solid; color:#434343;}
+#empAdd .auth_tree{padding:2px 0px 10px 0px;width:100%;display:inline-block;background: url("../images/common/bg.png") repeat;}
+#empAdd .auth_tree .tree_title{padding:0 5% 0 5%;height:25px;line-height:25px;text-align: left;background: #f9f9f9;}
+#empAdd .auth_tree .tree_body{padding-left:60px;max-height:200px;overflow-y: scroll;overflow-x: hidden;}
+#empAdd .emp_info_left{float:left;display:inline-block; width:420px;box-shadow:2px 0px 3px #ccc;-moz-box-shadow:2px 0px 3px #ccc;-webkit-box-shadow:2px 0px 3px #ccc;-o-box-shadow:2px 0px 3px #ccc;}
+#empAdd .emp_info_right{padding-left:10px; float:left;display:inline-block;width:350px;}
+#empAdd .emp_info_right .logs{padding:30px 2%; width:96%;display:inline-block;}
+#empAdd .emp_info_right .logs .log_li{line-height:20px;width:100%; font-size: 14px;text-align: left;}

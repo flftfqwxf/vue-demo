@@ -1,0 +1,394 @@
+@charset "utf-8";
+@import "../../../../../common/bootstrap/scss/custom/iconfontPlaceHolder";
+@import "../../../../../common/bootstrap/scss/bootstrap/variables";
+@import "../../../../../common/bootstrap/scss/bootstrap/mixins";
+
+.page-main-staff {
+  margin: 0;
+
+  .scope-toolbar-wrapper {
+    height: 60px;
+  }
+
+  .scope-toolbar {
+    padding: 10px 0;
+    text-align: center;
+    background: white;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .scope-content {
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .alert-info {
+    margin: 10px;
+  }
+
+  .emptylist-placeholder {
+    margin: 10px;
+    background: white;
+    color: $gray;
+    overflow: hidden;
+  }
+
+  .staff-list {
+    overflow: hidden;
+
+    li {
+      position: relative;
+      margin: 10px;
+      background: white;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    h4 {
+      font-weight: normal;
+      color: #313233;
+      margin-bottom: 10px;
+      line-height: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .staff-portrait {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      background: #edf0f2;
+      margin-bottom: 10px;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .staff-portrait .gm-icon {
+    font-size: 34px;
+    color: white;
+  }
+
+  .staff-list {
+    img {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .staff-phone {
+      color: #939699;
+      margin-bottom: 10px;
+      line-height: 100%;
+    }
+  }
+
+  .staff-toolbar {
+    text-align: center;
+    line-height: 100%;
+
+    .btn {
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      padding: 5px 12px;
+      line-height: 100%;
+    }
+  }
+}
+
+#staff-name-editbox {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+
+  .editbox-inner {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    top: 50%;
+    margin-top: -18px;
+  }
+
+  form {
+    position: relative;
+  }
+
+  .input-group {
+    display: block;
+    margin-right: 64px;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+//添加/修改员工权限
+
+.staff-permission-editbox {
+  min-width: 300px;
+  padding: 0;
+  display: inline-block;
+  box-sizing: content-box;
+  &.add-mode {
+    min-width: 525px;
+  }
+
+  .user-meta {
+    margin-bottom: 35px;
+    overflow: hidden;
+
+    .gm-user {
+      font-size: 40px;
+      border-radius: 50%;
+      background-color: #edf0f2;
+      display: inline-block;
+      vertical-align: middle;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      color: $white;;
+      text-align: center;
+    }
+
+    .user-info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .user-contact {
+      color: $gray-darker;
+    }
+
+    .user-jointime {
+      color: $gray;
+    }
+  }
+
+  .edit-note {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .input-group {
+      line-height: 100%;
+      font-size: 0;
+    .input-group-btn > .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    white-space: nowrap;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .control-label {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100px;
+      padding-right: $padding-large-horizontal;
+      padding-top: 0;
+      font-size: $font-size-base;
+      text-align: right;
+      margin: 0;
+      line-height: 105%;
+    }
+    &.form-group-top-vertical {
+      .control-label {
+        padding-top: 2px;
+      }
+      .control-label, .input-outer {
+        vertical-align: top
+      }
+    }
+
+    .form-control {
+      width: 240px;
+    }
+
+    .input-outer {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .btn-info {
+      //width: 60px;
+    }
+  }
+
+  .Validform_error {
+    background: transparent;
+    border-color: $input-border-error-color;
+    @include form-control-focus($input-border-error-color);
+  }
+
+  .Validform_checktip {
+    position: relative;
+    padding: 0 10px;
+    height: 36px;
+    line-height: 34px;
+    background-image: none;
+    border-radius: 4px;
+    &.Validform_wrong {
+      border: 1px solid #f9cdcd;
+      background-color: #fff0f0;
+      color: #e42519;
+    }
+    &.Validform_right {
+      border: 1px solid #b5eabb;
+      background-color: #e6ffeb;
+      color: #0ea865;
+    }
+
+  }
+  .J_longTips{width: 300px;white-space: normal;height: auto;margin: 0 0 0 105px;}
+
+  // tree reset
+  .fancytree-container {
+    overflow: visible;
+    border: none;
+    padding: 0 !important;
+
+    li:nth-child(n+2) {
+      margin-top: $padding-large-vertical;
+    }
+
+    span.fancytree-expander {
+      display: none;
+    }
+
+    span.fancytree-checkbox {
+      margin-left: 0;
+      margin-top: 0;
+      background-image: none;
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+        border: 1px solid $input-border-color;
+        vertical-align: middle;
+      }
+    }
+
+    li:hover span.fancytree-checkbox {
+      &:before {
+        border-width: 2px;
+        border-color: $brand-info;
+      }
+    }
+
+    .fancytree-selected .fancytree-checkbox {
+      &:before {
+        border-color: $brand-info;
+        background-color: $brand-info;
+      }
+      &:after {
+        content: '\e61a';
+        @include icon-font-base(17px);
+        position: absolute;
+        left: 1px;
+        color: #fff;
+        line-height: 1;
+      }
+    }
+
+    span.fancytree-title {
+      margin-left: 10px;
+      color: $gray-darker;
+      outline: none;
+      border: none;
+      border-radius: 0;
+      background-color: transparent !important;
+    }
+
+    span.fancytree-active,
+    span.fancytree-selected,
+    .fancytree-treefocus {
+      span.fancytree-title {
+        border: none;
+        background-image: none;
+        background-color: transparent !important;
+        color: $gray-darker;
+      }
+    }
+  }
+}
+
+// 新员工申请列表
+.staff-apply-list {
+  padding: 0;
+  display: inline-block;
+  min-width: 480px;
+  min-height: 80px;
+
+  .staff-list-item {
+    margin: 20px 0;
+    overflow: hidden;
+
+    .gm-user {
+      font-size: 40px;
+      border-radius: 50%;
+      background-color: #edf0f2;
+      display: inline-block;
+      vertical-align: middle;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      color: $white;;
+      text-align: center;
+    }
+
+    .apply-user, .apply-actions {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .apply-user {
+      margin: 0 50px 0 15px;
+    }
+
+    .user-contact,
+    .user-message {
+      color: $gray-darker;
+    }
+
+    .user-label {
+      color: $gray;
+    }
+
+    .user-jointime {
+      color: $gray;
+    }
+
+    .apply-actions {
+      .btn {
+        display: block;
+        line-height: 100%;
+        padding: $padding-small-vertical $padding-small-horizontal;
+        &:nth-child(2) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

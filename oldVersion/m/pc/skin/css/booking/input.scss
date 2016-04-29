@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import "../components/reset";
+@import "../components/header";
+@import "../components/footer";
+
+
+$inputWidth:979px;
+$inputHeight:40px;
+$setUpWidth:222px;
+$color:#999;
+$color2:#666;
+$border:1px solid #D8D8D8;
+$font-size:16px;
+$margin-top:10px;
+$titleColor:#333;
+$background:#FF7E1D;
+$titleBg:#F5F5F5;
+$setupBg:#EAEAEA;
+$color1:#666;
+.book_input_box{
+    width:1178px; border:$border; padding:30px 99px; margin:0 auto;margin-top:20px; box-sizing:border-box; margin-bottom:20px; background:#fff;
+    .subimt_form_box{
+        border:$border;  margin-top:42px;
+    }
+    .form-group-box{
+        padding:32px 32px; background:#fff;
+    }
+    .sub-box-title{
+       color:$titleColor; background:#f5f5f5; padding:10px 0 10px 16px; border-bottom:1px solid #D8D8D8;
+    }
+    .row{
+        margin-left:0;
+    }
+    label{
+        float:left; margin-top:4px; margin-right:19px; font-weight:100;  color:$color2;
+    }
+    .depart-time{
+        width:180px !important; height:30px; display:inline-block; position:relative;
+    } 
+    input{
+        width:180px !important; height:30px; border:$border; background-color:#fff !important;
+    }
+
+    .phone-number,.phone-name{
+        width:298px !important; padding-right:0;
+    }
+
+    textarea{
+        width:498px; border:$border; resize:none;  padding:7px 12px; border-radius:4px;
+    }
+    .form-group{
+        margin-bottom:16px;
+        span{
+             display:inline-block; padding-top:5px;
+        }
+        .form-control-feedback{
+            padding-top:0; color:#999
+        }
+
+    }
+    .add-number{
+       width:44px !important; float:left; text-align:center; background:#fff; border-radius:0;
+    }
+    input:disabled{
+        background:#fff;
+    }
+    .reduce,.increase{
+        float:left; display:inline-block; width:30px; height:30px; background:#F6F6F6; text-align:center; border:$border; cursor:pointer; 
+    }
+    .reduce{
+        border-right:none; border-top-left-radius:4px;border-bottom-left-radius:4px; color:$color;
+    }
+    .increase{
+        border-left:none;border-top-right-radius:4px;border-bottom-right-radius:4px; color:$color;
+    }
+    .book_input_setup{
+        li{
+            width:$setUpWidth; font-size:$font-size;color:$color;  text-align:center; display:inline-block;margin-right:25px;
+            a{
+              text-decoration:none; color:$color;display:block;width:100%; padding:8px 0; border-radius:38px; background:$setupBg;position: relative; 
+               &:after{
+                  display:block; width:32px; height:4px; position: absolute; top:18px;right:-32px;content:""; background:$setupBg;
+               } 
+            }
+            .active{
+                 background:$background;
+                 color:#fff;
+                 &:after{
+                  display:block; width:32px; height:4px; position: absolute; top:18px;right:-32px;content:""; background:$background;
+               }
+            }
+
+            .sectond{
+                background:$background;color:#fff; 
+            }
+           
+        }
+
+        li:nth-child(4){
+            a{
+                &:after{
+                  display:none;
+               } 
+            }
+        }
+        .last-rgiht{
+            margin-right:0;
+        }
+        
+    }
+    .prop-intention{
+        text-align:right;  margin-top:20px;
+        button{
+            width:296px; height:42px; background:$background;color:#fff; border:none; font-size:18px; font-weight:600; border:1px solid #E26D1E;border-radius:5px;
+        }
+        p{
+            color:$background; padding-top:10px;
+        }
+    }
+    table{
+        tr{
+
+        }
+        td{
+            padding:0px 10px 16px 10px;
+            em{
+                font-weight:600; font-style:normal; font-size:$font-size; color:$background;
+            }
+        }
+         .price_start{
+                font-size:14px;   color:$background;
+                span{
+                    display:inline-block; padding:5px;  color:$color; font-weight:500; 
+                }
+            }
+
+            .extraPrice{
+                color:$color;
+                em{
+                    color:$color;
+                }
+            }
+         .first-td{
+            padding:0;
+            padding-bottom:16px;
+         }
+    }
+
+
+
+    .submit-success{
+        padding:67px 0 103px; border:$border; text-align:center; background:#fff; margin-top:45px;
+        p span{
+            color:$color1; font-size:16px; font-weight:600; display:block; margin-top:10px;
+        }
+
+        p span+span{
+            color:$color; font-size:14px; font-weight:200; margin-top:3px;
+        }
+        .success-icon{
+            font-size:60px; color:$background;
+        }
+
+    }
+    .callback-index{
+        display:block; width:296px; height:42px; border:$border; border-radius:4px; line-height:42px;  color:$color; text-decoration:none; font-size:$font-size; text-align:center; margin:20px auto; margin-bottom:0;
+    }
+
+}
+
+.prorFaild span{
+    opacity:0;
+}
+
+
+
+
+
+
+
+

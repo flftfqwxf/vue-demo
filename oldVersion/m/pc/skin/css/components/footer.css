@@ -1,0 +1,139 @@
+/* contact-box start */
+.contact-box {
+  background-color: #666666;
+}
+
+.contact {
+  width: 1180px;
+  height: 238px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contact > div {
+  margin-top: 20px;
+  float: left;
+  width: 33.333333%;
+}
+
+.contact > div .title {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.contact .pic {
+  background-image: url(../../images/index-title.png);
+  width: 197px;
+  height: 20px;
+}
+
+.contact .one .pic {
+  background-position: 0 74px;
+}
+
+.contact .two .pic {
+  background-position: 0 55px;
+}
+
+.contact .three .pic {
+  background-position: 0 36px;
+}
+
+.contact .four .pic {
+  background-position: 0 18px;
+}
+
+.contact .one ul {
+  max-height: 145px;
+  overflow: hidden;
+}
+
+.contact .one li {
+  margin-top: 10px;
+}
+
+.contact .one li:first-child {
+  margin-top: 0px;
+}
+
+.contact .one li .name {
+  display: inline-block;
+  font-size: 14px;
+  min-width: 70px;
+  margin-right: 15px;
+  line-height: 1;
+}
+
+.contact .one li .telephone {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.contact .two .title {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contact .two .code {
+  margin-right: 20px;
+  float: left;
+}
+
+.contact .two .code > p {
+  margin-top: 10px;
+  color: #999999;
+  text-align: center;
+}
+
+.contact .two .code img {
+  width: 120px;
+  height: 120px;
+}
+
+.contact .name {
+  color: #cccccc;
+}
+
+.contact .txt {
+  color: #ffffff;
+}
+
+.contact .address {
+  margin-top: 25px;
+  padding-right: 20px;
+}
+
+.contact .four .code-pic img {
+  width: 120px;
+  height: 120px;
+}
+
+/* contact-box end */
+/* foot-box start */
+.foot-box {
+  background-color: #333333;
+}
+
+.foot {
+  width: 1180px;
+  height: 48px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999999;
+  line-height: 48px;
+}
+
+.foot .skill {
+  float: left;
+}
+
+.foot .copyright {
+  float: right;
+  font-size: 12px;
+}
+
+/* foot-box end */

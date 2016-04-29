@@ -1,0 +1,16 @@
+.order_info{width:520px;margin:20px;}
+.text_grey{color:#939699;}
+.info_tip {font-size:18px;color:#333;padding:10px 0px 5px 0px;display: inline-block;}
+.order_info table td span{font-size:14px;}
+.lang_text{width:200px;}
+.lang_text span{max-width:220px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;display: inline-block;}
+.lang_text a{display: inline-block;}
+.pro_info{width:100%;border-bottom:2px solid #e0e1e2;padding:10px 0px;}
+.pro_img{width:140px;height:100px;}
+.pro{margin:25px 10px;width:360px;}
+.pro_name{font-size:16px!important;color:#333!important;display: -webkit-box;-webkit-box-orient: vertical;height:40px;width:100%;text-overflow:ellipsis;overflow:hidden;-webkit-line-clamp: 2;word-break: break-all;}
+.text-price{font-size:18px;color:#FF4848;}
+.text-danger{color:#FF4848;font-size:16px;}
+.emptylist-placeholder {  text-align: center;  padding: 100px 0 90px; margin: 0 0 0;font-size:16px;}
+.sup_order{font-size:12px;border:1px solid #ccc;padding:2px 4px;}
+

@@ -1,0 +1,41 @@
+@charset "utf-8";
+.clearfix:before,.clearfix:after{ content:"";display:table; }
+.clearfix:after{ clear:both; }
+.clearfix{ *zoom:1; }
+body{padding:0;}
+.gmui-page .main{padding:0;}
+.main{width:100%;background:#f2f2f2;padding-bottom:4px;padding-top:1px;}
+.contactBody{width:100%;padding:10px;box-sizing:border-box;min-width:290px;height:auto;}
+.main .all_contact{ width:100%;margin:0px auto;height:auto; }
+.contact-title{width:100%;min-height:36px;*height:36px;padding:3px 0px;font-size:11px;line-height:18px;border-bottom:1px solid lightgrey;text-align:center;font-family:"微软雅黑"}
+.contact-title span{font-size:11px;color:#6599ff;}
+.main .all_contact .contact{width:100%;border-top:1px solid lightgrey;margin-bottom:20px; }
+.main .all_contact .contact:last-child{margin:0px;}
+.main .all_contact .contact:nth-child(2){border-top:none;}
+.main .all_contact .contact a{text-decoration: underline;color:#4a4a4a;}
+.main .all_contact .contact li{width:90%;margin:0px auto;border-bottom:1px dashed lightgrey;height:44px;line-height:44px;font-size:12px;}
+.main .all_contact .contact li:last-child{border-bottom:none;}
+.main .all_contact .contact li i{padding:10px 18px;margin-right:9px;}
+
+.conten-item{ margin-top: 10px; background:white; border:1px solid #E5E5E5;overflow: hidden; border-radius: 4px; }
+.conten-l{ margin: 0 10px 0 10px;text-align:center; }
+.conten-l i{ font-size:70px; color:#E5E5E5; }
+.conten-dl{ display:inline-block; margin-top:23px; font-size: 28px;width:calc(100% - 90px);width:-webkit-calc(100% - 90px);width:-o-calc(100% - 90px);width:-ms-calc(100% - 90px); }
+.conten-dl dt{ font-size: 17px; }
+.conten-dl dd{ color:#686868; }
+
+.conten-list{ margin-top:10px; }
+.conten-list li{ height: 45px; line-height: 45px; border-top: 1px solid #E5E5E5; }
+.conten-list li a{ display:inline-block; text-align: center; color: #999999;width:100%;}
+.conten-list li .fl .gmIcon{ margin: 0 30px 0 30px; font-size: 26px; }
+.send-number{ margin-right:10px; float: right; font-size: 12px;line-height:51px; }
+.tel-s{height: 45px; line-height: 40px; font-size:16px; color: #686868; }
+.gm-question{ font-size:80px; color:#ccc; }
+.no-result-body{ background-color:inherit; }
+.header .return_oldHome{ background: none; }
+.header .return_block{ line-height: 45px; }
+.header .gmIcon.gm-back{line-height: 50px;}
+.header .return_back{line-height:45px;}
+.gm-next{ display:inline-block; margin-top: -1px; color:#c7c7c7; font-size:12px; }
+.no-result p{ text-align: center; }
+.no-result p:last-child{ margin-top: 10px; color:#666; }

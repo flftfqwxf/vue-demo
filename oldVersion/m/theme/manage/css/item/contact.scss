@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import '../theme.scss';
+
+
+.header i.gm-back{display:inline-block;cursor:pointer;position:absolute;left:0px;top:0px;padding:0 10px;height:50px;font-size:22px;color:#ff7e1d;line-height:45px;}
+.contact{margin-top:10px;}
+.contact .title{margin-left:10px;font-size:16px;color:#999999;}
+.contact .con-list li,.contact>div.txt{margin:10px;padding-left:10px;padding-right:10px;background-color:#ffffff;border-radius:4px;height:45px;line-height:45px;border:solid 1px #ededed;}
+.contact .con-list li p{float:left;}
+.contact .con-list li p.tel{float:right;}
+.contact .con-list li a{color:#666666;}
+.contact .con-list li .contatc_name{max-width:60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.contact .con-list li i.gm-telephone{float:left;width:24px;height:45px;margin-right:10px;color:#ff7e1d;font-size:24px;}

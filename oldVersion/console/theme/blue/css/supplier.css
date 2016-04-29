@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.theme_but.on,.theme_but:hover{background: #356E96 ;}
+
+
+#empAdd{margin-bottom:5px;width:100%;height:auto;display:inline-block;font-size: 14px;color:#434343;}
+/*导航*/
+#empAdd .view_nav{background:white;padding-top:10px; }
+#empAdd .view_nav ul{width:242px;margin:0 auto;height: 30px;border: 1px solid #ccc;border-radius:3px }
+#empAdd .view_nav ul li{list-style: none;display: inline-block;width:80px;height:30px;line-height:30px;text-align: center;float: left;}
+#empAdd .view_nav ul li:nth-child(2){border-left:1px solid #ccc;border-right:1px solid #ccc; }
+.select{background: #4595f1;color: white}
+#empAdd .view_nav ul li:hover{cursor: pointer;}
+/*导航end*/
+#empAdd .input_body{padding:20px 3%;width:94%;display:inline-block;background: #fff;}
+#empAdd .input_body .body_li{width:100%;display:inline-block;text-align: left;min-height: 35px;line-height: 35px;}
+#empAdd .input_body .body_li .input_li_left{float:left;min-width:80px;width:15%;text-align: right;/*-moz-text-align-last:justify;text-align-last:justify;-webkit-text-align-last:justify; */padding:3px 0;line-height:30px;text-align: right;display:inline-block;}
+#empAdd .input_body .body_li .input_li_right{float:left;padding:3px 0 3px 2%;min-height:30px;max-width:460px; line-height:30px;word-wrap:break-word;word-break:break-all;display:inline-block;}
+#empAdd .input_body .body_li .input{height:16px;padding:2px;width:150px;border:1px #a0a0a0 solid; color:#434343;}
+#empAdd .auth_tree{padding:2px 0px 10px 0px;width:100%;display:inline-block;background: url("../images/common/bg.png") repeat;}
+#empAdd .auth_tree .tree_title{padding:0 5% 0 5%;height:25px;line-height:25px;text-align: left;background: #f9f9f9;}
+#empAdd .auth_tree .tree_body{padding-left:60px;max-height:200px;overflow-y: scroll;overflow-x: hidden;}
+#empAdd .emp_info_left{float:left;display:inline-block; width:270px;box-shadow:2px 0px 3px #ccc;-moz-box-shadow:2px 0px 3px #ccc;-webkit-box-shadow:2px 0px 3px #ccc;-o-box-shadow:2px 0px 3px #ccc;}
+#empAdd .emp_info_right{padding-left:10px; float:left;display:inline-block;width:350px;}
+#empAdd .emp_info_right .logs{padding:30px 2%; width:96%;display:inline-block;}
+#empAdd .emp_info_right .logs .log_li{line-height:20px;width:100%; font-size: 14px;text-align: left;}
+.belongUpload{float:left;display:inline-block;position: relative;z-index: 1;margin:0 10px;height:30px;overflow: hidden;}
+.belongUpload .belongUploadBut{cursor: pointer;}
+.theme_input{padding:4px 4px 4px 6px; width:120px;height:20px;border:1px solid #eee;-webkit-box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.3);box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.3);-o-box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.3);font-size: 14px;}
+
+.tour_select{max-width:100%;display:inline-block;}
+.tour_select .tourist_li{padding:0 3px;margin:3px 1px;background: #fff;color:#4b4b4b;line-height:22px;display:inline-block;}
+.tour_select .tour_select_left{float:left;margin-left:10px; width:210px;display:inline-block;min-height:10px;}
+.tour_select .tour_select_left p{width:100%;display:inline-block;}
+.search-select{height:25px;line-height:25px;}
+.search-select option{height:16px;padding:5px 0 5px 3px;}
+.max-address,.add_qual_max_tips{color:#d86c6f;display:none;}
+.belongLis{display:inline-block;}
+.travelagency-set{float:left;margin-right:10px;display:inline-block;}
+.travelagency-set .select-input{float:left;display:inline-block;position: relative;}
+.agencySelect{float:left;display:inline-block;}
+.belong_img{cursor: pointer;}
+.showArea{padding:0 10px;height:28px;line-height:28px;border:1px #ccc solid; border-radius:5px;display:inline-block;}
+.Validform_checktip{height:auto;display:inline-block;}
+#address-list>div{display:inline-block;width:100%;}
+.belongClose{margin-left:10px;float:left; margin-top:2px;line-height:26px;height:26px;width:26px;background: #ff4400;border-radius:50%;text-align: center;display:inline-block;color:#fff;font-size: 16px;cursor: pointer;}
+.address-input{float:left;display:inline-block;}
+.table_p{height:20px;line-height:20px;width:100%;overflow: hidden;}
+/*回访记录*/
+.return_record{display:none}
+.return_record .return_tips{letter-spacing: -1px;padding-bottom: 10px;}
+.return_record .text_one{width: 580px;max-width: 580px;height: 80px;padding:5px;}
+.return_record .btn_one{text-align: right;padding: 10px 0px;border-bottom:1px solid #ccc; }
+.return_record .btn_one button{background:#4595f1;color: white;width:100px;height: 30px;line-height: 30px;border: none;outline: none;font-size: 14px;border-radius:3px}
+.return_record .btn_one button:hover{background:#356E96;cursor: pointer;}
+.return_record .return_count{padding: 10px 0px;}
+.return_record .return_selec{width:592px;height:75px}
+.return_record .return_selec select{display: block;width:100px;height:30px}
+.return_record .return_selec .selec{float: left;width: 100px}
+.return_record .return_selec select:first-child{margin-bottom:5px}
+.return_record .return_selec textarea{float: left;width:370px;max-width: 370px;height: 53px;margin-left:5px}
+.return_record .return_selec button{float: right;background:#4595f1;color: white;width:100px;height: 65px;line-height: 30px;border: none;outline: none;font-size: 14px;border-radius:3px}
+.return_record .return_selec button:hover{background:#356E96;cursor: pointer;}
+.return_record .return_list{width:592px;}
+.return_record .return_list .list_detail{width:592px;padding:10px 0px;}
+.return_record .list_detail .time{display:inline-block;float: left}
+.return_record .list_detail div{display:inline-block;width:380px;}
+.return_record .list_detail .del_information{color:red;cursor: pointer;}
+.pad{padding-bottom:0px !important;}
+/*签约信息*/
+.sign_record{display:none}
+.sign_record .record_items{display:inline-block;width:70px;height:30px;line-height:30px;text-align:right;}
+.sign_record .record_pad{padding-bottom:10px;position: relative;}
+.sign_record .record_input{height:30px;width:125px}
+.sign_record .mar_lef{margin-left:47px}
+.sign_record .mar_left{margin-left:33px}
+.sign_record .record_selec{height:34px;width:129px;margin-left:-5px}
+.sign_record .record_money{width:200px;height: 30px}
+.sign_record .record_compact input{width:230px;height:30px}
+.sign_record .record_compact .recordUp{display:inline-block;position: relative;z-index: 1;margin:0 10px;height:33px;}
+.sign_record .record_compact .record_upbtn{height:32px;line-height:32px;}
+.record_tips{display:inline-block;width:70px;height:30px;text-align:right;float:left;}
+.sign_record .record_remark textarea{height:80px;width:506px;max-width:506px;padding:5px;}
+.sign_record .record_btn{padding:20px 0px;}
+.sign_record .record_btn button{background:#4595f1;color: white;width:100px;height: 30px;line-height: 30px;border: none;outline: none;font-size: 14px;border-radius:3px}
+.sign_record .record_btn button:hover{cursor:pointer;background:#356E96;}
+/*日历*/
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }  
+.ui-timepicker-div dl { text-align: left; }  
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }  
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }  
+.ui-timepicker-div td { font-size: 90%; }  
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; } 
+#pagination{padding-top:40px;text-align: center;}
+.paginationjs{display: inline-block;}

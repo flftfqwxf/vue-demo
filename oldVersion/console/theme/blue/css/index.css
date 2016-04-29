@@ -1,0 +1,51 @@
+@charset "utf-8";
+/**
+* 首页css
+* @author wuxing
+* @date 2015-02-28
+*/
+/*重置公共样式*/
+#rightBody.right_body_ct{background: #f2f2f2;}
+
+/*公共*/
+.bg_green{background: #a0d468;}
+.bg_jacinth{background: #fb6e52;}
+.bg_orange{background: #e6bd58;}
+.bg_skyblue{background: #2dc3e8;}
+.bg_blue{background: #4595f1;}
+.r_border{border-right: 1px solid #DADADA;}
+.r2_border{border-right: 2px solid #DADADA;}
+/*首页*/
+#rightBody .index_main{min-height:580px;padding:20px;border-right: 1px solid #DADADA;}
+#rightBody .index_main .w910{width: 910px;}
+#rightBody .index_main .w908{width: 908px;}
+#rightBody .index_main .w453{width: 453px;}
+#rightBody .index_main .w447{width: 453px;}
+#rightBody .index_main .w225{width: 226px;}
+#rightBody .index_main .w216{width: 216px;}
+#rightBody .index_main .w120{width: 120px;}
+#rightBody .index_main .w150{width: 150px;}
+#rightBody .index_main .h30{height: 30px;line-height: 30px;}
+#rightBody .index_main .h35{height: 35px;line-height: 35px;}
+#rightBody .index_main .h40{height: 40px;line-height: 40px;}
+#rightBody .index_main .h45{height: 45px;line-height: 45px;}
+#rightBody .index_main .h150{height: 150px;}
+#rightBody .index_main .h200{height: 200px;}
+#rightBody .index_main .mleft15{margin-left: 15px;}
+#rightBody .index_main .mleft131{margin-left:131px;}
+#rightBody .index_main [class*="_statistics"]{display:inline-block;padding-bottom:10px;}
+#rightBody .index_main .index_box{display:inline-block;overflow:hidden;float:left;margin-bottom: 25px;background-color: #fff;}
+#rightBody .index_main .index_box .index_box_title{text-align:center; color:#fff; font-size:18px;}
+#rightBody .index_main .index_box .index_box_content{border: 1px solid #DADADA; border-top: none;text-align:center;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_data,#rightBody .index_main .index_box .index_box_content .index_box_content_text{display:-moz-box;display:-webkit-box;display:box;-moz-box-pack: center;-webkit-box-pack: center;-box-pack: center;width: 100%;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_data{height: 50px;line-height: 50px; font-size:18px;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_text{height: 30px;line-height: 30px; font-size:14px;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_data li,#rightBody .index_main .index_box .index_box_content .index_box_content_text li{width:65px;text-align: center; overflow:hidden;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_data li{margin-top: 10px;height:40px;line-height: 40px;}
+#rightBody .index_main .index_box .index_box_content .index_box_content_text li{height:30px;line-height: 30px;padding:0px 0px 5px 0px;}
+#rightBody .index_main .index_box .index_box_content .index_btn_detail{display:inline-block;margin:10px auto;font-size:16px;color:#fff;text-align:center;}
+
+.plan{font-size: 16px;margin-top:5px;color:#6e6e6e;}
+.plan .plan-head{height: 40px;line-height: 40px;text-align: center;}
+.plan li {float:left;height: 30px;line-height: 30px; text-align: left;overflow: hidden;text-indent: 1em;}
+.plan-number{font-size:12px;font-weight:bold;}

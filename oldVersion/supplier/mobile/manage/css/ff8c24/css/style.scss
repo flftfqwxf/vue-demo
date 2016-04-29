@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import '../../theme.scss';
+.gm-date,.gm-light,.gm-card-logo,.gm-file-logo,.gm-dynamic{font-size:24px!important;display: inline-block;margin-top: -2px;}
+body .dest_other .dest_other_li .dest_other_li_title,
+body .product_spot_show .showButton{color:$themeDeep;}
+
+body .header .return_back .gmIcon,
+body .header .return_home .gmIcon{color:$themeDeep;}
+/*列表*/
+body .lmTopFilter li.current{color:$themeDeep;box-sizing: border-box;padding-bottom:25px;border-right:1px solid $border_box;border-left:1px solid $border_box;}
+body .lmTopFilter li.no_current{border-bottom:none;padding:13px 0x;border-bottom:1px solid $border_box;}
+body .lmTopFilter li.current *{color:$themeDeep;}
+body .header .search-title{color:$themeDeep;}
+
+body .no-result .backBtn{color:$font_title;background:$font_white;padding: 4px 20px;border-radius: 4px;border:1px solid $border_dashed;}
+body #lmTopFilters .outer-box .btn, body .header .search .box .searchBtn{background: $themeDeep;}
+body .lmTopFilterDrop .oneList li.current{color:$themeDeep;background:$font_white;}
+body #lmTopFilters .outer-box-content input{border:1px $border_box solid;-webkit-appearance: none;border-radius:4px;}
+body #lmTopFilters .outer-box-content .btn{border:1px $themeDeep solid;-webkit-appearance: none;}
+body .lmTopFilter li.current:not(.disabled):after{border-color: $font_white $themeDeep $themeDeep $font_white;}
+/*搜索*/
+
+
+/*产品详情*/
+body .other_title .other_title_li.on{color:$themeDeep;border-color:$themeDeep;}
+body .product_spot{height: 30px;line-height: 30px;}
+body .day_body .day_body_line{border-left:1px dashed $border_dashed;box-sizing:border-box;}
+body .day_body .day_title{color: $themeDeep;}
+body .day_body .end_day{color:$themeDeep;font-size:$size_sTitle;}
+body .itembg .gmIcon{z-index:20;background:$font_white;font-size:18px;}
+
+body .day_body .day_info_li .hotel .hotel_li .hotel_li_name{color:$themeDeep;}
+
+/*动感行程*/
+body .dynamic{position:relative; height:30px;line-height:30px;background-size:15px 15px;overflow: hidden;cursor: pointer;}
+body .dynamic .icon-next{position: absolute;right:0px;top:0px;width:15px;height:30px;}
+/*附件*/
+body .fileup .upfile_number{color:$font_desc;}
+
+/*登录*/
+body .main .login-group .login-btn{background-color:$themeDeep;}
+body .main .done .know{background-color:$themeDeep;width:100%;box-sizing:border-box;}
+body .main .done .login-user{color:$themeDeep;}
+body .main .done input[type=checkbox]:checked + label:after{color:$themeDeep;font-size:22px;line-height:16px;border:none;content:"\e602";position: absolute;left:-2px;top:0px;}
+
+/*联系客服*/
+.contact .telPhone{background:$themeDeep;}
+body .more_but_parent{position: relative;overflow: hidden;cursor: pointer;}
+body .more_but_parent .mores {position: absolute;right:0px;top:0px;padding-right:15px;}
+body .supplier-btn{background: $themeDeep;}

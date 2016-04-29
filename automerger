@@ -1,0 +1,4 @@
+#!/bin/sh
+cd  E:/Auto-Merger/src
+echo commit-hook trigered  >> E:/Auto-Merger/log/automerger.log
+python E:/Auto-Merger/src/postcommit.py $1 $2

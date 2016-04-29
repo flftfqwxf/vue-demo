@@ -1,0 +1,48 @@
+<html>
+    <head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="format-detection" content="telephone=no"><!--强制停止自动识别数字为电话号码-->
+    <title>系统维护中</title>
+    <link rel="stylesheet" href="http://static.gmmtour.com/m/theme/common/css/iconfont.css">
+     <style>
+     html,body{position: absolute;height:100%;width:100%;margin:0;font-family: "微软雅黑";font-size:14px;}
+     .gmui-page{height:100%;position: absolute;width:100%;}
+     .main{height:calc(100% - 55px);height:-webkit-calc(100% - 55px);height:-o-calc(100% - 55px);height:-ms-calc(100% - 55px);position: absolute;width:100%;}
+    /*旧版的返回和home*/
+    .header{min-height:50px;line-height:50px;background-color:#fff;width:100%;text-align: center;position: relative;border-bottom:1px solid #d8d8d8;}
+    .header .return_block{position: absolute;left:2px;top:0;height:45px;cursor: pointer;line-height:50px;}
+    /*end*/
+    .main{width:100%;min-width:320px;background:#F5F5F5;padding-bottom:5px;height}
+    .warning{width:96%;min-width:318px;margin:0px auto;background:white;height:calc(100% - 50px);padding-top:60px;box-sizing:border-box;margin-top:10px;border:1px solid lightgrey;}
+    .warning div{text-align:center;color:grey;width:220px;margin:0px auto;}
+    .warning img{width:140px;height:120px;}
+    .backBtn{width:153px;height:28px;font-size:12px;text-align:center;border-radius:4px;background:#6599ff;color:white;margin:0px auto;}
+    .gmIcon{color:#ff8c24;font-size:18px;}
+    </style>
+</head>
+<body>
+<section class="gmui-page">
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="return_block" onclick="history.back();"><i class="gmIcon gm-back"></i></div>
+            <span class="page_name theme_color"></span>
+        </div>
+    </header>   
+    <div class="main">
+        <div class="warning">
+                <div><img alt="" src="/m/500/500.png"></div>
+                <div style="margin-bottom:22px;margin-top:20px;font-size:15px;">系统维护中，请稍后再试</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

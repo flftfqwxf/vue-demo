@@ -1,0 +1,10 @@
+@charset "utf-8";
+/**
+* 行政区划css
+* @author wuxing
+* @date 2015-03-02
+*/
+
+#rightBody .ct_info {margin-left:10px;}
+#rightBody .ct_info .tree_body{ max-height: 780px;overflow-x: hidden;overflow-y: scroll;}
+#rightBody .ct_info .tree_body ul{border:none;}

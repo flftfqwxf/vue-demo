@@ -1,0 +1,46 @@
+.order_info{width:520px;margin:20px;}
+.text_grey{color:#939699;}
+.info_tip {font-size:18px;color:#333;padding:10px 0px 5px 0px;display: inline-block;}
+.order_info table td span{font-size:14px;}
+.lang_text{width:200px;}
+.lang_text span{max-width:220px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;display: inline-block;}
+.lang_text a{display: inline-block;}
+.pro_info{width:100%;border-bottom:2px solid #e0e1e2;padding:10px 0px;}
+.pro_img{width:140px;height:100px;}
+.pro{margin:25px 10px;width:360px;}
+.pro_name{font-size:16px!important;color:#333!important;display: -webkit-box;-webkit-box-orient: vertical;height:40px;width:100%;text-overflow:ellipsis;overflow:hidden;-webkit-line-clamp: 2;word-break: break-all;}
+.text-price{font-size:18px;color:#FF4848;}
+.text-danger{color:#FF4848;font-size:16px;}
+.emptylist-placeholder {  text-align: center;  padding: 100px 0 90px; margin: 0 0 0;font-size:16px;}
+.sup_order{font-size:12px;border:1px solid #ccc;padding:2px 4px;}
+
+.clear{clear: both;padding: 15px 0px;}
+.search_select{
+	margin-right: 5px;
+    padding: 6px 2px 5px 6px;
+    width: 110px;
+    height: 28px;
+    border: 1px solid #eee;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.mar_lef{margin-left:20px}
+.theme_but{width:100px;padding: 0px;text-align: center;background: #45aaf1;border-radius:3px}
+.down_excel{background:transparent;border:1px solid #777;color: black}
+.btn_info{background:#45aaf1;outline: none;padding:2px 6px;color: white !important;border-radius:3px}
+.btn_info:hover{cursor: pointer;}
+.btn_default{background-color:transparent;color:#333 !important;border:1px solid #333;}
+.father_d{overflow:hidden;width:520px;max-width:520px;}
+.float_L{float:left;}
+.remark_text{width:91%;padding:5px;}
+.padd_up{padding:8px 0px;}
+.pos_relative{position: relative;top:2px;}
+.margin_lef{margin-left:59px;}
+.input_wh{width:160px;height: 20px;}
+.comment_span{display:inline-block;width: 59px;text-align:right;}
+.refund_text{width:86%;padding:5px;}
+.color_info{color: #45aaf1 !important;}
+.account_box{width:520px;max-width:520px;height: 100px;font-size: 14px;}
+#rightBody .ct_info{border-right: none}
+#query_input{width:160px;height:25px;padding-left:3px;margin-top:10px;}

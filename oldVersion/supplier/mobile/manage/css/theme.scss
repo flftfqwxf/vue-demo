@@ -1,0 +1,70 @@
+@charset "utf-8";
+//字体类型
+$family: 'Microsoft YaHei';
+//辅助性描述字体大小
+$size_desc: 12px !default;
+//正文字体
+$size_cont: 14px !default;
+//一般标题字体
+$size_sTitle: 16px !default;
+//较大标题
+$size_mTitle: 18px !default;
+//大字体
+$size_bfont: 20px !default;
+//超大字体
+$size_lfont: 24px !default;
+
+
+//辅助性描述字体颜色
+$font_desc: #ccc;
+//文本内容颜色
+$font_content: #999 !default;
+//一般标题颜色
+$font_title: #666 !default;
+//深色字体颜色
+$font_deep: #333 !default;
+//白色字体
+$font_white: #fff !default;
+
+
+//灰色字体
+$color_desc: #ccc;
+
+
+//页面背景色
+$theme_bg: #f2f2f2 !default;
+//主题色
+$theme: #ff9d3b !default;
+//主题色
+$themeDeep: #ff7e1d !default;
+
+//辅助色
+$aid: #78a7ff !default;
+//深色辅助色
+$aidDeep: #4782e2 !default;
+
+//点缀色
+$ornament: #ff4848 !default;
+//深色点缀色
+$ornamentDeep: #ef2626 !default;
+
+//button色
+$button:#4d5054 !default;
+//深色button色
+$buttonDeep: #303235 !default;
+
+
+//输入框颜色
+$border_text: #ccc !default;
+//实线框
+$border_box: #e5e5e5 !default;
+//虚线框
+$border_dashed: #d8d8d8 !default;
+
+//自由行标签颜色
+$free: #ff4848 !default;
+//跟团游标签颜色
+$team: #ff7e1d !default;
+//游轮行标签颜色
+$ship: #78a7ff !default;
+

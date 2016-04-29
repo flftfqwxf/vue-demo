@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "../components/reset";
+@import "../components/header";
+@import "../components/footer";
+
+html,body{height:100%;background-color:#f6f6f6;}
+section{margin-top:-82px;margin-bottom:-60px;padding-top:81px;padding-bottom:60px;height:100%;}
+.pay{margin:0 auto;margin-top:40px;margin-bottom:40px;width:1180px;height:460px;border:solid 1px #d8d8d8;background-color:#ffffff;}
+.pay .time-txt{padding:20px 0 20px 30px;border-bottom:solid 1px #eaeaea;}
+.pay .time-txt i{font-size:18px;color:#ff7e1d;}
+.pay .time-txt span{color:#333;font-size:16px;font-weight:700;}
+.pay .time-txt .time{color:#ff7e1d;}
+.pay .time-txt .txt{padding-left:10px;color:#999;font-size:14px;font-weight:normal;}
+
+
+/* 订单信息 */
+.pay .pro-info{padding:20px 0 20px 30px;border-bottom:solid 1px #eaeaea;}
+.pay .pro-info a{color:#333;}
+.pay .pro-info a:hover{color:#ff7e1d;text-decoration:none;}
+.pay .pro-info li{margin-bottom:10px;}
+.pay .pro-info li:last-child{margin-bottom:0px;}
+.pay .pro-info li.price span{color:#ff7e1d;}
+.pay .pro-info li.price span.num{font-size:22px;}
+
+.pay .pay-type{padding:20px 0 20px 30px;overflow:hidden;}
+.pay .pay-type a{float:left;margin-right:20px;cursor:pointer;width:208px;height:72px;background-size:166px 48px;border:solid 1px #eaeaea;-webkit-transition: 0s;-o-transition: 0s;transition: 0s;border-radius:4px;background-position:center;background-repeat:no-repeat;}
+.pay .pay-type .weixin{background-image:url(../../images/weixin.svg);}
+.pay .pay-type .alipay{background-image:url(../../images/alipay.svg);}
+.pay .pay-type .weixin:hover{background-image:url(../../images/weixin_hover.svg);background-color:#00c901;border:solid 1px #00c901;}
+.pay .pay-type .alipay:hover{background-image:url(../../images/alipay_hover.svg);background-color:#00aaee;border:solid 1px #00aaee;}
+.pay .pay-type .offline{background-image:url(../../images/offline.png);}
+.pay .pay-type .offline:hover{background-image:url(../../images/offline_hover.png);background-color:#f98282;border:solid 1px #f98282;}

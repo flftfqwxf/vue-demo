@@ -1,0 +1,228 @@
+/** Base container **/
+.eCalendar-container {
+	display: inline-block;zoom:1;*display:inline;
+	background:#fff;
+	padding:0;
+	margin:5px;
+	font-size:12px;
+	font-family:'Helvetica Neue', 'Helvetica';
+	cursor:default;
+	position:relative;
+	border:solid 1px #eaeaea;
+}
+
+/** Popup Container for Input **/
+.eCalendar-container.e-floating {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	margin:5px 0;
+}
+
+/** Input's popup close button **/
+.eCalendar-container .e-btn-close {
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	width:16px;
+	height:16px;
+	background:white;
+	border:2px solid #ccc;
+	color:#999;
+	line-height:17px;
+	text-align:center;
+	font-size:13px;
+	border-radius:10px;
+	cursor:pointer;
+}
+.eCalendar-container .e-btn-close:after {content:"X";}
+.eCalendar-container .e-btn-close:hover {
+	color:#7EA0E2;
+	background:white;
+	border-color:#7EA0E2;
+}
+
+/** Month Container **/
+.eCalendar-container .eCalendar{display: inline-block;zoom:1;*display:inline;width:216px;vertical-align:top;}
+
+/** Month Separator **/
+.eCalendar-container .e-separator {display: inline-block;zoom:1;*display:inline;width:1px;vertical-align:top;background:#ddd;height:232px;margin:0px;}
+
+/** Month Title Row **/
+.eCalendar-container .e-title {text-align:center;white-space:nowrap;position:relative;height:18px;}
+.eCalendar-container .e-caption {font-size:14px;line-height:16px;font-weight:700;}
+
+
+/** Month and Year Buttons **/
+.eCalendar-container .e-btn-previous-month,
+.eCalendar-container .e-btn-next-month,
+.eCalendar-container .e-btn-previous-year,
+.eCalendar-container .e-btn-next-year {width:16px;height:16px;cursor:pointer;position:absolute;top:0;color:#777;font-size:20px;line-height:14px;}
+
+.eCalendar-container .e-btn-previous-year {left:0;}
+.eCalendar-container .e-btn-previous-month {left:16px;}
+.eCalendar-container .e-btn-next-month {right:16px;}
+.eCalendar-container .e-btn-next-year {right:0;}
+
+.eCalendar-container .e-btn-previous-year,
+.eCalendar-container .e-btn-next-year {letter-spacing:-4px;text-align:left;}
+
+.eCalendar-container .e-btn-previous-month:hover,
+.eCalendar-container .e-btn-next-month:hover {text-decoration:none;}
+
+.eCalendar-container .e-btn-previous-year:hover,
+.eCalendar-container .e-btn-next-year:hover {text-decoration:none;}
+
+/** Remove extra buttons when calendar shows multiple months **/
+.eCalendar-container .e-first-month .e-btn-next-month,
+.eCalendar-container .e-middle-month .e-btn-next-month,
+.eCalendar-container .e-middle-month .e-btn-previous-month,
+.eCalendar-container .e-last-month .e-btn-previous-month,
+.eCalendar-container .e-first-month .e-btn-next-year,
+.eCalendar-container .e-middle-month .e-btn-next-year,
+.eCalendar-container .e-middle-month .e-btn-previous-year,
+.eCalendar-container .e-last-month .e-btn-previous-year {display:none;}
+
+/** Force specific width for month container contents **/
+.eCalendar-container .e-title,
+.eCalendar-container .e-header,
+.eCalendar-container .e-days {
+	padding:0 10px;
+	display:block;
+	overflow:hidden;
+}
+.eCalendar-container .e-title{
+	margin:8px 10px 0;
+}
+.eCalendar-container .e-header{
+	background:#f7f7f7;
+	height:23px;
+	margin:5px 0;
+	border-top:solid 1px #eaeaea;
+	border-bottom:solid 1px #eaeaea;
+}
+
+
+/** Hide unusable buttons **/
+.eCalendar-container.e-disable-next-month-btn .e-btn-next-month,
+.eCalendar-container.e-disable-previous-month-btn .e-btn-previous-month,
+.eCalendar-container.e-disable-next-year-btn .e-btn-next-year,
+.eCalendar-container.e-disable-previous-year-btn .e-btn-previous-year {
+	color:#ccc!important;
+}
+.eCalendar-container.e-disable-next-year-btn  .e-btn-next-month{
+	right:0;
+}
+.eCalendar-container.e-disable-previous-year-btn .e-btn-previous-month{
+	left:0;
+}
+
+/** Week columns and day cells **/
+.eCalendar-container .e-header span,
+.eCalendar-container .e-days span {
+	float:left;
+	margin:1px
+}
+
+.eCalendar-container .e-header span {
+	text-align:center;
+	font-weight:bold;
+	width:26px;
+	color:#666;
+}
+
+.eCalendar-container .e-days span {
+	text-align:center;
+	width:26px;
+	height:26px;
+	line-height:26px;
+	color:#999;
+	border-radius:50%;
+}
+
+/** Today **/
+.eCalendar-container .e-today {
+	text-decoration: underline;
+}
+
+/** Selected day, when outside the selectable area **/
+.eCalendar-container .e-days span.e-selected {
+	border-color:#1072A5;
+	color:#1072A5;
+}
+
+/** Selected day, when inside the selectable area **/
+.eCalendar-container .e-days span.e-selected.e-active {
+	background:#ff9248;
+	color:white;
+}
+
+/** Days between the start and end points on a range, outside of the selectable area **/
+.eCalendar-container .e-days span.e-range {
+	background:none;
+	border-color:#6DD4FE;
+}
+
+/** Days between the start and end points on a range, inside of the selectable area **/
+.eCalendar-container .e-days span.e-range.e-active {
+	background:#C4D4F1;
+	border-color:#19AEFE;
+	color:#333;
+}
+
+/** Selectable but not selected day  **/
+.eCalendar-container .e-days span.e-active {
+	border-color:#ddd;
+	background-color:#fff;
+	cursor:pointer;
+	color:#333;
+}
+
+/** Selectable day, hovered **/
+.eCalendar-container .e-days span.e-active:hover {
+	border-color:#666;
+}
+
+/** Days outside of the month view (before the first day of the month, after the last day of the month) **/
+.eCalendar-container .e-days span.e-out-of-month {cursor:default;color:#ddd!important;background: transparent!important;border:none!important;}
+
+
+
+/*-------------------------------------IE8 ONLY CODE BELOW THIS LINE--------------------------------------------*/
+
+.eCalendar-container.ie8.e-floating {
+	border:1px solid #ccc;
+}
+
+.eCalendar-container.ie8 .e-btn-close {
+	width:20px;
+	height:20px;
+	border:none;
+	background:url('close.png') no-repeat top left;
+}
+.eCalendar-container.ie8 .e-btn-close:after {display:none;}
+
+.eCalendar-container.ie8 .e-btn-previous-month,
+.eCalendar-container.ie8 .e-btn-next-month,
+.eCalendar-container.ie8 .e-btn-previous-year,
+.eCalendar-container.ie8 .e-btn-next-year {width:16px;height:16px;cursor:pointer;background:#777 url('arrows.png') no-repeat center left;position:absolute;top:0;}
+
+.eCalendar-container.ie8 .e-btn-next-month,
+.eCalendar-container.ie8 .e-btn-next-year {background-position:center right;}
+
+.eCalendar-container.ie8 .e-btn-previous-month:hover,
+.eCalendar-container.ie8 .e-btn-next-month:hover {background-color:#7EA0E2;}
+
+.eCalendar-container.ie8 .e-btn-previous-year,
+.eCalendar-container.ie8 .e-btn-next-year {background-color:#333;}
+
+.eCalendar-container.ie8 .e-btn-previous-year:hover,
+.eCalendar-container.ie8 .e-btn-next-year:hover {background-color:#6FDF81;}
+
+.eCalendar-container.ie8 .e-btn-previous-month:after,
+.eCalendar-container.ie8 .e-btn-next-month:after,
+.eCalendar-container.ie8 .e-btn-previous-year:after,
+.eCalendar-container.ie8 .e-btn-next-year:after {display:none;}
+
+

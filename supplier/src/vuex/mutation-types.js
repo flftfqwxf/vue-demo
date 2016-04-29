@@ -1,0 +1,3 @@
+export const LOAD_BREADCRUMB='LOAD_BREADCRUMB'
+export const LOAD_NAV_LIST='LOAD_NAV_LIST'
+export const GET_TBLIST='GET_TBLIST'

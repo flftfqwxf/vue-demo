@@ -40,13 +40,50 @@ server.get('/api/mvvm/list2.json', {
         return data
     }
 });
+server.get('/api/mvvm/message.json', {
+    //delay: 12000,
+    data: function (params, query) {
+        var page = query.page, data;
+        data = require('./message.json');
+        return data
+    }
+});
+server.get('/menu.json', {
+    //delay: 12000,
+    data: function (params, query) {
+        data = require('./menu.json');
+        return data
+    }
+});
+server.get('/user/info.json', {
+    //delay: 12000,
+    data: function (params, query) {
+        data = require('./info.json');
+        return data
+    }
+});
+
+server.get('/order/count.json', {
+    //delay: 12000,
+    data: function (params, query) {
+        data = require('./count.json');
+        return data
+    }
+});
+server.get('/message/received.json', {
+    //delay: 12000,
+    data: function (params, query) {
+        data = require('./received.json');
+        return data
+    }
+});
+
 server.get('/api/mvvm/breadcrumb.json', {
     data: function (params, query) {
         var data = require('./breakcrumb.json');
-        if (query.url==='/mvvm') {
-             data = require('./breakcrumb3.json');
+        if (query.url === '/mvvm') {
+            data = require('./breakcrumb3.json');
         }
-
         return data
     }
 });

@@ -1,0 +1,40 @@
+{
+  "msgCount": {
+    "allMsg": 3,
+    "orderMsg": 4,
+    "financeMsg": 5,
+    "sysMsg": 6
+  },
+  "list": [
+    {
+      "msgType": 1,
+      "msgTime": "2016.03.01 15:14:03",
+      "msgContent": "订单22消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容",
+      "isRead": true
+    },
+    {
+      "msgType": 2,
+      "msgTime": "2016.03.01 15:14:03",
+      "msgContent": "财务消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容",
+      "isRead": true
+    },
+    {
+      "msgType": 3,
+      "msgTime": "2016.03.01 15:14:03",
+      "msgContent": "系统消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容",
+      "isRead": true
+    },
+    {
+      "msgType": 1,
+      "msgTime": "2016.03.01 15:14:03",
+      "msgContent": "消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容",
+      "isRead": true
+    }
+  ],
+  "pagination": {
+    "count": 2213,
+    "currentPage": 1,
+    "pageCount": 443,
+    "pageSize": 5
+  }
+}

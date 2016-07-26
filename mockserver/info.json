@@ -1,0 +1,17 @@
+{
+  "user": {
+    "backend": false,
+    "id": 2596,
+    "name": null,
+    "nick": null,
+    "phone": "18667165097"
+  },
+  "supplier": {
+    "address": "天府二街",
+    "description": "",
+    "id": 15646,
+    "name": "港马测试",
+    "phone": "18667165097"
+  },
+  "distributor": null
+}

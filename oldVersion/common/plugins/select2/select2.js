@@ -829,7 +829,7 @@ S2.define('select2/results',[
         var id = '' + item.id;
 
         if ($.inArray(id, selectedIds) > -1) {
-          $option.attr('aria-selected', 'true');
+          $option.attr('aria-selected', 'true').attr("disabled");
         } else {
           $option.attr('aria-selected', 'false');
         }
@@ -1548,8 +1548,7 @@ S2.define('select2/selection/multiple',[
   MultipleSelection.prototype.selectionContainer = function () {
     var $container = $(
       '<li class="select2-selection__choice">' +
-        '<span class="select2-selection__choice__remove" role="presentation">' +
-          '&times;' +
+        '<span class="select2-selection__choice__remove fa fa-times" role="presentation">' +
         '</span>' +
       '</li>'
     );
@@ -1573,7 +1572,7 @@ S2.define('select2/selection/multiple',[
       var $selection = this.selectionContainer();
 
       $selection.append(formatted);
-      $selection.prop('title', selection.title || selection.text);
+      $selection.prop("id",selection.id).prop('title', selection.title || selection.text);
 
       $selection.data('data', selection);
 

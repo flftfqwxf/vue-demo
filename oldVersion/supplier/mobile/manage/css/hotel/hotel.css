@@ -13,40 +13,33 @@
   width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .number {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  color: #fff;
-}
+  color: #fff; }
 
 .swipe {
   width: 100%;
   overflow: hidden;
-  position: relative;
-}
+  position: relative; }
 
 .swipe-wrap {
   overflow: hidden;
-  position: relative;
-}
+  position: relative; }
 
 .swipe-wrap li {
   float: left;
   width: 100%;
-  position: relative;
-}
+  position: relative; }
 
 .swipe-wrap a {
-  display: block;
-}
+  display: block; }
 
 .swipe-wrap img {
-  display: block;
-}
+  display: block; }
 
 .swipe_proPrice {
   background-color: #ff4848;
@@ -56,8 +49,7 @@
   padding: 2px 8px;
   margin-top: 13px;
   font-size: 12px;
-  border-radius: 16px;
-}
+  border-radius: 16px; }
 
 .mask {
   position: absolute;
@@ -75,39 +67,31 @@
   /*Opera 11.10+*/
   color: white;
   width: 100%;
-  z-index: 0;
-}
+  z-index: 0; }
 
 .pic img {
-  border-radius: 6px;
-}
+  border-radius: 6px; }
 
 .newImg {
-  width: 100%;
-}
+  width: 100%; }
 
 body {
   position: static;
-  background-color: #f2f2f2;
-}
+  background-color: #f2f2f2; }
 
 .hide {
-  display: none;
-}
+  display: none; }
 
 .fr {
-  float: right;
-}
+  float: right; }
 
 .hotel {
-  border-radius: 5px 0;
-}
+  border-radius: 5px 0; }
 
 .title {
   line-height: 40px;
   color: #333;
-  border-bottom: 1px solid #e5e5e5;
-}
+  border-bottom: 1px solid #e5e5e5; }
 
 .info-box {
   position: relative;
@@ -117,26 +101,22 @@ body {
   border-bottom: 2px solid #e5e5e5;
   padding-right: 4px;
   -webkit-tap-highlight-color: transparent;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .info-box .info-title, .title {
   font-family: "Microsoft YaHei";
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
 .info-box .info-title {
   margin-left: 10px;
   height: 45px;
   line-height: 45px;
   border-bottom: 1px solid #ccc;
-  color: #333;
-}
+  color: #333; }
 
 .info-box .info-content p {
   margin-bottom: 10px;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .info-box .info-title i, .title i.first-ico {
   display: inline-block;
@@ -144,80 +124,64 @@ body {
   margin: 0 8px;
   width: 26px;
   height: 26px;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .info-box .info-title i {
   margin: -2px 8px 0 0;
   font-size: 26px;
-  color: #ff7e1d;
-}
+  color: #ff7e1d; }
 
 .info-box .info-title i.first-ico {
-  background: url(/m/theme/manage/images/common/hotel/img_ico.jpg) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/img_ico.jpg) no-repeat; }
 
 .first-ico1 {
-  background: url(/m/theme/manage/images/common/hotel/address-icon.jpg) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/address-icon.jpg) no-repeat; }
 
 .first-ico2 {
-  background: url(/m/theme/manage/images/common/hotel/sight_time.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_time.png) no-repeat; }
 
 .first-ico3 {
-  background: url(/m/theme/manage/images/common/hotel/sight_tackt.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_tackt.png) no-repeat; }
 
 .first-ico4 {
-  background: url(/m/theme/manage/images/common/hotel/sight_jies.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_jies.png) no-repeat; }
 
 .first-ico5 {
-  background: url(/m/theme/manage/images/common/hotel/sight_teshe.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_teshe.png) no-repeat; }
 
 .first-ico6 {
-  background: url(/m/theme/manage/images/common/hotel/sight_daolan.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_daolan.png) no-repeat; }
 
 .first-ico7 {
-  background: url(/m/theme/manage/images/common/hotel/sight_notice.png) no-repeat;
-}
+  background: url(/m/theme/manage/images/common/hotel/sight_notice.png) no-repeat; }
 
 .info-box .info-title i.end-ico2 {
   position: absolute;
   right: 0px;
   top: 6px;
   width: 18px;
-  background: url(/m/theme/manage/css/6599ff/images/detail/see-details.png) no-repeat;
-}
+  background: url(/m/theme/manage/css/6599ff/images/detail/see-details.png) no-repeat; }
 
 .info-box .info-title i.end-ico {
   float: right;
   margin-top: 14px;
-  background-position: 0 -60px;
-}
+  background-position: 0 -60px; }
 
 .info-content {
   margin: 12px 0 0 10px;
   line-height: 25px;
-  color: #666;
-}
+  color: #666; }
 
 .info-box.on .info-content {
-  display: block;
-}
+  display: block; }
 
 .info-box .info-title i.end-icoh {
   float: right;
   margin-top: 14px;
-  background-position: 0 -38px;
-}
+  background-position: 0 -38px; }
 
 .hotel {
-  padding-bottom: 30px;
-}
+  padding-bottom: 30px; }
 
 .hotel-banner {
   margin-bottom: 5px;
@@ -225,82 +189,68 @@ body {
   font-size: 22px;
   color: #333;
   border-bottom: 2px solid #e5e5e5;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .hotel-banner img {
   display: block;
   width: 100%;
-  height: 360px;
-}
+  height: 360px; }
 
 .hotel-banner p {
   text-align: center;
-  font: 22px/24px "Microsoft YaHei";
-}
+  font: 22px/24px "Microsoft YaHei"; }
 
 .hotel-banner p.first-p {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .info-title span {
-  color: #999;
-}
+  color: #999; }
 
 .info-title span.time-s {
   display: block;
   color: #333;
   font-family: "Microsoft YaHei";
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .info-title span.time-slinhe {
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 .info-title span.fr {
-  margin-right: 28px;
-}
+  margin-right: 28px; }
 
 .notice {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #999;
-}
+  color: #999; }
 
 /* 景点照片 查看 */
 #picWrap {
   position: relative;
   overflow: hidden;
-  width: 100%;
-}
+  width: 100%; }
 
 #picList {
-  height: 100%;
-}
+  height: 100%; }
 
 #picList .item {
   width: 100%;
   overflow: hidden;
   vertical-align: middle;
-  text-align: center;
-}
+  text-align: center; }
 
 /*.picvier{ position:absolute; bottom:0; width:100%; }*/
 #picList .item img {
   max-width: 100%;
   max-height: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 #picBtns {
   height: 0.3rem;
   padding: 0.2rem 0;
   margin: 0;
   text-align: center;
-  display: none;
-}
+  display: none; }
 
 #picBtns span {
   width: 0.3rem;
@@ -310,12 +260,10 @@ body {
   display: inline-block;
   box-sizing: border-box;
   border-radius: 0.15rem;
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 #picBtns .active {
-  background: #f60;
-}
+  background: #f60; }
 
 .number-title {
   position: absolute;
@@ -325,51 +273,39 @@ body {
   line-height: 30px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
+  color: #fff; }
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   #picWrap {
-    height: 365px;
-  }
-}
+    height: 365px; } }
 @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   #picWrap {
-    height: 552px;
-  }
-}
+    height: 552px; } }
 @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 3) {
   #picWrap {
-    height: 620px;
-  }
-}
+    height: 620px; } }
 .no-more {
   margin: 15px auto;
   width: 95%;
   text-align: center;
   color: #999;
   height: 30px;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 .no-more .line {
   width: 40%;
   height: 15px;
-  border-bottom: 1px solid #999;
-}
+  border-bottom: 1px solid #999; }
 
 .no-more .text {
   width: 20%;
-  text-align: center;
-}
+  text-align: center; }
 
 .left {
-  float: left;
-}
+  float: left; }
 
 .play-date {
-  width: 85%;
-}
+  width: 85%; }
 
 #loading {
   width: 50%;
@@ -385,13 +321,11 @@ body {
   -moz-border-radius: 2px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
-  padding-left: 6%;
-}
+  padding-left: 6%; }
 
 #loading.loading {
   background: url(/m/theme/manage/images/loading.gif) no-repeat 10% #fff;
-  background-size: 20% 46%;
-}
+  background-size: 20% 46%; }
 
 .oth-footer {
   position: relative;
@@ -399,30 +333,24 @@ body {
   padding-top: 10px;
   width: 100%;
   border-top: 1px #e5e5e5 solid;
-  background-color: #fcfcfc;
-}
+  background-color: #fcfcfc; }
 
 .oth-footer p {
-  text-align: center;
-}
+  text-align: center; }
 
 .footer {
   padding-top: 0;
   border-top: none;
-  background-color: none;
-}
+  background-color: none; }
 
 .item-r {
   margin: 15px 0  15px 10px;
-  color: #999;
-}
+  color: #999; }
 
 .item-rw {
-  width: 40%;
-}
+  width: 40%; }
 
 .play-date .time-s {
   display: block;
   margin: 15px 0 15px 10px;
-  color: #666;
-}
+  color: #666; }

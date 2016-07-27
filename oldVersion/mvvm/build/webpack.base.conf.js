@@ -1,14 +1,14 @@
 var path = require('path')
-var devConfig = require('./devConfig.json')
-var devServer=devConfig.devServer.isIP ? devConfig.devServer.ip :devConfig.devServer.domain
-console.log(devServer.publicPath)
+var sysConfig=require('./parms');
+console.log('输出目录：',sysConfig.devConfig.devServer.publicPath)
+console.log('系统名：',sysConfig.options.sys)
 module.exports = {
     entry: {
-        app: './oldVersion/mvvm/supplier/src/main.js'
+        app: './oldVersion/mvvm/'+sysConfig.options.sys+'/src/main.js'
     },
     output: {
-        path: path.resolve(__dirname, '../dist/static'),
-        publicPath: devServer.publicPath,
+        path: path.resolve(__dirname, '../dist/static/'+sysConfig.options.sys),
+        publicPath: sysConfig.devConfig.devServer.publicPath,
         filename: '[name].js',
         chunkFilename: "[name]-[chunkhash].js"
     },

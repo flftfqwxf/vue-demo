@@ -3,8 +3,7 @@ html {
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
   background: #f2f2f2;
-  color: #333;
-}
+  color: #333; }
 
 body {
   font: 14px "microsoft yahei", Helvetica, Arial, sans-serif !important;
@@ -20,20 +19,16 @@ body {
   max-width: 640px;
   min-height: 100%;
   margin: 0 auto;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .fr {
-  float: right;
-}
+  float: right; }
 
 .fl {
-  float: left;
-}
+  float: left; }
 
 .texts .descr .fr {
-  display: none;
-}
+  display: none; }
 
 ul,
 li,
@@ -41,12 +36,10 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: none;
-}
+  outline: none; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .page_name > a {
   display: inline-block;
@@ -56,24 +49,19 @@ a {
   margin-left: 5px;
   background-size: 100% 100%;
   top: 20px;
-  position: absolute;
-}
+  position: absolute; }
 
 .header .page_name .gmIcon {
-  color: #999;
-}
+  color: #999; }
 
 .pd10 {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .pd13 {
-  padding: 13px;
-}
+  padding: 13px; }
 
 .mt13 {
-  margin-top: 13px;
-}
+  margin-top: 13px; }
 
 /*筛选列表样式*/
 .bc {
@@ -82,27 +70,22 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
-}
+  display: none; }
 
 #bc1 {
   background-color: transparent;
-  top: 0;
-}
+  top: 0; }
 
 #bc2 {
   background-color: rgba(0, 0, 0, 0.5);
   top: 40px;
-  z-index: 999;
-}
+  z-index: 999; }
 
 .header {
-  border: none;
-}
+  border: none; }
 
 #topMenu {
-  width: 100%;
-}
+  width: 100%; }
 
 .arrow-outer {
   display: none;
@@ -112,12 +95,10 @@ a {
   z-index: 1000;
   overflow: hidden;
   /*  height:100%;
-  background:rgba(0,0,0,0.4); */
-}
+  background:rgba(0,0,0,0.4); */ }
 
 .page_name.theme {
-  color: #333 !important;
-}
+  color: #333 !important; }
 
 .arrow_p {
   position: absolute;
@@ -126,14 +107,12 @@ a {
   font-size: 10px;
   color: #999;
   padding-right: 5px;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 .selectNav-list {
   width: 100%;
   background-color: #fff;
-  border-top: 1px solid #e5e5e5;
-}
+  border-top: 1px solid #e5e5e5; }
 
 .selectNav-list li {
   height: 39px;
@@ -142,12 +121,10 @@ a {
   width: 100%;
   cursor: pointer;
   position: relative;
-  color: #333 !important;
-}
+  color: #333 !important; }
 
 .selectNav-list li.last {
-  border-bottom: none;
-}
+  border-bottom: none; }
 
 .selectNav-list li a {
   font-size: 16px;
@@ -157,16 +134,13 @@ a {
   padding: 0px 10px;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
-}
+  margin: 0; }
 
 .selectNav-list li.selected {
-  position: relative;
-}
+  position: relative; }
 
 .selectNav-list li.selected a {
-  color: #ff7e1d !important;
-}
+  color: #ff7e1d !important; }
 
 .selectNav-list li.selected:after {
   font-family: "gmIcon" !important;
@@ -175,8 +149,7 @@ a {
   top: 0px;
   content: "\e640";
   font-size: 20px;
-  color: #ff9d3b;
-}
+  color: #ff9d3b; }
 
 .sub-title {
   display: inline-block;
@@ -185,35 +158,29 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 70px;
-}
+  width: 70px; }
 
 .sub-list {
-  display: none;
-}
+  display: none; }
 
 .sub-list span {
   margin-right: 10px;
   display: inline-block;
-  color: #999;
-}
+  color: #999; }
 
 .current .sub-title, .current .sub-list span {
-  color: #ff9d3b;
-}
+  color: #ff9d3b; }
 
 .lmTopFilters {
   height: auto;
   position: relative;
-  z-index: 99;
-}
+  z-index: 99; }
 
 .lmTopFilter {
   width: 100%;
   overflow: hidden;
   background-color: #fff;
-  border-top: 1px solid #e5e5e5;
-}
+  border-top: 1px solid #e5e5e5; }
 
 .lmTopFilter li {
   position: relative;
@@ -233,8 +200,7 @@ a {
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
+  /* Opera/IE 8+ */ }
 
 .lmTopFilter li span {
   display: inline-block;
@@ -244,26 +210,21 @@ a {
   box-sizing: border-box;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .lmTopFilter li:first-child {
-  border-left: none;
-}
+  border-left: none; }
 
 #lmTopFilters .oneList a {
-  color: #333;
-}
+  color: #333; }
 
 #topFilterTols {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .outer-box {
   position: absolute;
   overflow: hidden;
-  width: 100%;
-}
+  width: 100%; }
 
 #lmTopFilters .outer-box-content {
   position: absolute;
@@ -273,13 +234,11 @@ a {
   height: 100%;
   background: #fff;
   overflow: auto;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 #lmTopFilters .outer-box-content .filter_box {
   position: absolute;
-  overflow: auto;
-}
+  overflow: auto; }
 
 .lmTopFilterDrop {
   position: absolute;
@@ -288,12 +247,10 @@ a {
   top: 43px;
   background-color: #fff;
   display: none;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .lmTopFilterDrop li {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .lmTopFilterDrop .departure {
   width: 100%;
@@ -303,8 +260,7 @@ a {
   line-height: 30px;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #fff;
-}
+  background: #fff; }
 
 .lmTopFilterDrop .oneList {
   width: 100%;
@@ -312,8 +268,7 @@ a {
   box-sizing: border-box;
   background-color: #fff;
   overflow-y: auto;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 .lmTopFilterDrop .departure li, .lmTopFilterDrop .oneList li {
   width: 100%;
@@ -321,16 +276,13 @@ a {
   line-height: 35px;
   border-bottom: 1px solid #e5e5e5;
   font-size: 14px;
-  position: relative;
-}
+  position: relative; }
 
 .lmTopFilterDrop .departure li:last-child, .lmTopFilterDrop .oneList li:last-child {
-  border: none;
-}
+  border: none; }
 
 .lmTopFilterDrop .oneList li.current, .lmTopFilterDrop .departure li.current {
-  color: #ff7e1d;
-}
+  color: #ff7e1d; }
 
 .lmTopFilterDrop .oneList li.current:after, .lmTopFilterDrop .departure li.current:after {
   font-family: "gmIcon" !important;
@@ -340,8 +292,7 @@ a {
   right: 10px;
   top: 0px;
   width: 20px;
-  height: 20px;
-}
+  height: 20px; }
 
 #lmTopFilters .lmTopFilterDrop input[type='date'] {
   width: 100%;
@@ -351,17 +302,14 @@ a {
   height: 3rem;
   box-sizing: border-box;
   background: #fff;
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 
 input[type="date"]:before {
   content: attr(placeholder);
-  color: #999999;
-}
+  color: #999999; }
 
 ::-webkit-input-placeholder {
-  color: #999999;
-}
+  color: #999999; }
 
 #lmTopFilters .lmTopFilterDrop input[type='text'] {
   text-align: left;
@@ -370,13 +318,11 @@ input[type="date"]:before {
   height: 45px;
   box-sizing: border-box;
   width: 100%;
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 
 #lmTopFilters .lmTopFilterDrop .halfText {
   width: 47%;
-  position: relative;
-}
+  position: relative; }
 
 #lmTopFilters .lmTopFilterDrop .labelBtn {
   width: 70px;
@@ -388,27 +334,22 @@ input[type="date"]:before {
   border: 1px solid #e5e5e5;
   text-align: center;
   margin-right: 10px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #lmTopFilters .lmTopFilterDrop .labelBtn:last-child {
-  margin-right: 0px;
-}
+  margin-right: 0px; }
 
 #lmTopFilters .lmTopFilterDrop .labelBtn.current {
   background: #ff7e1d;
-  color: #fff;
-}
+  color: #fff; }
 
 #lmTopFilters .lmTopFilterDrop .filter_item {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 #lmTopFilters .lmTopFilterDrop .bot10px {
   margin-bottom: 10px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #lmTopFilters .lmTopFilterDrop .btn,
 #lmTopFilters .lmTopFilterDrop .fileInput {
@@ -418,16 +359,14 @@ input[type="date"]:before {
   line-height: 45px;
   height: 45px;
   box-sizing: border-box;
-  border: 1px solid #e5e5e5;
-}
+  border: 1px solid #e5e5e5; }
 
 #lmTopFilters .lmTopFilterDrop .confirm {
   position: fixed;
   bottom: 0px;
   left: 0px;
   color: #fff;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 #lmTopFilters .lmTopFilterDrop .clearfilter {
   width: 100%;
@@ -435,50 +374,41 @@ input[type="date"]:before {
   background: #fff;
   font-size: 14px;
   text-align: center;
-  height: 40px;
-}
+  height: 40px; }
 
 .date_input {
   width: 100%;
-  position: relative;
-}
+  position: relative; }
 
 .date_icon {
   position: absolute;
   top: 3px;
-  right: 10px;
-}
+  right: 10px; }
 
 .date_icon .gmIcon {
   font-size: 30px;
-  color: #999;
-}
+  color: #999; }
 
 ::-webkit-input-placeholder {
-  color: #999;
-}
+  color: #999; }
 
 .lmTopFilterMask {
   width: 100%;
   position: absolute;
   height: 100%;
   z-index: 90;
-  display: none;
-}
+  display: none; }
 
 #topFilterMask1 {
   background-color: transparent;
-  top: 0;
-}
+  top: 0; }
 
 #topFilterMask2 {
   background-color: rgba(0, 0, 0, 0.5);
-  top: 130px;
-}
+  top: 130px; }
 
 .clearfix {
-  zoom: 1;
-}
+  zoom: 1; }
 
 .clearfix:after {
   visibility: hidden;
@@ -486,23 +416,19 @@ input[type="date"]:before {
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0;
-}
+  height: 0; }
 
 #d1 {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 #datepicker {
   position: absolute;
-  z-index: 99;
-}
+  z-index: 99; }
 
 .header {
   line-height: 30px;
-  min-height: 35px;
-}
+  min-height: 35px; }
 
 .header .return_back {
   position: absolute;
@@ -511,8 +437,7 @@ input[type="date"]:before {
   height: 40px;
   width: 30px;
   line-height: 45px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .header .return_home {
   position: absolute;
@@ -521,8 +446,7 @@ input[type="date"]:before {
   height: 40px;
   width: 22px;
   line-height: 40px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .header .page_name {
   display: inline-block;
@@ -530,17 +454,14 @@ input[type="date"]:before {
   color: #333 !important;
   text-align: center;
   height: 40px;
-  line-height: 40px;
-}
+  line-height: 40px; }
 
 .gmui-header-logo {
-  cursot: pointer;
-}
+  cursot: pointer; }
 
 /*产品列表*/
 .lmProductList {
-  padding: 10px 5px 0px 5px;
-}
+  padding: 10px 5px 0px 5px; }
 
 .lmProductList li {
   display: inline-block;
@@ -548,35 +469,29 @@ input[type="date"]:before {
   padding: 0 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .lmProductList .box {
   position: relative;
   background-color: #fff;
   color: #333;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .lmProductList .box a {
-  color: #333;
-}
+  color: #333; }
 
 .lmProductList .box .pic {
-  position: relative;
-}
+  position: relative; }
 
 .lmProductList .box .texts {
-  padding: 2px 8px;
-}
+  padding: 2px 8px; }
 
 .lmProductList .box .texts .descr {
   height: auto;
   padding-bottom: 5px;
   color: #333;
   margin-right: 5px;
-  line-height: 18px;
-}
+  line-height: 18px; }
 
 .lmProductList .box .texts .date {
   height: 25px;
@@ -585,13 +500,11 @@ input[type="date"]:before {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #999;
-}
+  color: #999; }
 
 .lmProductList .box .texts .date .gmIcon {
   font-size: 14px !important;
-  line-height: 22px;
-}
+  line-height: 22px; }
 
 .lmProductList .box .texts .title {
   height: 34px;
@@ -601,8 +514,7 @@ input[type="date"]:before {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  word-break: break-all;
-}
+  word-break: break-all; }
 
 .list_search {
   box-sizing: border-box;
@@ -611,16 +523,14 @@ input[type="date"]:before {
   padding-top: 3px;
   height: 46px;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
 .input_search {
   position: relative;
   box-sizing: border-box;
   margin: 0px 65px 0px 30px;
   margin-top: 5px;
-  height: 40px;
-}
+  height: 40px; }
 
 .input_search .gm-close-o {
   font-size: 18px;
@@ -628,19 +538,16 @@ input[type="date"]:before {
   position: absolute;
   top: 0px;
   right: 10px;
-  z-index: 20;
-}
+  z-index: 20; }
 
 .searchIcon {
   position: absolute;
   right: 20px;
-  top: 8px;
-}
+  top: 8px; }
 
 .searchIcon .gmIcon {
   font-size: 18px;
-  color: #999;
-}
+  color: #999; }
 
 .search_input {
   color: #333;
@@ -654,15 +561,13 @@ input[type="date"]:before {
   height: 34px;
   line-height: 20px;
   font-size: 14px;
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 .left_searchBtn {
   position: absolute;
   right: 10px;
   top: 5px;
-  height: 40px;
-}
+  height: 40px; }
 
 .btn_search {
   background-color: #ff7e1d;
@@ -671,15 +576,12 @@ input[type="date"]:before {
   width: 45px;
   height: 33px;
   text-align: center;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .icon_result {
-  height: 55px;
-}
+  height: 55px; }
 
 .gm-question {
   font-size: 42px;
   color: #999;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }

@@ -1,6 +1,7 @@
 var config = require('./webpack.base.conf')
-var devConfig = require('./devConfig.json')
-var devServer=devConfig.devServer.isIP ? devConfig.devServer.ip :devConfig.devServer.domain
+var sysConfig=require('./parms');
+var devConfig=sysConfig.devConfig;
+var devServer=devConfig.devServer;
 var proxyConfig = {
     "/booking/*": {
         target: "http://localhost:9098",
@@ -14,7 +15,19 @@ var proxyConfig = {
             }
         }
     },
-    "/api/*": {
+    "/*/*.json*": {
+        target: "http://localhost:9098",
+        bypass: function (req, res, proxyOptions) {
+            console.log('api==>', req.url);
+            for (var item in devConfig.bypass) {
+                if (req.url.indexOf(item) !== -1 && devConfig.bypass[item]) {
+                    console.warn(req.url, ": is pass proxy");
+                    return req.url;
+                }
+            }
+        }
+    },
+    "/*.json*": {
         target: "http://localhost:9098",
         bypass: function (req, res, proxyOptions) {
             console.log('api==>', req.url);
@@ -26,15 +39,27 @@ var proxyConfig = {
             }
         }
     }
+    // "/*/*.json*": {
+    //     target: "http://localhost:9098",
+    //     bypass: function (req, res, proxyOptions) {
+    //         console.log('api==>', req.url);
+    //         for (var item in devConfig.bypass) {
+    //             if (req.url.indexOf(item) !== -1 && devConfig.bypass[item]) {
+    //                 console.warn(req.url, ": is pass proxy");
+    //                 return req.url;
+    //             }
+    //         }
+    //     }
+    // }
 }
-if (!devConfig.devServer.isIP) {
+if (!devServer.isIP) {
     proxyConfig["*"]={
         target: "http://localhost:8081",
         rewrite: function (req, proxyOptions) {
 
             // console.log('*==>', req);
             if (req.hostname && devServer.hostList[req.hostname]) {
-                console.log('*==>', req.hostname + req.url);
+                console.log('*==>',req.hostname, devServer.hostList[req.hostname]);
                 proxyOptions.target = devServer.hostList[req.hostname];
             }
 

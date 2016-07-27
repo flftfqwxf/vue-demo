@@ -103,6 +103,9 @@ button.button:hover,a.button:hover {background-color: #31b0d5;}
 #leftBody ul .redpacket{background: url("../images/index/finance_icon.png") no-repeat 14px center;}
 #leftBody ul .redpacket.on{background: url("../images/index/finance_icon_on.png") no-repeat 14px center;}
 
+#leftBody ul .message{background: url("../images/index/lines_icon.png") no-repeat 14px center;}
+#leftBody ul .message.on{background: url("../images/index/lines_icon_on.png") no-repeat 14px center;}
+
 #leftBody ul .dismiss{background: url("../images/index/dismiss_icon.png") no-repeat 14px center;}
 #leftBody ul .dismiss.on{background: url("../images/index/dismiss_icon_on.png") no-repeat 14px center;}
 #leftBody ul .producttpl{background: url("../images/index/producttpl_icon.png") no-repeat 14px center;}

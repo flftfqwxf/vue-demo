@@ -197,3 +197,5 @@ a.cl_default,.cl_default{color:#4f4f4f;}
 .top_info .menus .menu_li.no-access{color:#ccc;}
 .top_info .menus .menu_li.no-access:hover{background: none;}
 .tips-no-access,.tips-disabled{display:none;width: 170px;height: 44px;position: absolute;background:url("../images/common/bubble.png");color: #ff913a;text-align: center;line-height: 44px;z-index: 9999;}
+
+.common-notice .label{background-color:#ff7e1d;}

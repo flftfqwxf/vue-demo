@@ -49,10 +49,11 @@ header .heardnew{border-bottom: solid 1px #e0e1e2;}
 .form-control-feedback{height:32px;line-height:32px;}
 
 /*tour type*/
-.group-tour-type, .free-tour-type, .ship-tour-type{position:absolute;right:0;top:20px;text-align:center;padding-top:4px;padding-left:4px;width:64px;height:26px;color:#ffffff;font-size:12px;background-size:100% 100%;min-height:0;}
+.group-tour-type, .free-tour-type, .ship-tour-type, .local-tour-type{position:absolute;right:0;top:20px;text-align:center;padding-top:4px;padding-left:4px;width:64px;height:26px;color:#ffffff;font-size:12px;background-size:100% 100%;min-height:0;}
 .group-tour-type{background-image:url(../../images/group-tour.png);}
 .free-tour-type{background-image:url(../../images/free-tour.png);}
 .ship-tour-type{background-image:url(../../images/ship-tour.png);}
+.local-tour-type{background-image:url(../../images/local-tour.png);}
 
 .common-tips .gm-icon{margin-right:8px;}
 

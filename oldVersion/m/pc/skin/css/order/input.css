@@ -146,7 +146,7 @@ header .heardnew {
   line-height: 32px; }
 
 /*tour type*/
-.group-tour-type, .free-tour-type, .ship-tour-type {
+.group-tour-type, .free-tour-type, .ship-tour-type, .local-tour-type {
   position: absolute;
   right: 0;
   top: 20px;
@@ -168,6 +168,9 @@ header .heardnew {
 
 .ship-tour-type {
   background-image: url(../../images/ship-tour.png); }
+
+.local-tour-type {
+  background-image: url(../../images/local-tour.png); }
 
 .common-tips .gm-icon {
   margin-right: 8px; }
@@ -1858,3 +1861,5 @@ p.error {
 
 .rules_Info p {
   text-indent: 2em; }
+
+/*# sourceMappingURL=input.css.map */

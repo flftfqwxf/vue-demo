@@ -198,7 +198,9 @@ $(function(){
 	var $tourType = $("#tourType li a");
 	var orderdom = $("select[name=orderStatus]");
 	var expireddom =  $("#expired a");
-	var editordom =  $("#editor a")
+	var editordom =  $("#editor a");
+	var $leave= $("#leave li a");  //出发地
+	var $wellEdited= $("#wellEdited li a");  //产品属性
 	
 	 var line = subForm.find("input[name=line]").val();
 	 var play = subForm.find("input[name=playOption]").val();
@@ -210,6 +212,8 @@ $(function(){
 	 var onShelf = subForm.find("input[name=onShelf]").val();
 	 var expired = subForm.find("input[name=expired]").val();
 	 var editorId = subForm.find("input[name=editorId]").val();
+	 var leave = subForm.find("input[name=leave]").val(); //出发地
+	 var wellEdited = subForm.find("input[name=wellEdited]").val();//产品属性
 	 
 	 if(line!="" && line !="0"){
 		 css($("#tiaojian_line"));
@@ -241,6 +245,14 @@ $(function(){
 	 
 	 if (tourType != "") {
 		 css($("#tiaojian_tourType"));
+	 }
+
+	 if(leave != ""){//出发地
+        css($("#tiaojian_leave"));
+	 }
+
+	 if(wellEdited != ""){//产品属性
+        css($("#tiaojian_wellEdited"));
 	 }
 	 
 	 
@@ -314,6 +326,12 @@ $(function(){
 				} else if (this_id == "tiaojian_tourType") {
 					subForm.find("input[name=tourType]").val("");
 					delClass($tourType);
+				}else if(this_id == "tiaojian_leave"){//出发地
+                    subForm.find("input[name=leave]").val("");
+					delClass($leave);
+				}else if(this_id == "tiaojian_wellEdited"){//产品属性
+                    subForm.find("input[name=wellEdited]").val("");
+					delClass($wellEdited);
 				}
 				subform();
 			}
@@ -432,6 +450,35 @@ $(function(){
 			subform();
 		})
 	})
+
+	$leave.each(function(i,e){ //出发地
+		$(this).on("click",null,function(){
+			if(!$(this).hasClass("sele")){
+				var attr = $(this).attr("attr_id");
+				subForm.find("input[name=leave]").val(attr);
+			}else{
+				subForm.find("input[name=leave]").val("");
+			}
+			delClass($leave, i);
+			$(this).toggleClass("sele")
+			subform();
+		})
+	})
+
+	$wellEdited.each(function(i,e){//产品属性
+		$(this).on("click",null,function(){
+			if(!$(this).hasClass("sele")){
+				var attr = $(this).attr("attr_id");
+				subForm.find("input[name=wellEdited]").val(attr);
+			}else{
+				subForm.find("input[name=wellEdited]").val("");
+			}
+			delClass($wellEdited, i);
+			$(this).toggleClass("sele")
+			subform();
+		})
+	})
+
 	$tourType.each(function(i,e){
 		$(this).on("click",null,function(){
 			if(!$(this).hasClass("sele")){
@@ -792,5 +839,29 @@ function subform(clear){
 		form.submit();
 	}else{
 		
+	}
+}
+
+//3.6精编
+function rately(id){	    
+	if(id){
+       $.confirm("确认将此产品设置为精编？","确认提示", function(){
+	    		$.ajax({
+					url:"/product/well-edited.json?productIds="+id+"",
+					type:"POST",
+					async:false,
+					dataType:"json",
+					success:function(json){
+						$.gmMessage(json.result.message,true);
+					},
+					erro:function(){
+		             
+					}
+			    });        	
+		    },function(){
+			//取消
+		}); 
+	}else{
+       alert("无产品id");
 	}
 }

@@ -2,12 +2,17 @@
   "proxy": true,
   "bypass": {
     "/api/mvvm/list2.json": false,
+    "/api/mvvm/message.json": false,
+    "/message/received.json":false,
+    "/menu.json":false,
+    "/user/info.json":false,
     "/booking/count": false
   },
   "devServer": {
     "isIP":false,
     "domain": {
-      "host": "supplier.gmmtour.com",
+      "sys":"",
+      "host": ".gmmtour.com",
       "hostList": {
         "supplier.gmmtour.com": "http://localhost:8081",
         "m.gmmtour.com": "http://localhost:8084",
@@ -18,7 +23,7 @@
         "s.gmmtour.com": "http://localhost:8086"
       },
       "port": "80",
-      "publicPath": "http://supplier.gmmtour.com/mvvm/dist/static/"
+      "publicPath": "/mvvm/dist/static/"
     },
     "ip": {
       "host": "localhost",

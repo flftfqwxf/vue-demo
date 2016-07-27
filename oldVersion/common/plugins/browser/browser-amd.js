@@ -7,7 +7,7 @@
 				'<a href="http://ie.sogou.com/" class="browser_btn"><img src="'+ WEB_STATIC +'/common/plugins/browser/images/3.png"></a>'+
 			'</span>'+
 		'</div>';
-	if((!window.FormData)||(navigator.appVersion.toUpperCase().indexOf("MSIE 7.0")>=0)){
+	if(((!window.FormData))&&(navigator.appVersion.toUpperCase().indexOf("MSIE 9.0")<0)){
 	    $('body').prepend(tpl);
 	}
 })();

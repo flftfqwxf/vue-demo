@@ -1,46 +1,36 @@
 @charset "UTF-8";
 /*reset*/
 html, body {
-  background: #fff;
-}
+  background: #fff; }
 
 h1, h2, h3, h4, h5, h6, h7 {
   font-weight: 400;
-  margin: 0;
-}
+  margin: 0; }
 
 p {
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /*gloabl*/
 .fl {
-  float: left;
-}
+  float: left; }
 
 .fr {
-  float: right;
-}
+  float: right; }
 
 header, footer, section {
-  min-width: 1170px;
-}
+  min-width: 1170px; }
 
 .link-14 {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .yellow {
-  color: #ff8540;
-}
+  color: #ff8540; }
 
 .arial {
-  font-family: "arial";
-}
+  font-family: "arial"; }
 
 .day-icon {
   display: block;
@@ -51,84 +41,69 @@ header, footer, section {
   color: #fff;
   background: #ff9248;
   border-radius: 50%;
-  text-align: center;
-}
+  text-align: center; }
 
 .dashed {
   border-bottom: dashed 1px #e0e1e2;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .text-overflow {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-}
+  text-overflow: ellipsis; }
 
 .btns .btn {
   margin-right: 15px;
   padding-left: 25px;
   padding-right: 25px;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 .p-body {
   min-width: 1170px;
   width: 1170px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
 
 .p-download {
-  color: #626466 !important;
-}
+  color: #626466 !important; }
 
 .p-download i {
   color: #587ed1;
-  margin-right: 2px;
-}
+  margin-right: 2px; }
 
 .p-download:hover i {
-  color: #3057ad;
-}
+  color: #3057ad; }
 
 .p-arrow-right {
   width: 0;
   height: 0;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-left: 3px solid #ff9248;
-}
+  border-left: 3px solid #ff9248; }
 
 .p-no-data {
-  text-align: center;
-}
+  text-align: center; }
 
 div.p-no-data {
   border: solid 1px #e0e1e2;
-  line-height: 80px !important;
-}
+  line-height: 80px !important; }
 
 tr.p-no-data td {
   padding: 0 !important;
-  line-height: 80px !important;
-}
+  line-height: 80px !important; }
 
 .p-service {
   position: relative;
   padding-left: 22px;
-  color: #f98282;
-}
+  color: #f98282; }
 
 .p-service i {
   position: absolute;
   top: -3px;
-  left: 3px;
-}
+  left: 3px; }
 
 header .heardnew {
-  border-bottom: solid 1px #e0e1e2;
-}
+  border-bottom: solid 1px #e0e1e2; }
 
 .gm-rocket-up {
   display: none;
@@ -137,47 +112,38 @@ header .heardnew {
   color: #94989B;
   position: fixed;
   bottom: 140px;
-  right: 0;
-}
+  right: 0; }
 
 .gm-rocket-up:hover {
-  color: #FF7E1D;
-}
+  color: #FF7E1D; }
 
 .gm-rocket-up:active {
-  color: #FF7E1D;
-}
+  color: #FF7E1D; }
 
 /*header start*/
 .heardnew {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .heardnew .logo {
   display: inline-block;
   float: left;
   width: 216px;
-  margin-right: 70px;
-}
+  margin-right: 70px; }
 
 .heardnew .logo img {
-  margin-top: 5px;
-}
+  margin-top: 5px; }
 
 .heardnew .heard-center {
   margin: 0 auto;
-  width: 1170px;
-}
+  width: 1170px; }
 
 .heardnew .nav-list {
   display: inline;
-  float: left;
-}
+  float: left; }
 
 .heardnew .nav-list li {
   display: inline;
-  float: left;
-}
+  float: left; }
 
 .heardnew .nav-list li a {
   display: inline-block;
@@ -185,52 +151,43 @@ header .heardnew {
   line-height: 80px;
   padding: 0 20px;
   font-size: 18px;
-  color: #626466;
-}
+  color: #626466; }
 
 .heardnew .nav-list li a:hover, .reg-log a:hover, .footer-list li a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .heardnew .nav-list li.selected {
   color: #313233;
-  background-color: #EDF0F2;
-}
+  background-color: #EDF0F2; }
 
 .heardnew .nav-list li.selecteda {
-  color: #313233;
-}
+  color: #313233; }
 
 .heardnew .reg-log {
   display: inline;
   float: right;
   height: 80px;
-  line-height: 80px;
-}
+  line-height: 80px; }
 
 .heardnew .reg-log a {
   font-size: 14px;
-  color: #939699 !important;
-}
+  color: #939699 !important; }
 
 .heardnew .reg-log a.login {
   margin-left: 20px;
   padding: 8px 15px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  border-radius: 4px; }
 
 .heard-center .login-state {
   margin: 0 20px;
   padding: 25px 0 13px;
-  line-height: 32px;
-}
+  line-height: 32px; }
 
 .heard-center .pull-right {
   display: none;
-  float: right !important;
-}
+  float: right !important; }
 
 /*header end*/
 /*footer start*/
@@ -240,44 +197,37 @@ header .heardnew {
   height: 60px;
   line-height: 60px;
   padding: 0;
-  background-color: #252D36;
-}
+  background-color: #252D36; }
 
 .footernew .footer-list li a, .footernew .footer-list li span {
   font-size: 14px;
   color: #fff;
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .footernew .footer-centr {
   margin: 0 auto;
-  width: 1190px;
-}
+  width: 1190px; }
 
 .footernew .footer-list li {
   position: relative;
   display: inline;
   float: left;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 .footernew .footer-list li a, .footernew.footer-list li span {
   font-size: 14px;
   color: #fff;
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .footernew .footer-list li i {
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 .footernew .copyright {
   display: inline;
   float: right;
   font-size: 14px;
   color: #fff;
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .footernew .weixinImg {
   width: 200px;
@@ -286,13 +236,11 @@ header .heardnew {
   top: -205px;
   left: -58px;
   box-shadow: 0px 4px 4px grey;
-  z-index: 200;
-}
+  z-index: 200; }
 
 .weixinImg img {
   width: 200px;
-  height: 200px;
-}
+  height: 200px; }
 
 .weixinImg::after {
   color: white;
@@ -303,8 +251,7 @@ header .heardnew {
   position: absolute;
   display: inline-block;
   left: 95px;
-  top: 200px;
-}
+  top: 200px; }
 
 /*footer end*/
 /*unlogin start*/
@@ -317,8 +264,7 @@ header .heardnew {
   width: 100%;
   display: inline-block;
   text-align: center;
-  z-index: 99;
-}
+  z-index: 99; }
 
 .show-not-login .login-tips-bg {
   position: absolute;
@@ -331,8 +277,7 @@ header .heardnew {
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
   opacity: 0.7;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .show-not-login .login-tips {
   margin: 0;
@@ -342,8 +287,7 @@ header .heardnew {
   color: #fff;
   font-size: 18px;
   display: inline-block;
-  text-align: left;
-}
+  text-align: left; }
 
 .show-not-login .login-tips .login-tips-icon {
   float: left;
@@ -353,35 +297,30 @@ header .heardnew {
   width: 150px;
   height: 90px;
   margin-right: 32px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .show-not-login .login-tips .login-tips-info {
   float: left;
   max-width: 500px;
   overflow: hidden;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .login-tips .login-tips-info .login-tips-info-title {
   font-size: 36px;
   line-height: 50px;
-  margin-bottom: 4px;
-}
+  margin-bottom: 4px; }
 
 .login-tips .login-tips-info .login-tips-info-tips {
   line-height: 36px;
   color: #fff;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
-  opacity: 0.6;
-}
+  opacity: 0.6; }
 
 .show-not-login .login-tips .login-tips-buts {
   float: right;
   padding: 23px 0;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .login-tips .login-tips-buts .tips-but-reg {
   padding: 0 25px;
@@ -392,8 +331,7 @@ header .heardnew {
   color: #fff;
   background: #78a7ff;
   border-radius: 5px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .login-tips .login-tips-buts .tips-but-login {
   padding: 0 25px;
@@ -404,8 +342,7 @@ header .heardnew {
   color: #fff;
   background: #ff6342;
   border-radius: 5px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .login-tips .login-tips-buts .tips-but-close {
   float: left;
@@ -417,167 +354,137 @@ header .heardnew {
   background-position: center center;
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
-  opacity: 0.7;
-}
+  opacity: 0.7; }
 
 /*unlogin end*/
 html, body {
-  background-color: #f6f6f6;
-}
+  background-color: #f6f6f6; }
 
 /* 支付成功 */
 .pay-success-bg {
   background-color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .addPassenger {
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 40px;
   width: 1180px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .addPassenger .pay-success {
   margin: 0 auto;
   width: 150px;
   height: 48px;
-  line-height: 48px;
-}
+  line-height: 48px; }
 
 .addPassenger .pay-success i.gm-success-1 {
   float: left;
   margin-right: 10px;
   font-size: 48px;
-  color: #4bc5d1;
-}
+  color: #4bc5d1; }
 
 .addPassenger .pay-success .success {
   font-size: 18px;
   color: #4bc5d1;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 /* 订单信息 */
 .order-info {
   border: solid 1px #eaeaea;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .order-info > .title {
   padding-left: 10px;
   height: 40px;
   line-height: 40px;
   color: #333;
-  border-bottom: solid 1px #eaeaea;
-}
+  border-bottom: solid 1px #eaeaea; }
 
 .order-info ul {
   padding-left: 20px;
   padding-top: 10px;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
 .order-info li {
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .order-info li em {
-  font-style: normal;
-}
+  font-style: normal; }
 
 .order-info li .info {
-  color: #333;
-}
+  color: #333; }
 
 .order-info li .name a {
-  color: #333;
-}
+  color: #333; }
 
 .order-info li .name a:hover {
-  color: #ff7e1d;
-}
+  color: #ff7e1d; }
 
 .order-info li .money {
-  color: #ff7e1d;
-}
+  color: #ff7e1d; }
 
 .order-info li .money .num {
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 /* 常用旅客信息选择 */
 .passenger-info {
   margin-top: 20px;
   border: solid 1px #eaeaea;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .passenger-info > .title {
   padding-left: 10px;
   height: 40px;
   line-height: 40px;
   color: #333;
-  border-bottom: solid 1px #eaeaea;
-}
+  border-bottom: solid 1px #eaeaea; }
 
 /* 常用旅客信息填写 */
 .passenger-input {
-  margin: 0 20px;
-}
+  margin: 0 20px; }
 
 .passenger-input .travel-list {
   margin-top: 20px;
   padding-bottom: 5px;
   overflow: hidden;
-  border-bottom: dotted 1px #eaeaea;
-}
+  border-bottom: dotted 1px #eaeaea; }
 
 .passenger-input .travel-list:last-child {
-  border-bottom: none;
-}
+  border-bottom: none; }
 
 .passenger-input .travel-list em {
-  font-style: normal;
-}
+  font-style: normal; }
 
 .passenger-input .travel-list .name {
   float: left;
   margin-right: 90px;
   width: 120px;
-  text-align: center;
-}
+  text-align: center; }
 
 .passenger-input .travel-list .name .passenger {
   font-size: 16px;
-  color: #333;
-}
+  color: #333; }
 
 .passenger-input .travel-list .name .txt {
   font-size: 12px;
-  color: #999;
-}
+  color: #999; }
 
 .passenger-input .travel-list .input-info {
-  float: left;
-}
+  float: left; }
 
 .passenger-input .travel-list .null-btn {
-  float: right;
-}
+  float: right; }
 
 .passenger-input .travel-list .null-btn .btn {
-  padding: 2px 6px;
-}
+  padding: 2px 6px; }
 
 .passenger-input .travel-list .required {
   color: #ff7e1d;
   margin-right: 5px;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 .passenger-input .travel-list .form-group label.title {
   float: left;
@@ -586,60 +493,49 @@ html, body {
   height: 30px;
   line-height: 30px;
   text-align: right;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .passenger-input .travel-list .form-group input {
   display: inline-block;
   width: 200px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 .passenger-input .travel-list .form-group span.title {
   color: #999;
   margin-left: 5px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .passenger-input .travel-list .form-group span.error {
-  color: #f98282;
-}
+  color: #f98282; }
 
 .passenger-input .travel-list .form-control[disabled] {
   width: 120px;
   background-color: #fff;
-  color: #333;
-}
+  color: #333; }
 
 .passenger-input .travel-list .form-group .help-txt {
   margin-top: 5px;
   padding-left: 104px;
   width: 531px;
   color: #999;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .passenger-input .travel-list .form-group .dropdown {
   float: left;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
 
 .passenger-input .travel-list .form-group .HKCardNum, .passenger-input .travel-list .form-group .TWCardNum {
-  display: none;
-}
+  display: none; }
 
 .sure-btn {
   float: right;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .passenger-input .travel-list label {
-  margin-bottom: 11px;
-}
+  margin-bottom: 11px; }
 
 p[id$="-error"] {
-  padding-left: 106px;
-}
+  padding-left: 106px; }
 
 /* 全局错误提示 */
 .global-error {
@@ -647,5 +543,6 @@ p[id$="-error"] {
   position: fixed;
   top: 20px;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
+
+/*# sourceMappingURL=passengerInfo.css.map */

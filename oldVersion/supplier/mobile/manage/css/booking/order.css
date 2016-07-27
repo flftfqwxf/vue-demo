@@ -16,26 +16,22 @@ input[type=radio] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  position: relative;
-}
+  position: relative; }
 
 input[type=checkbox]:active,
 input[type=radio]:active {
   border-color: #ccc;
-  background: #ccc;
-}
+  background: #ccc; }
 
 input[type=checkbox]:hover {
   border-color: #ccc;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
-}
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1); }
 
 input[type=checkbox]:checked,
 input[type=radio]:checked {
-  background: #fff;
-}
+  background: #fff; }
 
 input[type=checkbox]:checked::after {
   content: "";
@@ -47,13 +43,11 @@ input[type=checkbox]:checked::after {
   height: 21px;
   width: 21px;
   border-radius: 4px;
-  background: #ff7e1d url(/m/theme/manage/images/common/iconfont-gmgouxuan.png) no-repeat center;
-}
+  background: #ff7e1d url(/m/theme/manage/images/common/iconfont-gmgouxuan.png) no-repeat center; }
 
 input[type=checkbox]:focus {
   outline: none;
-  border-color: #ff7e1d;
-}
+  border-color: #ff7e1d; }
 
 input[type="checkbox"] {
   width: 20px;
@@ -62,23 +56,19 @@ input[type="checkbox"] {
   top: 13px;
   right: 0px;
   border: 1px solid #ccc;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 input[type="checkbox"]:after {
   border: 1px solid #ccc;
   background-color: #ff7e1d;
-  color: #fff;
-}
+  color: #fff; }
 
 body {
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 body * {
   -webkit-appearance: none;
-  -moz-appearance: none;
-}
+  -moz-appearance: none; }
 
 .order_pro {
   width: 100%;
@@ -86,45 +76,37 @@ body * {
   background-color: #f2f2f2;
   padding-top: 1px;
   padding: 10px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .pro_info {
   width: 100%;
   height: 110px;
   border-bottom: 1px solid #e5e5e5;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .pro {
   height: 90px;
-  padding: 10px 0px 10px 10px;
-}
+  padding: 10px 0px 10px 10px; }
 
 .pro_right, .pro_left {
   display: inline-block;
-  float: left;
-}
+  float: left; }
 
 .pro_right {
   width: 60%;
   height: 90px;
-  position: relative;
-}
+  position: relative; }
 
 .pro_img {
   width: 100%;
-  height: 90px;
-}
+  height: 90px; }
 
 .pro_left {
   width: 40%;
-  height: 90px;
-}
+  height: 90px; }
 
 .pro_view {
-  margin: 0px 10px;
-}
+  margin: 0px 10px; }
 
 .pro_name {
   height: 40px;
@@ -134,8 +116,7 @@ body * {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  word-break: break-all;
-}
+  word-break: break-all; }
 
 .pro_dates, .pro_price {
   color: #999;
@@ -145,41 +126,33 @@ body * {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding-right: 5px;
-}
+  padding-right: 5px; }
 
 .pro_dates * {
   font-size: 12px;
-  line-height: 24px;
-}
+  line-height: 24px; }
 
 .redPrice {
   font-size: 14px;
-  color: #ff4848;
-}
+  color: #ff4848; }
 
 .pro_price {
   max-width: 112px;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 .select_group .pro_price {
-  text-align: right;
-}
+  text-align: right; }
 
 .text-danger {
   color: #ff4848;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .order_info {
-  height: auto;
-}
+  height: auto; }
 
 .order_form {
   margin: 0px 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .order_item {
   position: relative;
@@ -191,44 +164,37 @@ body * {
   margin: 10px 0px;
   background-color: #fff;
   color: #333;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 .order_item input[type="text"] {
   height: 45px;
   min-width: 80%;
   max-width: 85%;
   border: none;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 .order_item .item_desc {
   display: inline-block;
   width: 45px;
-  line-height: 45px;
-}
+  line-height: 45px; }
 
 .order_item.error {
-  border: 1px solid #ff4848;
-}
+  border: 1px solid #ff4848; }
 
 .order_date {
   display: inline-block;
-  width: 145px !important;
-}
+  width: 145px !important; }
 
 .order_content {
   height: 125px;
-  position: relative;
-}
+  position: relative; }
 
 .order_content textarea {
   min-width: 80%;
   max-width: 85%;
   height: 90px;
   margin-top: 14px;
-  resize: none;
-}
+  resize: none; }
 
 .tips {
   position: absolute;
@@ -236,13 +202,11 @@ body * {
   right: 10px;
   height: 20px;
   line-height: 20px;
-  color: #999;
-}
+  color: #999; }
 
 .order_submit {
   width: 100%;
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
 .gm-date2 {
   font-size: 26px;
@@ -253,8 +217,7 @@ body * {
   position: absolute;
   right: 10px;
   top: 0px;
-  z-index: 0;
-}
+  z-index: 0; }
 
 .pro_right .gm-next {
   position: absolute;
@@ -262,8 +225,7 @@ body * {
   top: 50%;
   margin-top: -6px;
   color: #ccc;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .submit_btn {
   background-color: #ff7e1d;
@@ -274,25 +236,21 @@ body * {
   height: 45px;
   line-height: 45px;
   border-radius: 2px;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .select_group {
   float: right;
   max-width: 132px;
-  position: relative;
-}
+  position: relative; }
 
 .select_group * {
-  line-height: 45px;
-}
+  line-height: 45px; }
 
 .select_count {
   min-width: 80%;
   max-width: 85%;
   height: 45px;
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 .select_arrow {
   position: absolute;
@@ -303,18 +261,15 @@ body * {
   color: #999;
   height: 45px;
   width: 18px;
-  line-height: 42px;
-}
+  line-height: 42px; }
 
 .select_arrow i {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: white;
-}
+  background: white; }
 
 .message_info {
   width: 100%;
@@ -325,8 +280,7 @@ select {
   left: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .message {
   margin: 0px;
@@ -338,8 +292,7 @@ select {
   margin-top: -50px;
   width: 90%;
   position: relative;
-  border-radius: 6px;
-}
+  border-radius: 6px; }
 
 .mes_info {
   text-align: center;
@@ -347,33 +300,28 @@ select {
   color: #666;
   background-color: #fff;
   margin: 10px;
-  padding: 5px;
-}
+  padding: 5px; }
 
 .gm-success-o {
   color: #ff7e1d;
   font-size: 30px;
   margin-right: 5px;
-  vertical-align: sub;
-}
+  vertical-align: sub; }
 
 .gm-close-o {
   color: #ff4848;
   font-size: 30px;
   margin-right: 5px;
-  vertical-align: sub;
-}
+  vertical-align: sub; }
 
 .mes_info p {
-  text-align: center;
-}
+  text-align: center; }
 
 .mes_icon {
   font-size: 18px;
   line-height: 30px;
   color: #333;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .btn_ok {
   width: 100%;
@@ -385,8 +333,7 @@ select {
   line-height: 50px;
   font-size: 18px;
   text-align: center;
-  border-radius: 0px 0px 6px 6px;
-}
+  border-radius: 0px 0px 6px 6px; }
 
 .waring_info {
   width: 100%;
@@ -394,8 +341,7 @@ select {
   bottom: 50%;
   margin-top: -20px;
   text-align: center;
-  display: none;
-}
+  display: none; }
 
 .waring_info span {
   display: inline-block;
@@ -405,8 +351,7 @@ select {
   height: 30px;
   line-height: 30px;
   color: #fff;
-  background-color: #666;
-}
+  background-color: #666; }
 
 /*蒙层*/
 .loading_mask {
@@ -419,8 +364,7 @@ select {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
-  z-index: 10;
-}
+  z-index: 10; }
 
 .loading_div {
   width: 75px;
@@ -432,41 +376,34 @@ select {
   margin-left: -50px;
   background: #fff;
   border-radius: 4px;
-  text-align: center;
-}
+  text-align: center; }
 
 .loading_div span {
   font-size: 12px;
-  color: #999;
-}
+  color: #999; }
 
 .loadingIcon {
-  padding: 10px 0px 6px 0px;
-}
+  padding: 10px 0px 6px 0px; }
 
 /*订单列表*/
 .booking_all {
   width: 100%;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .bookingInfo {
   width: 100%;
   padding: 10px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .booking_items {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .booking_items .booking_item {
   height: auto;
   background: #fff;
   width: 100%;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .booking_item .bok_name a {
   width: 100%;
@@ -478,33 +415,27 @@ select {
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .booking_item dl {
   display: inline-block;
   width: 100%;
   padding-right: 0px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .booking_item dt.bok_img {
-  width: 100px;
-}
+  width: 100px; }
 
 .booking_item dt img {
   width: 100px;
-  height: 100px;
-}
+  height: 100px; }
 
 .booking_item .bok_info {
   padding-bottom: 5px;
-  padding-top: 5px;
-}
+  padding-top: 5px; }
 
 .booking_item .bok_info dt, dd {
-  float: left;
-}
+  float: left; }
 
 .booking_item dd {
   position: relative;
@@ -513,14 +444,12 @@ select {
   width: -webkit-calc(100% - 110px);
   width: -o-calc(100% - 110px);
   width: -ms-calc(100% - 110px);
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .booking_item dd p, .booking_item dd p span {
   color: #666;
   line-height: 17px;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 .booking_item dd .bok_count {
   background: #f5f5f5;
@@ -530,19 +459,16 @@ select {
   border-radius: 4px;
   position: absolute;
   bottom: -8px;
-  right: -30px;
-}
+  right: -30px; }
 
 .booking_item .bok_monney {
   border-top: 1px solid #e5e5e5;
   height: 44px;
   line-height: 44px;
   font-size: 14px;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 
 .bok_monney .red_pirce {
   color: #ff4848;
   font-weight: bold;
-  font-size: 16px;
-}
+  font-size: 16px; }

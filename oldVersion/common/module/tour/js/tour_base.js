@@ -1428,13 +1428,27 @@ template.helper('join', function(array, separator) {
 							d.inputText && $("#fromcity").val(d.inputText).css('color', '#000');
 							d.inputText && $("#cityId").val(d.inputId);
 						}
-						
-						
 					}
 				});
+				
+				// 初始化出发地选择控件
+				/*$('#J-destination').querycity({
+					defaultText : "",
+					data : citysFlight,
+					tabs : labelFromcity,
+					hotList : hotList,
+					selector : $("#choiceCity2"),
+					callback : function(d) {
+					}
+				});*/
+				
 				$("#pop_city_fromcity .close").click(function() {
 					$("#pop_city_fromcity").hide();
 				});
+				
+				/*$("#pop_city_J-destination .close").click(function() {
+					$("#pop_city_J-destination").hide();
+				});*/
 
 				// 设置截至收客日期或不设置
 				$content.on("change", "#closedOffDeadline :radio", function(e) {

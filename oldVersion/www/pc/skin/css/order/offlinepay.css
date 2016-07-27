@@ -367,12 +367,23 @@ section {
   padding-bottom: 60px;
   height: 100%; }
 
+.offline-pay .order-info {
+  text-align: left;
+  padding: 20px;
+  border-bottom: solid 1px #eaeaea; }
+
+.offline-pay .order-info .order-num {
+  color: #333; }
+
+.offline-pay .order-info .order-time span {
+  color: #ff7e1d; }
+
 .offline-pay {
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 1180px;
-  height: 460px;
+  height: 540px;
   text-align: center;
   border: solid 1px #d8d8d8;
   background-color: #ffffff; }

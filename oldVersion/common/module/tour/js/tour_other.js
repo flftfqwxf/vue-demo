@@ -220,8 +220,31 @@ var constractdata;
 				var jsonData = {};
 				jsonData.tour = dataItems;
 				jsonData.product = dataItems.product;
+				
 				addRefundData(jsonData.product);
+				
+				jsonData.product.productDestinations=jsonData.product.productDestinations||[];
+				
+				var productDestinations=[];
+				$(".select2-selection--multiple .select2-selection__choice").each(function(i,v){
+				    var areaId=$(this).attr("id"),
+				    	has=false;
+				    for(var i=0;i<jsonData.product.productDestinations.length;i++){
+					if(jsonData.product.productDestinations[i].area.id==areaId){
+					    has=true;
+					    productDestinations.push(jsonData.product.productDestinations[i]);
+					    break;
+					}
+				    }
+				    if(!has){
+					productDestinations.push({area:{id:areaId}});
+				    }
+				});
+				
+				jsonData.product.productDestinations=productDestinations;
+				
 				var submitData = Tour.current.jsondom.formData(jsonData);
+			
 				// formData 后删除不需要的数据 如：飞机名称
 				for (var i = submitData.length - 1; i >= 0; i--) {
 					var nameString = submitData[i].name;

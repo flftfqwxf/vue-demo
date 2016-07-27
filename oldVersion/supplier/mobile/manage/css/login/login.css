@@ -1,14 +1,12 @@
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 .main {
   width: 100%;
   text-align: center;
   font-size: 1.1rem;
   padding-bottom: 2.0rem;
-  background-color: #f2f2f2;
-}
+  background-color: #f2f2f2; }
 
 .main .login-title {
   width: 100%;
@@ -16,38 +14,32 @@ html {
   text-align: center;
   padding-top: 0rem;
   margin-bottom: 0rem;
-  font-size: 1.1rem;
-}
+  font-size: 1.1rem; }
 
 .main .login-title label {
   padding-left: 1.6rem;
   padding-right: 0 0.3rem;
   background: url("../../manage/images/login/login-title.png") no-repeat 0rem 0rem;
-  background-size: 1.4rem 1.4rem;
-}
+  background-size: 1.4rem 1.4rem; }
 
 .loginForm {
   width: 100%;
   height: auto;
   padding: 15px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .loginForm .login-group {
   width: 100%;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .loginForm .erro-group {
   width: 100%;
   margin: 0rem auto;
   position: absolute;
-  top: 50%;
-}
+  top: 50%; }
 
 .diy_error {
-  text-align: center;
-}
+  text-align: center; }
 
 .loginForm .login-group .user, #login .login-group .pwd {
   width: 100%;
@@ -55,8 +47,7 @@ html {
   background: white !important;
   border: 0.1rem solid lightgrey;
   border-radius: 0.4rem;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .loginForm .login-group input {
   padding: 14px 0px;
@@ -71,54 +62,44 @@ html {
   color: #333;
   box-sizing: border-box;
   background: #fff;
-  border-radius: 0px 4px 4px 0px;
-}
+  border-radius: 0px 4px 4px 0px; }
 
 .loginForm .verify_input {
   width: 12rem !important;
   height: 4.1rem;
   border: 0.1rem solid lightgrey;
-  border-radius: 0.4rem;
-}
+  border-radius: 0.4rem; }
 
 .loginForm .verify_show {
-  margin-left: 0.5rem;
-}
+  margin-left: 0.5rem; }
 
 .loginForm .verify_show img {
   width: 9.3rem;
-  height: 4.1rem;
-}
+  height: 4.1rem; }
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: #fff !important;
   background-image: none !important;
-  color: black !important;
-}
+  color: black !important; }
 
 input::-moz-placeholder {
-  color: #999 !important;
-}
+  color: #999 !important; }
 
 input::-ms-placeholder {
-  color: #999 !important;
-}
+  color: #999 !important; }
 
 input::-webkit-input-placeholder {
-  color: #999 !important;
-}
+  color: #999 !important; }
 
 #login .login-group .lableIcon {
   padding: 0px 8px;
   display: inline-block;
   height: 50px;
-  line-height: 42px;
-}
+  line-height: 42px; }
 
 label .gmIcon {
   font-size: 24px;
-  color: #ccc;
-}
+  color: #ccc; }
 
 .loginForm .login-group .login-btn {
   width: 100%;
@@ -126,14 +107,12 @@ label .gmIcon {
   font-size: 18px;
   text-align: center;
   color: white;
-  border-radius: 0.4rem;
-}
+  border-radius: 0.4rem; }
 
 .loginForm p {
   font-size: 14px;
   margin-top: 0.8rem;
-  color: #333;
-}
+  color: #333; }
 
 .main .done {
   width: 100%;
@@ -141,13 +120,11 @@ label .gmIcon {
   padding-top: 1px;
   font-family: "Microsoft YaHei";
   box-sizing: border-box;
-  padding: 15px;
-}
+  padding: 15px; }
 
 .main .login-user {
   font-size: 18px;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 .main_do {
   background: #fff;
@@ -156,29 +133,24 @@ label .gmIcon {
   margin-bottom: 15px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .main .done .login-title {
-  font-size: 1.4rem;
-}
+  font-size: 1.4rem; }
 
 .main .done .done-group {
   height: 70px;
   width: 260px;
-  margin: 0px auto;
-}
+  margin: 0px auto; }
 
 .main .done .done-group ul {
   width: 210px;
   text-align: center;
   margin-top: 5px;
-  margin-left: -3px;
-}
+  margin-left: -3px; }
 
 .main .done .done-group ul li {
-  color: #666;
-}
+  color: #666; }
 
 .main .know {
   width: 100%;
@@ -187,12 +159,10 @@ label .gmIcon {
   text-align: center;
   color: white;
   border-radius: 0.4rem;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .done-group p {
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 body .main .done input[type="checkbox"] + label {
   position: relative;
@@ -205,22 +175,18 @@ body .main .done input[type="checkbox"] + label {
   height: 18px;
   background-color: #fff;
   border-radius: 0.3rem;
-  border: 0.1rem solid #d7d7d7;
-}
+  border: 0.1rem solid #d7d7d7; }
 
 body .main .done input[type=checkbox] {
-  opacity: 0;
-}
+  opacity: 0; }
 
 .gmIcon.gm-check:before {
-  color: #fff;
-}
+  color: #fff; }
 
 .Validform_error {
   background-color: transparent !important;
   height: 40px !important;
-  color: #fff !important;
-}
+  color: #fff !important; }
 
 .Validform_wrong {
   color: #fff !important;
@@ -231,8 +197,7 @@ body .main .done input[type=checkbox] {
   padding: 0px 10px;
   text-align: center !important;
   border: none !important;
-  border-radius: 4px !important;
-}
+  border-radius: 4px !important; }
 
 .Validform_checktip {
   margin-left: 0px !important;
@@ -244,17 +209,14 @@ body .main .done input[type=checkbox] {
   font-size: 16px !important;
   display: inline-block !important;
   width: 220px !important;
-  background: rgba(0, 0, 0, 0.6) !important;
-}
+  background: rgba(0, 0, 0, 0.6) !important; }
 
 .input_erro {
-  border: 1px solid #ff4848 !important;
-}
+  border: 1px solid #ff4848 !important; }
 
 .gm-hi {
   font-size: 100px;
   color: #ff9d3b;
   display: inline-block;
   height: 80px;
-  line-height: 60px;
-}
+  line-height: 60px; }

@@ -120,10 +120,10 @@
 		 * @return {[type]} [description]
 		 */
 		timeCheck:function(){
-			var id = parseInt($("[name=productId]").val()),
+			var id = parseInt($("[name=itemId]").val()),
 				_this=this;
 			
-			 $.getJSON("/product/"+ id +"/prices?format=json",
+			 $.getJSON("/item/"+ id +"/prices?format=json",
 			function(serverData) {
 				var prices = serverData && serverData.productPrices || [];
 				//json 格式
@@ -242,11 +242,16 @@
 			$("#form-info").eValidate({
 				submit:function(){
 					_this.checkCoupon();
-					_this.orderInfo();
-					var _value = $("[name=departureDate]").val();
-					_value = _value.replace("年","-").replace("月","-").replace("日","");
-					$("[name=departureDate]").val(_value);
-					return true;
+					var checked=$(".J-use").hasClass("active");
+					if(checked && $('[name="couponCodeId"]').val() ==""){
+						return false;
+					}else{
+						_this.orderInfo();
+						var _value = $("[name=departureDate]").val();
+						_value = _value.replace("年","-").replace("月","-").replace("日","");
+						$("[name=departureDate]").val(_value);
+						return true;
+					}
 				}
 
 			});

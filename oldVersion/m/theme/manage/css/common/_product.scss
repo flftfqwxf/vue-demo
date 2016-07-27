@@ -28,10 +28,11 @@
 .swipe .page li.on {background-color:$themeDeep;width:10px;height:10px;border-radius:10px;}
 
 /*产品类型标签*/
-.team, .freeWalker, .cruiseShip{margin:3px 3px 0 0;display:inline-block;color:$font_white;font-size:12px!important;line-height:100%;padding:4px 8px;position: absolute;bottom:10px;left:10px;border-radius:12px;}
+.team, .freeWalker, .cruiseShip,.local{margin:3px 3px 0 0;display:inline-block;color:$font_white;font-size:12px!important;line-height:100%;padding:4px 8px;position: absolute;bottom:10px;left:10px;border-radius:12px;}
 .team{background-color:$team;}
 .freeWalker{background-color:$free;}
 .cruiseShip{background-color:$ship;}
+.local{background-color:#30D56B;}
 /*产品类型标签 - 居上位置*/
 .hot_group .team, .hot_group .freeWalker, .hot_group .cruiseShip{position: absolute;bottom:10px;left: 10px;padding:4px 7px;margin:0;}
 .pic .team, .pic .freeWalker, .pic .cruiseShip{position: absolute;bottom:10px;left: 10px;padding:4px 7px;margin:0;}

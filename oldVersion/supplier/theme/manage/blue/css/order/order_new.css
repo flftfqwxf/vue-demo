@@ -426,7 +426,10 @@ td .alert-danger{background:none!important;}
 .order-info-list {
     padding-bottom:15px;
     margin-bottom:0;
+    border-top: 1px dashed #e8e8e8;
+    bot
 }
+.page-main-product dl.order-info-list:nth-child(2){border:none!important;}
 
 .order-info-list label {
     font-weight: normal;
@@ -444,9 +447,6 @@ td .alert-danger{background:none!important;}
     margin-left: 84px;
 }
 
-.form-group-dashed {
-    border-bottom: 1px dashed #e8e8e8
-}
 
 .tourist-info {
     position:relative;

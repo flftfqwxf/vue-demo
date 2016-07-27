@@ -252,7 +252,7 @@
         //     fixedObj.css({left: 0}).removeClass("top_step");
         // }
     }
-
+    
     var $form = $("#form").validationEngine({
         scroll: true, //是否滚动
         scrollOffset: 180, //滚动偏移量
@@ -264,7 +264,20 @@
         focusFirstField: true,
         validationEventTrigger : "",
         showOneMessage : false,
-        maxErrorsPerField : 1
+        maxErrorsPerField : 1,
+        onValidationComplete:function(dom,result){
+              if($("#base").is(":visible")){
+               if($(".select2-selection--multiple .select2-selection__choice").size()==0){
+           	     $(".select2-selection--multiple, .select2-selection--multiple input").addClass("error");  
+           	     return false;
+                   }
+           	else{
+           	     $(".select2-selection--multiple, .select2-selection--multiple input").removeClass("error");
+           	     return true;
+           	}
+              }
+            return result;
+        }
     });
     var docForm = document.getElementById("form");
     //行程服务.已经参数配置等信息
@@ -303,6 +316,29 @@
                         Tour.current.data = json.tour;
                         Tour.current.data.product = json.product;
                         Tour.current.lineId = Tour.current.lineId || (json.product.touristLine && json.product.touristLine.id);
+                        $("#urlTourLineId").attr("value",Tour.current.lineId);
+                        
+                        var selected={};
+                        $(json.product.productDestinations).each(function(i,v){
+                            selected[v.area.id]=v.area.id;
+                	});
+                        $.getJSON("/cityAreas.json?line="+$("#urlTourLineId").val(),function(serverData){
+                	    var options="";
+                	    $(serverData.areas).each(function(i,v){
+                		options+="<option value=\""+v.id+"\" "+((selected[v.id])?"selected":"")+">"+v.name+"</option>";
+                	    });
+                	    $("#J-destination").html(options);
+                	    $('#J-destination').select2({
+        			  placeholder:"请选择目的地"
+        		    });
+                	    
+                	    /*var selected="";
+                	    
+                	    $(".select2-selection__rendered .select2-search").before(selected);*/
+                	});
+                        
+                        
+			
                         if (copy) {
                             $.each("name coverImage priceIncluded priceExcluded brightSpot".split(" "), function (index, val) {
                                 json.product[val] = json.tour[val];
@@ -333,6 +369,17 @@
                 $(".step[ref=base]").click();
                 //Tour.module.base.init();
                 //alert("新建");
+                
+                $.getJSON("/cityAreas.json?line="+$("#urlTourLineId").val(),function(serverData){
+        	    var options="";
+        	    $(serverData.areas).each(function(i,v){
+        		options+="<option value=\""+v.id+"\">"+v.name+"</option>";
+        	    });
+        	    $("#J-destination").html(options);
+        	    $('#J-destination').select2({
+			  placeholder:"请选择目的地"
+		    });
+        	});
             }
             $(".step").removeClass("active");
             $(".step[ref=base]").addClass("active");

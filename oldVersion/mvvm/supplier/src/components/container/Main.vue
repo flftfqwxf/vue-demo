@@ -4,10 +4,8 @@
         <div class="page-content-outer">
             <div class="page-content-inner">
                 <div class="page-content">
-                    <breadcrumb :current-menu="currentMenu"></breadcrumb>
-                    <div class="page-main" id="manApp">
+                    <breadcrumb :breadcrumb-info="breadcrumbInfo"></breadcrumb>
                         <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
-                    </div>
                 </div>
             </div>
         </div>
@@ -24,9 +22,9 @@
         },
         vuex: {
             getters: {
-                currentMenu: ({breadcrumb})=> {
+                breadcrumbInfo: ({breadcrumb})=> {
 //                    console.log(breadcrumb.breadcrumbInfo.currentMenu)
-                    return breadcrumb.breadcrumbInfo.currentMenu
+                    return breadcrumb.breadcrumbInfo
                 }
             },
             actions:{
@@ -34,7 +32,7 @@
             }
         },
         ready: function () {
-            console.log(this.$route.fullPath)
+//            console.log(this.$route.fullPath)
             this.loadBreadCrumb( this.$route.fullPath)
         }
     }

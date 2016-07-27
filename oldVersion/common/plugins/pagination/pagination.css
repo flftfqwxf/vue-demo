@@ -1,3 +1,6 @@
+.pagination {
+  float: right; }
+
 .paginationjs {
   line-height: 1.6;
   font-family: "Marmelad", "Lucida Grande", "Arial", "Hiragino Sans GB", Georgia, sans-serif;
@@ -19,32 +22,35 @@
 
 .paginationjs .paginationjs-pages li {
   float: left;
+  margin-left: 2px;
   border: 1px solid transparent;
   border-right: 0;
   list-style: none;
   padding-right: 0; }
 
 .paginationjs .paginationjs-pages li > a {
-  min-width: 30px;
-  height: 28px;
-  line-height: 28px;
+  min-width: 26px;
+  height: 24px;
+  line-height: 24px;
   display: block;
-  background: #fff;
   font-size: 14px;
   color: #626466;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  border-radius: 2px;
+  border: solid 1px transparent; }
 
 .paginationjs .paginationjs-pages li > a:hover {
-  background: #eee; }
+  background-color: #fff;
+  border: solid 1px #eee; }
 
 .paginationjs .paginationjs-pages li.active {
   border: 0; }
 
 .paginationjs .paginationjs-pages li.active > a {
-  height: 30px;
-  line-height: 30px;
-  background: #aaa;
+  height: 26px;
+  line-height: 26px;
+  background: #ff7e1d;
   color: #fff; }
 
 .paginationjs .paginationjs-pages li.disabled > a {
@@ -72,11 +78,11 @@
   font-size: 14px; }
 
 .paginationjs .paginationjs-go-input > input[type="text"] {
-  width: 30px;
-  height: 28px;
+  width: 42px;
+  height: 24px;
   background: #fff;
   border-radius: 3px;
-  border: 1px solid #aaa;
+  border: 1px solid #d8d8d8;
   padding: 0;
   font-size: 14px;
   text-align: center;
@@ -91,12 +97,9 @@
   font-size: 14px; }
 
 .paginationjs .paginationjs-go-button > input[type="button"] {
-  min-width: 40px;
-  height: 30px;
-  line-height: 28px;
-  background: #fff;
-  border-radius: 3px;
-  border: 1px solid #aaa;
+  min-width: 26px;
+  height: 26px;
+  line-height: 26px;
   text-align: center;
   padding: 0 8px;
   font-size: 14px;
@@ -104,10 +107,13 @@
   outline: 0;
   box-shadow: none;
   color: #333;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 1px transparent; }
 
 .paginationjs .paginationjs-go-button > input[type="button"]:hover {
-  background-color: #f8f8f8; }
+  background-color: #fff;
+  border: solid 1px #eee; }
 
 .paginationjs .paginationjs-nav {
   float: left;
@@ -321,3 +327,5 @@
   height: 36px\0;
   *line-height: 36px;
   line-height: 36px\0; }
+
+/*# sourceMappingURL=pagination.css.map */

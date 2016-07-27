@@ -27,32 +27,82 @@ var category = {
                 "0": {
                     "0": "国内游",
                     "1": "出境游",
-                    "2": "邮轮/游船"
+                    "2": "邮轮/游船"/*,
+                    "3": "飞机/火车票",
+                    "4": "景点门票",
+                    "5": "通讯",
+                    "6": "租车",
+                    "7": "交通",
+                    "8": "签证",
+                    "9": "酒店",
+                    "10": "保险"*/
                 },
                 "0,0": {
                     "group": "国内跟团游",
-                    "free": "国内自由行"
+                    "free": "国内自由行",
+                    "local": "当地参团"
                 },
                 "0,0,group": {},
                 "0,0,free": {},
+                "0,0,local": {},
                 "0,1": {
                     "group": "出境跟团游",
-                    "free": "出境自由行"
+                    "free": "出境自由行",
+                    "local": "当地参团"
                 },
                 "0,1,group": {},
                 "0,1,free": {},
+                "0,1,local": {},
                 "0,2": {
                     "ship-0": "国际邮轮",
                     "ship-1": "国内邮轮"
                 },
                 "0,2,ship-0": {},
-                "0,2,ship-1": {},
+                "0,2,ship-1": {}
+                /*"0,3": {
+                    "ticket-0": "飞机票",
+                    "ticket-1": "火车票"
+                },
+                "0,3,ticket-0": {},
+                "0,3,ticket-1": {},
+                "0,4": {
+                    "ticket-0": "境外门票",
+                    "ticket-1": "国内门票"
+                },
+                "0,4,ticket-0": {},
+                "0,4,ticket-1": {},
+                "0,5": {
+                    "contact-0": "境外WiFi",
+                    "contact-1": "境外电话卡",
+                    "contact-2": "国内WiFi"
+                },
+                "0,5,contact-0": {},
+                "0,5,contact-1": {},
+                "0,5,contact-2": {},
+                "0,6": {
+                    "rentCar-0": "国内租车",
+                    "rentCar-1": "国际租车"
+                },
+                "0,6,rentCar-0": {},
+                "0,6,rentCar-1": {},
+
+                "0,7": {
+                    "traffic-0": "巴士",
+                    "traffic-1": "接送",
+                    "traffic-2": "地铁",
+                    "traffic-3": "包车"
+                },
+                "0,7,traffic-0": {},
+                "0,7,traffic-1": {},
+                "0,7,traffic-2": {},
+                "0,7,traffic-3": {}*/
             };
 
             $.each(res.touristlines, function(i, n){
                 if(n.region == 1){ // 国内
                     result['0,0,group'][n.id] = n.name;
                     result['0,0,free'][n.id] = n.name;
+                    result['0,0,local'][n.id] = n.name;
                 }else{
                     if(n.shipLine){ // 游轮
                        result['0,2,ship-0'][n.id] = n.name;
@@ -60,6 +110,7 @@ var category = {
                     }else{ //国外
                         result['0,1,group'][n.id] = n.name;
                         result['0,1,free'][n.id] = n.name;
+                        result['0,1,local'][n.id] = n.name;
                     }
                 }
             });
@@ -155,7 +206,12 @@ var category = {
             		   abroad = 1; //国际
             	   }
             }
-           location.href = '/product/input?tourtype='+ tourtype +'&line=' + self.keys.line+"&abroad="+abroad;
+            var localTour = 0;
+            if (tourtype=="local") {
+            	tourtype = 'group';
+            	localTour = 1;
+            }
+           location.href = '/product/input?tourtype='+ tourtype +'&localTour=' + localTour + '&line=' + self.keys.line+"&abroad="+abroad;
         });
     }
 }

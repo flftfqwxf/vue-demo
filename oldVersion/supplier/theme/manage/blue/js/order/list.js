@@ -178,6 +178,83 @@ $(function() {
 
                 });
 
+            }).on('click', '[action="listview"]',function() {
+        	var _this=$(this);
+        	var btn=[
+                         {
+                             name: "重新上传",
+                             callback:function(){
+                        	 $(".upload-again label").click();
+                           	 return false;
+                             }
+                         },
+                         {
+                             name: "确定",
+                             className: 'btn-process',
+                             callback:function(){
+                        	 location.reload();
+                             }
+                         }
+                ];
+        	
+        	if($(this).attr("distributor")!=undefined){
+        	    btn=[
+        	         {
+        	             name:"取消"
+        	         },
+        	         {
+        	             name:"下载",
+        	             className: 'btn-process',
+                             callback: function() {
+                        	 window.location.href=$(".upload-have-notice a").attr("href");
+                             }
+        	         }
+        	    ];
+        	}
+        	
+                self._artDialog({
+                    title: "查看出团通知书",
+                    content: template("view-have-notice-f", {name:_this.attr("attr_name"),href:_this.attr("attr_href")}),
+                    width: 462,
+                    height: 102,
+                    lock: true,
+                    fixed: true,
+                    padding: "10px 0",
+                    button:btn
+
+                });
+                
+                //上传组件调用
+                self._uploadNotice(".upload-again", "重新上传",_this);
+
+            }).on('click', '[action="listview2"]', function() {
+                var _this = $(this);
+
+                self._artDialog({
+                    title: "查看出团通知书",
+                    content: template("view-have-notice-f", {
+                        name: _this.attr("attr_name"),
+                        href: _this.attr("attr_href")
+                    }),
+                    width: 462,
+                    height: 102,
+                    lock: true,
+                    fixed: true,
+                    padding: "10px 0",
+                    button: [
+                        {
+                            name:"取消"
+                        },
+                        {
+                            name:"下载",
+                            className: 'btn-process',
+                            callback: function() {
+                        	 window.location.href=$(".upload-have-notice a").attr("href");
+                            }
+                        }
+                    ]
+
+                });
             }).on('click', '.btn-new-standard',
             function() {
 

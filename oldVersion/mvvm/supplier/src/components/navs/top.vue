@@ -3,14 +3,10 @@
         <div class="pull-left">
             <button type="button" class="btn btn-default" id="nav-button"><i class="gm-icon gm-menu"></i></button>
             <h2>
-                供应商管理中心 - {{breadcrumbInfo.supplierName}}
-                {{ b | capitalize }}
+                供应商管理中心 - {{userInfo.supplier && userInfo.supplier.name}}
                 <small>
-                    <template v-if="breadcrumbInfo.distributorInfo && breadcrumbInfo.distributorInfo!=''">
+                    <template v-if="userInfo.distributor">
                         <i class="fa fa-retweet"></i><a href="{{WEB_DISTRIBUTOR }}">分销商管理中心</a>
-                    </template>
-                    <template v-if="breadcrumbInfo.supplierStaff && breadcrumbInfo.supplierStaff!='' && !breadcrumbInfo.supplierStaff.admin">
-                        <i class="gm-icon gm-switch"></i><a title="您已经是供应商员工，不能成为分销商">分销商管理中心</a>
                     </template>
                     <template v-else>
                         <i class="gm-icon gm-switch"></i><a href="{{WEB_WWW}}/register-detail">分销商管理中心</a>
@@ -22,18 +18,15 @@
             <li class="dropdown" data-toggle="mouseenter">
                 <div href="#" class="dropdown-toggle">
                     <i class="gm-icon gm-user"></i>
-                    {{breadcrumbInfo.userInfo && breadcrumbInfo.userInfo.phone}}
+                    {{phone}}
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <ul class="dropdown-menu">
                     <li><a href="{{WEB_SUPPLIER }}"><i class="gm-icon gm-supplier"></i>供应商中心</a></li>
-                    <template v-if="breadcrumbInfo.distributorInfo && breadcrumbInfo.distributorInfo != ''">
+                    <template v-if="userInfo.distributor">
                         <li><a href="{{WEB_DISTRIBUTOR }}"><i class="gm-icon gm-distributor"></i>分销商中心</a></li>
                     </template>
-                    <template v-if="breadcrumbInfo.supplierStaff && breadcrumbInfo.supplierStaff!='' && !breadcrumbInfo.supplierStaff.admin">
-                        <li><a style="color:#e6e6e6 !important;" title="您已经是供应商员工，不能成为分销商"><i class="gm-icon gm-distributor"></i>分销商中心</a></li>
-                    </template>
-                    <template>
+                    <template v-else>
                         <li><a href="{{WEB_WWW }}/register-detail"><i class="gm-icon gm-distributor"></i>申请分销商</a></li>
                     </template>
                     <li><a href="{{WEB_WWW }}/user/password"><i class="gm-icon gm-modify-pwd"></i>修改密码</a></li>
@@ -45,32 +38,38 @@
     </div>
 </template>
 <script type="text/ecmascript-6">
-    import {loadBreadCrumb} from "../../vuex/actions"
+    import {loadUserInfo} from "../../vuex/actions"
     export default{
         vuex: {
             getters: {
-                breadcrumbInfo: ({breadcrumb})=>{
-                    return breadcrumb.breadcrumbInfo
+                userInfo: ({top})=> {
+                    return top.userInfo
                 }
             },
             actions: {
-                loadBreadCrumb
+                loadUserInfo
+            }
+        },
+        data(){
+            return {
+                WEB_DISTRIBUTOR: WEB_DISTRIBUTOR,
+                WEB_SUPPLIER: WEB_SUPPLIER,
+                WEB_WWW: WEB_WWW
             }
         },
         created: function () {
-//            this.loadBreadCrumb()
+            this.loadUserInfo()
         },
         computed: {
-            b: {
-//                get: ()=>{
-//                    console.log(444,this)
-//                    return Math.random()
-//                    },
-                get:  function () {
-                  //  return this.tt + Math.random()
-                },
-                set: function (newValue) {
-                  //  this.tt=newValue
+            phone: {
+                get: function () {
+//                    console.log('dddd',userInfo)
+                    let userInfo = this.userInfo.user;
+                    if (userInfo && userInfo.phone) {
+                        let replacestr = userInfo.phone.substring(3, 7)
+                        return userInfo.phone.replace(replacestr, '****')
+                    }
+                    return '***********'
                 }
             }
         }

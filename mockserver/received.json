@@ -1,20 +1,191 @@
 {
   "unread": {
-    "finance": 0,
-    "order": 0,
-    "system": 0,
-    "total": 0
+    "finance": 4,
+    "order": 7,
+    "system": 8,
+    "total": 11
   },
   "pagination": {
-    "count": 1,
+    "count": 10,
     "currentPage": 1,
-    "pageCount": 1,
+    "pageCount": 5,
     "pageSize": 5
   },
   "receiveList": [
     {
       "id": 2845,
       "message": "<img src=\"http:\/\/img3.gmmtour.com\/908\/524\/955e8b469a634db8e7705267b46eb60c.jpg\" width=\"500px\" alt=\"\" \/>",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
+      "messageType": "system",
+      "messageTypeUpperCase": "SYSTEM",
+      "messageTypeValue": "系统消息",
+      "read": true,
+      "receiveTime": "2016-05-24 11:49:16"
+    },
+    {
+      "id": 2845,
+      "message": "sdsdfsdfsdfsfsdf",
       "messageType": "system",
       "messageTypeUpperCase": "SYSTEM",
       "messageTypeValue": "系统消息",

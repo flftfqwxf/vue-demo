@@ -745,7 +745,7 @@ table {
   border-radius: 10px; }
 
 /*产品类型标签*/
-.team, .freeWalker, .cruiseShip {
+.team, .freeWalker, .cruiseShip, .local {
   margin: 3px 3px 0 0;
   display: inline-block;
   color: #fff;
@@ -765,6 +765,9 @@ table {
 
 .cruiseShip {
   background-color: #78a7ff; }
+
+.local {
+  background-color: #30D56B; }
 
 /*产品类型标签 - 居上位置*/
 .hot_group .team, .hot_group .freeWalker, .hot_group .cruiseShip {

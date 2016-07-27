@@ -8631,7 +8631,7 @@ button.aui_state_highlight {
 .schedule-list {
   margin: 0 auto;
   width: 1180px;
-  margin-top: 40px;
+  margin-top: 30px;
   overflow: hidden; }
 
 .schedule-list li {
@@ -8687,33 +8687,10 @@ button.aui_state_highlight {
   color: #ffffff;
   font-size: 12px; }
 
-.schedule-list li.present .icon em {
-  font-style: normal; }
-
-.schedule-list li.present .icon i {
-  display: none; }
-
-.schedule-list li.present .schedule .line {
-  left: -10px;
-  background-color: #ff7e1d; }
-
-.schedule-list li.present .schedule .status {
-  background-color: #F9CAA7; }
-
-.schedule-list li.present .txt {
-  color: #ff7e1d; }
-
-.schedule-list li.present .status .num {
-  display: none; }
-
-.schedule-list li.present .icon {
-  display: block; }
-
-.schedule-list li.active .icon em {
-  display: none; }
+.schedule-list li.active .schedule .line {
+  left: -10px; }
 
 .schedule-list li.active .schedule .line {
-  left: -10px;
   background-color: #ff7e1d; }
 
 .schedule-list li.active .schedule .status {

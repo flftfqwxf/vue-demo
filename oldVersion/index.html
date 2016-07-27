@@ -2,6 +2,15 @@
 <html class="single-screen">
 <head>
     <meta charset="utf-8"/>
+    <script type="text/javascript">
+        var WEB_STATIC = "http://static.gmmtour.com";
+        var WEB_STATIC_DISTRIBUTOR = "http://static.gmmtour.com/distributor";
+        //系统名称，用于在分销商和供应商存在相同功能时，局部区分的判断标识
+        var PROJECT_NAME='distributor';
+        var WEB_DISTRIBUTOR = "http://distributor.gmmtour.com";
+        var WEB_SUPPLIER = "http://supplier.gmmtour.com";
+        var WEB_WWW = "http://www.gmmtour.com";
+    </script>
     <link rel="stylesheet" href="/common/css/bootstrap-system.css">
     <style>
         .btns-wrap dt{ padding: 5px 0; }
@@ -9,12 +18,11 @@
     </style>
     <script src="/common/js/jquery1.9.1.min.js"></script>
     <script src="/common/js/bootstrap.js?v=1"></script>
-    <script src="/common/js/toolbar.js"></script>
     <script src="/common/plugins/pagination/pagination.js"></script>
+    <script src="/distributor/theme/manage/blue/js/common.js?v=" type="text/javascript"></script>
 </head>
 <body>
-
 <app></app>
-<script src="/mvvm/dist/static/app.js"></script>
+<script src="/mvvm/dist/static/distributor/app.js"></script>
 </body>
 </html>

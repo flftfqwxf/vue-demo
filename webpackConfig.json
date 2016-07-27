@@ -1,5 +1,14 @@
 {
   "path":"oldVersion/mvvm/dist/",
-  "entryPath":"oldVersion/mvvm/dist/index.jsp",
-  "supplierPath":"../gmmtour-web-supplier/WebContent/page/mvvm"
+  "supplier":{
+    "entryPath":"oldVersion/mvvm/dist/static/supplier/index.jsp",
+    "distPath":"oldVersion/mvvm/dist/static/supplier",
+    "jspPath":"../gmmtour-web-supplier/WebContent/page/mvvm"
+  },
+  "distributor":{
+    "entryPath":"oldVersion/mvvm/dist/static/distributor/index.jsp",
+    "distPath":"oldVersion/mvvm/dist/static/distributor/",
+    "jspPath":"../gmmtour-web-distributor/WebContent/page/mvvm"
+  }
+
 }

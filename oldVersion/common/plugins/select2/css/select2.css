@@ -230,7 +230,7 @@
 .select2-container--default .select2-results__option[aria-disabled=true] {
   color: #999; }
 .select2-container--default .select2-results__option[aria-selected=true] {
-  background-color: #ddd; }
+  background-color: #ff9248 !important;display:none;}
 .select2-container--default .select2-results__option .select2-results__option {
   padding-left: 1em; }
   .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
@@ -251,7 +251,7 @@
             margin-left: -5em;
             padding-left: 6em; }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #5897fb;
+   background-color: #ff9248 !important;
   color: white; }
 .select2-container--default .select2-results__group {
   cursor: default;
@@ -420,3 +420,14 @@
   padding: 6px; }
 .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: #5897fb; }
+
+/*重置*/
+.select2-container--default .select2-selection--multiple{
+    border: 1px solid #d8d8d8!important;
+    border-radius: 2px!important;
+}
+.select2-container .select2-search--inline .select2-search__field{height:auto;}
+.select2-dropdown{border-color:#d8d8d8!important;}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{border:none!important;background:#fff7eb!important;color:#999!important;}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{font-weight:400!important;color:#f7c29a!important;margin-left:10px;margin-top:3px;float:right;}
+.select2-container--default .error{border-color: #f98282!important;}

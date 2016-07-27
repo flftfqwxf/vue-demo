@@ -188,7 +188,7 @@
                 var footer = $.isFunction(attributes.footer) ? attributes.footer() : attributes.footer;
 
                 var html = '';
-                var goInput = '<input type="text" class="J-paginationjs-go-pagenumber">';
+                var goInput = '<span style="padding-right:5px;">跳转到</span><input type="text" class="J-paginationjs-go-pagenumber">';
                 var goButton = '<input type="button" class="J-paginationjs-go-button" value="'+ goButtonText +'">';
                 var formattedString;
                 var i;
@@ -219,12 +219,12 @@
                     if(showPrevious){
                         if(currentPage === 1){
                             if(!autoHidePrevious){
-                                html += '<li class="'+ classPrefix +'-prev '+ disableClassName +'"><a>'+ firstText +'<\/a><\/li>';
+                                /*html += '<li class="'+ classPrefix +'-prev '+ disableClassName +'"><a>'+ firstText +'<\/a><\/li>';*/
                                 html += '<li class="'+ classPrefix +'-prev '+ disableClassName +'"><a>'+ prevText +'<\/a><\/li>';
                             }
                         }
                         else{
-                            html += '<li class="'+ classPrefix +'-prev J-paginationjs-previous" data-num="1"><a href="'+ pageLink +'">'+ firstText +'<\/a><\/li>';
+                            /*html += '<li class="'+ classPrefix +'-prev J-paginationjs-previous" data-num="1"><a href="'+ pageLink +'">'+ firstText +'<\/a><\/li>';*/
                             html += '<li class="'+ classPrefix +'-prev J-paginationjs-previous" data-num="'+ (currentPage - 1) +'"><a href="'+ pageLink +'">'+ prevText +'<\/a><\/li>';
                         }
                     }
@@ -278,12 +278,12 @@
                         if(currentPage == totalPage){
                             if(!autoHideNext){
                                 html += '<li class="'+ classPrefix +'-next '+ disableClassName +'"><a>'+ nextText +'<\/a><\/li>';
-                                html += '<li class="'+ classPrefix +'-next '+ disableClassName +'"><a>'+ lastText +'<\/a><\/li>';
+                                /*html += '<li class="'+ classPrefix +'-next '+ disableClassName +'"><a>'+ lastText +'<\/a><\/li>';*/
                             }
                         }
                         else{
                             html += '<li class="'+ classPrefix +'-next J-paginationjs-next" data-num="'+ (currentPage + 1) +'"><a href="'+ pageLink +'">'+ nextText +'<\/a><\/li>';
-                            html += '<li class="'+ classPrefix +'-next J-paginationjs-next" data-num="'+ totalPage +'"><a href="'+ pageLink +'">'+ lastText +'<\/a><\/li>';
+                            /*html += '<li class="'+ classPrefix +'-next J-paginationjs-next" data-num="'+ totalPage +'"><a href="'+ pageLink +'">'+ lastText +'<\/a><\/li>';*/
                         }
                     }
 
@@ -918,19 +918,19 @@
         showNavigator: false,
 
         // Whether to display the 'Go' input
-        showGoInput: false,
+        showGoInput: true,
 
         // Whether to display the 'Go' button
-        showGoButton: false,
+        showGoButton: true,
 
         // Page link
         pageLink: '',
 
         // 'Previous' text
-        prevText: '&lt;',
+        prevText: '上一页',//'&lt;'
 
         // 'Next' text
-        nextText: '&gt;',
+        nextText: '下一页',//'&gt;'
 
         firstText: '&lt;&lt;',
         lastText: '&gt;&gt;',

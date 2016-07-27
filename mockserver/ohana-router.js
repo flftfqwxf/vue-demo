@@ -27,7 +27,7 @@ server.get('/api/mvvm/list1.json', {
             ]
         }
     }
-});
+})
 server.get('/api/mvvm/list2.json', {
     //delay: 12000,
     data: function (params, query) {
@@ -62,7 +62,6 @@ server.get('/user/info.json', {
         return data
     }
 });
-
 server.get('/order/count.json', {
     //delay: 12000,
     data: function (params, query) {
@@ -77,7 +76,6 @@ server.get('/message/received.json', {
         return data
     }
 });
-
 server.get('/api/mvvm/breadcrumb.json', {
     data: function (params, query) {
         var data = require('./breakcrumb.json');

@@ -1,14 +1,15 @@
 @charset "utf-8";
 @import "../../bootstrap/scss/bootstrap/variables";
+.pagination{float:right;}
 .paginationjs{ line-height: 1.6; font-family: "Marmelad", "Lucida Grande", "Arial", "Hiragino Sans GB", Georgia, sans-serif; font-size: 14px; box-sizing: initial }
 .paginationjs:after{ display: table; content: " "; clear: both }
 .paginationjs .paginationjs-pages{ float: left }
 .paginationjs .paginationjs-pages ul{ float: left; margin: 0; padding: 0 }
-.paginationjs .paginationjs-pages li{ float: left; border: 1px solid $pagination-border; border-right: 0; list-style: none; padding-right: 0;}
-.paginationjs .paginationjs-pages li > a{ min-width: 30px; height: 28px; line-height: 28px; display: block; background: #fff; font-size: 14px; color: $pagination-color; text-decoration: none; text-align: center }
-.paginationjs .paginationjs-pages li > a:hover{ background: #eee }
-.paginationjs .paginationjs-pages li.active{ border: 0 }
-.paginationjs .paginationjs-pages li.active > a{ height: 30px; line-height: 30px; background: #aaa; color: #fff }
+.paginationjs .paginationjs-pages li{ float: left;margin-left:2px; border: 1px solid $pagination-border; border-right: 0; list-style: none; padding-right: 0;}
+.paginationjs .paginationjs-pages li > a{ min-width: 26px; height: 24px; line-height: 24px; display: block; font-size: 14px; color: $pagination-color; text-decoration: none; text-align: center ;border-radius:2px;border:solid 1px transparent}
+.paginationjs .paginationjs-pages li > a:hover{background-color:#fff;border:solid 1px #eee; }
+.paginationjs .paginationjs-pages li.active{ border:0;}
+.paginationjs .paginationjs-pages li.active > a{ height: 26px; line-height: 26px; background: #ff7e1d; color: #fff }
 .paginationjs .paginationjs-pages li.disabled > a{ opacity: .3 }
 .paginationjs .paginationjs-pages li.disabled > a:hover{ background: 0 }
 .paginationjs .paginationjs-pages li:first-child{ border-radius: 3px 0 0 3px }
@@ -16,10 +17,10 @@
 .paginationjs .paginationjs-pages li:last-child{ border-right: 1px solid $pagination-border; border-radius: 0 3px 3px 0 }
 .paginationjs .paginationjs-pages li:last-child > a{ border-radius: 0 3px 3px 0 }
 .paginationjs .paginationjs-go-input{ float: left; margin-left: 10px; font-size: 14px }
-.paginationjs .paginationjs-go-input > input[type="text"]{ width: 30px; height: 28px; background: #fff; border-radius: 3px; border: 1px solid #aaa; padding: 0; font-size: 14px; text-align: center; vertical-align: baseline; outline: 0; box-shadow: none; box-sizing: initial }
+.paginationjs .paginationjs-go-input > input[type="text"]{ width: 42px; height: 24px; background: #fff; border-radius: 3px; border: 1px solid #d8d8d8; padding: 0; font-size: 14px; text-align: center; vertical-align: baseline; outline: 0; box-shadow: none; box-sizing: initial }
 .paginationjs .paginationjs-go-button{ float: left; margin-left: 10px; font-size: 14px }
-.paginationjs .paginationjs-go-button > input[type="button"]{ min-width: 40px; height: 30px; line-height: 28px; background: #fff; border-radius: 3px; border: 1px solid #aaa; text-align: center; padding: 0 8px; font-size: 14px; vertical-align: baseline; outline: 0; box-shadow: none; color: #333; cursor: pointer }
-.paginationjs .paginationjs-go-button > input[type="button"]:hover{ background-color: #f8f8f8 }
+.paginationjs .paginationjs-go-button > input[type="button"]{ min-width: 26px; height: 26px; line-height: 26px; text-align: center; padding: 0 8px; font-size: 14px; vertical-align: baseline; outline: 0; box-shadow: none; color: #333; cursor: pointer ;background-color:transparent;border:solid 1px transparent;}
+.paginationjs .paginationjs-go-button > input[type="button"]:hover{ background-color: #fff;border:solid 1px #eee; }
 .paginationjs .paginationjs-nav{ float: left; height: 30px; line-height: 30px; margin-left: 10px; font-size: 14px }
 .paginationjs.paginationjs-small{ font-size: 12px }
 .paginationjs.paginationjs-small .paginationjs-pages li > a{ min-width: 26px; height: 24px; line-height: 24px; font-size: 12px }

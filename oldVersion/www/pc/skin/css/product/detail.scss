@@ -16,9 +16,30 @@ header .nav-list{display:none!important;}
 /*plugins*/
 .p-pics{width:470px;position:relative;}
 
-.p-pics .tour-type{z-index:10;color:#fff;text-indent:20px;font-size:18px;width:100px;height:50px;line-height:42px;display:block;position:absolute;left:-10px;top:20px;background:url(../../images/teamTour-icon.png);}
+.p-pics .tour-type{z-index:10;color:#fff;text-align:center;font-size:18px;width:100px;height:50px;line-height:42px;display:block;position:absolute;left:-10px;top:20px;background:url(../../images/teamTour-icon.png);}
 .p-pics .freeWalker{background:url(../../images/freeWalker-icon.png);}
 .p-pics .cruiseShip{background:url(../../images/cruiseShip-icon.png);}
+.p-pics .localTour{background:url(../../images/localTour-icon.png);}
+
+.p-calendar .date-store{
+    font-style: normal;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    padding: 0 1px;
+    bottom: 13px;
+    height: 16px;
+    color:#53bec3;
+    transform:scale(0.9); 
+    line-height: 16px;
+    overflow: hidden;
+}
+.p-calendar .date-price{
+    bottom:0!important;
+}
 
 .pic-cover{height:354px;overflow:hidden;position:relative;}
 .pic-cover div>div{float:left;width:470px;height:354px;float:left;overflow:hidden;}
@@ -96,7 +117,7 @@ header .nav-list{display:none!important;}
 }
 
 .p-info .discount-info{display:inline-block;margin-left:15px;}
-.p-info .discount-info p{margin-bottom:-1px;float:left;margin-right:10px;text-align:center;line-height:20px;border-radius:2px;}
+.p-info .discount-info p{margin-bottom:-1px;float:left;margin-right:10px;text-align:center;line-height:20px;height:22px;border-radius:2px;}
 .p-info .discount-info p .text{width:34px;color:#fff;}
 .p-info .discount-info p .num{min-width:32px;padding:0 3px;}
 .p-info .discount-info span{display:inline-block;}

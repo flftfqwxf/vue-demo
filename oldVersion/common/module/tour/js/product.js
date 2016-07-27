@@ -274,4 +274,122 @@ $(function(){
 			return this.title
 		}
 	});
+
+
+	//3.6
+    $(".m-btn-w").on("click",function(){//批量选择
+		var t = $(".m-btn-w").eq(0).hasClass('active'),
+		isFirst = $(this).hasClass('first-temp');
+		if(!t && isFirst){
+			$(".m-btn-w").not($(".m-btn-w").eq(0)).addClass('active');
+			$(".modify_site").removeAttr("disabled");
+			$(".currentProduct").find('em').text($(".m-btn-w.active").length);
+		}else{
+			if(!isFirst){
+				$(".m-btn-w").eq(0).removeClass('active');
+				$(".modify_site").removeAttr("disabled");
+			}else{
+				$(".m-btn-w").not($(".m-btn-w").eq(0)).removeClass('active');
+				 $(".modify_site").attr("disabled","disabled");								
+			}			
+		}
+	});
+	$(".modify_site").on("click",function(){//批量删除
+            var num=$(".m-btn-w.active").not($(".m-btn-w").eq(0)).length;
+            var arr=[];
+            $(".m-btn-w.active").not($(".m-btn-w").eq(0)).each(function(){//id
+               arr.push($(this).text().trim())
+            });
+            var moredata=arr.join(",");
+		    var deleteMore = function(){//ajax
+				$.ajax({
+					url : "/product/delete.json",
+					type: "POST",
+					dataType: "json",
+                    data:products=moredata,
+					success:function(data){
+						$.gmMessage(data.result.message, true);
+						window.location.reload();
+					},
+					error:function(){
+						$.gmMessage(data.result.message, false);
+					}
+				});
+			};
+
+			$.dialog({//弹窗
+				title: false,
+				width: 400,
+				height: 120,
+				padding : '0 20px',
+				isOuterBoxShadow: false,
+				content: '<p>产品删除后不可恢复，确认删除'+num+'个产品?</p>',
+				lock: true,
+				fixed: true,
+				ok: false,
+				cancel: function () {},
+				cancelVal: '取消',
+				button: [
+					{
+						name: '删除',
+						className: 'btn-important',
+						callback: function () {
+							deleteMore();
+						}
+					}
+				]
+		    });
+	})
+
 });
+
+//库存设置
+function reserve(productId,productName){
+	console.log(productName)
+    $.dialog({//弹窗
+		title: "库存设置",
+		width: 400,
+		height: 120,
+		padding : '0 20px',
+		isOuterBoxShadow: false,
+		content: '',
+		lock: true,
+		fixed: true,
+		ok: false,
+		cancel: false,
+		button: [
+			{
+				name: '保存',
+				className: 'btn-process aui_state_highlight',
+				callback: function () {
+					$.ajax({
+						url : "/product/" + productId + "/seat.json",
+						type: "POST",
+						async:false,
+						data:$("#reserveForm").serialize(),
+						dataType: "json",
+						success:function(data){					
+		                    $.gmMessage("设置成功", true);                 
+						}
+					});
+				}
+			}
+		],
+		init:function(){
+			$.ajax({
+				url : "/product/" + productId + "/seat.json",
+				type: "GET",
+				async:false,
+				dataType: "json",
+				success:function(data){					
+                    $(".aui_content").html(template("reserve_tem",data)); 
+                    $(".reserve_title span").eq(1).html(productName);                  
+				}
+			});						
+		}
+	});
+}
+
+
+
+

@@ -8637,7 +8637,8 @@ button.aui_state_highlight {
   height: 3px;
   width: 100%;
   background-color: #cccccc;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-radius: 1.5px; }
 
 .schedule-list li:last-child .schedule .line {
   width: 110%; }

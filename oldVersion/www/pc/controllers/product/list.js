@@ -32,7 +32,7 @@
             this.slider();
 
             //
-            this.hotSupplier();
+            /*this.hotSupplier();*/
 
             // event
             this.event();
@@ -192,7 +192,8 @@
             typeText = {
                 "groupTour": "跟团游",
                 "shipTour": "游轮",
-                "freeWalkerTour": "自由行"
+                "freeWalkerTour": "自由行",
+                "localTour": "当地参团"
             },
             listBox = "",
             tbody = $("<div></div>"),
@@ -262,7 +263,7 @@
                 $(data.productList).each(function(i, v) {
                     tr = $(vars.listItemTpl);
 
-                    if (v.groupTour) {
+                    if (v.groupTour && !v.localTour) {
                         tourType = "groupTour";
                     }
                     if (v.shipTour) {
@@ -271,7 +272,9 @@
                     if (v.freeWalkerTour) {
                         tourType = "freeWalkerTour";
                     }
-
+                    if (v.groupTour && v.localTour) {
+                        tourType = "localTour";
+                    }
                     // fill value
                     // cover
                     tr.attr("data-id", v.id);
@@ -302,13 +305,13 @@
                             $("[v=authenticate]",tr).append("<b><i class=\"gmIcon gm-authenticate\"></i>已认证</b>")
                         }
                         if (v.minus !== 0) {
-                            $("[v=discountInfo]",tr).append("<p class=\"stand-by\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"本产品可使用红包"+v.minus+"/人\"><span class=\"title\">立减</span><span class=\"num\">"+v.minus+"</span></p>");
+                            $("[v=discountInfo]",tr).append("<p class=\"stand-by\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"本产品可使用红包"+v.minus+"元/人\"><span class=\"title\">立减</span><span class=\"num\">"+v.minus+"</span></p>");
                         }
                         if (v.rebate !== 0) {
-                            $("[v=discountInfo]",tr).append("<p class=\"rebate\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"本产品可获得返利"+v.rebate+"/人\"><span class=\"title\">返利</span><span class=\"num\">"+v.rebate+"</span></p>");
+                            $("[v=discountInfo]",tr).append("<p class=\"rebate\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"购买付款后，可享受现金返利"+v.rebate+"元/人\"><span class=\"title\">返利</span><span class=\"num\">"+v.rebate+"</span></p>");
                         }
                         if (v.profits !== 0) {
-                            $("[v=discountInfo]",tr).append("<p class=\"profit\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"本产品可获得利润"+v.profits+"/人\"><span class=\"title\">利润</span><span class=\"num\">"+v.profits+"</span></p>");
+                            $("[v=discountInfo]",tr).append("<p class=\"profit\" data-placement=\"bottom\" data-toggle=\"tooltip\" data-original-title=\"利润=市场价-同行价+立减  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 本单利润："+v.minRecommendPrice+"-"+v.minPrice+"+"+v.minus+"="+v.profits+"/人\"><span class=\"title\">利润</span><span class=\"num\">"+v.profits+"</span></p>");
                         }
                         if (v.recentItems) {
                             $("[v=priceDetail]", tr).html("<em>" + (v.recentItems.length) + "组报价</em>");
@@ -764,7 +767,7 @@
                 $(".J-search-city-ul").css("visibility", "visible");
             }
         },
-        hotSupplier: function() {
+        /*hotSupplier: function() {
             $.ajax({
                 url: "/product/hotSupplier.json?size=5&_=" + Date.parse(new Date()),
                 type: 'GET',
@@ -787,7 +790,7 @@
                     }
                 }
             });
-        },
+        },*/
         event: function() {
             var i = this,
             vars = i.staticVars;

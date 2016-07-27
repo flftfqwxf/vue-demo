@@ -833,6 +833,9 @@ header .heardnew {
   border-top: solid 1px #fff !important;
   border-bottom: solid 1px #e0e1e2 !important; }
 
+.p-list-item {
+  position: relative; }
+
 .p-list-item > td:first-child {
   width: 260px;
   border-left: solid 1px #fff; }
@@ -853,7 +856,8 @@ header .heardnew {
   width: 240px;
   height: 180px;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  position: relative; }
 
 .list-box .pic img {
   height: 180px;
@@ -945,7 +949,9 @@ header .heardnew {
 .list-box .info p.supplier {
   margin-top: 5px; }
 
-.list-box .info p.supplier a {
+.list-box .info p.supplier i {
+  cursor: auto;
+  font-style: normal;
   color: #78A7FF; }
 
 .list-box .info p.supplier b {
@@ -957,8 +963,9 @@ header .heardnew {
   background-color: #20CE8B;
   border-radius: 3px; }
 
-.list-box .info p.supplier b i {
-  font-size: 14px; }
+.list-box .info p.supplier b i.gm-authenticate {
+  font-size: 14px;
+  color: #fff; }
 
 .list-box .info p span {
   display: inline-block;
@@ -997,9 +1004,10 @@ header .heardnew {
   margin-left: 5px;
   border-left: solid 1px #666; }
 
-.list-box .info h1 span {
-  float: left;
-  margin-right: 10px;
+.list-box .pic span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
   display: inline-block;
   color: #fff;
   font-size: 12px !important;
@@ -1007,14 +1015,17 @@ header .heardnew {
   border-radius: 3px;
   padding: 5px; }
 
-.list-box .info h1 span.groupTour {
+.list-box .pic span.groupTour {
   background-color: #ff8540; }
 
-.list-box .info h1 span.freeWalkerTour {
+.list-box .pic span.freeWalkerTour {
   background-color: #20ce8b; }
 
-.list-box .info h1 span.shipTour {
+.list-box .pic span.shipTour {
   background-color: #78a7ff; }
+
+.list-box .pic span.localTour {
+  background-color: #ffc200; }
 
 .list-box .info .price-show em {
   cursor: pointer; }

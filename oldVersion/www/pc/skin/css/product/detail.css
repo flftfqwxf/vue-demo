@@ -978,7 +978,7 @@ header .nav-list {
 .p-pics .tour-type {
   z-index: 10;
   color: #fff;
-  text-indent: 20px;
+  text-align: center;
   font-size: 18px;
   width: 100px;
   height: 50px;
@@ -994,6 +994,28 @@ header .nav-list {
 
 .p-pics .cruiseShip {
   background: url(../../images/cruiseShip-icon.png); }
+
+.p-pics .localTour {
+  background: url(../../images/localTour-icon.png); }
+
+.p-calendar .date-store {
+  font-style: normal;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  padding: 0 1px;
+  bottom: 13px;
+  height: 16px;
+  color: #53bec3;
+  transform: scale(0.9);
+  line-height: 16px;
+  overflow: hidden; }
+
+.p-calendar .date-price {
+  bottom: 0 !important; }
 
 .pic-cover {
   height: 354px;
@@ -1285,6 +1307,7 @@ header .nav-list {
   margin-right: 10px;
   text-align: center;
   line-height: 20px;
+  height: 22px;
   border-radius: 2px; }
 
 .p-info .discount-info p .text {

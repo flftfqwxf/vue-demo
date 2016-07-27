@@ -1,17 +1,14 @@
 @charset "UTF-8";
 body {
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 .index_all {
   width: 100%;
-  background: #fff;
-}
+  background: #fff; }
 
 .index_body {
   overflow: hidden;
-  position: relative;
-}
+  position: relative; }
 
 .go_down {
   position: absolute;
@@ -21,13 +18,11 @@ body {
   z-index: 1;
   bottom: 15%;
   text-align: center;
-  z-index: 1000;
-}
+  z-index: 1000; }
 
 .go_down img {
   width: 28px;
-  height: 30px;
-}
+  height: 30px; }
 
 .shop_info {
   height: 100px;
@@ -37,33 +32,28 @@ body {
   position: absolute;
   z-index: 100;
   top: 90px;
-  margin-top: -45px;
-}
+  margin-top: -45px; }
 
 .shop_info .search_box {
-  margin-top: 105px;
-}
+  margin-top: 105px; }
 
 .shop_name > span {
   width: 80px;
   height: 80px;
   display: inline-block;
-  border-radius: 18px;
-}
+  border-radius: 18px; }
 
 .shop_name img {
   width: 80px;
   height: 80px;
   border-radius: 18px;
-  border: none;
-}
+  border: none; }
 
 .shop_name {
   font-size: 20px;
   margin-bottom: 10px;
   color: white;
-  text-align: center;
-}
+  text-align: center; }
 
 .search_text {
   vertical-align: baseline;
@@ -73,16 +63,13 @@ body {
   color: white;
   border: 0.1rem solid #fff;
   border-radius: 6px;
-  padding: 8px 0px 10px 0px;
-}
+  padding: 8px 0px 10px 0px; }
 
 .search_text * {
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 .gm-search2 {
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 .swipe_pro {
   position: absolute;
@@ -90,8 +77,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  color: white;
-}
+  color: white; }
 
 .swipe_proName {
   font-size: 18px;
@@ -107,8 +93,7 @@ body {
   overflow: hidden;
   -webkit-line-clamp: 2;
   word-break: break-all;
-  text-align: left;
-}
+  text-align: left; }
 
 .swipe_proPrice {
   font-size: 16px;
@@ -118,32 +103,27 @@ body {
   padding-left: 5%;
   background: none;
   margin: 0;
-  max-width: 90%;
-}
+  max-width: 90%; }
 
 .redPrice {
   font-size: 18px;
   color: #fff;
   background-color: #ff4848;
   padding: 2px 10px;
-  border-radius: 4px;
-}
+  border-radius: 4px; }
 
 .small_text {
   font-size: 12px;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 .text_peer {
-  color: #333 !important;
-}
+  color: #333 !important; }
 
 .swipe_num {
   position: absolute;
   width: 70px;
   bottom: 15%;
-  left: 5%;
-}
+  left: 5%; }
 
 .swipe_num .num {
   width: 8px;
@@ -151,12 +131,10 @@ body {
   border-radius: 5px;
   background: #ccc;
   float: left;
-  margin-right: 6px;
-}
+  margin-right: 6px; }
 
 .swipe_num .num.active {
-  background: #ff9d3b;
-}
+  background: #ff9d3b; }
 
 .cover_img {
   height: 100%;
@@ -164,27 +142,22 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   z-index: 999;
-  top: 0;
-}
+  top: 0; }
 
 .ellipsis1 .direct_price_gray {
-  color: #999;
-}
+  color: #999; }
 
 .hot_list {
-  width: 100%;
-}
+  width: 100%; }
 
 .hot_title {
   height: 50px;
-  text-align: center;
-}
+  text-align: center; }
 
 .hot_title .title_text {
   font-size: 18px;
   line-height: 50px;
-  margin: 0px 10px;
-}
+  margin: 0px 10px; }
 
 .title-line {
   display: inline-block;
@@ -192,55 +165,44 @@ body {
   height: 2px;
   width: 35px;
   line-height: 60px;
-  margin-top: 23px;
-}
+  margin-top: 23px; }
 
 .hot_item {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .pro_info {
   height: auto;
   position: relative;
-  min-height: 60px;
-}
+  min-height: 60px; }
 
 .pro_img {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .pro_name {
-  padding: 10px 10px;
-}
+  padding: 10px 10px; }
 
 .pro_price {
-  color: #ff4848;
-}
+  color: #ff4848; }
 
 .pro_price span {
   display: inline-block;
   color: white;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .float_left {
-  float: left;
-}
+  float: left; }
 
 .float_right {
-  float: right;
-}
+  float: right; }
 
 .p_play {
   margin-top: 5px;
-  width: 100%;
-}
+  width: 100%; }
 
 .p_name {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .groupTravel, .cruisesTravel, .selfTravel {
   color: white;
@@ -248,24 +210,19 @@ body {
   padding: 0 0.2rem;
   position: relative;
   top: 4px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 .groupTravel {
-  background: #ff7e1d;
-}
+  background: #ff7e1d; }
 
 .cruisesTravel {
-  background: #78a7ff;
-}
+  background: #78a7ff; }
 
 .selfTravel {
-  background: #20CE8B;
-}
+  background: #20CE8B; }
 
 a {
-  color: #333;
-}
+  color: #333; }
 
 @media screen and (max-device-width: 320px) {
   .shop_info {
@@ -276,21 +233,18 @@ a {
     position: absolute;
     z-index: 100;
     top: 12%;
-    margin-top: -45px;
-  }
+    margin-top: -45px; }
 
   .swipe_pro {
     position: absolute;
     top: 60%;
-    z-index: 1000;
-  }
+    z-index: 1000; }
 
   .swipe_num {
     position: absolute;
     width: 70px;
     top: 82%;
-    left: 5%;
-  }
+    left: 5%; }
 
   .go_down {
     position: absolute;
@@ -300,45 +254,36 @@ a {
     z-index: 1;
     bottom: 14%;
     text-align: center;
-    z-index: 1000;
-  }
+    z-index: 1000; }
 
   .shop_info .search_box {
-    margin-top: 50px;
-  }
-}
+    margin-top: 50px; } }
 /*目的地页面*/
 .line_body {
-  position: relative;
-}
+  position: relative; }
 
 .line_list {
   width: 100%;
   background: transparent;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 .line_item {
   float: left;
   width: 50%;
   height: 150px;
-  margin: 30px 0px;
-}
+  margin: 30px 0px; }
 
 .line_item a, .line_item p {
   display: block;
-  text-align: center;
-}
+  text-align: center; }
 
 .line_img {
   width: 100px;
   height: 105px;
-  margin: 5px auto;
-}
+  margin: 5px auto; }
 
 .line_proCount {
-  color: #ff7e1d;
-}
+  color: #ff7e1d; }
 
 #downMove {
   width: 30px;
@@ -348,111 +293,82 @@ a {
   animation: myfirst 1s infinite;
   -webkit-animation: myfirst 1s infinite;
   -moz-animation: myfirst 1s infinite;
-  -o-animation: myfirst 1s infinite;
-}
+  -o-animation: myfirst 1s infinite; }
 
 /*箭头动画*/
 @keyframes myfirst {
   0% {
     opacity: 1;
-    top: 0px;
-  }
+    top: 0px; }
   20% {
     opacity: 0.8;
-    top: -2px;
-  }
+    top: -2px; }
   40% {
     opacity: 0.6;
-    top: -4px;
-  }
+    top: -4px; }
   60% {
     opacity: 0.4;
-    top: -6px;
-  }
+    top: -6px; }
   80% {
     opacity: 0.2;
-    top: -8px;
-  }
+    top: -8px; }
   100% {
     opacity: 0;
-    top: -10px;
-  }
-}
+    top: -10px; } }
 @-moz-keyframes myfirst /* Firefox */ {
   0% {
     opacity: 1;
-    top: 0px;
-  }
+    top: 0px; }
   20% {
     opacity: 0.8;
-    top: -2px;
-  }
+    top: -2px; }
   40% {
     opacity: 0.6;
-    top: -4px;
-  }
+    top: -4px; }
   60% {
     opacity: 0.4;
-    top: -6px;
-  }
+    top: -6px; }
   80% {
     opacity: 0.2;
-    top: -8px;
-  }
+    top: -8px; }
   100% {
     opacity: 0;
-    top: -10px;
-  }
-}
+    top: -10px; } }
 @-webkit-keyframes myfirst /* Safari and Chrome */ {
   0% {
     opacity: 1;
-    top: 0px;
-  }
+    top: 0px; }
   20% {
     opacity: 0.8;
-    top: -2px;
-  }
+    top: -2px; }
   40% {
     opacity: 0.6;
-    top: -4px;
-  }
+    top: -4px; }
   60% {
     opacity: 0.4;
-    top: -6px;
-  }
+    top: -6px; }
   80% {
     opacity: 0.2;
-    top: -8px;
-  }
+    top: -8px; }
   100% {
     opacity: 0;
-    top: -10px;
-  }
-}
+    top: -10px; } }
 @-o-keyframes myfirst /* Opera */ {
   0% {
     opacity: 1;
-    top: 0px;
-  }
+    top: 0px; }
   20% {
     opacity: 0.8;
-    top: -2px;
-  }
+    top: -2px; }
   40% {
     opacity: 0.6;
-    top: -4px;
-  }
+    top: -4px; }
   60% {
     opacity: 0.4;
-    top: -6px;
-  }
+    top: -6px; }
   80% {
     opacity: 0.2;
-    top: -8px;
-  }
+    top: -8px; }
   100% {
     opacity: 0;
-    top: -10px;
-  }
-}
+    top: -10px; } }

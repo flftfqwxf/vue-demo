@@ -98,6 +98,7 @@ function(controller) {
 			rebateCount = parseInt(sum*rebatePercent/100);
 			minusCount = parseInt(sum*minusPercent/100);
 			
+			
 			$("#J-discount").text("下单可用红包立减"+minusCount+"元，并获得返利"+rebateCount+"元红包");
 		},
 		orderHandler: function(options) {
@@ -229,7 +230,7 @@ function(controller) {
 
 							dom = $(".fc-day-number[data-date=" + date + "]");
 							if ((!dom.hasClass("fc-other-month")) && (dom.hasClass("fc-future") || dom.hasClass("fc-today"))) {
-								dom.attr("prices", JSON.stringify(datePrices)).attr("data-detail", pricesDetail).append("<em class=\"date-price\">￥" + v.minPrice + "</em>");
+								dom.attr("prices", JSON.stringify(datePrices)).attr("data-detail", pricesDetail).append((v.seats?"<em class=\"date-store\">位置余" + v.seats + "</em>":"")+"<em class=\"date-price\">￥" + v.minPrice + "</em>");
 							}
 						});
 

@@ -1,11 +1,17 @@
 @charset "utf-8";
 //字体ICON，所有字体图标都在此处管理
-$base: '../fonts/';
+$base: '../../../fonts/';
+$base: '../../../common/fonts/';
+
+@import "../../../common/fonts/";
 @mixin icon-font-base($size: 16px){
   font-family: "gmIcon" !important;
   font-size: $size;
   font-style: normal;
 }
+
+
+
 
 // 兼容360浏览器
 @mixin small-icon-font($size: 15px){

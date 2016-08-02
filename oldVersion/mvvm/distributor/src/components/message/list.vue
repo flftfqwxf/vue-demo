@@ -35,7 +35,7 @@
     @import "../../../../../common/module/message/css/message.css";
 </style>
 <script type="text/ecmascript-6">
-
+    import jquery from "jquery"
     import pagination from "../pagination/pagination.js"
     import Dialog from "../common/dialog/dialog.vue"
     let url='/message/received.json'

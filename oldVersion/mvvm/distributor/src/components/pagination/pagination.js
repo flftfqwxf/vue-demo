@@ -1,9 +1,15 @@
 var Vue;
 if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
     Vue = require('vue');
+
 } else if (typeof window.Vue !== 'undefined') {
     Vue = window.Vue;
 }
+
+if ($ && !$.pagination) {
+    require('paginationPlugin')
+}
+
 let container;
 Vue.directive('pagination', {
     twoWay: true,

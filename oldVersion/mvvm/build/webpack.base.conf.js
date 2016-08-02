@@ -15,7 +15,11 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.vue'],
         alias: {
-            'pagination': path.resolve(__dirname, '../../common/plugins/pagination/pagination.css')
+            'pagination': path.resolve(__dirname, '../../common/plugins/pagination/pagination.css'),
+            'paginationPlugin':path.resolve(__dirname, '../../common/plugins/pagination/pagination.js'),
+            'bootstrap':path.resolve(__dirname, '../../common/js/bootstrap.js'),
+            'bootstrapCss':path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
+            'jquery':path.resolve(__dirname, '../../common/js/jquery1.9.1.min.js'),
         }
     },
     module: {
@@ -34,7 +38,7 @@ module.exports = {
                 loader: 'json'
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|gif|svg|woff|svg|eot|ttf)$/,
                 loader: 'url',
                 query: {
                     limit: 10000,

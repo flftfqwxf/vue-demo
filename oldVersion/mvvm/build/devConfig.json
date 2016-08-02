@@ -12,15 +12,15 @@
     "isIP":false,
     "domain": {
       "sys":"",
-      "host": ".gmmtour.com",
+      "host": ".wulianaq.com",
       "hostList": {
-        "supplier.gmmtour.com": "http://localhost:8081",
-        "m.gmmtour.com": "http://localhost:8084",
-        "www.gmmtour.com": "http://localhost:8083",
-        "static.gmmtour.com": "http://localhost:9053",
-        "distributor.gmmtour.com": "http://localhost:8082",
-        "console.gmmtour.com": "http://localhost:8080",
-        "s.gmmtour.com": "http://localhost:8086"
+        "supplier.wulianaq.com": "http://localhost:8081",
+        "m.wulianaq.com": "http://localhost:8084",
+        "www.wulianaq.com": "http://localhost:8083",
+        "static.wulianaq.com": "http://localhost:9053",
+        "distributor.wulianaq.com": "http://localhost:8082",
+        "console.wulianaq.com": "http://localhost:8080",
+        "s.wulianaq.com": "http://localhost:8086"
       },
       "port": "80",
       "publicPath": "/mvvm/dist/static/"
@@ -28,13 +28,13 @@
     "ip": {
       "host": "localhost",
       "hostList": {
-        "supplier.gmmtour.com": "http://localhost:8081",
-        "m.gmmtour.com": "http://localhost:8084",
-        "www.gmmtour.com": "http://localhost:8083",
-        "static.gmmtour.com": "http://localhost:9053",
-        "distributor.gmmtour.com": "http://localhost:8082",
-        "console.gmmtour.com": "http://localhost:8080",
-        "s.gmmtour.com": "http://localhost:8086"
+        "supplier.wulianaq.com": "http://localhost:8081",
+        "m.wulianaq.com": "http://localhost:8084",
+        "www.wulianaq.com": "http://localhost:8083",
+        "static.wulianaq.com": "http://localhost:9053",
+        "distributor.wulianaq.com": "http://localhost:8082",
+        "console.wulianaq.com": "http://localhost:8080",
+        "s.wulianaq.com": "http://localhost:8086"
       },
       "port": "9083",
       "publicPath": "http://localhost:9083/mvvm/dist/static/"

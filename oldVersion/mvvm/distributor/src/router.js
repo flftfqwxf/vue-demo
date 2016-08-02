@@ -19,6 +19,11 @@ export default function (router) {
                 require(['./components/message/list'], resolve);
             }
         },
+        '/mvvm/demo': {
+            component: function (resolve) {
+                require(['./components/demo/index'], resolve);
+            }
+        },
         // '/mvvm/2': {
         //     component: function (resolve) {
         //         require(['./components/tables/list2'], resolve);

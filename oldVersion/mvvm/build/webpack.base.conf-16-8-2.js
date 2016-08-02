@@ -7,7 +7,7 @@ module.exports = {
         app: './oldVersion/mvvm/'+sysConfig.options.sys+'/src/main.js'
     },
     output: {
-        path: path.resolve(__dirname, '../../dist/'+sysConfig.options.sys),
+        path: path.resolve(__dirname, '../dist/static/'+sysConfig.options.sys),
         publicPath: sysConfig.devConfig.devServer.publicPath,
         filename: '[name].js',
         chunkFilename: "[name]-[chunkhash].js"

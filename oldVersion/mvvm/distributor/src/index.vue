@@ -7,7 +7,7 @@
 </template>
 <style lang="sass">
     /*@import "~bootstrapCss";*/
-    @import "ddd/a.scss";
+    @import "./ddd/a.scss";
 </style>
 <script type="text/ecmascript-6">
 

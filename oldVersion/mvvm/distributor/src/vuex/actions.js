@@ -1,6 +1,6 @@
 import * as types from './mutation-types'
 export const loadNavList = function ({ dispatch}) {
-    this.$http.get('/menu.json').then(function (res) {
+    this.$http.get('/api/menu.json').then(function (res) {
         if (res.ok && res.data) {
             dispatch(types.LOAD_NAV_LIST,res.data.menus)
         }
@@ -10,7 +10,7 @@ export const loadNavList = function ({ dispatch}) {
 
 }
 export const loadBreadCrumb= function ({dispatch},uri='') {
-    this.$http.get('/menu.json?uri='+uri).then(function (res) {
+    this.$http.get('/api/menu.json?uri='+uri).then(function (res) {
         if (res.ok && res.data) {
           dispatch(types.LOAD_BREADCRUMB,res.data.menu)
         }
@@ -24,7 +24,7 @@ export const loadBreadCrumb= function ({dispatch},uri='') {
  * @param url
  */
 export const loadUserInfo= function ({dispatch}) {
-    this.$http.get('/user/info.json').then(function (res) {
+    this.$http.get('/api/user/info.json').then(function (res) {
         if (res.ok && res.data) {
             dispatch(types.LOAD_USER_INFO,res.data)
         }

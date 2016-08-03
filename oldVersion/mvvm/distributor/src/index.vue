@@ -5,17 +5,12 @@
         <main></main>
     </div>
 </template>
-<!--<style lang="sass" >-->
-    <!--/*根据组件位置的相对路径修改字体图标的引用地址*/-->
-    <!--$fa-font-path:"../../../common/fonts/";-->
 
-    <!--@import "~bootstrapCss";-->
-    <!--/*@import "./ddd/a.scss";*/-->
-<!--</style>-->
 <script type="text/ecmascript-6">
 
+    //引入全局CSS,不建议使用 style方式引入,因为通过style方式引入的外部CSS的background:url的路径必须相对于当前VUE组件
+
     require('bootstrapCss')
-//    import '../../../common/font-awesome'
     import Silder from './components/navs/Silder'
     import Main from './components/container/Main.vue'
     import store from './vuex/store'

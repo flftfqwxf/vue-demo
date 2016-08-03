@@ -48,28 +48,28 @@ server.get('/api/mvvm/message.json', {
         return data
     }
 });
-server.get('/menu.json', {
+server.get('/api/menu.json', {
     //delay: 12000,
     data: function (params, query) {
         data = require('./menu.json');
         return data
     }
 });
-server.get('/user/info.json', {
+server.get('/api/user/info.json', {
     //delay: 12000,
     data: function (params, query) {
         data = require('./info.json');
         return data
     }
 });
-server.get('/order/count.json', {
+server.get('/api/order/count.json', {
     //delay: 12000,
     data: function (params, query) {
         data = require('./count.json');
         return data
     }
 });
-server.get('/message/received.json', {
+server.get('/api/message/received.json', {
     //delay: 12000,
     data: function (params, query) {
         data = require('./received.json');
@@ -85,7 +85,7 @@ server.get('/api/mvvm/breadcrumb.json', {
         return data
     }
 });
-server.get('/booking/count', {
+server.get('/api/booking/count', {
     //delay: 12000,
     data: function (params, query) {
         var data = require('./list2.json');
@@ -101,7 +101,7 @@ server.get('/api/mvvm/a.json', {
     }
 });
 // 输出数据之前，处理一下数据
-server.get('/user/filter/', {
+server.get('/api/user/filter/', {
     beforeResponse: function (data) {
         return data.data;
     },
@@ -118,7 +118,7 @@ server.get('/user/filter/', {
 });
 // 指定输出的 content-type
 // 返回 text/html 类型
-server.get('/user/:id/tag', {
+server.get('/api/user/:id/tag', {
     contentType: 'text/html',
     beforeResponse: function (data) {
         return data.tag;

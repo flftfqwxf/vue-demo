@@ -38,7 +38,7 @@
     import jquery from "jquery"
     import pagination from "../pagination/pagination.js"
     import Dialog from "../common/dialog/dialog.vue"
-    let url='/message/received.json'
+    let url='/api/message/received.json'
     export default {
 //        components:{
 //            GridColumn: require('vue-desktop/lib/data/grid-column.vue'),

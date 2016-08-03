@@ -8819,7 +8819,7 @@ html.single-screen {
       display: block;
       height: 100%;
       width: 100%;
-      background: url(/common/image/logo.png?v=3.0) center no-repeat; }
+      background: url(../../image/logo.png) center no-repeat; }
   .page-sidebar .nav > li > a {
     height: 44px;
     padding-left: 45px; }

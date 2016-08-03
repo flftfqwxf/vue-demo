@@ -60,7 +60,9 @@ table.aui_border, table.aui_dialog {
 	text-align: left;
 	text-indent: -999em;
 	overflow: hidden;
-	background: url(../image/loading.gif) no-repeat center center;
+	//background: url(../../image/loading.gif) no-repeat center center;
+  background: url(/common/image/loading.gif) no-repeat center center;
+
 }
 .aui_icon {
 	vertical-align: middle;

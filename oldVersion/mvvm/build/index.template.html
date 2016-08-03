@@ -2,8 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>vueproject</title>{% for (var css in o.htmlWebpackPlugin.files.css) { %}
-    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">{% } %}
+    <title>vueproject</title>
+
+      <script type="text/javascript">
+          var WEB_STATIC = "http://static.gmmtour.com";
+          var WEB_STATIC_DISTRIBUTOR = "http://static.gmmtour.com/distributor";
+          //系统名称，用于在分销商和供应商存在相同功能时，局部区分的判断标识
+          var PROJECT_NAME='distributor';
+          var WEB_DISTRIBUTOR = "http://distributor.gmmtour.com";
+          var WEB_SUPPLIER = "http://supplier.gmmtour.com";
+          var WEB_WWW = "http://www.gmmtour.com";
+      </script>
+
+      <link rel="stylesheet" href="/common/css/bootstrap-system.css">
+      {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+
+    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+      {% } %}
   </head>
   <body>
     <app></app>{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}

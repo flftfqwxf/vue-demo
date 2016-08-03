@@ -22,10 +22,9 @@ function generateExtractLoaders(loaders) {
 }
 //sysConfig.devConfig.devServer
 //publickPath路径的最后必须含有【/】否则生成的路径将会是【http:\static.gmmtour.com\mvvm\dist\static\aa.js】格式
-var publicPath = "http://distributor.wulianaq.com/dist/" + sysConfig.options.sys;
-var publicPath = "http://distributor.wulianaq.com/";
+// var publicPath = "http://distributor.wulianaq.com/dist/" + sysConfig.options.sys;
 
-// publicPath=sysConfig.devConfig.devServer.publicPath
+var publicPath=sysConfig.devConfig.devServer.publicPath
 // publicPath=sysConfig.devConfig.devServer.host
 
 //devServer.publicPath = 'http://' + sysConfig.devConfig.devServer + devServer.publicPath + devServer.sys

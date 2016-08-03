@@ -21,8 +21,9 @@ function setConfigByDomain() {
     } else {
         devServer = devConfig.devServer.domain;
         devServer.sys = options.sys;
+        //把二级域名与主域名拼接,如  'distributor'+'.wulianaq.com'
         devServer.host = devServer.sys + devServer.host;
-        devServer.publicPath = 'http://' + devServer.host + devServer.publicPath + devServer.sys
+        devServer.publicPath = 'http://' + devServer.host
     }
     return devServer;
 }

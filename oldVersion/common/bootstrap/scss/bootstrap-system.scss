@@ -97,7 +97,7 @@ html.single-screen {
 			display: block;
 			height: $fullSize;
 			width: $fullSize;
-			background: url(../image/logo.png?v=3.0) center no-repeat;
+			background: url(/common/image/logo.png?v=3.0) center no-repeat;
 		}
 	}
 	.nav{
@@ -166,7 +166,7 @@ html.single-screen {
 .sidebar-mini {
 	.logo {
 		&:before {
-			background-image: url(../image/logo-mini.png?v=3.0);
+			background-image: url(/common/image/logo-mini.png?v=3.0);
 		}
 	}
 	.page-sidebar {
@@ -214,7 +214,7 @@ html.single-screen {
 					font-size: 1.286em;
 					margin: -1px 0 0 -1px;
 				}
-				
+
 				// 收起和展开的当前状态颜色不一致
 				&[aria-expanded="true"]{
 					color: $nav-link-hover-color;
@@ -239,7 +239,7 @@ html.single-screen {
 		margin-left: $minisidebarWidth;
 	}
 
-	
+
 }
 .page-title {
 	position: absolute;
@@ -447,7 +447,7 @@ html.single-screen {
 	}
 	.copyright {
 		color: $gray;
-      
+
 	}
 }
 .common-loading {
@@ -458,6 +458,7 @@ html.single-screen {
 		@extend .fa-spin;
 		margin-right: 5px;
 	}
+
 }
 //tooltip style reset
 #tooltip, #tooltip pre {
@@ -512,7 +513,7 @@ html.single-screen.nature-screen {
 	}
 	.secondbar-fixed {
 		position: static !important;
-	}  
+	}
 }
 
 
@@ -521,7 +522,7 @@ html.single-screen.nature-screen {
 .browser .downBrowser{position: absolute;top:0;right: 200px;}
 .browser_desc{position: relative;}
 .browser .browser_info{position: absolute;top: 1px;left: -20px;background:url(/common/plugins/browser/images/info.png) no-repeat;display:inline-block;width:20px;height:16px;line-height:50px;}
-.browser_btn{float:left;width:44px;height:50px;border-right:1px solid lightgrey;line-height: 50px;background:#fff url(images/icon.png) no-repeat 39px 45px;text-decoration: none;color: black;position: relative;	}
+.browser_btn{float:left;width:44px;height:50px;border-right:1px solid lightgrey;line-height: 50px;background:#fff url(/common/images/icon.png) no-repeat 39px 45px;text-decoration: none;color: black;position: relative;	}
 a.browser_btn{position: relative;}
 .browser_btn img{margin:11px 10px;}
 

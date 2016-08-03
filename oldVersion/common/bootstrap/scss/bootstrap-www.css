@@ -6621,7 +6621,7 @@ table.aui_border, table.aui_dialog {
   text-align: left;
   text-indent: -999em;
   overflow: hidden;
-  background: url(../image/loading.gif) no-repeat center center; }
+  background: url(/common/image/loading.gif) no-repeat center center; }
 
 .aui_icon {
   vertical-align: middle; }
@@ -7038,7 +7038,7 @@ html.single-screen body, html.single-screen .page-wrapper {
   display: block;
   height: 100%;
   width: 100%;
-  background: url(../image/logo.png?v=2.4) no-repeat; }
+  background: url(/common/image/logo.png?v=2.4) no-repeat; }
 
 .page-sidebar .nav .label {
   position: absolute;
@@ -7087,7 +7087,7 @@ html.single-screen body, html.single-screen .page-wrapper {
   height: 60px; }
 
 .sidebar-mini .logo:before {
-  background-image: url(../image/logo-mini.png?v=2.4); }
+  background-image: url(/common/image/logo-mini.png?v=2.4); }
 
 .sidebar-mini .page-sidebar {
   width: 80px; }
@@ -7328,7 +7328,7 @@ html.single-screen body, html.single-screen .page-wrapper {
   margin-left: -25px;
   width: 21px;
   height: 21px;
-  background: url(../image/btn-loading.gif) no-repeat; }
+  background: url(/common/image/btn-loading.gif) no-repeat; }
 
 #tooltip, #tooltip pre {
   background: #fff !important;
@@ -7423,7 +7423,7 @@ html.single-screen.nature-screen .secondbar-fixed {
   height: 50px;
   border-right: 1px solid lightgrey;
   line-height: 50px;
-  background: #fff url(images/icon.png) no-repeat 39px 45px;
+  background: #fff url(common/images/icon.png) no-repeat 39px 45px;
   text-decoration: none;
   color: black;
   position: relative; }

@@ -23,7 +23,7 @@
         "s.wulianaq.com": "http://localhost:8086"
       },
       "port": "80",
-      "publicPath": "/mvvm/dist/static/"
+      "publicPath": "/dist/"
     },
     "ip": {
       "host": "localhost",

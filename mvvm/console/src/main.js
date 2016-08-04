@@ -16,6 +16,7 @@ import configRouter from "./router"
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueResource);
+Vue.http.headers.common['Authorization'] = 'Basic YXBpOnBhc3N3b3Jk';
 Vue.http.interceptors.push({
     request: function (request) {
         return request

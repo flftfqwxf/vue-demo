@@ -1,6 +1,0 @@
-.btn_info{background:#45aaf1;outline: none;padding:2px 6px;color: white !important;border-radius:3px}
-.btn_info:hover{cursor: pointer;}
-.creat_special{padding:6px 20px;}
-.disabled_status:hover{
-	cursor:not-allowed; 
-}

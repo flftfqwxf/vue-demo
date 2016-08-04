@@ -1,10 +1,10 @@
 'use strict';
 var path = require('path');
-var wwwUrl = './oldVersion/www/src';
-var commonUrl = './oldVersion/common';
+var wwwUrl = './www/src';
+var commonUrl = './common';
 var AssetsPlugin = require('assets-webpack-plugin');
 var map=path.join(__dirname,'../','gmmtour-web-www/WebContent/page/common/web/','assets-map.json');
-var assetsPluginInstance = new AssetsPlugin({filename: path.join(__dirname, 'oldVersion/dist/assets-map.json'), update: true, prettyPrint: true});
+var assetsPluginInstance = new AssetsPlugin({filename: path.join(__dirname, 'dist/assets-map.json'), update: true, prettyPrint: true});
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     module: {
@@ -31,7 +31,7 @@ module.exports = {
 
     },
     output: {
-        path: path.join(__dirname, 'oldVersion/dist'),
+        path: path.join(__dirname, 'dist'),
         filename: "[name].js",
         //filename: "[name]-[chunkhash].js",
         chunkFilename: "[name]-[chunkhash].js"

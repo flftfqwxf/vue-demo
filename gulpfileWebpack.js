@@ -1,43 +1,43 @@
 var gulp = require('gulp');
-var gutil=require('gulp-util');
+var gutil = require('gulp-util');
 //var uncss = require('gulp-uncss');
 //var concat = require('gulp-concat');
 var pkg = require('./package.json');
 var webpack = require('webpack');
-var prodConfig = require('./oldVersion/mvvm/build/webpack.prod.conf');
-var devConfig = require('./oldVersion/mvvm/build/webpack.dev.conf');
-var webpackConfig=require('./webpackConfig.json');
-var gulpSequence=require('gulp-sequence');
-var rimraf=require('gulp-rimraf');
-var WebpackDevServer=require('webpack-dev-server');
-var minimist = require('minimist');
-var knownOptions = {
-    string: 'sys',
-    default: { sys:  'supplier' }
-};
-var options = minimist(process.argv.slice(2), knownOptions);
+var prodConfig = require('./mvvm/build/webpack.prod.conf');
+// var devConfig = require('./mvvm/build/webpack.dev.conf');
+var buildBaseConfig = require('./buildConfig');
+console.log(buildBaseConfig)
+if (!buildBaseConfig) {
+    console.log('----------------------------------/n')
+    console.log('未获取到配置')
+    console.log('----------------------------------/n')
+
+    return false
+
+}
+var gulpSequence = require('gulp-sequence');
+var rimraf = require('gulp-rimraf');
+var WebpackDevServer = require('webpack-dev-server');
 /**
- * 清除供应商系统：webpack生成的文件
+ * 清除：webpack生成的文件
  */
-gulp.task('cleanWebpackDist', function () {
-    // console.log('dddddddddddddd',webpackConfig[options.sys].distPath);
-    return gulp.src(webpackConfig[options.sys].distPath,{read:false})
-        .pipe(rimraf({ force: true }));
+gulp.task('cleanWebpackDist', function (cb) {
+    console.log('----------------------------------/n')
+    console.log('被清空的目录:' + buildBaseConfig.outPutPath)
+    console.log('----------------------------------/n')
+    return gulp.src(buildBaseConfig.outPutPath, {read: false})
+        .pipe(rimraf({force: true}));
 })
 /**
- * 清除分销商系统：webpack生成的文件
+ * 构建系统：webpack生成的文件
  */
-// gulp.task('cleanWebpackDist:distributor', function () {
-//     return gulp.src(webpackConfig.distributor.distPath,{read:false})
-//         .pipe(rimraf({ force: true }));
-// })
 gulp.task('webpack:bulid', function (cb) {
-    prodConfig.devtool=false;
+    prodConfig.devtool = false;
     var myConfig = Object.create(prodConfig);
-    myConfig.modules=false;
+    myConfig.modules = false;
     //myConfig.entry=
     webpack(myConfig, function (err, stats) {
-
         if (err) throw new gutil.PluginError("webpack:build", err);
         gutil.log("[webpack:build]", stats.toString({
             colors: true
@@ -46,10 +46,9 @@ gulp.task('webpack:bulid', function (cb) {
     })
 })
 //将生成的入口页移动到后台目录 通过设置 --sys [supplier|distributor]来区分不同项目
-gulp.task('moveEntry', function () {
-    return gulp.src(webpackConfig[options.sys].entryPath).pipe(gulp.dest(webpackConfig[options.sys].jspPath))
-})
-
+// gulp.task('moveEntry', function () {
+//     return gulp.src(webpackConfig[options.sys].entryPath).pipe(gulp.dest(webpackConfig[options.sys].jspPath))
+// })
 // gulp.task('webpack:dev', function (cb) {
 //     var myConfig = Object.create(devConfig);
 //     myConfig.entry.app.unshift("webpack-dev-server/client?http://localhost:9093/");
@@ -90,23 +89,22 @@ gulp.task('moveEntry', function () {
 //     });
 //     server.listen(8080, "localhost", function() {});
 // })
-
-gulp.task('default',gulpSequence('cleanWebpackDist','webpack:bulid','moveEntry'));
+gulp.task('default', gulpSequence('cleanWebpackDist', 'webpack:bulid'));
 var webserver = require('gulp-webserver');
 var cors = require('cors');
-gulp.task('webserver', function() {
-    return  gulp.src('oldVersion/')
+gulp.task('webserver', function () {
+    return gulp.src('./')
         .pipe(webserver({
-            host:'127.0.0.1',
+            host: '127.0.0.1',
             directoryListing: {
-                enable:true,
-                path:'oldVersion',
-                options:{
+                enable: true,
+                path: './',
+                options: {
                     // icons:true
                 }
             },
             open: true,
-            port:9053,
+            port: 9053,
             middleware: [cors()]
         }));
 });

@@ -55,7 +55,7 @@ a:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
     .category .dropdown-menu > li:not(.active):hover > a {
-      color: #ff9248 !important;
+      color: #26D2D6 !important;
       background: none !important; }
   .category h5 {
     padding-bottom: 10px;

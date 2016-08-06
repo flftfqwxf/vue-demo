@@ -125,7 +125,7 @@ a:focus {
   left: 0;
   z-index: 2;
   display: none;
-  border: 3px solid #ffa162; }
+  border: 3px solid #3ad8dc; }
 
 .gallery_thumbnails li:hover .icon {
   display: block; }
@@ -137,7 +137,7 @@ a:focus {
   line-height: 1;
   border-radius: 50%;
   margin: -20px 0 0 -20px;
-  color: #ff9248;
+  color: #26D2D6;
   font-size: 40px;
   display: none; }
 
@@ -292,13 +292,13 @@ a:focus {
         border-radius: 3px 0 0 3px;
         color: #999999; }
         .ui-tabs .ui-tabs-nav li a:hover {
-          color: #ff9248; }
+          color: #26D2D6; }
       .ui-tabs .ui-tabs-nav li.ui-tabs-active {
         padding-bottom: 0;
         margin-bottom: 0;
         background-color: #fff; }
         .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-tabs-active :link a:visited {
-          color: #ff9248; }
+          color: #26D2D6; }
   .ui-tabs .ui-tabs-panel {
     padding: 20px 0 20px 20px; }
 
@@ -360,3 +360,5 @@ a:focus {
 @-ms-keyframes fadeIn {
   100% {
     opacity: .7; } }
+
+/*# sourceMappingURL=gmgallery.css.map */

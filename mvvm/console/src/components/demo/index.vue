@@ -3,6 +3,7 @@
         <div class="page-content-inner">
             <div class="page-content">
                 <div class="page-main">
+
                     <!-- 可关闭的警告框 -->
                     <div class="alert alert-info alert-dismissible" role="alert">
                         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
@@ -832,7 +833,7 @@
     }
 </style>
 <script>
-    import {modal} from 'vue-strap'
+    import components from 'vue-strap'
     export default{
         data(){
             return {
@@ -840,7 +841,8 @@
             }
         },
         components: {
-            'modal': modal
+            'modal': components.modal,
+            'alert':components.alert
         }
     }
 </script>

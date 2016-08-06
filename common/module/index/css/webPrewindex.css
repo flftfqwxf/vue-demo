@@ -374,7 +374,7 @@ p.qrcodeInfo span {
   padding-left: 40px; }
   .installSuccess .gm-icon {
     font-size: 60px;
-    color: #ff9248;
+    color: #26D2D6;
     position: absolute;
     left: -30px;
     top: -12px; }
@@ -641,7 +641,7 @@ p.qrcodeInfo span {
       width: calc(100% - 20px);
       border-bottom: 1px solid #e5e5e5; }
     .pro-list li:hover {
-      border: 1px solid #ff9248;
+      border: 1px solid #26D2D6;
       background-color: #fff7f3; }
       .pro-list li:hover:after {
         border-color: transparent; }
@@ -662,7 +662,7 @@ p.qrcodeInfo span {
       .pro-list li > div a {
         color: #333333; }
         .pro-list li > div a:hover {
-          color: #ff9248;
+          color: #26D2D6;
           text-decoration: none; }
       .pro-list li > div p {
         line-height: 1;

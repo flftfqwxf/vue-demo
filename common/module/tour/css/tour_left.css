@@ -72,7 +72,7 @@ a:focus {
     color: #999999;
     padding-top: 7px; }
   .page-main-tourinput .panel-group .content-heading .result-count {
-    color: #ff7e1d;
+    color: #26D2D6;
     font-size: 16px; }
 .page-main-tourinput .panel-group .list-group-item {
   padding: 15px;
@@ -104,7 +104,7 @@ a:focus {
   .page-main-tourinput .panel-group .list-group-item.selected {
     cursor: default; }
     .page-main-tourinput .panel-group .list-group-item.selected > .list-group-item-text {
-      color: #ff9248; }
+      color: #26D2D6; }
       .page-main-tourinput .panel-group .list-group-item.selected > .list-group-item-text > .gm-icon, .page-main-tourinput .panel-group .list-group-item.selected > .list-group-item-text .fa {
         color: #ddd5d9 !important;
         cursor: not-allowed !important; }

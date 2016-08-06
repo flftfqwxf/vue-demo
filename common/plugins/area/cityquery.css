@@ -18,7 +18,7 @@
   -webkit-box-shadow: 2px 2px 5px #333333; }
 
 .list_city .list_city_head {
-  background-color: #ff7e1d;
+  background-color: #26D2D6;
   border: medium none;
   color: #FFF;
   display: block;
@@ -139,13 +139,13 @@
   padding: 0px 4px; }
 
 .pop_city .list_label li a:hover {
-  color: #ff7e1d; }
+  color: #26D2D6; }
 
 .pop_city .list_label li a.current {
-  color: #ff7e1d;
+  color: #26D2D6;
   display: block;
   background: #FFF;
-  border-bottom: 2px solid #ff7e1d;
+  border-bottom: 2px solid #26D2D6;
   padding: 0px 4px;
   font-weight: bold; }
 
@@ -171,9 +171,11 @@
   padding: 2px 0px; }
 
 .pop_city .pop_city_container ul li a:hover {
-  color: #ff7e1d; }
+  color: #26D2D6; }
 
 .close {
   float: right;
   margin-right: 10px;
   cursor: pointer; }
+
+/*# sourceMappingURL=cityquery.css.map */

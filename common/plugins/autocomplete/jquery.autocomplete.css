@@ -37,7 +37,7 @@
   font-weight: normal; }
 
 .ac_results .ac_over {
-  background-color: #ff9248;
+  background-color: #26D2D6;
   color: #fff; }
 
 .ac_results .pagination {
@@ -158,4 +158,6 @@
   margin: 20px; }
 
 .paginationjs .paginationjs-pages li.active > a {
-  background: #ff9248 !important; }
+  background: #26D2D6 !important; }
+
+/*# sourceMappingURL=jquery.autocomplete.css.map */

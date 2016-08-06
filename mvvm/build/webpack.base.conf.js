@@ -61,7 +61,7 @@ module.exports = {
     vue: {
         loaders: {
             js: 'babel',
-            sass: 'style!css!resolve-url!sass'
+            sass: 'style!css?sourceMap!resolve-url!sass?sourceMap'
         }
     },
     eslint: {

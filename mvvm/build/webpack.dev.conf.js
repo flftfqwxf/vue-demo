@@ -11,7 +11,7 @@ console.log('dev环境配置开始 :-------------------')
 if (baseConfig.openProxy) {
     console.log('开启代理:-------------------')
     proxyUrl = proxySetting.setProxyUrls(proxyConfig)
-    if (baseConfig.isIP) {
+   // if (baseConfig.isIP) {
 
         //TODO: 官方提供的方案无效,在网查上到,似乎需要依赖外部插件
         // proxyUrl["/images/*"] = {
@@ -29,7 +29,7 @@ if (baseConfig.openProxy) {
         //     }
         // }
 
-    }
+   // }
 }
 config.devServer = {
     color: true,

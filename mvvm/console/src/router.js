@@ -1,5 +1,5 @@
 import * as actions from './vuex/actions'
-export default function (router) {
+export default function (router, authorization) {
     router.map({
         //'/': {
         //    component: List
@@ -14,7 +14,7 @@ export default function (router) {
                 require(['./components/tables/list2'], resolve);
             }
         },
-        '/mvvm/message': {
+        '/': {
             component: function (resolve) {
                 require(['./components/message/list'], resolve);
             }
@@ -31,9 +31,8 @@ export default function (router) {
         // },
         //'/about':
     });
-
     router.redirect({
-        "*":'/mvvm/message'
+        "*":'/'
     })
     router.beforeEach(function (transition) {
 
@@ -53,7 +52,13 @@ export default function (router) {
         // if (transition.to.path === '/forbidden') {
         //     transition.abort()
         // } else {
+        // if (!authorization) {
+        //     transition.redirect('/login');
+        // } else if (transition.to.path === '/login') {
+        //     transition.redirect('/');
+        // } else {
             transition.next()
+        // }
         // }
     })
 }

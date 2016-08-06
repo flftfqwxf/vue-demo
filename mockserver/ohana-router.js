@@ -48,6 +48,19 @@ server.get('/api/mvvm/message.json', {
         return data
     }
 });
+
+server.get('/api/login', {
+    //delay: 12000,
+    data: function (params, query) {
+        var page = query.page, data;
+        return {
+            code:1,
+            message:'登录成功',
+            access_token:'sdfirmeirmww'
+        }
+    }
+});
+
 server.get('/api/menu.json', {
     //delay: 12000,
     data: function (params, query) {

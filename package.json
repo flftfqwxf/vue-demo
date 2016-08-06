@@ -109,6 +109,7 @@
     "runpack": "webpack"
   },
   "dependencies": {
+    "blueimp-file-upload-node": "^2.1.0",
     "vue": "^1.0.14",
     "vue-desktop": "^0.2.19",
     "vue-i18n": "2.2.0",

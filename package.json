@@ -104,7 +104,7 @@
     "test": "karma start mvvm/build/karma.conf.js --single-run",
     "puer": "puer --port 9098 -a mockserver/router.js",
     "mock": "node $NODE_DEBUG_OPTION mockserver/ohana-router.js",
-    "webserver": "$NODE_DEBUG_OPTION gulp webserver --gulpfile gulpfileWebpack.js",
+    "webserver": " gulp webserver --gulpfile gulpfileWebpack.js",
     "debug": "weinre --boundHost 192.168.1.191 --httpPort 9099",
     "runpack": "webpack"
   },
@@ -115,6 +115,7 @@
     "vue-i18n": "2.2.0",
     "vue-resource": "^0.7.0",
     "vue-router": "0.7.11",
+    "vue-upload-component": "^0.3.6",
     "vue-validator": "^2.1.5",
     "vuex": "^0.6.2",
     "vuex-router-sync": "^1.0.0"

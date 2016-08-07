@@ -252,6 +252,23 @@
                                                 </div>
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
+                                                        <label class="col-sm-2 control-label">上传 vue组件</label>
+                                                        <div class="col-sm-6">
+                                                            <file-upload post-action="/post.method" put-action="/put.method"></file-upload>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-dashed">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">上传 input</label>
+                                                        <div class="col-sm-6">
+                                                            <span class="btn btn-default btn-file">Browse <input type="file"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-dashed">
+                                                    <div class="form-group">
                                                         <label class="col-sm-2 control-label">选择表单</label>
                                                         <div class="col-sm-6">
                                                             <div class="select-group radio-group" data-toggle="buttons">
@@ -834,6 +851,8 @@
 </style>
 <script>
     import components from 'vue-strap'
+    import FileUpload from 'vue-upload-component'
+
     export default{
         data(){
             return {
@@ -842,7 +861,8 @@
         },
         components: {
             'modal': components.modal,
-            'alert':components.alert
+            'alert':components.alert,
+            FileUpload:FileUpload
         }
     }
 </script>

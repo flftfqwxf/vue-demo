@@ -20,6 +20,7 @@ module.exports = {
         alias: {
             'pagination': path.resolve(__dirname, '../../common/plugins/pagination/pagination.css'),
             'paginationPlugin': path.resolve(__dirname, '../../common/plugins/pagination/pagination.js'),
+            'datepicker': path.resolve(__dirname, '../console/src/components/datepicker/datepicker.js'),
             'bootstrap': path.resolve(__dirname, '../../common/js/bootstrap.js'),
             'bootstrapCss': path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
             'jquery': path.resolve(__dirname, '../../common/js/jquery1.9.1.min.js'),

@@ -24,6 +24,16 @@ export default function (router, authorization) {
                 require(['./components/demo/index'], resolve);
             }
         },
+        '/mvvm/demo/picker': {
+            component: function (resolve) {
+                require(['./components/demo/demo.vue'], resolve);
+            }
+        },
+        '/mvvm/demo/upload': {
+            component: function (resolve) {
+                require(['./components/demo/upload-demo.vue'], resolve);
+            }
+        },
         // '/mvvm/2': {
         //     component: function (resolve) {
         //         require(['./components/tables/list2'], resolve);

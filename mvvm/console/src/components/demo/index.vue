@@ -267,6 +267,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="form-group-dashed">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">日历组件 input</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" @click="showCalendar" v-model="value" placeholder="请输入日期">
+                                                            <calendar :show.sync="show" :value.sync="value" :x="x" :y="y" :begin="begin" :end="end" :type="type" :range="range"></calendar>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">选择表单</label>
@@ -851,18 +863,45 @@
 </style>
 <script>
     import components from 'vue-strap'
-    import FileUpload from 'vue-upload-component'
+    import FileUpload from '../upload/vue-upload-component'
 
     export default{
         data(){
             return {
-                showModal: false
+                showModal: false,
+                show:false,
+                type:"datetime", //date datetime
+                value:"2015-12-11",
+                begin:"2015-12-20",
+                end:"2015-12-25",
+                x:0,
+                y:0,
+                range:false,//是否多选
             }
         },
         components: {
             'modal': components.modal,
             'alert':components.alert,
-            FileUpload:FileUpload
+            FileUpload,
+            calendar: require('../calendar/calendar.vue'),
+        },
+        methods:{
+            showCalendar:function(e){
+                e.stopPropagation();
+                var that=this;
+                that.show=true;
+                that.x=e.target.offsetLeft;
+                that.y=e.target.offsetTop+e.target.offsetHeight+8;
+                var bindHide=function(e){
+                    e.stopPropagation();
+                    that.show=false;
+                    document.removeEventListener('click',bindHide,false);
+                };
+                setTimeout(function(){
+                    document.addEventListener('click',bindHide,false);
+                },500);
+            }
         }
+
     }
 </script>

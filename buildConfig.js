@@ -35,7 +35,7 @@ const projectOpts = {
     'console': {
         build:{
             sysName: 'console',
-            host: 'console.flftfqwxf.com',
+            host: 'console.wulianaq.com',
             publicPath: 'http://console.flftfqwxf.com',
             outPutPath: '../../dist/console',
             template: 'mvvm/build/index.template.console.html'

@@ -1,8 +1,7 @@
 var path = require('path')
 var baseConfig = require('../../buildConfig');
-
-var outputPath=path.resolve(__dirname, baseConfig.outPutPath)
-console.log('物理输出路径:',outputPath)
+var outputPath = path.resolve(__dirname, baseConfig.outPutPath)
+console.log('物理输出路径:', outputPath)
 console.log('输出目录：', baseConfig.publicPath)
 console.log('系统名：', baseConfig.sysName)
 module.exports = {
@@ -35,6 +34,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel',
+                query: {compact: false},
                 exclude: /node_modules/
             },
             {
@@ -47,6 +47,16 @@ module.exports = {
                 loaders: ['style', 'css', 'sass'],
                 exclude: /node_modules/,
             },
+            {test: require.resolve('../console/src/components/qiniu-upload/ui.js'),
+                loader: "exports?FileProgress"},
+            {
+                test: require.resolve("../console/src/components/qiniu-upload/plupload.full.min.js"),
+                loader: "imports?this=>window"
+            },
+            {
+                test: require.resolve("../console/src/components/qiniu-upload/moxie.js"),
+                loader: "imports?this=>window"
+            },
             {
                 test: /\.(png|jpg|gif|svg|woff|woff2|svg|eot|ttf)$/,
                 //这里不能写成loaders
@@ -56,7 +66,6 @@ module.exports = {
                     name: '[name].[ext]?[hash]'
                 }
             }
-
         ]
     },
     vue: {

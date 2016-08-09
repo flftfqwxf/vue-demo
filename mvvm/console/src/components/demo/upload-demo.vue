@@ -30,6 +30,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="form-group-dashed">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">上传 input</label>
+                                                        <div class="col-sm-6">
+                                                            <qnupload></qnupload>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
 
 
@@ -71,7 +79,7 @@
 <script>
     import components from 'vue-strap'
     import FileUpload from '../upload/vue-upload-component'
-
+    import qnupload from '../qiniu-upload/qnupload.vue'
     export default{
         data(){
             return {
@@ -91,6 +99,7 @@
             'alert':components.alert,
             FileUpload,
             calendar: require('../calendar/calendar.vue'),
+            qnupload
         },
         methods:{
             showCalendar:function(e){

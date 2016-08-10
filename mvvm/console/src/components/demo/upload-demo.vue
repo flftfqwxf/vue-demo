@@ -33,16 +33,11 @@
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">上传 input</label>
-                                                        <div class="col-sm-6">
-                                                            <qnupload></qnupload>
+                                                        <div class="col-sm-10">
+                                                            <qnupload :file-names.sync="fileNames"></qnupload>
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
-
-
                                             </form>
                                         </div>
                                     </div>
@@ -92,6 +87,7 @@
                 x:0,
                 y:0,
                 range:false,//是否多选
+                fileNames:[]
             }
         },
         components: {

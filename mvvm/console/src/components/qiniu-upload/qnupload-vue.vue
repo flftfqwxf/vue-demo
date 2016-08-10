@@ -206,17 +206,7 @@
                                 status: file.status,
                                 type: file.type,
                             }
-                            _this.files[]
                             _this.files.push(fileArray);
-//                            _this.files.push({
-//                                name: file.name,
-//                                loaded: file.loaded,
-//                                origSize: file.origSize,
-//                                percent: file.percent,
-//                                size: plupload.formatSize(file.size).toUpperCase(),
-//                                status: file.status,
-//                                type: file.type,
-//                            })
                         });
 window.rrrr=_this.files;
                         console.log(_this.files)

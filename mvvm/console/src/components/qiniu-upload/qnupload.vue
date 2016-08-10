@@ -5,6 +5,111 @@
             <span>选择文件</span>
         </a>
     </div>
+    <!--<table class="table table-striped table-hover text-left mt" v-show="">-->
+    <!--<thead>-->
+    <!--<tr>-->
+    <!--<th class="col-md-4">文件名</th>-->
+    <!--<th class="col-md-2">大小</th>-->
+    <!--<th class="col-md-6">进度</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr id="{{file.id}}" class="progressContainer" v-for="file in files">-->
+    <!--<td class="progressName">{{files[file]}}</td>-->
+    <!--<td class="progressFileSize">62 KB</td>-->
+    <!--<td>-->
+    <!--<div class="info">-->
+    <!--<div class="progress">-->
+    <!--<div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>-->
+    <!--</div>-->
+    <!--<span class="sr-only">62 KB</span>-->
+    <!--<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>-->
+    <!--<div class="status text-left">等待中...</div>-->
+    <!--</div>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--&lt;!&ndash;<tr id="{{file}}" class="progressContainer">&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressName">反馈详情.png</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressFileSize">62 KB</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="info">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span class="sr-only">62 KB</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="status text-left">已上传: 52 KB 上传速度： 7 KB/s</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tr id="{{file}}" class="progressContainer">&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressName">反馈详情.png</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressFileSize">62 KB</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="info">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span class="sr-only">62 KB</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="status text-left">已取消上传</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tr id="{{file}}" class="progressContainer">&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressName">反馈详情.png</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressFileSize">62 KB</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="info">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span class="sr-only">62 KB</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="status text-left">客户端认证授权失败。请重试或提交反馈。(401：expired token)</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tr id="{{file}}" class="progressContainer">&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressName">反馈详情.png</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressFileSize">62 KB</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="info">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div><strong>Link:</strong><a href="http://o8eatr2zr.bkt.clouddn.com/%E7%89%88%E6%9C%AC%E8%AF%A6%E6%83%85.png" target="_blank">&ndash;&gt;-->
+    <!--&lt;!&ndash;http://o8eatr2zr.bkt.clouddn.com/版本详情.png</a></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span class="sr-only">62 KB</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tr id="{{file}}" class="progressContainer">&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressName">反馈详情.png&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="Wrapper">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="imgWrapper">&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="linkWrapper" target="_blank"&ndash;&gt;-->
+    <!--&lt;!&ndash;href="http://o8eatr2zr.bkt.clouddn.com/%E5%8F%8D%E9%A6%88%E8%AF%A6%E6%83%85.png?imageView2/1/w/100/h/100" title="查看原图"><img&ndash;&gt;-->
+    <!--&lt;!&ndash;src="http://o8eatr2zr.bkt.clouddn.com/%E5%8F%8D%E9%A6%88%E8%AF%A6%E6%83%85.png?imageView2/1/w/100/h/100"></a></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="infoWrapper"><a class="fopLink" data-key="反馈详情.png">查看处理效果</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div>格式：<span class="origin-format">png</span></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div>宽度：<span class="orgin-width">1920px</span></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div>高度：<span class="origin-height">1275px</span></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td class="progressFileSize">62 KB</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="info">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div><strong>Link:</strong><a href="http://o8eatr2zr.bkt.clouddn.com/%E7%89%88%E6%9C%AC%E8%AF%A6%E6%83%85.png" target="_blank">&ndash;&gt;-->
+    <!--&lt;!&ndash;http://o8eatr2zr.bkt.clouddn.com/版本详情.png</a></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span class="sr-only">62 KB</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="progressCancel" style="display: inline;">×</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--</tbody>-->
+    <!--</table>-->
     <div style="display:none" id="success" class="col-md-12" v-show="isSuccess">
         <div class="alert-success">
             队列全部文件处理完毕
@@ -20,29 +125,54 @@
             </tr>
             </thead>
             <tbody id="fsUploadProgress">
-
+            <tr track-by="id" class="progressContainer" v-for="file of files">
+                <td class="progressName">{{file.name}}</td>
+                <td class="progressFileSize">{{file.size}}</td>
+                <td>
+                    <div class="info">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" :style="{width:file.percent+'%'}"></div>
+                        </div>
+                        <a href="javascript:;" class="progressCancel" @click="deleteItem(file.id)" style="display: inline;">×</a>
+                        <div class="status text-left">等待中...</div>
+                    </div>
+                </td>
+            </tr>
             </tbody>
-
         </table>
     </div>
     <div>
         <button type="button" id="upBtn">手动上传</button>
         <button type="button" id="stopBtn">停止上传</button>
+        <button type="button" @click="validateData"></button>
     </div>
 </template>
+<style scoped>
+    .Wrapper{
+        width: 200px;
+    }
+    .linkWrapper{ width: 100px; float: left; }
+    .imgWrapper{ width: 100px; float: left; }
+    .infoWrapper{ padding-left: 10px; float: left }
+</style>
 <script>
+    function isEmpty(obj) {
+        for (var name in obj) {
+            return false;
+        }
+        return true;
+    }
+    ;
     //       require('./moxie.js');
     require('jquery')
-
-//    var loading=require('./images/loading.gif');
-
+    //    var loading=require('./images/loading.gif');
     //测试环境调用
-//    require("./moxie.js")
-//    require('./plupload.dev.js');
+    //引用 moxie.js或 plupload.full.min.js 需要在webpack中配置
+    //    require("./moxie.js")
+    //    require('./plupload.dev.js');
     //线上环境调用
     require('./plupload.full.min.js')
-    var FileProgress=require('./ui')
-
+    //    var FileProgress = require('./ui')
     require('./qiniu.js');
     module.exports = {
         data(){
@@ -93,12 +223,31 @@
                 },
                 isShow: false,
                 isSuccess: false,
-                files: []
+                files: {},
+            }
+        },
+        towWay: true,
+        props: ['fileNames'],
+        methods: {
+            validateData: function () {
+                for (var file in this.files) {
+                    console.log(file);
+                }
+            },
+            deleteItem(id){
+                var obj = JSON.parse(JSON.stringify(this.files))
+                delete obj[id];
+                this.$set('files', obj);
+                if (isEmpty(obj)) {
+                    this.isShow = false
+                }
+//                alert(id)
             }
         },
         ready: function () {
-            const _this = this;
+            var _this = this;
 //            console.log($('#pickfiles').html());
+            var filesAddList = [];
             var uploader = Qiniu.uploader({
 //                idx: 123,
                 runtimes: 'html5,flash,html4',    //上传模式,依次退化
@@ -108,8 +257,8 @@
 //            },
 //            uptoken_url: 'http://192.168.28.218/api/mobile/v1/settings/uptoken',
 // Ajax请求upToken的Url，**强烈建议设置**（服务端提供）
-                uptoken: '7kSE98xxxk4hgFufkUgx2vsVU1Pw0hTfZCOQP61S:cBzptabSJPutYa9q_IHWr1RIOdM=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA3MzY4NTB9', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
-                // unique_names: true, // 默认 false，key为文件名。若开启该选项，SDK为自动生成上传成功后的key（文件名）。
+                uptoken: '7kSE98xxxk4hgFufkUgx2vsVU1Pw0hTfZCOQP61S:GdN3Cn5iULG0ycJPIix3KnVBY2k=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA3OTgyMjR9', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
+                unique_names: true, // 默认 false，key为文件名。若开启该选项，SDK为自动生成上传成功后的key（文件名）。
                 // save_key: true,   // 默认 false。若在服务端生成uptoken的上传策略中指定了 `sava_key`，则开启，SDK会忽略对key的处理
                 domain: 'http://o8eatr2zr.bkt.clouddn.com/',   //bucket 域名，下载资源时用到，**必需**
                 get_new_uptoken: false,  //设置上传文件的时候是否每次都重新获取新的token
@@ -119,42 +268,52 @@
                 max_retries: 3,                   //上传失败最大重试次数
                 dragdrop: true,                   //开启可拖曳上传
                 drop_element: 'qnupload-container',        //拖曳上传区域元素的ID，拖曳文件或文件夹后可触发上传
-                chunk_size: '4mb',                //分块上传时，每片的体积
-                auto_start: true,                 //选择文件后自动上传，若关闭需要自己绑定事件触发上传
+                chunk_size: '0mb',                //分块上传时，每片的体积
+                auto_start: false,                 //选择文件后自动上传，若关闭需要自己绑定事件触发上传
                 init: {
                     'FilesAdded': function (up, files) {
-                        $('table').show();
-                        $('#success').hide();
+                        _this.isShow = true;
+                        _this.isSucess = false;
                         plupload.each(files, function (file) {
-                            var progress = new FileProgress(file, 'fsUploadProgress');
-                            progress.setStatus("等待...");
-                            progress.bindUploadCancel(up);
+                            _this.$set('files.' + file.id, {
+                                id: file.id,
+                                name: file.name,
+                                loaded: file.loaded,
+                                origSize: file.origSize,
+                                percent: file.percent,
+                                size: plupload.formatSize(file.size).toUpperCase(),
+                                status: file.status,
+                                type: file.type,
+                            })
                         });
+                        //                        window.rrrr = _this.files;
+//                        window.eee = filesAddList;
                     },
                     'BeforeUpload': function (up, file) {
-                        var progress = new FileProgress(file, 'fsUploadProgress');
-                        var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
-                        if (up.runtime === 'html5' && chunk_size) {
-                            progress.setChunkProgess(chunk_size);
-                        }
+//                        var progress = new FileProgress(file, 'fsUploadProgress');
+//                        var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
+//                        if (up.runtime === 'html5' && chunk_size) {
+//                            progress.setChunkProgess(chunk_size);
+//                        }
                     },
                     'UploadProgress': function (up, file) {
-                        var progress = new FileProgress(file, 'fsUploadProgress');
-                        var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
-                        progress.setProgress(file.percent + "%", file.speed, chunk_size);
+//                        var progress = new FileProgress(file, 'fsUploadProgress');
+//                        var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
+//                        progress.setProgress(file.percent + "%", file.speed, chunk_size);
                     },
                     'UploadComplete': function () {
-                        $('#success').show();
+//                        $('#success').show();
                     },
                     'FileUploaded': function (up, file, info) {
-                        var progress = new FileProgress(file, 'fsUploadProgress');
-                        progress.setComplete(up, info);
+//                        var progress = new FileProgress(file, 'fsUploadProgress');
+//                        _this.fileNames.push(file.target_name);
+//                        progress.setComplete(up, info);
                     },
                     'Error': function (up, err, errTip) {
-                        $('table').show();
-                        var progress = new FileProgress(err.file, 'fsUploadProgress');
-                        progress.setError();
-                        progress.setStatus(errTip);
+//                        $('table').show();
+//                        var progress = new FileProgress(err.file, 'fsUploadProgress');
+//                        progress.setError();
+//                        progress.setStatus(errTip);
                     }
                     // ,
                     // 'Key': function(up, file) {

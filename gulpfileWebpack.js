@@ -108,3 +108,36 @@ gulp.task('webserver', function () {
             middleware: [cors()]
         }));
 });
+
+gulp.task('mobile', function () {
+    return gulp.src('./mobile')
+        .pipe(webserver({
+            host: '192.168.29.33',
+            directoryListing: {
+                enable: true,
+                path: './mobile',
+                options: {
+                    // icons:true
+                }
+            },
+            open: true,
+            port: 9054,
+            middleware: [cors()]
+        }));
+});
+gulp.task('web', function () {
+    return gulp.src('./web')
+        .pipe(webserver({
+            host: '192.168.29.33',
+            directoryListing: {
+                enable: true,
+                path: './web',
+                options: {
+                    // icons:true
+                }
+            },
+            open: true,
+            port: 9053,
+            middleware: [cors()]
+        }));
+});

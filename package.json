@@ -107,6 +107,9 @@
     "puer": "puer --port 9098 -a mockserver/router.js",
     "mock": "node $NODE_DEBUG_OPTION mockserver/ohana-router.js",
     "webserver": " gulp webserver --gulpfile gulpfileWebpack.js",
+    "mobile": " gulp mobile --gulpfile gulpfileWebpack.js",
+    "web": " gulp web --gulpfile gulpfileWebpack.js",
+
     "debug": "weinre --boundHost 192.168.1.191 --httpPort 9099",
     "runpack": "webpack"
   },

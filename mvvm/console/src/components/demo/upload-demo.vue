@@ -6,6 +6,8 @@
 
                     <div class="row">
                         <div class="col-md-8">
+
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="item">
@@ -34,23 +36,20 @@
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">上传 input</label>
                                                         <div class="col-sm-10">
-                                                            <qnupload :file-names.sync="fileNames"></qnupload>
+                                                            <qnupload v-if="isInit" :file-names.sync="fileNames" :options="options" upload-container="qnupload-container"></qnupload>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                             <!--table-->
-                            <!--table end-->
-                            <!--table 空列表-->
-                            <!--table end-->
-                            <!-- form step start-->
+
                             <!-- form step end-->
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -65,6 +64,7 @@
         </div>
     </div>
 
+
 </template>
 <style>
     body{
@@ -78,6 +78,7 @@
     export default{
         data(){
             return {
+                isInit:false,
                 showModal: false,
                 show:false,
                 type:"datetime", //date datetime
@@ -87,8 +88,37 @@
                 x:0,
                 y:0,
                 range:false,//是否多选
-                fileNames:[]
+                fileNames:[],
+                options:{
+                    uptoken:'7kSE98xxxk4hgFufkUgffx2vsVU1Pw0hTfZCOQP61S:l1VIeTDEE8Yd0tUYL7i-Vc1JgL0=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA5OTEwNjN9',
+                    filters: {
+                        max_file_size: '100mb',
+                        prevent_duplicates: true,//不允许选取重复文件
+                        // Specify what files to browse for
+                        mime_types: [
+//                        {title: "flv files", extensions: "flv"},// 限定flv后缀上传格式上传
+//                        {title: "Video files", extensions: "flv,mpg,mpeg,avi,wmv,mov,asf,rm,rmvb,mkv,m4v,mp4"}, // 限定flv,mpg,mpeg,avi,wmv,mov,asf,rm,rmvb,mkv,m4v,mp4后缀格式上传
+                            {title: "Image files", extensions: "jpg,gif,png"}, // 限定jpg,gif,png后缀上传
+//                        {title: "Zip files", extensions: "zip"} // 限定zip后缀上传
+                        ]
+                    },
+                }
             }
+        },
+        computed: {
+
+        },
+        ready:function () {
+            var _this=this;
+            this.$http.get('http://192.168.28.218/api/mobile/v1/settings/uptoken').then(function (res) {
+                if (res.ok && res.data) {
+                    _this.options.uptoken=res.data.data.uptoken;
+                    console.log(_this.options.uptoken);
+                    _this.isInit=true;
+                }
+            }, function (res) {
+                alert('请求错误')
+            })
         },
         components: {
             'modal': components.modal,

@@ -34,6 +34,11 @@ export default function (router, authorization) {
                 require(['./components/demo/upload-demo.vue'], resolve);
             }
         },
+        '/mvvm/demo/ueditor': {
+            component: function (resolve) {
+                require(['./components/demo/ueditor-demo.vue'], resolve);
+            }
+        },
         // '/mvvm/2': {
         //     component: function (resolve) {
         //         require(['./components/tables/list2'], resolve);

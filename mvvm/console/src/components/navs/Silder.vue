@@ -42,7 +42,22 @@
     </div>
 </template>
 <script type="text/ecmascript-6">
+    require('jquery')
     import {loadNavList, loadBreadCrumb} from "../../vuex/actions"
+    $(function () {
+        var _sidebar_mini_class = 'sidebar-mini';
+        localStorage.__navStatus && $('html').addClass(_sidebar_mini_class);
+        if(localStorage.__navStatus){
+            $('#nav-button').addClass('btn-info');
+        }
+        $('#nav-button').on('click', function(){
+            $('html').toggleClass(_sidebar_mini_class);
+            $(this).toggleClass('btn-info');
+
+            localStorage.__navStatus = $('html').hasClass(_sidebar_mini_class) ? 1 : '';
+        });
+    })
+
     export default {
         vuex: {
             getters: {

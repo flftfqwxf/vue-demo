@@ -23,6 +23,7 @@ module.exports = {
             'bootstrap': path.resolve(__dirname, '../../common/js/bootstrap.js'),
             'bootstrapCss': path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
             'jquery': path.resolve(__dirname, '../../common/js/jquery1.9.1.min.js'),
+
         }
     },
     module: {
@@ -47,6 +48,13 @@ module.exports = {
                 loaders: ['style', 'css', 'sass'],
                 exclude: /node_modules/,
             },
+            //todo:将jquery暴露到全局,暂时无效,后续再测试使用
+            // { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
+            /**
+             *  设置UI.js的 module.exports=FileProgress
+             *  在页面中,就可以使用 require引用时,就可以获取到 FileProgress方法
+             */
+
             {test: require.resolve('../console/src/components/qiniu-upload/ui.js'),
                 loader: "exports?FileProgress"},
             {
@@ -71,7 +79,7 @@ module.exports = {
     vue: {
         loaders: {
             js: 'babel',
-            sass: 'style!css?sourceMap!resolve-url!sass?sourceMap'
+            // sass: 'style!css?sourceMap!resolve-url!sass?sourceMap'
         }
     },
     eslint: {

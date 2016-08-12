@@ -17,7 +17,7 @@ plupload.addI18n({
     "Start Upload": "开始上传",
     "Error: File too large:": "错误: 文件太大:",
     "kb": "kb",
-    "Duplicate file error.": "重复文件错误。",
+    "Duplicate file error.": "不允许上传重复文件。",
     "File size error.": "文件大小错误。",
     "N/A": "N/A",
     "gb": "gb",

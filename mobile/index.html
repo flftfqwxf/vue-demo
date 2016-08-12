@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物联网安全-手机客户端下载</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<div class="header_download">
+    <img class="logo" src="images/logo.png" alt="">
+    <p class="title">物联网安全-手机客户端</p>
+    <p class="summary">联合物联网专业人士 &nbsp;分享物联网专业知识</p>
+    <p class="down_wrap">
+        <a class="down_link down_android" style="display: none" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.istuary.ironhide">android版本下载</a><br>
+        <a class="down_link down_iphone" style="display: none" href="itms-services://?action=download-manifest&url=https://dn-hrx00747.qbox.me/Ironhide2.plist">iphone版本下载</a>
+    </p>
+</div>
+<div class="introduction">
+    <img src="images/desc.png" alt="">
+</div>
+<script>
+    function isWX() {
+        var ua = navigator.userAgent.toLowerCase();
+        return (/micromessenger/.test(ua)) ? true : false;
+    }
+    function isAndroid() {
+        var ua = navigator.userAgent.toLowerCase();
+        return (/android/.test(ua)) ? true : false;
+    }
+    function isIphone() {
+        var ua = navigator.userAgent.toLowerCase();
+        return (/iphone/.test(ua)) ? true : false;
+    }
+    if (isAndroid()) {
+        document.querySelector('.down_android').style.display = 'inline-block';
+    } else {
+        document.querySelector('.down_iphone').style.display = 'inline-block';
+        if (isWX()) {
+            document.querySelector('.down_link').addEventListener('click', function (e) {
+                e.preventDefault();
+                alert('点击右上角用浏览器打开')
+                return false
+            })
+            document.querySelector('.down_iphone').addEventListener('click', function (e) {
+                e.preventDefault();
+                alert('点击右上角用浏览器打开')
+                return false
+            })
+        }
+    }
+</script>
+</body>
+</html>

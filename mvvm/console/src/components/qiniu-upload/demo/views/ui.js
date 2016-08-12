@@ -7,6 +7,7 @@ function FileProgress(file, targetID) {
     this.opacity = 100;
     this.height = 0;
     this.fileProgressWrapper = $('#' + this.fileProgressID);
+
     if (!this.fileProgressWrapper.length) {
         // <div class="progress">
         //   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">

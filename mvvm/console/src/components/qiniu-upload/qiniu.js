@@ -966,7 +966,11 @@ function QiniuJsSDK() {
                             uploader.destroy();
                             break;
                         default:
-                            errTip = err.message + err.details;
+                            errTip = err.message
+                            if (err.details) {
+                                errTip+=err.details
+
+                            }
                             if (!unknow_error_retry(file)) {
                                 return;
                             }

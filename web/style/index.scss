@@ -1,0 +1,70 @@
+@import "reset";
+$dp:2;
+@function setDp($val,$dp:2,$unit:px){
+ @return $val*$dp+$unit;
+}
+html{height: 100%}
+body{color:#FFF;background-size: cover;background: #FF9B16;height: 100%; overflow-y: hidden;
+
+}
+.logo{
+  width:1200px; margin:20px auto;
+  background: url("../images/logo.png") no-repeat;padding-left:30px; text-align: left ;height: 24px;font-size: 22px;}
+
+.main_wrap{
+  background:url("../images/bg.png") no-repeat bottom #FF9B16;
+  display: table;height: 100%;width: 100%;padding-bottom: 50px;min-heigt:565px;
+  .cell_wrap{display: table-cell; vertical-align: middle}
+}
+.main{
+  width: 1200px;margin: auto;overflow: hidden;
+  background: url("../images/line.png") no-repeat center;
+  .pic{float:left; padding-right:60px;width:480px;
+   img  { width:420px;}
+  }
+  .desc_content{ float: left;width: 700px}
+  .title{
+    font-size: 70px;
+    color: #FFFFFF;
+    letter-spacing: -0.44px;
+    padding-bottom: 20px;
+  }
+  .summary{
+    font-size: 38px;
+    color: #FFFFFF;
+    letter-spacing: -0.24px;
+    padding-bottom:70px;
+  }
+  .code_wrap{
+
+    width:260px;height:300px;background: #FFF; overflow: hidden;float: left; margin-right:40px;
+    font-size: 18px;
+    color: #373737;
+    letter-spacing: -0.12px;
+    padding:20px;
+    text-align: center;
+    .down_txt{
+      padding-top:10px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.footer{
+  position: fixed;text-align: center;padding: 10px;
+  width:100%;
+  bottom: 0;
+  clear: both;
+  background: #FFF;
+  height: 50px;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: -0.09px;
+  line-height: 20px;
+  .inter_info{
+    font-size: 10px;
+    color: #BABABA;
+    letter-spacing: -0.07px;
+  }
+}

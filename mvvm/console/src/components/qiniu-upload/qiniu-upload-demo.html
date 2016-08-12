@@ -22,7 +22,7 @@
     <!--<script src="/common/plugins/pagination/pagination.js"></script>-->
     <!--<script src="/distributor/theme/manage/blue/js/common.js?v=" type="text/javascript"></script>-->
     <script src="moxie.js"></script>
-    <script src="ui.js"></script>
+    <script src="ui-old.js"></script>
 
     <script src="plupload.dev.js"></script>
 
@@ -60,7 +60,7 @@
 <body>
 
 
-    <div id="qnupload-container">
+    <div id="qnupload-container" class="upload_c">
         <a href="#" id="qnupload-btn"><span>选择文件</span></a>
     </div>
     <div role="tabpanel" class="tab-pane fade in active" id="demo" aria-labelledby="demo-tab">
@@ -110,17 +110,17 @@
 // Ajax请求upToken的Url，**强烈建议设置**（服务端提供）
 
 
-             uptoken : '7kSE98xxxk4hgFufkUgx2vsVU1Pw0hTfZCOQP61S:yjzJvzRWoYMoBRMkyE5SLXK0XdY=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA4MjA4NTd9', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
+             uptoken : '7kSE98xxxk4hgFufkUgx2vsVU1Pw0hTfZCOQP61S:wa7_xt2OMVLhazyjTr8W-Vh41GI=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA4OTg5Mjh9', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
             // unique_names: true, // 默认 false，key为文件名。若开启该选项，SDK为自动生成上传成功后的key（文件名）。
             // save_key: true,   // 默认 false。若在服务端生成uptoken的上传策略中指定了 `sava_key`，则开启，SDK会忽略对key的处理
             domain: 'http://o8eatr2zr.bkt.clouddn.com/',   //bucket 域名，下载资源时用到，**必需**
             get_new_uptoken: false,  //设置上传文件的时候是否每次都重新获取新的token
-            container: 'qnupload-container',           //上传区域DOM ID，默认是browser_button的父元素，
+            container:document.querySelector('.upload_c') ,           //上传区域DOM ID，默认是browser_button的父元素，
             max_file_size: '100mb',           //最大文件体积限制
             flash_swf_url: './Moxie.swf',  //引入flash,相对路径
             max_retries: 3,                   //上传失败最大重试次数
             dragdrop: true,                   //开启可拖曳上传
-            drop_element: 'qnupload-container',        //拖曳上传区域元素的ID，拖曳文件或文件夹后可触发上传
+            drop_element: '.upload_c',        //拖曳上传区域元素的ID，拖曳文件或文件夹后可触发上传
             chunk_size: '4mb',                //分块上传时，每片的体积
             auto_start: false,                 //选择文件后自动上传，若关闭需要自己绑定事件触发上传
             init: {

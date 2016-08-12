@@ -10,6 +10,113 @@
             队列全部文件处理完毕
         </div>
     </div>
+    <table class="table table-striped table-hover text-left mt">
+        <thead>
+        <tr>
+            <th class="col-md-4">文件名</th>
+            <th class="col-md-2">大小</th>
+            <th class="col-md-6">进度</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="{{file.id}}" class="progressContainer" v-for="file in files">
+            <td class="progressName">{{files[file]}}</td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>
+                    </div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                    <div class="status text-left">等待中...</div>
+                </div>
+            </td>
+        </tr>
+        <tr id="{{file}}" class="progressContainer">
+            <td class="progressName">反馈详情.png</td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>
+                    </div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                    <div class="status text-left">已上传: 52 KB 上传速度： 7 KB/s</div>
+                </div>
+            </td>
+        </tr>
+        <tr id="{{file}}" class="progressContainer">
+            <td class="progressName">反馈详情.png</td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>
+                    </div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                    <div class="status text-left">已取消上传</div>
+                </div>
+            </td>
+        </tr>
+        <tr id="{{file}}" class="progressContainer">
+            <td class="progressName">反馈详情.png</td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%"></div>
+                    </div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                    <div class="status text-left">客户端认证授权失败。请重试或提交反馈。(401：expired token)</div>
+                </div>
+            </td>
+        </tr>
+        <tr id="{{file}}" class="progressContainer">
+            <td class="progressName">反馈详情.png</td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div><strong>Link:</strong><a href="http://o8eatr2zr.bkt.clouddn.com/%E7%89%88%E6%9C%AC%E8%AF%A6%E6%83%85.png" target="_blank">
+                        http://o8eatr2zr.bkt.clouddn.com/版本详情.png</a></div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                </div>
+            </td>
+        </tr>
+        <tr id="{{file}}" class="progressContainer">
+            <td class="progressName">反馈详情.png
+                <div class="Wrapper">
+                    <div class="imgWrapper">
+                        <a class="linkWrapper" target="_blank"
+                           href="http://o8eatr2zr.bkt.clouddn.com/%E5%8F%8D%E9%A6%88%E8%AF%A6%E6%83%85.png?imageView2/1/w/100/h/100" title="查看原图"><img
+                                src="http://o8eatr2zr.bkt.clouddn.com/%E5%8F%8D%E9%A6%88%E8%AF%A6%E6%83%85.png?imageView2/1/w/100/h/100"></a></div>
+                    <div class="infoWrapper"><a class="fopLink" data-key="反馈详情.png">查看处理效果</a>
+                        <div>
+                            <div>格式：<span class="origin-format">png</span></div>
+                            <div>宽度：<span class="orgin-width">1920px</span></div>
+                            <div>高度：<span class="origin-height">1275px</span></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="progressFileSize">62 KB</td>
+            <td>
+                <div class="info">
+                    <div><strong>Link:</strong><a href="http://o8eatr2zr.bkt.clouddn.com/%E7%89%88%E6%9C%AC%E8%AF%A6%E6%83%85.png" target="_blank">
+                        http://o8eatr2zr.bkt.clouddn.com/版本详情.png</a></div>
+                    <span class="sr-only">62 KB</span>
+                    <a href="javascript:;" class="progressCancel" style="display: inline;">×</a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
     <div>
         <table class="table table-striped table-hover text-left mt" v-show="isShow">
             <thead>

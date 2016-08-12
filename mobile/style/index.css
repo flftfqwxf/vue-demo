@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* ------- HTML5 display-role reset for older browsers ------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: Arial, "Microsoft Yahei", "Lantinghei SC", "Hiragino Sans GB", "Helvetica Neue", Helvetica, sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header_download {
+  background: url("../images/bg.png") no-repeat bottom center #FF9B16;
+  background-size: cover;
+  text-align: center; }
+
+.logo {
+  margin: 52px;
+  text-align: center; }
+
+.title {
+  font-size: 52px;
+  color: #FFF; }
+
+.summary {
+  font-size: 28px;
+  color: #FFF;
+  padding: 20px 0 0 0; }
+
+.down_wrap {
+  text-align: center;
+  padding: 50px 0; }
+  .down_wrap .down_link {
+    margin: 20px;
+    display: inline-block;
+    background: url("../images/android.png") no-repeat;
+    width: 360px;
+    height: 80px;
+    overflow: hidden;
+    text-indent: -999px; }
+  .down_wrap .down_iphone {
+    background-image: url("../images/iphone.png"); }
+
+.introduction {
+  margin-top: -4px;
+  background: #FFF;
+  text-align: center;
+  padding-top: 70px; }
+  .introduction img {
+    display: inline-block; }
+
+/*# sourceMappingURL=index.css.map */

@@ -44,6 +44,7 @@
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-loader": "^1.2.0",
     "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.4",
     "function-bind": "^1.0.2",
@@ -109,16 +110,17 @@
     "webserver": " gulp webserver --gulpfile gulpfileWebpack.js",
     "mobile": " gulp mobile --gulpfile gulpfileWebpack.js",
     "web": " gulp web --gulpfile gulpfileWebpack.js",
-
     "debug": "weinre --boundHost 192.168.1.191 --httpPort 9099",
     "runpack": "webpack"
   },
   "dependencies": {
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "blueimp-file-upload-node": "^2.1.0",
     "eonasdan-bootstrap-datetimepicker": "^4.15.35",
     "moment": "^2.14.1",
     "moment-timezone": "^0.5.5",
     "qiniu-js": "^1.0.14-beta",
+    "ueditor": "^1.1.4",
     "vue": "^1.0.14",
     "vue-datetime-picker": "^0.2.1",
     "vue-desktop": "^0.2.19",

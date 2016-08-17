@@ -141,3 +141,20 @@ gulp.task('web', function () {
             middleware: [cors()]
         }));
 });
+
+gulp.task('wulianMobile', function () {
+    return gulp.src('./wulianMobile')
+        .pipe(webserver({
+            host: '192.168.29.33',
+            directoryListing: {
+                enable: true,
+                path: './wulianMobile',
+                options: {
+                    // icons:true
+                }
+            },
+            open: true,
+            port: 9055,
+            middleware: [cors()]
+        }));
+});

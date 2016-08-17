@@ -672,7 +672,7 @@
                     var json = {
                         "original": response_json.key,
                         "name": response_json.key,
-                        "url": editor.getOpt('imageUrlPrefix') + '/' + response_json.key,
+                        "url":  response_json.key,
                         "size": file.size,
                         "type": file.type,
                         "state": state

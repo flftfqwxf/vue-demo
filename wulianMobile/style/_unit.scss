@@ -1,0 +1,40 @@
+@charset "utf-8";
+$dp: 2;
+@function setDp($val,$dp:2,$unit:px) {
+  @return $val*$dp+$unit;
+}
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max{
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value/58.5938}rem;
+
+    @if $i < $max{
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $remValues;
+}
+@function transform-rem($values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max{
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value/58.5938}rem;
+
+    @if $i < $max{
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  @return $remValues;
+}

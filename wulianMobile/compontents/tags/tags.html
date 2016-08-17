@@ -1,0 +1,29 @@
+<div class="tags_wrap">
+    <div class="tags_container">
+        <div class="tags_list">
+            <ul>
+                <li><a href="" class="btn btn-info btn-xs">工业控制系统安全</a></li>
+                <li><a href="" class="btn btn-info btn-xs">工业控制系统安全</a></li>
+                <li><a href="" class="btn btn-info btn-xs">工业控制系统安全</a></li>
+                <li><a href="" class="btn btn-info btn-xs">工业控制系统安全</a></li>
+            </ul>
+        </div>
+    </div>
+    <i class="wl-iconfont wl-right tag_ico"></i>
+</div>
+<script>
+    (function () {
+        $('.tag_ico').click(function () {
+            var _this = $(this);
+            var w = $('.tags_list ul').width();
+            var c_w = $('.tags_list').width();
+            if (_this.hasClass('wl-left')) {
+                $(this).removeClass('wl-left').addClass('wl-right');
+                $('.tags_list').animate({scrollLeft: 0}, 300);
+            } else {
+                $(this).addClass('wl-left').removeClass('wl-right');
+                $('.tags_list').animate({scrollLeft: w - c_w}, 300);
+            }
+        })
+    })()
+</script>

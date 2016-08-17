@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+
+.tags_wrap{
+  overflow: hidden;
+  position: relative;
+  height:transform-rem(35);
+  margin:transform-rem(10) transform-rem(10) 5px;
+  border-bottom:1px solid $bottomColor;
+  .btn-xs{border-radius: 0}
+  .tags_container{
+    width:100%;padding-right: 30px;
+  }
+  .tags_list{
+    border-spacing: 0;
+    height: 30px;white-space: nowrap;
+    width:auto;overflow: scroll;
+    ul{
+      float: left;
+    }
+  }
+  li{ display: inline-block;}
+  .tag_ico{position: absolute;right: 5px; top:0;}
+}

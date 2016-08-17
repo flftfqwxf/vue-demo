@@ -31,9 +31,7 @@
         var ua = navigator.userAgent.toLowerCase();
         return (/iphone/.test(ua)) ? true : false;
     }
-    if (isAndroid()) {
-        document.querySelector('.down_android').style.display = 'inline-block';
-    } else {
+    if (isIphone()) {
         document.querySelector('.down_iphone').style.display = 'inline-block';
         if (isWX()) {
             document.querySelector('.down_link').addEventListener('click', function (e) {
@@ -47,6 +45,9 @@
                 return false
             })
         }
+
+    } else {
+        document.querySelector('.down_android').style.display = 'inline-block';
     }
 </script>
 </body>

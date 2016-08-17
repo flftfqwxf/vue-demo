@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+.personalInfo{
+  text-align: center;
+  padding:transform-rem(20);
+  .u_info,.u_count{
+    color: $summaryColor;
+    padding:transform-rem(15) 0;
+    font-size: transform-rem(12);
+  }
+  .wl-peopple{font-size: 80px}
+}

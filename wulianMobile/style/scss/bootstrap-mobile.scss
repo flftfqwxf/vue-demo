@@ -1,0 +1,58 @@
+@charset "utf-8";
+//
+@import "custom/mixins/shape";
+//重置变量
+@import "custom/resetVariables";
+//重置 padding和margin
+@import "bootstrap/resetMarginAndPadding";
+//字体图标
+@import 'custom/iconfont';
+//重置webUploader样式
+@import "custom/resetWebUploader";
+@import 'bootstrap.src';
+@import "custom/formsChange";
+//表单步骤组件
+@import "custom/formStep";
+//重构弹出层
+@import 'custom/artdialog';
+//美化SELECT
+@import "bootstrap/select";
+//指定的INPUT长度
+@import "bootstrap/inputSize";
+//内容为空时，列表样式
+@import "bootstrap/emptylist";
+//头部按钮小模块
+@import "custom/topBarWidget";
+
+
+
+@import "custom/schedule_nav";
+
+//手机端图标
+@import "../../compontents/iconfont/iconfont.css";
+
+@import "../reset";
+
+
+
+////输出所有背景颜色 CLASS
+//@include bgColorList();
+//@include bgColorList('dark');
+//@include bgColorList('light');
+//@include bgColorList('xlight');
+
+
+:focus {
+    outline: none;
+}
+
+.p-base {
+    padding: paddings() !important;
+}
+.p-lr-5 {
+    padding: 0 paddings('xSmall') !important;
+}
+
+.fl{float:left!important;}
+.fr{float:right!important;}
+

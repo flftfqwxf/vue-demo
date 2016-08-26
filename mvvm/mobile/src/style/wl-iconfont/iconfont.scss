@@ -1,0 +1,30 @@
+@charset "utf-8";
+$font-path:'wl-iconfont/';
+@font-face {font-family: "wl-iconfont";
+
+  src: url('#{$font-path}iconfont.eot?t=1471327092'); /* IE9*/
+  src: url('#{$font-path}iconfont.eot?t=1471327092#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('#{$font-path}iconfont.woff?t=1471327092') format('woff'), /* chrome, firefox */
+  url('#{$font-path}iconfont.ttf?t=1471327092') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('#{$font-path}iconfont.svg?t=1471327092#wl-iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.wl-iconfont {
+  font-family:"wl-iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wl-add:before { content: "\e600"; }
+.wl-close:before { content: "\e601"; }
+.wl-eye:before { content: "\e602"; }
+.wl-female:before { content: "\e603"; }
+.wl-left:before { content: "\e604"; }
+.wl-like:before { content: "\e605"; }
+.wl-mail:before { content: "\e606"; }
+.wl-male:before { content: "\e607"; }
+.wl-right:before { content: "\e608"; }
+.wl-shai:before { content: "\e609"; }
+.wl-peopple:before { content: "\e60a"; }

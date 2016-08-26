@@ -35,8 +35,8 @@ const projectOpts = {
     'console': {
         build:{
             sysName: 'console',
-            host: 'console.wulianaq.com',
-            publicPath: 'http://console.wulianaq.com',
+            host: 'console.flftfqwxf.com',
+            publicPath: 'http://console.flftfqwxf.com',
             outPutPath: '../../dist/console',
             template: 'mvvm/build/index.template.console.html'
         },
@@ -46,6 +46,23 @@ const projectOpts = {
             port:9083,
             publicPath: 'http://localhost:9083/',
             outPutPath: '../../dist/console'
+        }
+
+    },
+    'mobile': {
+        build:{
+            sysName: 'mobile',
+            host: 'm.flftfqwxf.com',
+            publicPath: 'http://m.flftfqwxf.com',
+            outPutPath: '../../dist/m',
+            template: 'mvvm/build/index.template.mobile.html'
+        },
+        dev:{
+            sysName: 'mobile',
+            host: '192.168.29.33',
+            port:9093,
+            publicPath: 'http://192.168.29.33:9093/',
+            outPutPath: '../../dist/mobile'
         }
 
     }

@@ -1,0 +1,23 @@
+@import "reset";
+$dp:2;
+@function setDp($val,$dp:2,$unit:px){
+ @return $val*$dp+$unit;
+}
+.header_download{background:url("../images/bg.png") no-repeat bottom center #FF9B16;background-size: cover;text-align: center}
+  .logo{ margin:setDp(26); text-align: center;}
+  .title{font-size: 52px; color: #FFF;}
+  .summary{font-size: 28px;color: #FFF;padding: setDp(10) 0 0 0}
+
+  .down_wrap{
+    text-align: center;padding: setDp(25) 0;
+    .down_link{ margin: setDp(10);display: inline-block;background: url("../images/android.png") no-repeat;
+      width: setDp(180);height: setDp(40);overflow: hidden;text-indent: -999px}
+    .down_iphone{background-image: url("../images/iphone.png")}
+
+  }
+
+  .introduction{
+    margin-top:setDp(-2);background: #FFF;
+    text-align: center; padding-top:setDp(35);
+    img{ display: inline-block;}
+  }

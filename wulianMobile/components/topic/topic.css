@@ -1,0 +1,11 @@
+.topic_info {
+  text-align: center;
+  padding: 0.34133rem 0 0.17067rem 0;
+  margin-bottom: 0.08533rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dashed #F0F0F1; }
+  .topic_info .u_name {
+    padding-top: 0.08533rem; }
+
+/*# sourceMappingURL=topic.css.map */

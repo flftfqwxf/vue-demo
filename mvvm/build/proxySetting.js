@@ -5,21 +5,25 @@
  */
 function setProxyUrls(proxyConfig) {
     var proxyUrl = {};
-    proxyConfig.proxyUrlList.map((item)=> {
-        proxyUrl[item.url] = {
-            target: item.target,
-            bypass: function (req, res, proxyOptions) {
-                for (var item in proxyConfig.bypass) {
-                    if (req.url.indexOf(item) !== -1 && proxyConfig.bypass[item]) {
-                        console.warn(req.url, ": is pass proxy");
-                        return req.url;
+    if (proxyConfig && proxyConfig.proxyUrlList) {
+        proxyConfig.proxyUrlList.map((item)=> {
+            proxyUrl[item.url] = {
+                target: item.target,
+                bypass: function (req, res, proxyOptions) {
+                    for (var item in proxyConfig.bypass) {
+                        if (req.url.indexOf(item) !== -1 && proxyConfig.bypass[item]) {
+                            console.warn(req.url, ": is pass proxy");
+                            return req.url;
+                        }
                     }
+                    console.log('使用代理的URL===>', req.url);
                 }
-                console.log('使用代理的URL===>', req.url);
             }
-        }
-    })
-    console.log('代理规则:',proxyUrl);
+        })
+        console.log('代理规则:',proxyUrl);
+      
+    }
+
     return proxyUrl
 }
 

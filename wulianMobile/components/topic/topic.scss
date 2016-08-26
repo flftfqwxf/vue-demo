@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+.topic_info{
+  text-align: center;
+  padding:transform-rem(20) 0 transform-rem(10) 0;
+  margin-bottom: transform-rem(5);
+  display: inline-block;width: 100%;
+  border-bottom: 1px dashed $bottomColor;
+
+  span{
+    background: #72B3FF;
+    width: transform-rem(55); height:transform-rem(55);border-radius: 50%; display: inline-block;
+    line-height: transform-rem(55);
+    color: #FFF;font-size: transform-rem(25);
+  }
+  .topic_name{
+    padding:transform-rem(15);
+  }
+}

@@ -1,4 +1,4 @@
-@import url(../compontents/iconfont/iconfont.css);
+@import url(../components/iconfont/iconfont.css);
 .openApp {
   width: 100%;
   height: 0.85333rem;
@@ -13,7 +13,7 @@
     font-size: 0.17067rem;
     line-height: 0.512rem; }
   .openApp .downLogo {
-    background: url(/compontents/downLoadTips/icon.png) no-repeat;
+    background: url(/components/downLoadTips/icon.png) no-repeat;
     background-size: contain;
     width: 0.54613rem;
     height: 0.54613rem;
@@ -96,12 +96,22 @@
 
 .personalInfo {
   text-align: center;
-  padding: 0.34133rem; }
+  padding: 0.34133rem 0 0.17067rem 0;
+  margin-bottom: 0.08533rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dashed #F0F0F1; }
   .personalInfo .u_info, .personalInfo .u_count {
     color: #9DA0A5;
-    padding: 0.256rem 0;
-    font-size: 0.2048rem; }
+    font-size: 0.2048rem;
+    padding-top: 0.17067rem; }
+  .personalInfo .u_name {
+    padding-top: 0.08533rem; }
   .personalInfo .wl-peopple {
-    font-size: 80px; }
+    font-size: 1.024rem;
+    color: #C4C6C9; }
+  .personalInfo .info_sex {
+    color: #3BA5FF;
+    font-size: 0.2048rem; }
 
 /*# sourceMappingURL=homepage.css.map */

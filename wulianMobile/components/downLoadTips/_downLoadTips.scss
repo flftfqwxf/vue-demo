@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+
+// 浏览器升级提示
+.openApp{ width: 100%; height: transform-rem(50); opacity: 0.95; position: fixed; bottom:0; padding-top:transform-rem(11);
+  background: #FFF;
+  .downClose{ margin: 0 transform-rem(10) 0 transform-rem(10);
+float: left; font-size: transform-rem(10);line-height: transform-rem(30);
+  }
+  .downLogo{ background: url(/components/downLoadTips/icon.png) no-repeat;background-size: contain; width: transform-rem(32);height: transform-rem(32); float: left;}
+  .downSummary{
+    float: left;margin:transform-rem(2) 0 0 transform-rem(5);
+
+    .downName{font-size: transform-rem(14) }
+    .downDesc{font-size: transform-rem(11); color: $summaryColor; }
+  }
+
+  .downBtn{float: right;margin-right: transform-rem(10) }
+}

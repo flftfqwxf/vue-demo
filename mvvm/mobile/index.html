@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="single-screen">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 640) {
+                            docEl.style.fontSize = '100px';
+                        } else {
+                            docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="/src/style/common.css">
+    <script src="/src/js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<app></app>
+<script src="/app.js"></script>
+</body>
+</html>

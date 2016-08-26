@@ -2,5 +2,18 @@
   margin: 0.34133rem 0.17067rem; }
   .detail_main h3 {
     font-size: 20px; }
+  .detail_main .detail_info, .detail_main .detail_count {
+    line-height: 0.4096rem;
+    font-size: 0.18773rem;
+    color: #9DA0A5;
+    margin: 0.08533rem 0 0.17067rem 0; }
+  .detail_main .detail_content {
+    line-height: 0.44373rem; }
+    .detail_main .detail_content img {
+      max-width: 100%;
+      text-align: center; }
+  .detail_main .detail_count i {
+    padding-right: 0.08533rem;
+    font-size: 14px; }
 
 /*# sourceMappingURL=content.css.map */

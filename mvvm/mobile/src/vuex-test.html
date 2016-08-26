@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://vuejs.org/js/vue.js"></script>
+    <script src="//cdn.bootcss.com/vuex/0.6.3/vuex.min.js"></script>
+    <meta charset="utf-8">
+    <title>vue-validtor</title>
+</head>
+<body id="app">
+vuex 示例
+<global-component></global-component>
+<script>
+    //声明一个state
+    const state = {
+        a: 1
+    };
+    //声明一个 mutations
+    const mutations = {
+        MU1(state, num){
+            state.a = num;
+            console.log(num)
+        }
+    };
+    //声明一个 actions
+    const actions = {
+        nu1({dispatch}){
+            dispatch('MU1', 8)
+        }
+    };
+    var store = new Vuex.Store({
+        state,
+        mutations
+    });
+    Vue.component('global-component', {
+        template: 'This is global {{a}} component<br><br><input v-model="c"> {{c}}',
+
+        computed:{
+            c(){
+                return store.state.a+1;
+            }
+        }
+    });
+    var VUE = new Vue({
+                el: '#app',
+                store: store,
+            }
+    );
+    store.dispatch('MU1', 5);
+    actions.nu1(store)
+</script>
+</body>
+</html>

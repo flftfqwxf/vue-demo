@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+
+.comments{
+  .comments_head{background: #EFEFF4;height: transform-rem(30);line-height: transform-rem(30); padding:0 transform-rem(10);}
+  .comment_item{
+    margin: transform-rem(10);
+  }
+  .comment_content{
+    padding: 0 0 transform-rem(10) transform-rem(45);line-height: transform-rem(20);
+    font-size: transform-rem(14);
+  }
+  .face_pic{
+    width:transform-rem(30);height: transform-rem(30);float: left;
+    border-radius: 50%;float: left; margin:0 transform-rem(10) 0 transform-rem(5);}
+  .comment_info{
+    font-size:transform-rem(11);
+    color: $summaryColor;
+    border-bottom:1px solid $bottomColor; padding-bottom:transform-rem(5);
+  }
+  .comment_txt{ padding:transform-rem(10) 0 transform-rem(5) 0;text-align: justify}
+  .openAppWrap {
+    text-align: center;
+    margin:transform-rem(20) transform-rem(10) ;
+    .btn-lg{
+      border-radius: 4px;
+      font-size: transform-rem(16);
+      height: transform-rem(50);
+      line-height:transform-rem(30) ;
+      width: 100%;
+    }
+  }
+  .comment_empty{
+    padding-top:transform-rem(10);
+    text-align: center; font-style: transform-rem(16);line-height: transform-rem(40);color: $summaryColor;
+  }
+
+}

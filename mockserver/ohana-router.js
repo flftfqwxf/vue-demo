@@ -49,6 +49,7 @@ server.get('/api/mvvm/message.json', {
     }
 });
 
+
 server.get('/api/login', {
     //delay: 12000,
     data: function (params, query) {
@@ -140,4 +141,8 @@ server.get('/api/user/:id/tag', {
         tag: 'loli'
     }
 });
+
+require('./wl-mobile/mobile-mock')(server)
+
+
 server.start(9098);

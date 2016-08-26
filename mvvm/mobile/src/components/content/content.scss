@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "../../style/unit";
+@import "../../style/varibale";
+
+.detail_main{
+  margin:transform-rem(20) transform-rem(10);
+  h3{font-size: $bigSize}
+  .detail_info,.detail_count{
+    line-height: transform-rem(24);
+    font-size: transform-rem(11);
+    color: $summaryColor;
+    margin: transform-rem(5) 0 transform-rem(10) 0;
+  }
+  .detail_content{
+    font-size: transform-rem(14);
+    line-height: transform-rem(26);
+    img{max-width: 100%;text-align: center}}
+.detail_count{
+
+  i{ padding-right:transform-rem(5);font-size: 14px;}
+}
+}

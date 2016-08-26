@@ -1,0 +1,20 @@
+.topic_info {
+  text-align: center;
+  padding: 0.34133rem 0 0.17067rem 0;
+  margin-bottom: 0.08533rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dashed #F0F0F1; }
+  .topic_info span {
+    background: #72B3FF;
+    width: 0.93867rem;
+    height: 0.93867rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 0.93867rem;
+    color: #FFF;
+    font-size: 0.42667rem; }
+  .topic_info .topic_name {
+    padding: 0.256rem; }
+
+/*# sourceMappingURL=topic.css.map */

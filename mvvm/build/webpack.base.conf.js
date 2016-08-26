@@ -22,7 +22,19 @@ module.exports = {
             'datepicker': path.resolve(__dirname, '../console/src/components/datepicker/datepicker.js'),
             'bootstrap': path.resolve(__dirname, '../../common/js/bootstrap.js'),
             'bootstrapCss': path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
+            //移动站全局CSS wulianaq
+            'bootstrapMobileCss': path.resolve(__dirname, '../mobile/src/style/scss/bootstrap-mobile.scss'),
+
+            'indexCss': path.resolve(__dirname, '../mobile/src/style/index.scss'),
+            'detailCss': path.resolve(__dirname, '../mobile/src/style/detail.scss'),
+            'cssUrl': path.resolve(__dirname, '../mobile/src/style'),
+            'topic': path.resolve(__dirname, '../mobile/src/style/topic.scss'),
+            'homepage': path.resolve(__dirname, '../mobile/src/style/homepage.scss'),
+
             'jquery': path.resolve(__dirname, '../../common/js/jquery1.9.1.min.js'),
+            alias: {
+                'vux-components': 'vux/src/components/'
+            }
 
         }
     },
@@ -73,6 +85,11 @@ module.exports = {
                     limit: 10000,
                     name: '[name].[ext]?[hash]'
                 }
+            },
+            //vux UI库 编译
+            {
+                test: /vux.src.*?js$/,
+                loader: 'babel'
             }
         ]
     },

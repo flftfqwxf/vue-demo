@@ -1,0 +1,26 @@
+header {
+  height: 0.68267rem;
+  line-height: 0.68267rem;
+  font-size: 0.27307rem;
+  text-align: center; }
+  header i.wl-mail {
+    position: absolute;
+    left: 10px; }
+  header i.wl-shai {
+    position: absolute;
+    right: 10px; }
+  header .sort_wrap {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    font-size: 0.23893rem; }
+    header .sort_wrap > li {
+      line-height: -0.768rem;
+      margin: 0rem -0.34133rem;
+      border-bottom: 1px solid #F0F0F1; }
+    header .sort_wrap .active {
+      color: #FF9B2D; }
+
+/*# sourceMappingURL=topSort.css.map */

@@ -35,6 +35,7 @@
             'plugins/scrawl.js',
             'plugins/removeformat.js',
             'plugins/blockquote.js',
+            'plugins/hstyle.js',
             'plugins/convertcase.js',
             'plugins/indent.js',
             'plugins/print.js',

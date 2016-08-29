@@ -1,12 +1,15 @@
 @charset "utf-8";
-$font-path:'wl-iconfont/';
+$font-path:'wl-iconfont/'; //注意,相对路径是根据 import 此 sass文件的相对目录来制定,而非此文件本身的路径
 @font-face {font-family: "wl-iconfont";
+  src: url('#{$font-path}iconfont.eot'); /* IE9*/
+  src: url('#{$font-path}iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('#{$font-path}iconfont.woff') format('woff'), /* chrome, firefox */
+  url('#{$font-path}iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('#{$font-path}iconfont.svg#wl-iconfont') format('svg'); /* iOS 4.1- */
 
-  src: url('#{$font-path}iconfont.eot?t=1471327092'); /* IE9*/
-  src: url('#{$font-path}iconfont.eot?t=1471327092#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('#{$font-path}iconfont.woff?t=1471327092') format('woff'), /* chrome, firefox */
-  url('#{$font-path}iconfont.ttf?t=1471327092') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('#{$font-path}iconfont.svg?t=1471327092#wl-iconfont') format('svg'); /* iOS 4.1- */
+  //src: url('#{$font-path}iconfont.eot?t=1471327092')
+  //如果使用 webpack编译,不能在引用资源后面加上时间戳等 带 ?xx=xx的参数,否则在编译可能会报错
+  //;
 }
 
 .wl-iconfont {

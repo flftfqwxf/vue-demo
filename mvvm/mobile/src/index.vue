@@ -13,6 +13,7 @@
 </style>
 <script type="text/ecmascript-6">
 
+    require('jquery')
     import store from './vuex/store'
     export default {
         store:store,

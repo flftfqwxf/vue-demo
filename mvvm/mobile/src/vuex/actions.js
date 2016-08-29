@@ -10,7 +10,7 @@ export const loadIndexSwipeInfo = function ({dispatch}) {
             dispatch(types.LOAD_INDEX_SWIPE_INFO, res.data.data)
         }
     }, function (res) {
-        alert('请求错误')
+        alert('请求错误1')
     })
 }
 /**
@@ -27,7 +27,7 @@ export const loadList = function ({dispatch}, sort = 0, page = 1, callback) {
             callback.call(this, res.data.data.list.length)
         }
     }, function (res) {
-        alert('请求错误')
+        console.log('请求错误2')
     })
 }
 export const setPage = function ({dispatch}, page) {
@@ -50,7 +50,7 @@ export const loadTopicsList = function ({dispatch}, topic_id, page = 1, callback
             callback.call(this, res.data.data.list.length)
         }
     }, function (res) {
-        alert('请求错误')
+        console.log('请求错误3')
     })
 }
 /**
@@ -64,7 +64,7 @@ export const loadTopicsInfo = function ({dispatch}, topic_id) {
             dispatch(types.LOAD_TOPICS_INFO, res.data.data)
         }
     }, function (res) {
-        alert('请求错误')
+        console.log('请求错误4')
     })
 }
 /**
@@ -83,7 +83,7 @@ export const loadArticles = function ({dispatch}, article_id, callback) {
             callback.apply(this);
         }
     }, function (res) {
-        alert('请求错误')
+        console.log('请求错误5')
     })
 }
 /**
@@ -102,6 +102,6 @@ export const loadArticles = function ({dispatch}, article_id, callback) {
 //             callback.apply(this);
 //         }
 //     }, function (res) {
-//         alert('请求错误')
+//         console.log('请求错误')
 //     })
 // }

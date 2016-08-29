@@ -110,12 +110,12 @@ gulp.task('webserver', function () {
 });
 
 gulp.task('mobile', function () {
-    return gulp.src('./mobile')
+    return gulp.src('./site-mobile')
         .pipe(webserver({
             host: '192.168.29.33',
             directoryListing: {
                 enable: true,
-                path: './mobile',
+                path: './site-mobile',
                 options: {
                     // icons:true
                 }

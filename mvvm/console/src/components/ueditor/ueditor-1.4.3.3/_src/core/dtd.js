@@ -162,6 +162,7 @@ var dtd = dom.dtd = (function() {
         b : L,
         a : X( _({a:1}), J ),
         blockquote :X(_({td:1,tr:1,tbody:1,li:1}),P),
+        hstyle :X(_({td:1,tr:1,tbody:1,li:1}),P),
         caption : L,
         i : L,
         u : L,

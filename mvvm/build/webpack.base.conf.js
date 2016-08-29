@@ -23,7 +23,7 @@ module.exports = {
             'bootstrap': path.resolve(__dirname, '../../common/js/bootstrap.js'),
             'bootstrapCss': path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
             //移动站全局CSS wulianaq
-            'bootstrapMobileCss': path.resolve(__dirname, '../mobile/src/style/scss/bootstrap-mobile.scss'),
+            'bootstrapMobileCss': path.resolve(__dirname, '../mobile/src/style/common.scss'),
 
             'indexCss': path.resolve(__dirname, '../mobile/src/style/index.scss'),
             'detailCss': path.resolve(__dirname, '../mobile/src/style/detail.scss'),
@@ -78,7 +78,7 @@ module.exports = {
                 loader: "imports?this=>window"
             },
             {
-                test: /\.(png|jpg|gif|svg|woff|woff2|svg|eot|ttf)$/,
+                test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/,
                 //这里不能写成loaders
                 loader: 'url',
                 query: {

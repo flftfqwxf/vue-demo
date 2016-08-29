@@ -105,8 +105,10 @@
     "dev": " webpack-dev-server --inline --hot --display-error-details     --config mvvm/build/webpack.dev.conf.js",
     "devS": "webpack-dev-server --inline --hot --display-error-details  --content-base   --config mvvm/build/webpack.dev.conf.js  --host supplier.gmmtour.com --port 8089",
     "build-supplier": "gulp --gulpfile gulpfileWebpack.js",
-    "build-distributor": "gulp  --sysName console --ip false --build   --gulpfile gulpfileWebpack.js",
-    "build": "rimraf dist && webpack --progress --hide-modules --config mvvm/build/webpack.prod.conf.js",
+    "build-console": "gulp  --sysName console --ip false --build   --gulpfile gulpfileWebpack.js",
+    "build": "gulp  --ip false --build   --gulpfile gulpfileWebpack.js",
+
+    "build-old": "rimraf dist && webpack --progress --hide-modules --config mvvm/build/webpack.prod.conf.js",
     "test": "karma start mvvm/build/karma.conf.js --single-run",
     "puer": "puer --port 9098 -a mockserver/router.js",
     "mock": "node $NODE_DEBUG_OPTION mockserver/ohana-router.js",

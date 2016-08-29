@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物联网安全-手机客户端下载222</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<script>
+    /**
+     * Created by leixianhua on 16/8/25.
+     */
+
+    var UA = window.navigator.userAgent.toLowerCase()
+    alert(UA)
+    var isAndroid = UA && UA.indexOf('android') > 0
+    var isChrome = UA && UA.indexOf('chrome') > 0
+    var isIos = UA && /(iphone|ipad|ipod|ios)/i.test(UA)
+    var iosVersionMatch = isIos && UA.match(/os ([\d_]+)/)
+    var iosVersion = iosVersionMatch && iosVersionMatch[1].split('_')[0]
+
+    var Scheme = "ironhide://article?source_id=26";
+    var baseLink = "ironhide://article?source_id=26";
+    var iOSdownLoadLink="ihttps://itunes.apple.com/us/app/wu-lian-wang-an-quan/id1142068846?mt=8";
+    var androidDownLoadLink="http://a.app.qq.com/o/simple.jsp?pkgname=com.istuary.ironhide"
+    //实际上就是新建一个iframe的生成器
+    var createIframe = (function () {
+        var iframe;
+        return function () {
+            if (iframe) {
+                return iframe;
+            } else {
+                iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                document.body.appendChild(iframe);
+                return iframe;
+            }
+        }
+    })()
+    var openIframe;
+    //增加通用链接的生成,
+
+    // var createScheme = function (url, isLink) {
+    //     // var urlScheme = isLink ? baseLink : baseScheme;
+    //     // for (var item in options) {
+    //     //     urlScheme = urlScheme + item + '=' + encodeURIComponent(options[item]) + "&";
+    //     // }
+    //     // urlScheme = urlScheme.substring(0, urlScheme.length - 1);
+    //     return isLink ? urlScheme : encodeURIComponent(urlScheme);
+    // }
+    var openApp = function (bashScheme, baseLink, iOSdownLoadLink, androidDownLoadLink) {
+        //生成你的scheme你也可以选择外部传入
+        // var localUrl = createScheme({type: 1, id: "sdsdewe2122"});
+        if (!openIframe) {
+            openIframe = createIframe();
+        }
+        var localUrl =bashScheme;
+        if (isIos) {
+            alert(3)
+            //判断是否是ios,具体的判断函数自行百度
+            if (iosVersion > 8) {
+                //判断是否为ios9以上的版本,跟其他判断一样navigator.userAgent判断,ios会有带版本号
+                localUrl = baseLink;//代码还可以优化一下
+                location.href = localUrl;//实际上不少产品会选择一开始将链接写入到用户需要点击的a标签里
+                return;
+            }
+            window.location.href = localUrl;
+            var loadDateTime = Date.now();
+            setTimeout(function () {
+                var timeOutDateTime = Date.now();
+                if (timeOutDateTime - loadDateTime < 1000) {
+                    window.location.href = iOSdownLoadLink;
+                }
+            }, 25);
+        } else if (isAndroid) {
+            //判断是否是android，具体的判断函数自行百度
+            if (isChrome) {
+                //chrome浏览器用iframe打不开得直接去打开，算一个坑
+//                 window.location.href = localUrl;
+//                alert(localUrl);
+                openIframe.src = localUrl;
+            } else {
+                //抛出你的scheme
+                alert(localUrl);
+//                window.location.href = localUrl;
+
+                openIframe.src = localUrl;
+            }
+            setTimeout(function () {
+                window.location.href = androidDownLoadLink;
+            }, 5000);
+        } else {
+            alert('else')
+            // //主要是给winphone的用户准备的,实际都没测过，现在winphone不好找啊
+            // openIframe.src = localUrl;
+            // setTimeout(function () {
+            //     window.location.href = "你的下载页面";
+            // }, 500);
+        }
+    }
+
+    function openAppFun() {
+        openApp(Scheme,Scheme,iOSdownLoadLink,androidDownLoadLink);
+    }
+
+</script>
+<div class="header_download">
+    <img class="logo" src="images/logo.png" alt="">
+    <p class="title">物联网安全-手机客户端</p>
+    <p class="summary">联合物联网专业人士 &nbsp;分享物联网专业知识</p>
+    <p class="down_wrap">
+        <a class="down_link down_android" onclick="openAppFun()" href="javascript:;">android版本下载</a><br>
+
+    </p>
+</div>
+<div class="introduction">
+    <img src="images/desc.png" alt="">
+</div>
+
+</body>
+</html>

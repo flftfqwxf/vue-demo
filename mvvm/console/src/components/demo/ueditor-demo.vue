@@ -15,7 +15,7 @@
                                                 <div class="form-group">
                                                     <label class="col-sm-2 control-label">上传 input</label>
                                                     <div class="col-sm-10">
-                                                        <ueditor v-if="isInit" :file-names.sync="fileNames" :options="options"
+                                                        <ueditor :height="height" v-if="isInit" :file-names.sync="fileNames" :options="options"
                                                                  upload-container="qnupload-container"></ueditor>
                                                     </div>
                                                 </div>
@@ -52,23 +52,30 @@
     export default{
         data(){
             return {
-                isInit:false,
-                options:{
-                    uptoken: ''
-                }
-
+                isInit: false,
+                options: {
+                    uptoken: '',
+                    enableContextMenu:false
+                    //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的重新定义
+                    , toolbars: [[
+                        // 'fullscreen', 'source', '|', 'undo', 'redo', '|',
+                         'bold', 'italic', 'underline',  'strikethrough',  'blockquote','hstyle', 'insertorderedlist', 'insertunorderedlist',
+                         'link', 'horizontal','|',
+                        'insertimage', 'removeFormat'
+                    ]]
+                }, height: '400px'
             }
         },
         components: {
             ueditor
         },
-        ready:function () {
-            var _this=this;
+        ready: function () {
+            var _this = this;
             this.$http.get('http://192.168.28.218/api/mobile/v1/settings/uptoken').then(function (res) {
                 if (res.ok && res.data) {
-                    _this.options.uptoken=res.data.data.uptoken;
+                    _this.options.uptoken = res.data.data.uptoken;
                     console.log(_this.options.uptoken)
-                    _this.isInit=true;
+                    _this.isInit = true;
                 }
             }, function (res) {
                 alert('请求错误')

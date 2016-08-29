@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="single-screen">
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript">
+        var WEB_STATIC = "http://static.gmmtour.com";
+        var WEB_STATIC_DISTRIBUTOR = "http://static.gmmtour.com/distributor";
+        //系统名称，用于在分销商和供应商存在相同功能时，局部区分的判断标识
+        var PROJECT_NAME='distributor';
+        var WEB_DISTRIBUTOR = "http://distributor.gmmtour.com";
+        var WEB_SUPPLIER = "http://supplier.gmmtour.com";
+        var WEB_WWW = "http://www.gmmtour.com";
+    </script>
+    <link rel="stylesheet" href="http://localhost:9083/common/css/bootstrap-system.css">
+    <!--<link href="http://distributor.wulianaq.com/app.f27b1a66a1dc03dc741ac2535dbc5b67.css" rel="stylesheet">-->
+    <style>
+        .btns-wrap dt{ padding: 5px 0; }
+        .btns-wrap dd{ margin-bottom: 10px; }
+    </style>
+    <script src="demo/scripts/jquery1.9.1.min.js"></script>
+    <!--<script src="/common/js/bootstrap.js?v=1"></script>-->
+    <!--<script src="/common/plugins/pagination/pagination.js"></script>-->
+    <!--<script src="/distributor/theme/manage/blue/js/common.js?v=" type="text/javascript"></script>-->
+    <script src="moxie.js"></script>
+    <script src="ui-old.js"></script>
+
+    <script src="plupload.dev.js"></script>
+
+    <script src="qiniu.js"></script>
+    <style >
+        #qnupload-container{}
+        #qnupload-btn{
+            width: 145px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 1px 0 rgba(243, 243, 243, 0.75);
+            box-shadow: 0 1px 0 rgba(243, 243, 243, 0.75);
+            color: #646464;
+            border: 1px solid #d2d2d2;
+            text-align: center;
+            -webkit-transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+            transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+            -webkit-user-select: none;
+            outline: none;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            white-space: nowrap;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            user-select: none;
+            background-image: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="qnupload-container" class="upload_c">
+        <a href="#" id="qnupload-btn"><span>选择文件</span></a>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in active" id="demo" aria-labelledby="demo-tab">
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-12">
+                <div id="container">
+                    <a class="btn btn-default btn-lg " id="pickfiles" href="#" >
+                        <i class="glyphicon glyphicon-plus"></i>
+                        <span>选择文件</span>
+                    </a>
+                </div>
+            </div>
+            <div style="display:none" id="success" class="col-md-12">
+                <div class="alert-success">
+                    队列全部文件处理完毕
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <table class="table table-striped table-hover text-left"   style="margin-top:40px;display:none">
+                    <thead>
+                    <tr>
+                        <th class="col-md-4">Filename</th>
+                        <th class="col-md-2">Size</th>
+                        <th class="col-md-6">Detail</th>
+                    </tr>
+                    </thead>
+                    <tbody id="fsUploadProgress">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<button type="button" id="upBtn">手动上传</button>
+        <button type="button" id="stopBtn">停止上传</button>
+
+    </div>
+
+    <script>
+        var uploader = Qiniu.uploader({
+            idx:123,
+            runtimes: 'html5,flash,html4',    //上传模式,依次退化
+            browse_button: 'pickfiles',       //上传选择的点选按钮，**必需**
+//            uptoken_func: function (file) {
+//                console.log(file)
+//            },
+//            uptoken_url: 'http://192.168.28.218/api/mobile/v1/settings/uptoken',
+// Ajax请求upToken的Url，**强烈建议设置**（服务端提供）
+
+
+             uptoken : '7kSE98xxxk4hgFufkUgx2vsVU1Pw0hTfZCOQP61S:wa7_xt2OMVLhazyjTr8W-Vh41GI=:eyJzY29wZSI6Imlyb25oaWRlIiwiZGVhZGxpbmUiOjE0NzA4OTg5Mjh9', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
+            // unique_names: true, // 默认 false，key为文件名。若开启该选项，SDK为自动生成上传成功后的key（文件名）。
+            // save_key: true,   // 默认 false。若在服务端生成uptoken的上传策略中指定了 `sava_key`，则开启，SDK会忽略对key的处理
+            domain: 'http://o8eatr2zr.bkt.clouddn.com/',   //bucket 域名，下载资源时用到，**必需**
+            get_new_uptoken: false,  //设置上传文件的时候是否每次都重新获取新的token
+            container:document.querySelector('.upload_c') ,           //上传区域DOM ID，默认是browser_button的父元素，
+            max_file_size: '100mb',           //最大文件体积限制
+            flash_swf_url: './Moxie.swf',  //引入flash,相对路径
+            max_retries: 3,                   //上传失败最大重试次数
+            dragdrop: true,                   //开启可拖曳上传
+            drop_element: '.upload_c',        //拖曳上传区域元素的ID，拖曳文件或文件夹后可触发上传
+            chunk_size: '4mb',                //分块上传时，每片的体积
+            auto_start: false,                 //选择文件后自动上传，若关闭需要自己绑定事件触发上传
+            init: {
+                'FilesAdded': function(up, files) {
+                    $('table').show();
+                    $('#success').hide();
+                    plupload.each(files, function(file) {
+                        var progress = new FileProgress(file, 'fsUploadProgress');
+                        progress.setStatus("等待...");
+                        progress.bindUploadCancel(up);
+                    });
+                },
+                'BeforeUpload': function(up, file) {
+                    var progress = new FileProgress(file, 'fsUploadProgress');
+                    var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
+                    if (up.runtime === 'html5' && chunk_size) {
+                        progress.setChunkProgess(chunk_size);
+                    }
+                },
+                'UploadProgress': function(up, file) {
+                    var progress = new FileProgress(file, 'fsUploadProgress');
+                    var chunk_size = plupload.parseSize(this.getOption('chunk_size'));
+                    progress.setProgress(file.percent + "%", file.speed, chunk_size);
+                },
+                'UploadComplete': function() {
+                    $('#success').show();
+                },
+                'FileUploaded': function(up, file, info) {
+                    var progress = new FileProgress(file, 'fsUploadProgress');
+                    progress.setComplete(up, info);
+                },
+                'Error': function(up, err, errTip) {
+                    $('table').show();
+                    var progress = new FileProgress(err.file, 'fsUploadProgress');
+                    progress.setError();
+                    progress.setStatus(errTip);
+                }
+                // ,
+                // 'Key': function(up, file) {
+                //     var key = "";
+                //     // do something with key
+                //     return key
+                // }
+            }
+
+        });
+        uploader.bind('FileUploaded', function() {
+            console.log('hello man,a file is uploaded');
+        });
+
+        $('#upBtn').on('click', function(){
+            uploader.start();
+        });
+        $('#stopBtn').on('click', function(){
+            uploader.stop();
+        });
+    </script>
+</body>
+</html>

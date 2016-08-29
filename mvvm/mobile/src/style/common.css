@@ -711,9 +711,9 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: "wl-iconfont";
-  src: url("wl-iconfont/iconfont.eot?t=1471327092");
+  src: url("wl-iconfont/iconfont.eot");
   /* IE9*/
-  src: url("wl-iconfont/iconfont.eot?t=1471327092#iefix") format("embedded-opentype"), url("wl-iconfont/iconfont.woff?t=1471327092") format("woff"), url("wl-iconfont/iconfont.ttf?t=1471327092") format("truetype"), url("wl-iconfont/iconfont.svg?t=1471327092#wl-iconfont") format("svg");
+  src: url("wl-iconfont/iconfont.eot#iefix") format("embedded-opentype"), url("wl-iconfont/iconfont.woff") format("woff"), url("wl-iconfont/iconfont.ttf") format("truetype"), url("wl-iconfont/iconfont.svg#wl-iconfont") format("svg");
   /* iOS 4.1- */ }
 .wl-iconfont {
   font-family: "wl-iconfont" !important;

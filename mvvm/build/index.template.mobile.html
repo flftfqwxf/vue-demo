@@ -2,26 +2,30 @@
 <html class="single-screen">
 <head>
     <meta charset="utf-8"/>
-    <!--<link rel="stylesheet" href="/common/css/bootstrap-system.css">-->
-    <script type="text/javascript">
-        var WEB_STATIC = "http://static.gmmtour.com";
-        var WEB_STATIC_DISTRIBUTOR = "http://static.gmmtour.com/distributor";
-        //系统名称，用于在分销商和供应商存在相同功能时，局部区分的判断标识
-        var PROJECT_NAME='distributor';
-        var WEB_DISTRIBUTOR = "http://distributor.gmmtour.com";
-        var WEB_SUPPLIER = "http://supplier.gmmtour.com";
-        var WEB_WWW = "http://www.gmmtour.com";
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 640) {
+                            docEl.style.fontSize = '100px';
+                        } else {
+                            docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
     </script>
     {% for (var css in o.htmlWebpackPlugin.files.css) { %}
     <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
     {% } %}
-    <style>
-        .btns-wrap dt{ padding: 5px 0; }
-        .btns-wrap dd{ margin-bottom: 10px; }
-    </style>
-    <!--<script src="/common/js/jquery1.9.1.min.js"></script>-->
-    <!--<script src="/common/js/bootstrap.js?v=1"></script>-->
-    <!--<script src="/common/plugins/pagination/pagination.js"></script>-->
+    <!--<link rel="stylesheet" href="/src/style/common.css">-->
+    <!--<script src="/src/js/jquery-3.1.0.min.js"></script>-->
 </head>
 <body>
 <app></app>
@@ -30,4 +34,3 @@
 {% } %}
 </body>
 </html>
-

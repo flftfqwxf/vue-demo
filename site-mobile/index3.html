@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>this's a demo</title>
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui">
+</head>
+<body>
+<div>
+    <a id="J-call-app" href="javascript:;" class="label">立即打开&gt;&gt;</a>
+    <a href="intent://article/#Intent;scheme=ironhide;package=com.istuary.ironhide;end">打开2</a>
+    <input id="J-download-app" type="hidden" name="storeurl" value="http://m.chanyouji.cn/apk/chanyouji-2.2.0.apk">
+</div>
+<script>
+    window.appLaunch=false
+    window.onerror=function (err) {
+        alert(err)
+    }
+    document.addEventListener("visibilitychange", function() {
+        window.appLaunch = true;//唤起成功
+    });
+    var UA = window.navigator.userAgent.toLowerCase()
+//    alert(UA);
+
+    var androidDownLoadLink="http://www.wulianaq.com";
+    (function () {
+        var canOpenApp = {
+            android: 'MQQBrowser|ucbrowser|weibo|micromessenger|AliApp|article',
+            ios: 'MQQBrowser|ucbrowser|weibo|QHBrowser|micromessenger|AliApp|article',
+            noIntent: 'MQQBrowser|ucbrowser|baidubrowser|sogouMobilebrowser|mxbrowser|360 APhone',
+//            noIntent: 'MQQBrowser|ucbrowser|baidubrowser|sogouMobilebrowser|mxbrowser|LieBao|360 APhone',
+            iosNoUN: 'Crios|Fxios|baidubrowser|sogouMobilebrowser|QHBrowser|Mxios'
+        };
+        var ua = navigator.userAgent.toLowerCase();
+        var t;
+        var config = {
+            /*scheme:必须*/
+            scheme_IOS: 'ironhide://article?source_id=26',
+            scheme_Adr: 'ironhide://article?source_id=26',
+            playUrl:'ironhide://article?source_id=26',
+            download_url: document.getElementById('J-download-app').value,
+            timeout: 600
+        };
+        var playUrl='ironhide://article?source_id=26';
+        function openclient() {
+//            alert(3)
+            var regexp = new RegExp(canOpenApp.noIntent, 'i');
+            if (window.navigator.userAgent.match(/OS 9/i) != null || (window.navigator.userAgent.match(/OS/i) != null && window.navigator.userAgent.match(/CriOS/i) != null)) {
+//                alert(3)
+                window.location.href = playUrl;
+            } else {
+
+                var iframe = document.createElement("iframe");
+                iframe.height = 0;
+                iframe.width = 0;
+//                iframe.src = encodeURIComponent(playUrl);
+                iframe.src = playUrl;
+
+                document.body.appendChild(iframe);
+                setTimeout(function () {
+//                    alert(window.appLaunch == false)
+//                    alert(window.navigator.userAgent.match(/Android/i) != null)
+//                    alert(window.navigator.userAgent.match(regexp) == null)
+                    if (window.appLaunch == false && window.navigator.userAgent.match(/Android/i) != null && window.navigator.userAgent.match(regexp) == null) {//唤起但不支持vilibilitychange不需要进这个逻辑,或者未唤起且不支持youku://协议需要进入逻辑
+//                        var chromeUrl = "intent://article/#Intent;scheme=ironhide;package=com.istuary.ironhide;end";
+                        var chromeUrl =  "intent://play?vid=XMTY5NjYzMTI3Mg==&ua=other&source=mplaypage2&cookieid=1472114969039HpoihU|972dHa#Intent;scheme=youku;package=com.youku.phone;end;"
+                        alert(chromeUrl);
+                        window.location.href = chromeUrl;
+                    }
+                }, 1000);
+//                setTimeout(function () {
+//                    window.location.href = androidDownLoadLink;
+//                }, 500);
+            }
+        }
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("J-call-app").addEventListener('click', openclient, false);
+        }, false);
+    })()
+</script>
+</body>
+</html>

@@ -6,7 +6,8 @@ import VueResource from 'vue-resource';
 import mainPage from './index';
 import configRouter from "./router"
 //引入全局CSS,不建议使用 style方式引入,因为通过style方式引入的外部CSS的background:url的路径必须相对于当前VUE组件
-// require('bootstrapMobileCss')
+require('bootstrapMobileCss')
+
 //import List from './components/tables/list'
 /* eslint-disable no-new */
 // new Vue({
@@ -34,7 +35,7 @@ Vue.http.interceptors.push({
     response: function (response) {
         if (response.data && response.data.code && response.data.code.toString() === "401") {
             clearToken();
-            alert(response.data.message);
+            // alert(response.data.message);
             location.reload()
         }
         return response;

@@ -4,7 +4,6 @@ export default function (router, authorization) {
         //'/': {
         //    component: List
         //},
-
         '/articles/:article_id': {
             component: function (resolve) {
                 require(['./pages/details/index'], resolve);
@@ -13,6 +12,16 @@ export default function (router, authorization) {
         '/topics/:topic_id': {
             component: function (resolve) {
                 require(['./pages/topics/topics'], resolve);
+            }
+        },
+        '/topics/:topic_id': {
+            component: function (resolve) {
+                require(['./pages/topics/topics'], resolve);
+            }
+        },
+        '/openApp': {
+            component: function (resolve) {
+                require(['./pages/openApp/index'], resolve);
             }
         },
         // '/homepage/:user_id': {
@@ -25,10 +34,10 @@ export default function (router, authorization) {
                 require(['./pages/index/index'], resolve);
             }
         }
-
     });
     router.redirect({
-        "*":'/'
+        // "/ironhide": '/openApp',
+        "*": '/'
     })
     router.beforeEach(function (transition) {
 
@@ -53,7 +62,7 @@ export default function (router, authorization) {
         // } else if (transition.to.path === '/login') {
         //     transition.redirect('/');
         // } else {
-            transition.next()
+        transition.next()
         // }
         // }
     })

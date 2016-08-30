@@ -4,7 +4,8 @@
         <new-list v-if="listInit" :list="newsList" v-ref:newList :isreset="isReset" :total="total" :wrapper-height="wrapperHeight">
             <swiper></swiper>
         </new-list>
-        <down-load-tips></down-load-tips>
+        <down-load-tips :scheme-link="schemeLink" :base-link="baseLink" :intent-link="intentLink" :ios-down-load-link="iosDownLoadLink"
+                        :android-down-load-link="androidDownLoadLink"></down-load-tips>
     </div>
 </template>
 <script type="text/ecmascript-6">
@@ -53,6 +54,12 @@
                 load: null,
                 wrapperHeight: 400,
                 listInit: false,
+                schemeLink: "ironhide://Home",
+//                baseLink: "youku://play?vid=XMTY5OTEzODI4MA==&ua=other&source=mplaypage2&cookieid=1472528008334sxcHJG|c4xzLb",
+                baseLink:'',
+                intentLink: "intent://article/#Intent;scheme=ironhide;package=com.istuary.ironhide;end;",
+                iosDownLoadLink: "http://www.wulianaq.com",
+                androidDownLoadLink: "http://www.wulianaq.com"
             }
         },
 //        watch: {

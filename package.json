@@ -106,8 +106,8 @@
     "devS": "webpack-dev-server --inline --hot --display-error-details  --content-base   --config mvvm/build/webpack.dev.conf.js  --host supplier.gmmtour.com --port 8089",
     "build-supplier": "gulp --gulpfile gulpfileWebpack.js",
     "build-console": "gulp  --sysName console --ip false --build   --gulpfile gulpfileWebpack.js",
+    "build-test": "gulp   --ip false --test   --gulpfile gulpfileWebpack.js",
     "build": "gulp  --ip false --build   --gulpfile gulpfileWebpack.js",
-
     "build-old": "rimraf dist && webpack --progress --hide-modules --config mvvm/build/webpack.prod.conf.js",
     "test": "karma start mvvm/build/karma.conf.js --single-run",
     "puer": "puer --port 9098 -a mockserver/router.js",

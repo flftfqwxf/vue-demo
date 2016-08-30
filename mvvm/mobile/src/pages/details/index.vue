@@ -1,6 +1,7 @@
 <template>
     <div>
-        <down-load-tips></down-load-tips>
+        <down-load-tips v-if="isLoad" :scheme-link="schemeLink" :base-link="baseLink" :intent-link="intentLink" :ios-down-load-link="iosDownLoadLink"
+                        :android-down-load-link="androidDownLoadLink"></down-load-tips>
         <tags v-if="topics.length" :topics="topics"></tags>
         <content :article="article"></content>
         <comments :comments="comments" v-if="isLoad" :comment_count="comment_count"></comments>
@@ -23,7 +24,13 @@
     export default{
         data(){
             return {
-                isLoad:false
+                isLoad: false,
+                schemeLink: "ironhide://Article?source_id=",
+//                baseLink: "youku://play?vid=XMTY5OTEzODI4MA==&ua=other&source=mplaypage2&cookieid=1472528008334sxcHJG|c4xzLb",
+                baseLink: '',
+                intentLink: "intent://Article?source_id=222/#Intent;scheme=ironhide;package=com.istuary.ironhide;end;",
+                iosDownLoadLink: "http://www.wulianaq.com",
+                androidDownLoadLink: "http://www.wulianaq.com"
             }
         },
         components: {
@@ -43,7 +50,7 @@
                 },
                 comments: ({articles})=> {
                     return articles.comments;
-                },comment_count: ({articles})=> {
+                }, comment_count: ({articles})=> {
                     return articles.article.comment_count;
                 }
             },
@@ -52,10 +59,12 @@
             }
         },
         ready(){
-            const _this=this;
-            const article_id = this.$route.params.article_id
-            this.loadArticles(article_id,function () {
-                _this.isLoad=true
+            const _this = this;
+            const article_id = this.$route.params.article_id;
+            this.schemeLink += article_id;
+            this.intentLink = "intent://Article?source_id=" + article_id + "/#Intent;scheme=ironhide;package=com.istuary.ironhide;end;"
+            this.loadArticles(article_id, function () {
+                _this.isLoad = true
             });
         }
     }

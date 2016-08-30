@@ -5,7 +5,7 @@
  */
 var defaultOps = {
     boolean: 'build',
-    default: {build:false}
+    default: {build: false}
 };
 /**
  * 获取命令行参数集合
@@ -33,59 +33,63 @@ function getProjectConfig() {
 }
 const projectOpts = {
     'console': {
-        build:{
+        build: {
             sysName: 'console',
             host: 'console.wulianaq.com',
             publicPath: 'http://console.wulianaq.com',
             outPutPath: '../../dist/console',
             template: 'mvvm/build/index.template.console.html'
         },
-        dev:{
+        dev: {
             sysName: 'console',
             host: 'localhost',
-            port:9083,
+            port: 9083,
             publicPath: 'http://localhost:9083/',
             outPutPath: '../../dist/console'
         }
-
     },
     'mobile': {
-        build:{
+        build: {
             sysName: 'mobile',
             host: 'm.wulianaq.com',
             publicPath: 'http://m.wulianaq.com',
             outPutPath: '../../dist/m',
             template: 'mvvm/build/index.template.mobile.html'
         },
-        dev:{
+        test: {
+            sysName: 'mobile',
+            host: '192.168.28.218',
+            port: 9073,
+            publicPath: 'http://192.168.28.218:9073/',
+            outPutPath: '../../dist/m-test',
+            template: 'mvvm/build/index.template.mobile.html'
+        },
+        dev: {
             sysName: 'mobile',
             host: '192.168.29.33',
-            port:9093,
+            port: 9093,
             publicPath: 'http://192.168.29.33:9093/',
             outPutPath: '../../dist/mobile'
         }
-
     },
     'www': {
-        build:{
+        build: {
             sysName: 'www',
             host: 'www.wulianaq.com',
             publicPath: 'http://www.wulianaq.com',
             outPutPath: '../../dist/www',
             template: 'mvvm/build/index.template.www.html'
         },
-        dev:{
+        dev: {
             sysName: 'www',
             host: 'localhost',
-            port:9073,
+            port: 9073,
             publicPath: 'http://localhost:9073/',
             outPutPath: '../../dist/www'
         }
-
     },
-
 }
-function getProjectConfigByName(projectName,domain) {
+function getProjectConfigByName(projectName, domain) {
     var config = {
         sysName: projectName,
         host: projectName + domain,
@@ -97,7 +101,12 @@ function getProjectConfigByName(projectName,domain) {
     return config
 }
 function setProjectConfig(projectName) {
-    var currentOpts = options.build ? projectOpts[projectName]['build'] :projectOpts[projectName]['dev']
+    var currentOpts = projectOpts[projectName]['dev'];
+    if (options.build) {
+        currentOpts = projectOpts[projectName]['build']
+    } else if (options.test) {
+        currentOpts = projectOpts[projectName]['test']
+    }
     if (!currentOpts) {
         currentOpts = getProjectConfigByName(projectName)
     }

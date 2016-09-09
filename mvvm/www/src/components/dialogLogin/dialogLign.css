@@ -1,0 +1,10 @@
+.modal-content {
+  border: transparent !important;
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.modal-header, .modal-footer {
+  display: none; }
+
+/*# sourceMappingURL=dialogLign.css.map */

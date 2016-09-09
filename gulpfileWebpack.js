@@ -1,20 +1,21 @@
 var gulp = require('gulp');
+var fs = require('fs');
 var gutil = require('gulp-util');
 //var uncss = require('gulp-uncss');
 //var concat = require('gulp-concat');
 var pkg = require('./package.json');
+var path = require('path')
 var webpack = require('webpack');
 var prodConfig = require('./mvvm/build/webpack.prod.conf');
 // var devConfig = require('./mvvm/build/webpack.dev.conf');
 var buildBaseConfig = require('./buildConfig');
+var gulpCopy = require('gulp-file-copy')
 console.log(buildBaseConfig)
 if (!buildBaseConfig) {
     console.log('----------------------------------/n')
     console.log('未获取到配置')
     console.log('----------------------------------/n')
-
     return false
-
 }
 var gulpSequence = require('gulp-sequence');
 var rimraf = require('gulp-rimraf');
@@ -23,10 +24,11 @@ var WebpackDevServer = require('webpack-dev-server');
  * 清除：webpack生成的文件
  */
 gulp.task('cleanWebpackDist', function (cb) {
+    var clearPath = buildBaseConfig.outPutPath
     console.log('----------------------------------/n')
-    console.log('被清空的目录:' + buildBaseConfig.outPutPath)
+    console.log('被清空的目录:' + clearPath);
     console.log('----------------------------------/n')
-    return gulp.src(buildBaseConfig.outPutPath, {read: false})
+    return gulp.src(clearPath, {read: false})
         .pipe(rimraf({force: true}));
 })
 /**
@@ -45,6 +47,40 @@ gulp.task('webpack:bulid', function (cb) {
         cb();
     })
 })
+gulp.task('copyFolder', function () {
+    if (buildBaseConfig.copyFolder) {
+        // var copyFolderList = buildBaseConfig.copyFolder.split(',');
+        // var copyPath = [], copyBase = [];
+        // copyFolderList.forEach(function (val) {
+        //     if (val) {
+        //         var curpath = path.resolve(__dirname, val)
+        //         copyPath.push(curpath + '/**/*');
+        //         copyBase.push(curpath.substring(0, curpath.lastIndexOf('/')))
+        //     }
+        // })
+        // // var copyBase = copyPath.substring(0, copyPath.lastIndexOf('/'))
+        var toPath = path.resolve(__dirname, buildBaseConfig.outPutPath);
+        // console.log('要复制的目录:', copyPath)
+        // console.log('复制到:', toPath)
+        // console.log('base:', copyBase)
+        // gulp.src(copyPath+,{base: './'})
+        //     .pipe(gulpCopy(toPath, {
+        //         start: copyPath
+        //     }))
+        buildBaseConfig.copyFolder.forEach(function (item,index) {
+            var toPath = path.resolve(__dirname, buildBaseConfig.outPutPath);
+            console.log('要复制的目录:', item.dir)
+            console.log('复制到:', toPath+='/'+item.toDir)
+            // console.log('base:', copyBase[index])
+            gulp.src(item.dir).pipe(gulp.dest(toPath))
+
+        })
+
+    }
+    return false;
+
+})
+
 //将生成的入口页移动到后台目录 通过设置 --sys [supplier|distributor]来区分不同项目
 // gulp.task('moveEntry', function () {
 //     return gulp.src(webpackConfig[options.sys].entryPath).pipe(gulp.dest(webpackConfig[options.sys].jspPath))
@@ -89,7 +125,10 @@ gulp.task('webpack:bulid', function (cb) {
 //     });
 //     server.listen(8080, "localhost", function() {});
 // })
-gulp.task('default', gulpSequence('cleanWebpackDist', 'webpack:bulid'));
+gulp.task('default', function (cb) {
+    return gulpSequence('cleanWebpackDist', 'webpack:bulid','copyFolder', cb)
+});
+// gulp.task('default', gulpSequence('cleanWebpackDist'));
 var webserver = require('gulp-webserver');
 var cors = require('cors');
 gulp.task('webserver', function () {
@@ -108,7 +147,6 @@ gulp.task('webserver', function () {
             middleware: [cors()]
         }));
 });
-
 gulp.task('mobile', function () {
     return gulp.src('./site-mobile')
         .pipe(webserver({
@@ -141,7 +179,6 @@ gulp.task('web', function () {
             middleware: [cors()]
         }));
 });
-
 gulp.task('wulianMobile', function () {
     return gulp.src('./wulianMobile')
         .pipe(webserver({

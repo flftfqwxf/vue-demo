@@ -8,7 +8,7 @@
                     <form class="form-horizontal" id="formId" novalidate>
                         <div class="form-group-dashed">
                             <div class="form-group  has-feedback-left">
-                                <input type="text" v-model="username" id="username" initial="off" placeholder="请输入用户名" class="form-control input-lg"
+                                <input type="text" v-model="mobile" id="mobile" initial="off" placeholder="请输入手机号" class="form-control input-lg"
                                        v-validate:mobile="['required']">
                                 <span class="fa fa-user form-control-feedback"></span>
                             </div>
@@ -24,11 +24,16 @@
                         <div class="errors">
                             <div v-if="$validation1.mobile.required" class="alert alert-danger alert-dismissible" role="alert">
                                 <i class="fa fa-times-circle"></i>
-                                请输入用户名
+                                请输入手机号
                             </div>
                             <div v-if="$validation1.password.required" class="alert alert-danger alert-dismissible" role="alert">
                                 <i class="fa fa-times-circle"></i>
                                 请输入密码
+                            </div>
+                            <div v-if="loginError && !$validation1.mobile.required && !$validation1.password.required"
+                                 class="alert alert-danger alert-dismissible" role="alert">
+                                <i class="fa fa-times-circle"></i>
+                                {{loginError}}
                             </div>
                         </div>
                     </form>
@@ -41,11 +46,18 @@
 <script>
     //    import Validator from 'vue-validator';
     import {setToken} from '../../checkLogin'
+    import {login} from '../../vuex/actions'
     export default {
+        vuex: {
+            actions: {
+                login
+            }
+        },
         data(){
             return {
-                username: null,
-                password: null
+                mobile: null,
+                password: null,
+                loginError: null
             }
         },
         methods: {
@@ -53,18 +65,7 @@
                 var self = this
                 this.$validate(true, function (e) {
                     if (self.$validation1.valid) {
-                        self.$http.get('/api/login').then(function (res) {
-                            if (res.ok && res.data) {
-                                if (res.data.access_token) {
-                                    setToken(res.data.access_token);
-                                    location.reload();
-                                }else{
-                                    alert(res.data.message)
-                                }
-                            }
-                        }, function (res) {
-                            alert(res)
-                        })
+                        self.login(self.mobile, self.password, self)
                     }
                 })
 //                console.log(this.$validation1)

@@ -1,7 +1,7 @@
 <template>
     <div style="height: 200px" >
         <!--<loading :show="!swipeList.length" :text="加载中...."></loading>-->
-        <swiper v-if="swipeList.length" id="swipe" auto  dots-class="custom_bottom" dots-position="center">
+        <swiper v-if="swipeList.length" id="swipe" auto loop  dots-class="custom_bottom" dots-position="center">
             <swiper-item class="black" v-for="item in swipeList">
                 <a v-link="{path:'articles/'+item.target_id}">
                     <img :src="item.img" alt="">

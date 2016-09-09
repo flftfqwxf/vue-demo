@@ -7,7 +7,7 @@
                 </ul>
             </div>
         </div>
-        <i class="wl-iconfont wl-right tag_ico"></i>
+        <i class="wl-iconfont wl-right tag_ico" style="display: none;"></i>
     </div>
 </template>
 <script type="text/ecmascript-6">
@@ -19,18 +19,22 @@
             }
         },
         ready(){
-            $('.tag_ico').click(function () {
-                var _this = $(this);
-                var w = $('.tags_list ul').width();
-                var c_w = $('.tags_list').width();
-                if (_this.hasClass('wl-left')) {
-                    $(this).removeClass('wl-left').addClass('wl-right');
-                    $('.tags_list').animate({scrollLeft: 0}, 300);
-                } else {
-                    $(this).addClass('wl-left').removeClass('wl-right');
-                    $('.tags_list').animate({scrollLeft: w - c_w}, 300);
-                }
-            })
+            if ($('.tags_list').width()<$('.tags_list ul').width()) {
+                $('.tag_ico').show().click(function () {
+                    var _this = $(this);
+                    var w = $('.tags_list ul').width();
+                    var c_w = $('.tags_list').width();
+                    if (_this.hasClass('wl-left')) {
+                        $(this).removeClass('wl-left').addClass('wl-right');
+                        $('.tags_list').animate({scrollLeft: 0}, 300);
+                    } else {
+                        $(this).addClass('wl-left').removeClass('wl-right');
+                        $('.tags_list').animate({scrollLeft: w - c_w}, 300);
+                    }
+                })
+
+            }
+
         }
     }
 </script>

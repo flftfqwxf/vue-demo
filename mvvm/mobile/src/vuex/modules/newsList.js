@@ -1,4 +1,4 @@
-import {LOAD_NEWS_LIST, SET_PAGE, SET_RESET} from '../mutation-types'
+import {LOAD_NEWS_LIST, SET_PAGE, SET_RESET, SET_NEWS_LIST} from '../mutation-types'
 const state = {
     newsList: [],
     sort: 0,
@@ -12,7 +12,6 @@ const mutations = {
             state.newsList = res.list
             state.isReset = false;
             state.page = 1;
-
         } else {
             state.newsList = state.newsList.concat(res.list);
             state.page = page;
@@ -27,6 +26,13 @@ const mutations = {
     },
     [SET_RESET](state, isReset){
         state.isReset = isReset;
+    },
+    [SET_NEWS_LIST](state, postId, filedName, val){
+        state.newsList.map(function (item) {
+            if (item.post_id.toString() === postId) {
+                item[filedName] = val;
+            }
+        })
     }
 }
 export default{

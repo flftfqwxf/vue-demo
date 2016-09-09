@@ -3,7 +3,6 @@
         <div class="page-content-inner">
             <div class="page-content">
                 <div class="page-main">
-
                     <!-- 可关闭的警告框 -->
                     <div class="alert alert-info alert-dismissible" role="alert">
                         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
@@ -235,6 +234,23 @@
                                                 </div>
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
+                                                        <label class="col-sm-2 control-label">模拟下拉选择</label>
+                                                        <div class="col-sm-6">
+                                                            <dropdown text="Action" type="primary">
+                                                                <li><a href="#dropdown">Action</a></li>
+                                                                <li><a href="#dropdown">Another action</a></li>
+                                                                <li><a href="#dropdown">Something else here</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#dropdown">Separated link</a></li>
+                                                            </dropdown>
+                                                            <dropdown text="Disabled" type="warning" disabled>
+                                                                <li><a href="#dropdown">Action</a></li>
+                                                            </dropdown>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-dashed">
+                                                    <div class="form-group">
                                                         <label class="col-sm-2 control-label">原生下拉选择</label>
                                                         <div class="col-sm-6">
                                                             <label class="btn btn-default btn-select">
@@ -255,7 +271,6 @@
                                                         <label class="col-sm-2 control-label">上传 vue组件</label>
                                                         <div class="col-sm-6">
                                                             <file-upload post-action="/post.method" put-action="/put.method"></file-upload>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -267,18 +282,16 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">日历组件 input</label>
                                                         <div class="col-sm-6">
                                                             <input type="text" @click="showCalendar" v-model="value" placeholder="请输入日期">
-                                                            <calendar :show.sync="show" :value.sync="value" :x="x" :y="y" :begin="begin" :end="end" :type="type" :range="range"></calendar>
+                                                            <calendar :show.sync="show" :value.sync="value" :x="x" :y="y" :begin="begin" :end="end" :type="type"
+                                                                      :range="range"></calendar>
                                                         </div>
                                                     </div>
                                                 </div>
-
-
                                                 <div class="form-group-dashed">
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">选择表单</label>
@@ -700,7 +713,6 @@
                                             <button class="btn btn-success" type="button">成功</button>
                                             <button class="btn btn-warning" type="button">警告</button>
                                             <button class="btn btn-danger" type="button">危险</button>
-
                                         </dd>
                                         <dt>聚焦</dt>
                                         <dd>
@@ -854,7 +866,6 @@
             </div>
         </div>
     </div>
-
 </template>
 <style>
     body{
@@ -862,46 +873,45 @@
     }
 </style>
 <script>
-    import components from 'vue-strap'
+    import {modal, alert, dropdown} from 'vue-strap'
     import FileUpload from '../upload/vue-upload-component'
-
     export default{
         data(){
             return {
                 showModal: false,
-                show:false,
-                type:"datetime", //date datetime
-                value:"2015-12-11",
-                begin:"2015-12-20",
-                end:"2015-12-25",
-                x:0,
-                y:0,
-                range:false,//是否多选
+                show: false,
+                type: "datetime", //date datetime
+                value: "2015-12-11",
+                begin: "2015-12-20",
+                end: "2015-12-25",
+                x: 0,
+                y: 0,
+                range: false,//是否多选
             }
         },
         components: {
-            'modal': components.modal,
-            'alert':components.alert,
+            modal,
+            alert,
+            dropdown,
             FileUpload,
             calendar: require('../calendar/calendar.vue'),
         },
-        methods:{
-            showCalendar:function(e){
+        methods: {
+            showCalendar: function (e) {
                 e.stopPropagation();
-                var that=this;
-                that.show=true;
-                that.x=e.target.offsetLeft;
-                that.y=e.target.offsetTop+e.target.offsetHeight+8;
-                var bindHide=function(e){
+                var that = this;
+                that.show = true;
+                that.x = e.target.offsetLeft;
+                that.y = e.target.offsetTop + e.target.offsetHeight + 8;
+                var bindHide = function (e) {
                     e.stopPropagation();
-                    that.show=false;
-                    document.removeEventListener('click',bindHide,false);
+                    that.show = false;
+                    document.removeEventListener('click', bindHide, false);
                 };
-                setTimeout(function(){
-                    document.addEventListener('click',bindHide,false);
-                },500);
+                setTimeout(function () {
+                    document.addEventListener('click', bindHide, false);
+                }, 500);
             }
         }
-
     }
 </script>

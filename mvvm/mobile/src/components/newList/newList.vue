@@ -7,30 +7,30 @@
                 <slot></slot>
                 <div class="main">
                     <template track-by="$index" v-for="item in list">
-                        <div track-by="item.post_id" v-if="item.attachments && item.attachments.length===1" class="news_item pic_and_txt_item">
+                        <div v-link="{path:'/articles/'+item.post_id}" track-by="item.post_id" v-if="item.attachments && item.attachments.length>0  && item.attachments.length<3" class="news_item pic_and_txt_item">
                             <div class="txt_info">
-                                <p class="info_title"><a v-link="{path:'/articles/'+item.post_id}">{{item.post_title}}</a></p>
-                                <span class="news_count">阅读{{item.view_count}}  赞{{item.vote_count}}  评论{{item.comment_count}}</span>
+                                <p class="info_title"><a >{{item.post_title}}</a></p>
+                                <span class="news_count">阅读{{item.view_count}}  赞{{item.vote_count}}  </span>
                             </div>
                             <a v-link="{path:'/articles/'+item.post_id}"><img :src="item.attachments[0].thumbnail" alt=""></a>
                         </div>
-                        <div track-by="item.post_id" v-if="item.attachments && item.attachments.length===0" class="news_item txt_item">
+                        <div v-link="{path:'/articles/'+item.post_id}" track-by="item.post_id" v-if="item.attachments && item.attachments.length===0" class="news_item txt_item">
                             <div class="txt_info">
-                                <p class="info_title"><a v-link="{path:'/articles/'+item.post_id}">{{item.post_title}}</a></p>
+                                <p class="info_title"><a >{{item.post_title}}</a></p>
                                 <p class="summary_txt">
                                     {{item.post_short_content}}</p>
-                                <span class="news_count">阅读{{item.view_count}}  赞{{item.vote_count}}  评论{{item.comment_count}}</span>
+                                <span class="news_count">阅读{{item.view_count}}  赞{{item.vote_count}}  </span>
                             </div>
                         </div>
-                        <div track-by="item.post_id" v-if="item.attachments && item.attachments.length>1" class="news_item pic_item">
+                        <div v-link="{path:'/articles/'+item.post_id}" track-by="item.post_id" v-if="item.attachments && item.attachments.length==3" class="news_item pic_item">
                             <div class="txt_info">
-                                <p class="info_title"><a v-link="{path:'/articles/'+item.post_id}">{{item.post_title}}</a></p>
+                                <p class="info_title"><a >{{item.post_title}}</a></p>
                             </div>
                             <div class="img_list">
                                 <div>
                                     <a v-link="{path:'/articles/'+item.post_id}" v-for=" img in item.attachments "><img :src="img.thumbnail" alt=""></a>
                                 </div>
-                                <p class="news_count">阅读{{item.view_count}} 赞{{item.vote_count}} 评论{{item.comment_count}}</p>
+                                <p class="news_count">阅读{{item.view_count}} 赞{{item.vote_count}} </p>
                             </div>
                         </div>
                     </template>
@@ -84,7 +84,7 @@
             },
             load2 (uuid) {
                 var _this = this;
-                this.$dispatch('getList', function (len) {
+                this.$dispatch('getlist', function (len) {
                     if (len == 0) {
                         _this.$broadcast('pullup:done', uuid)
                     } else {

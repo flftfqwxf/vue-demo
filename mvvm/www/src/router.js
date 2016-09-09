@@ -16,7 +16,17 @@ export default function (router, authorization) {
         },
         '/': {
             component: function (resolve) {
-                require(['./components/message/list'], resolve);
+                require(['./components/articlesList/list'], resolve);
+            }
+        },
+        '/article/add': {
+            component: function (resolve) {
+                require(['./page/article/add'], resolve);
+            }
+        },
+        '/article/editor/:id': {
+            component: function (resolve) {
+                require(['./page/article/editor'], resolve);
             }
         },
         '/mvvm/demo': {

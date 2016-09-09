@@ -22,6 +22,9 @@ module.exports = {
             'datepicker': path.resolve(__dirname, '../console/src/components/datepicker/datepicker.js'),
             'bootstrap': path.resolve(__dirname, '../../common/js/bootstrap.js'),
             'bootstrapCss': path.resolve(__dirname, '../../common/bootstrap/scss/bootstrap-system.scss'),
+            //物联 WEB 全局CSS
+            'webScss': path.resolve(__dirname, '../../mvvm/www/src/style/bootstrap/scss/bootstrap-system.scss'),
+
             //移动站全局CSS wulianaq
             'bootstrapMobileCss': path.resolve(__dirname, '../mobile/src/style/common.scss'),
 
@@ -31,7 +34,15 @@ module.exports = {
             'topic': path.resolve(__dirname, '../mobile/src/style/topic.scss'),
             'homepage': path.resolve(__dirname, '../mobile/src/style/homepage.scss'),
 
+            'wwwVariablesScss':path.resolve(__dirname, '../www/src/style/bootstrap/scss/bootstrap/_variables.scss'),
+
+            'wwwV':            path.resolve(__dirname, '../www/src/style/bootstrap/scss/_customer_variables.scss'),
             'jquery': path.resolve(__dirname, '../../common/js/jquery1.9.1.min.js'),
+            'www-pagination': path.resolve(__dirname, '../../common/plugins/pagination/pagination.scss'),
+
+            'strap': path.resolve(__dirname, '../www/src/components/vue-strap1.0.11/src'),
+            // 'strap': path.resolve(__dirname, '../www/src/components/vue-strap/src'),
+
             alias: {
                 'vux-components': 'vux/src/components/'
             }
@@ -56,8 +67,10 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                // loaders: ["style", "css", "sass"],
-                loaders: ['style', 'css', 'sass'],
+                loaders: ["style", "css", "sass"],
+                //加上sourceMap后,方便调试,
+                // 但是加上后,刷新页面时会出现,先没有样式,然后再有样式的情况
+                // loaders: ['style', "css?sourceMap", "sass?sourceMap"],
                 exclude: /node_modules/,
             },
             //todo:将jquery暴露到全局,暂时无效,后续再测试使用

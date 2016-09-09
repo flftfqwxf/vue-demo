@@ -18,7 +18,7 @@
      * 因此，UEditor提供了针对不同页面的编辑器可单独配置的根路径，具体来说，在需要实例化编辑器的页面最顶部写上如下代码即可。当然，需要令此处的URL等于对应的配置。
      * window.UEDITOR_HOME_URL = "/xxxx/xxxx/";
      */
-    window.UEDITOR_HOME_URL = "/mvvm/console/src/components/ueditor/ueditor-1.4.3.3/dist/utf8-php/"
+    window.UEDITOR_HOME_URL = "/src/components/ueditor/ueditor-1.4.3.3/dist/utf8-php/"
     var URL = window.UEDITOR_HOME_URL || getUEBasePath();
     /**
      * 配置项主体。注意，此处所有涉及到路径的配置别遗漏URL变量。
@@ -29,7 +29,7 @@
         "imageActionName": "uploadimage", /* 执行上传图片的action名称 */
         "imageFieldName": "file", /* 提交的图片表单名称 */
         "imageMaxSize": 2048000, /* 上传大小限制，单位B */
-        "imageAllowFiles": [".jpg", ".jpeg",, ".png", ".gif"], /* 上传图片格式显示 */
+        "imageAllowFiles": [".jpg", ".jpeg", , ".png", ".gif"], /* 上传图片格式显示 */
         "imageCompressEnable": true, /* 是否压缩图片,默认是true */
         "imageCompressBorder": 1600, /* 图片压缩最长边限制 */
         "imageInsertAlign": "none", /* 插入的图片浮动方式 */
@@ -51,7 +51,8 @@
             // 'directionalityltr', 'directionalityrtl', 'indent', '|',
             // 'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
             // 'link', 'unlink', 'anchor', '|',
-
+            //自定义添加的 h2标签格式
+            'hstyle',
             'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
             'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
             'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',

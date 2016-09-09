@@ -36,6 +36,9 @@ export const setPage = function ({dispatch}, page) {
 export const setReset = function ({dispatch}, isReset) {
     dispatch(types.SET_RESET, isReset)
 }
+export const setNewsList = function ({dispatch}, postId, filedName, val) {
+    dispatch(types.SET_NEWS_LIST, postId, filedName, val)
+}
 /**
  * 获取话题列表信息
  * @param dispatch

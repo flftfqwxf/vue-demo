@@ -16,6 +16,8 @@ module.exports = {
     checkLogin: checkLogin,
     setToken: (token)=> {
         window.localStorage.setItem('Authorization', token);
+
+
     },
     clearToken:()=>{
         window.localStorage.removeItem('Authorization');

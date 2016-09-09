@@ -17,6 +17,9 @@ export const LOAD_ARTICLES='LOAD_ARTICLES'
 
 export const LOAD_COMMENTS='LOAD_COMMENTS'
 
+//设置文章信息
+export const SET_NEWS_LIST='SET_NEWS_LIST'
+
 //话题页
 export const LOAD_TOPICS_INFO='LOAD_TOPICS_INFO'
 

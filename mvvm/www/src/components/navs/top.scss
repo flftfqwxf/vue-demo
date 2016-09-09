@@ -1,0 +1,71 @@
+@charset "utf-8";
+//在引用前加 [~]是告诉SASS,根据WEBPACK的编译的目录进行引用,如果你在webpack配置中指定了同名的【alias】,则会引用该地址,
+//其作用是把长的地址简化引用
+@import "~wwwVariablesScss";
+@import "~wwwV";
+
+
+.page-title {
+  line-height: 32px;
+  margin: 0;
+  padding: 13px 20px 0;
+  height: 60px;
+  z-index: 101;
+  background-color: $body-bg;
+  border-bottom: 1px solid $table-border-color;
+  min-width: 1180px;
+
+  .btn {
+    float: left;
+    margin-right: 16px;
+  }
+  h2 {
+    float: left;
+    margin: 0;
+    line-height: 32px;
+    font-size: $font-size-h3;
+    padding-left: 10px; font-size:20px;
+  }
+  small {
+    font-size: 70%;
+    margin-left: 15px;
+    color: $gray;
+
+    i {
+      margin-right: 8px;
+    }
+    a {
+      color: $gray;
+    }
+  }
+  .dropdown-toggle {
+    cursor: default;
+  }
+
+  .gm-icon,
+  .fa{
+    color: $gray-light;
+  }
+  .btn-info{
+    .gm-icon,
+    .fa{
+      color: $white;
+    }
+  }
+}
+
+.header_wrap{ width:1180px; margin:auto; color: $brand-primary;
+  .logo{ width: 36px; height: 36px; float: left;font-size: 36px}
+
+  .fa-mobile{font-size: 18px}
+  .btn-default{border:transparent !important;background: transparent !important;
+  }
+  .btn-group.open .dropdown-toggle{
+    background: transparent!important;border:transparent!important;box-shadow:none!important
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+  }
+}

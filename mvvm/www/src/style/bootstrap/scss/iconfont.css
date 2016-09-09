@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "wl-web-iconfont";
+  src: url("../../custom-font/iconfont.eot");
+  /* IE9*/
+  src: url("../../custom-font/iconfont.eot?#iefix") format("embedded-opentype"), url("../../custom-font/iconfont.woff") format("woff"), url("../../custom-font/iconfont.ttf") format("truetype"), url("../../custom-font/iconfont.svg#gmIcon") format("svg");
+  /* iOS 4.1- */ }
+.wl-web-iconfont {
+  font-family: "wl-web-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.wl-font-logo:before {
+  content: "\e600"; }
+
+/*# sourceMappingURL=iconfont.css.map */

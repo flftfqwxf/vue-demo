@@ -24,6 +24,7 @@ UE.plugins['pagebreak'] = function () {
 
     me.ready(function(){
         utils.cssRule('pagebreak','.pagebreak{display:block;clear:both !important;cursor:default !important;width: 100% !important;margin:0;}',me.document);
+
     });
     function isHr(node){
         return node && node.nodeType == 1 && node.tagName == 'HR' && node.className == 'pagebreak';

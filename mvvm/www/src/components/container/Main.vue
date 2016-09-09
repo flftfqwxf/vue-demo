@@ -1,17 +1,37 @@
 <template>
     <div class="page-content-wrapper">
-        <top></top>
         <div class="page-content-outer">
             <div class="page-content-inner">
                 <div class="page-content">
-                    <breadcrumb :breadcrumb-info="breadcrumbInfo"></breadcrumb>
-                        <router-view class="view" transition="fade" transition-mode="out-in" keep-alive></router-view>
+                        <router-view class="view" transition="fade" transition-mode="out-in"></router-view>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <style>
+    .page-content-wrapper {
+        margin-left:20px;
+        position: relative;
+        float: left;
+        width:960px;
+
+    }
+    .page-content-outer {
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .page-content-inner {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .page-content {
+
+        width: 100%;
+        display: inline-block;
+    }
     .fade-transition {
         transition: opacity .3s ease;
     }
@@ -20,28 +40,25 @@
     }
 </style>
 <script type="text/ecmascript-6">
-    import Breadcrumb from '../../components/navs/breadcrumb.vue'
-    import {loadBreadCrumb} from '../../vuex/actions'
-    import Top from '../../components/navs/top.vue'
+//    import {loadBreadCrumb} from '../../vuex/actions'
+
     export default {
         components: {
-            Top,
-            Breadcrumb
         },
         vuex: {
             getters: {
-                breadcrumbInfo: ({breadcrumb})=> {
-//                    console.log(breadcrumb.breadcrumbInfo.currentMenu)
-                    return breadcrumb.breadcrumbInfo
-                }
+//                breadcrumbInfo: ({breadcrumb})=> {
+////                    console.log(breadcrumb.breadcrumbInfo.currentMenu)
+//                    return breadcrumb.breadcrumbInfo
+//                }
             },
             actions:{
-                loadBreadCrumb
+//                loadBreadCrumb
             }
         },
         ready: function () {
 //            console.log(this.$route.fullPath)
-            this.loadBreadCrumb( this.$route.fullPath)
+//            this.loadBreadCrumb( this.$route.fullPath)
         }
     }
 </script>

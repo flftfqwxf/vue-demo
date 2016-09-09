@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "~wwwVariablesScss";
+@import "~wwwV";
+
+
+$rootPath:'';
+$sidebarWidth: 200px;
+$minisidebarWidth: 60px;
+$fullSize: 100%;
+//主体内容最小宽度
+$mainMinWidth: 1100px;
+//内容之间的间距
+$paddingContent: 20px !default;
+// padding margin
+$smallPadding: 10px !default;
+//小间距
+$xSmallPadding: 5px !default;
+//超小间距
+$footerHeight:  50px !default;
+// 页面标题高度
+$titleHeight:   60px !default;
+//底部高度
+$form-width: 900px !default;
+/// 导航高度
+$navHeight: 50px !default;
+.page-sidebar {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //z-index: 10;
+  width: $sidebarWidth;
+  min-height: 800px;
+  float: left;
+  background-color: #FFF;
+  white-space: nowrap;
+  border: 1px solid #DDDDDD;
+  li ul {
+    overflow: hidden;
+    background-color: $nav-link-hover-bg;
+
+    li:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .open{
+    .open {
+      border: none !important;
+
+    }
+  }
+  // Open dropdowns
+  .open:not(.dropdown){
+    a{
+      &,
+      &:hover,
+      &:focus
+      {
+        //background-color: $nav-link-hover-bg !important;
+        border-left:2px solid $selectedColor;
+        border-bottom:2px solid $border-color;
+      }
+    }
+
+    > a{
+      &,
+      &:hover,
+      &:focus{
+        //color: $nav-link-hover-color !important;
+      }
+    }
+  }
+  .logo {
+    display: block;
+    height: 130px;
+    overflow: hidden;
+    &:before {
+      content: '';
+      display: block;
+      height: $fullSize;
+      width: $fullSize;
+      //background: url(../../image/logo.png) center no-repeat;
+    }
+  }
+  .nav{
+    > li > a{
+      height: $navHeight;
+      padding-left: 45px;
+
+      > i{
+        position: absolute;
+        left: 20px;
+        top: 11px;
+      }
+    }
+    .label{
+      position: absolute;
+      right: 15px;
+    }
+    .fa-angle-down{
+      position: absolute;
+      right: 15px;
+      margin-top: 2px;
+    }
+  }
+
+  span{
+    opacity: 1;
+    width: auto;
+  }
+  .loginOut_wrap{
+
+      background: #EEEEEE;
+      display: inline-block;
+      text-align: center;
+      width:100%; height:50px;
+      line-height: 50px;
+      cursor: pointer;
+    margin-top:20px;
+
+
+  }
+
+
+}

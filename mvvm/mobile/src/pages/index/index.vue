@@ -1,7 +1,7 @@
 <template>
     <div>
         <top-sort></top-sort>
-        <new-list v-if="listInit" :list="newsList" v-ref:newList :isreset="isReset" :total="total" :wrapper-height="wrapperHeight">
+        <new-list v-if="listInit" :list="newsList" @getlist="getList" v-ref:newList :isreset="isReset" :total="total" :wrapper-height="wrapperHeight">
             <swiper></swiper>
         </new-list>
         <down-load-tips :scheme-link="schemeLink" :base-link="baseLink" :intent-link="intentLink" :ios-down-load-link="iosDownLoadLink"
@@ -70,7 +70,7 @@
 //                }
 //            }
 //        },
-        events: {
+        methods: {
             getList: function (callback) {
                 this.setPage(this.page + 1);
                 this.loadList(this.sort, this.page, callback)
@@ -83,6 +83,7 @@
             downLoadTips
         },
         ready(){
+            this.setReset(true);
             this.loadList(0, 1, function () {
                 this.listInit = true;
             })

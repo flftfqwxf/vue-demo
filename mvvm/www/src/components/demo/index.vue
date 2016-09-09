@@ -862,7 +862,7 @@
     }
 </style>
 <script>
-    import components from 'vue-strap'
+    import components from 'strap'
     import FileUpload from '../upload/vue-upload-component'
 
     export default{

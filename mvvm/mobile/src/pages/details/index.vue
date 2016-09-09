@@ -4,7 +4,8 @@
                         :android-down-load-link="androidDownLoadLink"></down-load-tips>
         <tags v-if="topics.length" :topics="topics"></tags>
         <content :article="article"></content>
-        <comments :comments="comments" v-if="isLoad" :comment_count="comment_count"></comments>
+        <comments :comments="comments" v-if="isLoad" :comment_count="comment_count" :scheme-link="schemeLink" :base-link="baseLink" :intent-link="intentLink" :ios-down-load-link="iosDownLoadLink"
+                  :android-down-load-link="androidDownLoadLink"></comments>
     </div>
 </template>
 <style scoped>
@@ -19,7 +20,7 @@
     import content from '../../components/content/content.vue';
     import comments from '../../components/comments/comments.vue';
 
-    import {loadArticles} from '../../vuex/actions'
+    import {loadArticles,setNewsList} from '../../vuex/actions'
     require('detailCss')
     export default{
         data(){
@@ -28,7 +29,7 @@
                 schemeLink: "ironhide://Article?source_id=",
 //                baseLink: "youku://play?vid=XMTY5OTEzODI4MA==&ua=other&source=mplaypage2&cookieid=1472528008334sxcHJG|c4xzLb",
                 baseLink: '',
-                intentLink: "intent://Article?source_id=222/#Intent;scheme=ironhide;package=com.istuary.ironhide;end;",
+                intentLink: "intent://Article?source_id=222#Intent;scheme=ironhide;package=com.istuary.ironhide;end;",
                 iosDownLoadLink: "http://www.wulianaq.com",
                 androidDownLoadLink: "http://www.wulianaq.com"
             }
@@ -55,17 +56,20 @@
                 }
             },
             actions: {
-                loadArticles
+                loadArticles,
+                setNewsList
             }
         },
         ready(){
             const _this = this;
             const article_id = this.$route.params.article_id;
             this.schemeLink += article_id;
-            this.intentLink = "intent://Article?source_id=" + article_id + "/#Intent;scheme=ironhide;package=com.istuary.ironhide;end;"
+            this.intentLink = "intent://Article?source_id=" + article_id + "#Intent;scheme=ironhide;package=com.istuary.ironhide;end;"
             this.loadArticles(article_id, function () {
-                _this.isLoad = true
+                _this.isLoad = true;
+                _this.setNewsList(article_id, 'view_count', this.article.view_count)
             });
+
         }
     }
 </script>

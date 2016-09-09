@@ -56,7 +56,9 @@ module.exports = {
          * url:为 代理规则,可用通配符
          * target:将此规则代理到指定的服务上
          */
-        proxyUrlList: [{url: "/api/*", target: "http://localhost:9098"}]
+        // proxyUrlList: [{url: "/api/*", target: "http://localhost:9098"}]
+        proxyUrlList: [{url: "/api/*", target: "http://192.168.28.218"}]
+
     },
     mobile: {
         /**
@@ -83,8 +85,8 @@ module.exports = {
          * url:为 代理规则,可用通配符
          * target:将此规则代理到指定的服务上
          */
-        proxyUrlList: [{url: "/api/*", target: "http://localhost:9098"}]
-        // proxyUrlList: [{url: "/api/*", target: "http://192.168.28.218"}]
+        // proxyUrlList: [{url: "/api/*", target: "http://localhost:9098"}]
+        proxyUrlList: [{url: "/api/*", target: "http://192.168.28.218"}]
 
     }
 }

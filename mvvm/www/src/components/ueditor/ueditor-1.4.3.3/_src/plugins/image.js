@@ -17,7 +17,6 @@
  * editor.execCommand( 'imagefloat', 'center' );
  * ```
  */
-
 /**
  * 如果选区所在位置是图片区域
  * @command imagefloat
@@ -31,7 +30,7 @@
  */
 
 UE.commands['imagefloat'] = {
-    execCommand:function (cmd, align) {
+    execCommand: function (cmd, align) {
         var me = this,
             range = me.selection.getRange();
         if (!range.collapsed) {
@@ -48,8 +47,8 @@ UE.commands['imagefloat'] = {
                         tmpNode = pN;
                         if (tmpNode.tagName == 'P' && domUtils.getStyle(tmpNode, 'text-align') == 'center') {
                             if (!domUtils.isBody(tmpNode) && domUtils.getChildCount(tmpNode, function (node) {
-                                return !domUtils.isBr(node) && !domUtils.isWhitespace(node);
-                            }) == 1) {
+                                    return !domUtils.isBr(node) && !domUtils.isWhitespace(node);
+                                }) == 1) {
                                 pre = tmpNode.previousSibling;
                                 next = tmpNode.nextSibling;
                                 if (pre && next && pre.nodeType == 1 && next.nodeType == 1 && pre.tagName == next.tagName && domUtils.isBlockElm(pre)) {
@@ -62,28 +61,24 @@ UE.commands['imagefloat'] = {
                                 } else {
                                     domUtils.setStyle(tmpNode, 'text-align', '');
                                 }
-
-
                             }
-
                             range.selectNode(img).select();
                         }
                         domUtils.setStyle(img, 'float', align == 'none' ? '' : align);
-                        if(align == 'none'){
-                            domUtils.removeAttributes(img,'align');
+                        if (align == 'none') {
+                            domUtils.removeAttributes(img, 'align');
                         }
-
                         break;
                     case 'center':
                         if (me.queryCommandValue('imagefloat') != 'center') {
                             pN = img.parentNode;
                             domUtils.setStyle(img, 'float', '');
-                            domUtils.removeAttributes(img,'align');
+                            domUtils.removeAttributes(img, 'align');
                             tmpNode = img;
                             while (pN && domUtils.getChildCount(pN, function (node) {
                                 return !domUtils.isBr(node) && !domUtils.isWhitespace(node);
                             }) == 1
-                                && (dtd.$inline[pN.tagName] || pN.tagName == 'A')) {
+                            && (dtd.$inline[pN.tagName] || pN.tagName == 'A')) {
                                 tmpNode = pN;
                                 pN = pN.parentNode;
                             }
@@ -91,9 +86,7 @@ UE.commands['imagefloat'] = {
                             pN = me.document.createElement('div');
                             pN.appendChild(tmpNode);
                             domUtils.setStyle(tmpNode, 'float', '');
-
                             me.execCommand('insertHtml', '<p id="_img_parent_tmp" style="text-align:center">' + pN.innerHTML + '</p>');
-
                             tmpNode = me.document.getElementById('_img_parent_tmp');
                             tmpNode.removeAttribute('id');
                             tmpNode = tmpNode.firstChild;
@@ -103,16 +96,13 @@ UE.commands['imagefloat'] = {
                             if (next && domUtils.isEmptyNode(next)) {
                                 domUtils.remove(next);
                             }
-
                         }
-
                         break;
                 }
-
             }
         }
     },
-    queryCommandValue:function () {
+    queryCommandValue: function () {
         var range = this.selection.getRange(),
             startNode, floatStyle;
         if (range.collapsed) {
@@ -121,26 +111,21 @@ UE.commands['imagefloat'] = {
         startNode = range.getClosedNode();
         if (startNode && startNode.nodeType == 1 && startNode.tagName == 'IMG') {
             floatStyle = domUtils.getComputedStyle(startNode, 'float') || startNode.getAttribute('align');
-
             if (floatStyle == 'none') {
                 floatStyle = domUtils.getComputedStyle(startNode.parentNode, 'text-align') == 'center' ? 'center' : floatStyle;
             }
             return {
-                left:1,
-                right:1,
-                center:1
+                left: 1,
+                right: 1,
+                center: 1
             }[floatStyle] ? floatStyle : 'none';
         }
         return 'none';
-
-
     },
-    queryCommandState:function () {
+    queryCommandState: function () {
         var range = this.selection.getRange(),
             startNode;
-
         if (range.collapsed)  return -1;
-
         startNode = range.getClosedNode();
         if (startNode && startNode.nodeType == 1 && startNode.tagName == 'IMG') {
             return 0;
@@ -148,8 +133,6 @@ UE.commands['imagefloat'] = {
         return -1;
     }
 };
-
-
 /**
  * 插入图片
  * @command insertimage
@@ -181,44 +164,39 @@ UE.commands['imagefloat'] = {
  */
 
 UE.commands['insertimage'] = {
-    execCommand:function (cmd, opt) {
-
+    execCommand: function (cmd, opt) {
         opt = utils.isArray(opt) ? opt : [opt];
+
         if (!opt.length) {
             return;
         }
         var me = this,
             range = me.selection.getRange(),
             img = range.getClosedNode();
-
-        if(me.fireEvent('beforeinsertimage', opt) === true){
+        if (me.fireEvent('beforeinsertimage', opt) === true) {
             return;
         }
 
+
         function unhtmlData(imgCi) {
-
             utils.each('width,height,border,hspace,vspace'.split(','), function (item) {
-
                 if (imgCi[item]) {
                     imgCi[item] = parseInt(imgCi[item], 10) || 0;
                 }
             });
-
             utils.each('src,_src'.split(','), function (item) {
-
                 if (imgCi[item]) {
                     imgCi[item] = utils.unhtmlForUrl(imgCi[item]);
                 }
             });
             utils.each('title,alt'.split(','), function (item) {
-
                 if (imgCi[item]) {
                     imgCi[item] = utils.unhtml(imgCi[item]);
                 }
             });
         }
 
-        if (img && /img/i.test(img.tagName) && (img.className != "edui-faked-video" || img.className.indexOf("edui-upload-video")!=-1) && !img.getAttribute("word_img")) {
+        if (img && /img/i.test(img.tagName) && (img.className != "edui-faked-video" || img.className.indexOf("edui-upload-video") != -1) && !img.getAttribute("word_img")) {
             var first = opt.shift();
             var floatStyle = first['floatStyle'];
             delete first['floatStyle'];
@@ -231,13 +209,11 @@ UE.commands['insertimage'] = {
                 range.setStartAfter(img).setCursor(false, true);
                 me.execCommand('insertimage', opt);
             }
-
         } else {
-            var html = [], str = '', ci;
+            var html = [], str = '<div class="image-package">', ci;
             ci = opt[0];
             if (opt.length == 1) {
                 unhtmlData(ci);
-
                 str = '<img src="' + ci.src + '" ' + (ci._src ? ' _src="' + ci._src + '" ' : '') +
                     (ci.width ? 'width="' + ci.width + '" ' : '') +
                     (ci.height ? ' height="' + ci.height + '" ' : '') +
@@ -248,26 +224,24 @@ UE.commands['insertimage'] = {
                     (ci.hspace && ci.hspace != "0" ? ' hspace = "' + ci.hspace + '"' : '') +
                     (ci.vspace && ci.vspace != "0" ? ' vspace = "' + ci.vspace + '"' : '') + '/>';
                 if (ci['floatStyle'] == 'center') {
-                    str = '<p style="text-align: center">' + str + '</p>';
+                    str = '<p style="text-align: center">' + str + '</p><br><div class="image-caption"></div></div>';
                 }
+                str = '<div class="image-package">' + str + '<br><div class="image-caption"></div></div>'
                 html.push(str);
-
             } else {
                 for (var i = 0; ci = opt[i++];) {
                     unhtmlData(ci);
-                    str = '<p ' + (ci['floatStyle'] == 'center' ? 'style="text-align: center" ' : '') + '><img src="' + ci.src + '" ' +
+                    str = '<div class="image-package"><p ' + (ci['floatStyle'] == 'center' ? 'style="text-align: center" ' : '') + '><img src="' + ci.src + '" ' +
                         (ci.width ? 'width="' + ci.width + '" ' : '') + (ci._src ? ' _src="' + ci._src + '" ' : '') +
                         (ci.height ? ' height="' + ci.height + '" ' : '') +
                         ' style="' + (ci['floatStyle'] && ci['floatStyle'] != 'center' ? 'float:' + ci['floatStyle'] + ';' : '') +
                         (ci.border || '') + '" ' +
-                        (ci.title ? ' title="' + ci.title + '"' : '') + ' /></p>';
+                        (ci.title ? ' title="' + ci.title + '"' : '') + ' /></p><br><div class="image-caption"></div></div>';
                     html.push(str);
                 }
             }
-
-            me.execCommand('insertHtml', html.join(''));
+            me.execCommand('insertHtml', html.join(''),true);
         }
-
         me.fireEvent('afterinsertimage', opt)
     }
 };

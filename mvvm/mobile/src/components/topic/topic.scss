@@ -14,11 +14,17 @@
     width: transform-rem(55); height: transform-rem(55); border-radius: 50%; display: inline-block;
     line-height: transform-rem(55);
     color: #FFF; font-size: transform-rem(25);
+    //静态资源地址必须是相对于引用此模块的文件地址,比如此处,此文件被 style/topic.scss文件引用。而topic.scss被require到页面中,故图片地址必须是相对于 style/topic.scss文件,因为WEBPACK 会把所有资源转换为 require()方式来引入
+    background: url("../components/topic/image0_2_xhdpi.png") no-repeat center;
+    background-size: cover;
     img{
       width: 100%;
       height: 100%;
       -webkit-border-radius: 50%; -moz-border-radius: 50%;
       border-radius: 50%;
+      //background: url("image0_2_xhdpi.png") no-repeat ;
+
+
     }
   }
   .topic_name{

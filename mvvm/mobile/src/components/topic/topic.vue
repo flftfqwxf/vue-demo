@@ -1,7 +1,7 @@
 <template>
     <div class="topic_info">
         <span>
-            <img :src="info.logo" alt="">
+            <img v-if="info.logo" :src="info.logo" alt="">
         </span>
         <p class="topic_name">{{info.topic_name}}</p>
 

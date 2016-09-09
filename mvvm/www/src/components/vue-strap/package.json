@@ -1,0 +1,144 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "vue-strap@^1.1.3",
+        "scope": null,
+        "escapedName": "vue-strap",
+        "name": "vue-strap",
+        "rawSpec": "^1.1.3",
+        "spec": ">=1.1.3 <2.0.0",
+        "type": "range"
+      },
+      "/Users/leixianhua/project/ironhide-frontend"
+    ]
+  ],
+  "_cnpm_publish_time": 1473268239945,
+  "_from": "vue-strap@>=1.1.3 <2.0.0",
+  "_id": "vue-strap@1.1.15",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/vue-strap",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/vue-strap-1.1.15.tgz_1473268238764_0.800737846409902"
+  },
+  "_npmUser": {
+    "name": "yuche",
+    "email": "i@yuche.me"
+  },
+  "_npmVersion": "2.14.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "vue-strap@^1.1.3",
+    "scope": null,
+    "escapedName": "vue-strap",
+    "name": "vue-strap",
+    "rawSpec": "^1.1.3",
+    "spec": ">=1.1.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/vue-strap/download/vue-strap-1.1.15.tgz",
+  "_shasum": "d8b8202414221a7c479a227e466a035a0d487008",
+  "_shrinkwrap": null,
+  "_spec": "vue-strap@^1.1.3",
+  "_where": "/Users/leixianhua/project/ironhide-frontend",
+  "author": {
+    "name": "yuche"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ],
+      [
+        "vueify"
+      ]
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/yuche/vue-strap/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "vue": "^1.0.26"
+  },
+  "description": "Bootstrap components built with Vue.js",
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-runtime": "^6.3.19",
+    "css-loader": "^0.21.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "node-sass": "^3.4.1",
+    "prismjs": "^1.3.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "7.1.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "directories": {
+    "src": "src/"
+  },
+  "dist": {
+    "shasum": "d8b8202414221a7c479a227e466a035a0d487008",
+    "size": 186705,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/vue-strap/download/vue-strap-1.1.15.tgz"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "src",
+    "dist"
+  ],
+  "gitHead": "f0d45bca7b76a8c23d5f5966845b3b717340c3c5",
+  "homepage": "http://yuche.github.io/vue-strap/",
+  "keywords": [
+    "vue",
+    "vue-bootstrap",
+    "vue-component",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "main": "dist/vue-strap.js",
+  "maintainers": [
+    {
+      "name": "yuche",
+      "email": "i@yuche.me"
+    }
+  ],
+  "name": "vue-strap",
+  "optionalDependencies": {},
+  "publish_time": 1473268239945,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuche/vue-strap.git"
+  },
+  "scripts": {
+    "build": "webpack --progress --hide-modules --config  webpack.build.min.js && webpack --progress --hide-modules --config  webpack.build.js",
+    "builddocs": "webpack --progress --hide-modules && set NODE_ENV=production webpack --progress --hide-modules",
+    "docs": "webpack-dev-server --inline --hot --quiet",
+    "postversion": "git push && git push --tags",
+    "version": "npm run build && git add -A dist"
+  },
+  "version": "1.1.15"
+}

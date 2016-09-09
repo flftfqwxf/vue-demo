@@ -1,4 +1,5 @@
-UE.registerUI('combox',function(editor,uiName){
+UE.registerUI('combox',
+    function(editor,uiName){
     //注册按钮执行时的command命令,用uiName作为command名字，使用命令默认就会带有回退操作
     editor.registerCommand(uiName,{
         execCommand:function(cmdName,value){

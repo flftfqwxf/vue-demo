@@ -9,6 +9,7 @@ const iosVersionMatch = isIos && UA.match(/os ([\d_]+)/)
 const iosVersion = iosVersionMatch && iosVersionMatch[1].split('_')[0]
 //实际上就是新建一个iframe的生成器
 const createIframe = (function () {
+    // document.body.removeChild()
     var iframe;
     return function (src) {
         if (iframe) {
@@ -29,7 +30,7 @@ const createIframe = (function () {
 const canOpenApp = {
     android: 'MQQBrowser|ucbrowser|weibo|micromessenger|AliApp|article',
     ios: 'MQQBrowser|ucbrowser|weibo|QHBrowser|micromessenger|AliApp|article',
-    noIntent: 'MQQBrowser|ucbrowser|baidubrowser|sogouMobilebrowser|mxbrowser|360 APhone',
+    noIntent: 'MQQBrowser|ucbrowser|baidubrowser|sogouMobilebrowser|mxbrowser|360 APhone|mz',
 //            noIntent: 'MQQBrowser|ucbrowser|baidubrowser|sogouMobilebrowser|mxbrowser|LieBao|360 APhone',
     iosNoUN: 'Crios|Fxios|baidubrowser|sogouMobilebrowser|QHBrowser|Mxios'
 };
@@ -63,11 +64,13 @@ var locationDownLoad = function (androidDownLoadUrl, iosDownLoadUrl, startTime) 
     clearTimeout(openTimeout);
     openTimeout = setTimeout(function () {
         var timeOutDateTime = Date.now();
+        // alert(startTime)
         if (timeOutDateTime - startTime < 3000) {
+
             // alert(downLoadUrl)
             window.location.href = downLoadUrl;
         }
-    }, 2000);
+    }, 2500);
 }
 window.onblur = function () {
     // alert('timeout');
@@ -93,16 +96,20 @@ var openApp = function (schemeLink, baseLink, intentLink, iosDownLoadLink, andro
             openIframe.src = schemeLink
         }
         setTimeout(function () {
+            // alert(UA)
             if (window.appLaunch == false && window.navigator.userAgent.match(/Android/i) != null && window.navigator.userAgent.match(regexp) == null) {//唤起但不支持vilibilitychange不需要进这个逻辑,或者未唤起且不支持youku://协议需要进入逻辑
                 // var chromeUrl = "intent://play?vid="+videoIdEn+callAppFidEn+callAppRefer+callAppTuid+callAppUa+"&source="+tsource+"&cookieid="+cookieid+cookiePlus+"#Intent;scheme=youku;package=com.youku.phone;end;";
                 // window.location.href = "intent://play?vid=XMTY5OTEzODI4MA==&ua=other&source=mplaypage2&cookieid=1472114969039HpoihU|l4Xifn#Intent;scheme=youku;package=com.youku.phone;end;";
                 window.location.href = intentLink;
                 locationDownLoad(androidDownLoadLink, iosDownLoadLink, startTime);
+            }else{
+                locationDownLoad(androidDownLoadLink, iosDownLoadLink,startTime)
+
             }
-        }, 300);
+        }, 200);
         // setTimeout(function () {
         //     locationDownLoad(androidDownLoadLink, iosDownLoadLink)
-        // }, 1000);
+        // }, 400);
     }
 }
 module.exports = openApp;

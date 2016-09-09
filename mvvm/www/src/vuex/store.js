@@ -1,15 +1,13 @@
 
 import Vue from "vue"
 import Vuex from "vuex"
-import nav from './modules/nav'
-import breadcrumb from './modules/breadcrumb'
-import top from './modules/top'
+import message from './modules/message'
+import user from './modules/user'
 Vue.use(Vuex)
 export default new Vuex.Store({
     modules:{
-        nav,
-        top,
-        breadcrumb
+        message,
+        user
     },
     strict: process.env.NODE_ENV !== 'production'
 })

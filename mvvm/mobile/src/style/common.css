@@ -767,6 +767,9 @@ input[type="button"].btn-block {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+button, a {
+  outline: none; }
+
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent; }
@@ -899,7 +902,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a {
+a, a:link, a:visited, a:active {
   text-decoration: none;
   color: #302F3E; }
 
